@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class Accumulator;
@@ -27,10 +28,10 @@ namespace CIMPP
 		AccumulatorValue();
 		~AccumulatorValue() override;
 
-		/** \brief Measurement to which this value is connected. Default: 0 */
+		/** \brief Measurement to which this value is connected. Default: nullptr */
 		CIMPP::Accumulator* Accumulator;
 
-		/** \brief The command that resets the accumulator value. Default: 0 */
+		/** \brief The command that resets the accumulator value. Default: nullptr */
 		CIMPP::AccumulatorReset* AccumulatorReset;
 
 		static const char debugName[];

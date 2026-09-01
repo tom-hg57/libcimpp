@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Reactance.hpp"
 
 namespace CIMPP
@@ -26,7 +27,7 @@ namespace CIMPP
 		GroundingImpedance();
 		~GroundingImpedance() override;
 
-		/** \brief Reactance of device. Default: nullptr */
+		/** \brief Reactance of device. Default: 0.0 */
 		CIMPP::Reactance x;
 
 		static const char debugName[];

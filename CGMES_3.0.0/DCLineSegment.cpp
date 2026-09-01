@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "DCLineSegment.length", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "DCLineSegment.resistance", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 DCLineSegment::DCLineSegment() {}

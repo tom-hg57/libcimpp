@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ExcST7BOELselectorKind.hpp"
 #include "ExcST7BUELselectorKind.hpp"
 #include "PU.hpp"
@@ -29,49 +30,49 @@ namespace CIMPP
 		ExcIEEEST7B();
 		~ExcIEEEST7B() override;
 
-		/** \brief High-value gate feedback gain (K).  Typical Value 1. Default: nullptr */
+		/** \brief High-value gate feedback gain (K).  Typical Value 1. Default: 0.0 */
 		CIMPP::PU kh;
 
-		/** \brief Voltage regulator integral gain (K).  Typical Value = 1. Default: nullptr */
+		/** \brief Voltage regulator integral gain (K).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU kia;
 
-		/** \brief Low-value gate feedback gain (K).  Typical Value 1. Default: nullptr */
+		/** \brief Low-value gate feedback gain (K).  Typical Value 1. Default: 0.0 */
 		CIMPP::PU kl;
 
-		/** \brief Voltage regulator proportional gain (K).  Typical Value = 40. Default: nullptr */
+		/** \brief Voltage regulator proportional gain (K).  Typical Value = 40. Default: 0.0 */
 		CIMPP::PU kpa;
 
 		/** \brief OEL input selector (OELin). Typical Value = noOELinput. Default: 0 */
 		CIMPP::ExcST7BOELselectorKind oelin;
 
-		/** \brief Regulator lag time constant (T).  Typical Value 1. Default: nullptr */
+		/** \brief Regulator lag time constant (T).  Typical Value 1. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Regulator lead time constant (T).  Typical Value 1. Default: nullptr */
+		/** \brief Regulator lead time constant (T).  Typical Value 1. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Excitation control system stabilizer time constant (T).  Typical Value 1. Default: nullptr */
+		/** \brief Excitation control system stabilizer time constant (T).  Typical Value 1. Default: 0.0 */
 		CIMPP::Seconds tf;
 
-		/** \brief Feedback time constant of inner loop field voltage regulator (T). Typical Value 1. Default: nullptr */
+		/** \brief Feedback time constant of inner loop field voltage regulator (T). Typical Value 1. Default: 0.0 */
 		CIMPP::Seconds tg;
 
-		/** \brief Feedback time constant (T).  Typical Value = 3. Default: nullptr */
+		/** \brief Feedback time constant (T).  Typical Value = 3. Default: 0.0 */
 		CIMPP::Seconds tia;
 
 		/** \brief UEL input selector (UELin). Typical Value = noUELinput. Default: 0 */
 		CIMPP::ExcST7BUELselectorKind uelin;
 
-		/** \brief Maximum voltage reference signal (V).  Typical Value = 1.1. Default: nullptr */
+		/** \brief Maximum voltage reference signal (V).  Typical Value = 1.1. Default: 0.0 */
 		CIMPP::PU vmax;
 
-		/** \brief Minimum voltage reference signal (V).  Typical Value = 0.9. Default: nullptr */
+		/** \brief Minimum voltage reference signal (V).  Typical Value = 0.9. Default: 0.0 */
 		CIMPP::PU vmin;
 
-		/** \brief Maximum voltage regulator output (V).  Typical Value = 5. Default: nullptr */
+		/** \brief Maximum voltage regulator output (V).  Typical Value = 5. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator output (V).  Typical Value = -4.5. Default: nullptr */
+		/** \brief Minimum voltage regulator output (V).  Typical Value = -4.5. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

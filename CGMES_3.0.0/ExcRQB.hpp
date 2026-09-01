@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,43 +29,43 @@ namespace CIMPP
 		ExcRQB();
 		~ExcRQB() override;
 
-		/** \brief Voltage reference input gain (&lt;i&gt;Ki0&lt;/i&gt;).  Typical value = 12,7. Default: 0.0 */
+		/** \brief Voltage reference input gain (<i>Ki0</i>).  Typical value = 12,7. Default: 0.0 */
 		CIMPP::Float ki0;
 
-		/** \brief Voltage input gain (&lt;i&gt;Ki1&lt;/i&gt;).  Typical value = -16,8. Default: 0.0 */
+		/** \brief Voltage input gain (<i>Ki1</i>).  Typical value = -16,8. Default: 0.0 */
 		CIMPP::Float ki1;
 
-		/** \brief OEL input gain (&lt;i&gt;KLIR&lt;/i&gt;).  Typical value = 12,13. Default: 0.0 */
+		/** \brief OEL input gain (<i>KLIR</i>).  Typical value = 12,13. Default: 0.0 */
 		CIMPP::Float klir;
 
-		/** \brief Limiter gain (&lt;i&gt;KLUS&lt;/i&gt;).  Typical value = 50. Default: 0.0 */
+		/** \brief Limiter gain (<i>KLUS</i>).  Typical value = 50. Default: 0.0 */
 		CIMPP::Float klus;
 
-		/** \brief Integrator limiter (&lt;i&gt;LSAT&lt;/i&gt;).  Typical value = 5,73. Default: nullptr */
+		/** \brief Integrator limiter (<i>LSAT</i>).  Typical value = 5,73. Default: 0.0 */
 		CIMPP::PU lsat;
 
-		/** \brief Setpoint (&lt;i&gt;LUS&lt;/i&gt;).  Typical value = 0,12. Default: nullptr */
+		/** \brief Setpoint (<i>LUS</i>).  Typical value = 0,12. Default: 0.0 */
 		CIMPP::PU lus;
 
-		/** \brief Voltage input time constant (&lt;i&gt;MESU&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,02. Default: nullptr */
+		/** \brief Voltage input time constant (<i>MESU</i>) (&gt;= 0).  Typical value = 0,02. Default: 0.0 */
 		CIMPP::Seconds mesu;
 
-		/** \brief Input time constant (&lt;i&gt;T4M&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 5. Default: nullptr */
+		/** \brief Input time constant (<i>T4M</i>) (&gt;= 0).  Typical value = 5. Default: 0.0 */
 		CIMPP::Seconds t4m;
 
-		/** \brief Lead lag time constant (&lt;i&gt;TC&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,02. Default: nullptr */
+		/** \brief Lead lag time constant (<i>TC</i>) (&gt;= 0).  Typical value = 0,02. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Lead lag time constant (&lt;i&gt;TE&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,22. Default: nullptr */
+		/** \brief Lead lag time constant (<i>TE</i>) (&gt;= 0).  Typical value = 0,22. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Exciter time constant (&lt;i&gt;TF&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,01. Default: nullptr */
+		/** \brief Exciter time constant (<i>TF</i>) (&gt;= 0).  Typical value = 0,01. Default: 0.0 */
 		CIMPP::Seconds tf;
 
-		/** \brief Maximum voltage reference limit (&lt;i&gt;UCMAX&lt;/i&gt;) (&amp;gt; ExcRQB.ucmin).  Typical value = 1,1. Default: nullptr */
+		/** \brief Maximum voltage reference limit (<i>UCMAX</i>) (&gt; ExcRQB.ucmin).  Typical value = 1,1. Default: 0.0 */
 		CIMPP::PU ucmax;
 
-		/** \brief Minimum voltage reference limit (&lt;i&gt;UCMIN&lt;/i&gt;) (&amp;lt; ExcRQB.ucmax).  Typical value = 0,9. Default: nullptr */
+		/** \brief Minimum voltage reference limit (<i>UCMIN</i>) (&lt; ExcRQB.ucmax).  Typical value = 0,9. Default: 0.0 */
 		CIMPP::PU ucmin;
 
 		static const char debugName[];

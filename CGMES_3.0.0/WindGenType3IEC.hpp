@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 
 namespace CIMPP
@@ -27,16 +28,16 @@ namespace CIMPP
 		WindGenType3IEC();
 		~WindGenType3IEC() override;
 
-		/** \brief Wind turbine type 3 model with which this wind generator type 3 is associated. Default: 0 */
+		/** \brief Wind turbine type 3 model with which this wind generator type 3 is associated. Default: nullptr */
 		CIMPP::WindTurbineType3IEC* WindTurbineType3IEC;
 
-		/** \brief Maximum active current ramp rate (&lt;i&gt;di&lt;/i&gt;&lt;i&gt;&lt;sub&gt;pmax&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Maximum active current ramp rate (<i>di</i><i><sub>pmax</sub></i>). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU dipmax;
 
-		/** \brief Maximum reactive current ramp rate (&lt;i&gt;di&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qmax&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Maximum reactive current ramp rate (<i>di</i><i><sub>qmax</sub></i>). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU diqmax;
 
-		/** \brief Electromagnetic transient reactance (&lt;i&gt;x&lt;/i&gt;&lt;i&gt;&lt;sub&gt;S&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Electromagnetic transient reactance (<i>x</i><i><sub>S</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU xs;
 
 		static const char debugName[];

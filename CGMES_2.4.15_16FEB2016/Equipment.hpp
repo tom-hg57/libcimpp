@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 
 namespace CIMPP
@@ -28,10 +29,10 @@ namespace CIMPP
 		Equipment();
 		~Equipment() override;
 
-		/** \brief Container of this equipment. Default: 0 */
+		/** \brief Container of this equipment. Default: nullptr */
 		CIMPP::EquipmentContainer* EquipmentContainer;
 
-		/** \brief The operational limit sets associated with this equipment. Default: 0 */
+		/** \brief The operational limit sets associated with this equipment. Default: {} */
 		std::list<CIMPP::OperationalLimitSet*> OperationalLimitSet;
 
 		/** \brief The single instance of equipment represents multiple pieces of equipment that have been modeled together as an aggregate.  Examples would be power transformers or synchronous machines operating in parallel modeled as a single aggregate power transformer or aggregate synchronous machine.  This is not to be used to indicate equipment that is part of a group of interdependent equipment produced by a network production program. Default: false */

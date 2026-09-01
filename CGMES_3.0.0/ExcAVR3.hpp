@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,40 +29,40 @@ namespace CIMPP
 		ExcAVR3();
 		~ExcAVR3() override;
 
-		/** \brief Field voltage value 1 (&lt;i&gt;E&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;).  Typical value = 4,18. Default: nullptr */
+		/** \brief Field voltage value 1 (<i>E</i><i><sub>1</sub></i>).  Typical value = 4,18. Default: 0.0 */
 		CIMPP::PU e1;
 
-		/** \brief Field voltage value 2 (&lt;i&gt;E&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;).  Typical value = 3,14. Default: nullptr */
+		/** \brief Field voltage value 2 (<i>E</i><i><sub>2</sub></i>).  Typical value = 3,14. Default: 0.0 */
 		CIMPP::PU e2;
 
-		/** \brief AVR gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;A&lt;/sub&gt;&lt;/i&gt;).  Typical value = 100. Default: 0.0 */
+		/** \brief AVR gain (<i>K</i><i><sub>A</sub></i>).  Typical value = 100. Default: 0.0 */
 		CIMPP::Float ka;
 
-		/** \brief Saturation factor at &lt;i&gt;E&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;&lt;i&gt; &lt;/i&gt;(&lt;i&gt;S[E&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;]&lt;/i&gt;).  Typical value = 0,1. Default: 0.0 */
+		/** \brief Saturation factor at <i>E</i><i><sub>1</sub></i><i> </i>(<i>S[E</i><i><sub>1</sub></i><i>]</i>).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Float se1;
 
-		/** \brief Saturation factor at &lt;i&gt;E&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;&lt;i&gt; &lt;/i&gt;(&lt;i&gt;S[E&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;]&lt;/i&gt;).  Typical value = 0,03. Default: 0.0 */
+		/** \brief Saturation factor at <i>E</i><i><sub>2</sub></i><i> </i>(<i>S[E</i><i><sub>2</sub></i><i>]</i>).  Typical value = 0,03. Default: 0.0 */
 		CIMPP::Float se2;
 
-		/** \brief AVR time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 20. Default: nullptr */
+		/** \brief AVR time constant (<i>T</i><i><sub>1</sub></i>) (&gt;= 0).  Typical value = 20. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief AVR time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1,6. Default: nullptr */
+		/** \brief AVR time constant (<i>T</i><i><sub>2</sub></i>) (&gt;= 0).  Typical value = 1,6. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief AVR time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,66. Default: nullptr */
+		/** \brief AVR time constant (<i>T</i><i><sub>3</sub></i>) (&gt;= 0).  Typical value = 0,66. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief AVR time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;4&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,07. Default: nullptr */
+		/** \brief AVR time constant (<i>T</i><i><sub>4</sub></i>) (&gt;= 0).  Typical value = 0,07. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Exciter time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;E&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1. Default: nullptr */
+		/** \brief Exciter time constant (<i>T</i><i><sub>E</sub></i>) (&gt;= 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Minimum AVR output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RMN&lt;/sub&gt;&lt;/i&gt;).  Typical value = -7,5. Default: nullptr */
+		/** \brief Minimum AVR output (<i>V</i><i><sub>RMN</sub></i>).  Typical value = -7,5. Default: 0.0 */
 		CIMPP::PU vrmn;
 
-		/** \brief Maximum AVR output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RMX&lt;/sub&gt;&lt;/i&gt;).  Typical value = 7,5. Default: nullptr */
+		/** \brief Maximum AVR output (<i>V</i><i><sub>RMX</sub></i>).  Typical value = 7,5. Default: 0.0 */
 		CIMPP::PU vrmx;
 
 		static const char debugName[];

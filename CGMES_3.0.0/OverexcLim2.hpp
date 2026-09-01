@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 
 namespace CIMPP
@@ -26,16 +27,16 @@ namespace CIMPP
 		OverexcLim2();
 		~OverexcLim2() override;
 
-		/** \brief Limit value of rated field current (&lt;i&gt;I&lt;/i&gt;&lt;i&gt;&lt;sub&gt;FDLIM&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,05. Default: nullptr */
+		/** \brief Limit value of rated field current (<i>I</i><i><sub>FDLIM</sub></i>).  Typical value = 1,05. Default: 0.0 */
 		CIMPP::PU ifdlim;
 
-		/** \brief Gain Over excitation limiter (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;OI&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,1. Default: nullptr */
+		/** \brief Gain Over excitation limiter (<i>K</i><i><sub>OI</sub></i>).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::PU koi;
 
-		/** \brief Maximum error signal (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;OIMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; OverexcLim2.voimin).  Typical value = 0. Default: nullptr */
+		/** \brief Maximum error signal (<i>V</i><i><sub>OIMAX</sub></i>) (&gt; OverexcLim2.voimin).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU voimax;
 
-		/** \brief Minimum error signal (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;OIMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; OverexcLim2.voimax).  Typical value = -9999. Default: nullptr */
+		/** \brief Minimum error signal (<i>V</i><i><sub>OIMIN</sub></i>) (&lt; OverexcLim2.voimax).  Typical value = -9999. Default: 0.0 */
 		CIMPP::PU voimin;
 
 		static const char debugName[];

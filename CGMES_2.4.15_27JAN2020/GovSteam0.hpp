@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,28 +29,28 @@ namespace CIMPP
 		GovSteam0();
 		~GovSteam0() override;
 
-		/** \brief Turbine damping coefficient (Dt).  Unit = delta P / delta speed. Typical Value = 0. Default: nullptr */
+		/** \brief Turbine damping coefficient (Dt).  Unit = delta P / delta speed. Typical Value = 0. Default: 0.0 */
 		CIMPP::PU dt;
 
-		/** \brief Base for power values (MWbase)  (&gt;0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (MWbase)  (>0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Permanent droop (R).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Permanent droop (R).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::PU r;
 
-		/** \brief Steam bowl time constant (T1).  Typical Value = 0.5. Default: nullptr */
+		/** \brief Steam bowl time constant (T1).  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Numerator time constant of T2/T3 block (T2).  Typical Value = 3. Default: nullptr */
+		/** \brief Numerator time constant of T2/T3 block (T2).  Typical Value = 3. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Reheater time constant (T3).  Typical Value = 10. Default: nullptr */
+		/** \brief Reheater time constant (T3).  Typical Value = 10. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Maximum valve position, PU of mwcap (Vmax).  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum valve position, PU of mwcap (Vmax).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU vmax;
 
-		/** \brief Minimum valve position, PU of mwcap (Vmin).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum valve position, PU of mwcap (Vmin).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU vmin;
 
 		static const char debugName[];

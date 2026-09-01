@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,37 +28,37 @@ namespace CIMPP
 		GovGAST4();
 		~GovGAST4() override;
 
-		/** \brief Droop (bp).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Droop (bp).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::PU bp;
 
-		/** \brief Compressor gain (K).  Typical Value = 0. Default: nullptr */
+		/** \brief Compressor gain (K).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU ktm;
 
-		/** \brief Fuel flow maximum negative error value (MN).  Typical Value = -0.05. Default: nullptr */
+		/** \brief Fuel flow maximum negative error value (MN).  Typical Value = -0.05. Default: 0.0 */
 		CIMPP::PU mnef;
 
-		/** \brief Fuel flow maximum positive error value (MX).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Fuel flow maximum positive error value (MX).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::PU mxef;
 
-		/** \brief Minimum valve opening (RYMN).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum valve opening (RYMN).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU rymn;
 
-		/** \brief Maximum valve opening (RYMX).  Typical Value = 1.1. Default: nullptr */
+		/** \brief Maximum valve opening (RYMX).  Typical Value = 1.1. Default: 0.0 */
 		CIMPP::PU rymx;
 
-		/** \brief Maximum gate opening velocity (T).  Typical Value = 3. Default: nullptr */
+		/** \brief Maximum gate opening velocity (T).  Typical Value = 3. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Maximum gate closing velocity (T).  Typical Value = 0.5. Default: nullptr */
+		/** \brief Maximum gate closing velocity (T).  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Fuel control time constant (T).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Fuel control time constant (T).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Seconds tcm;
 
-		/** \brief Compressor discharge volume time constant (T).  Typical Value = 0.2. Default: nullptr */
+		/** \brief Compressor discharge volume time constant (T).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::Seconds tm;
 
-		/** \brief Time constant of fuel valve positioner (T).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Time constant of fuel valve positioner (T).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Seconds tv;
 
 		static const char debugName[];

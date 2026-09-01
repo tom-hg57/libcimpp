@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 #include "Simple_Float.hpp"
@@ -29,46 +30,46 @@ namespace CIMPP
 		LoadMotor();
 		~LoadMotor() override;
 
-		/** \brief Aggregate load to which this aggregate motor (dynamic) load belongs. Default: 0 */
+		/** \brief Aggregate load to which this aggregate motor (dynamic) load belongs. Default: nullptr */
 		CIMPP::LoadAggregate* LoadAggregate;
 
-		/** \brief Damping factor (D).  Unit = delta P/delta speed.  Typical Value = 2. Default: nullptr */
+		/** \brief Damping factor (D).  Unit = delta P/delta speed.  Typical Value = 2. Default: 0.0 */
 		CIMPP::Simple_Float d;
 
-		/** \brief Inertia constant (H) (not=0).  Typical Value = 0.4. Default: nullptr */
+		/** \brief Inertia constant (H) (not=0).  Typical Value = 0.4. Default: 0.0 */
 		CIMPP::Seconds h;
 
-		/** \brief Loading factor - ratio of initial P to motor MVA base (Lfac).  Typical Value = 0.8. Default: nullptr */
+		/** \brief Loading factor - ratio of initial P to motor MVA base (Lfac).  Typical Value = 0.8. Default: 0.0 */
 		CIMPP::Simple_Float lfac;
 
-		/** \brief Transient reactance (Lp).  Typical Value = 0.15. Default: nullptr */
+		/** \brief Transient reactance (Lp).  Typical Value = 0.15. Default: 0.0 */
 		CIMPP::PU lp;
 
-		/** \brief Subtransient reactance (Lpp).  Typical Value = 0.15. Default: nullptr */
+		/** \brief Subtransient reactance (Lpp).  Typical Value = 0.15. Default: 0.0 */
 		CIMPP::PU lpp;
 
-		/** \brief Synchronous reactance (Ls).  Typical Value = 3.2. Default: nullptr */
+		/** \brief Synchronous reactance (Ls).  Typical Value = 3.2. Default: 0.0 */
 		CIMPP::PU ls;
 
-		/** \brief Fraction of constant-power load to be represented by this motor model (Pfrac) (&gt;=0.0 and &lt;=1.0).  Typical Value = 0.3. Default: nullptr */
+		/** \brief Fraction of constant-power load to be represented by this motor model (Pfrac) (>=0.0 and <=1.0).  Typical Value = 0.3. Default: 0.0 */
 		CIMPP::Simple_Float pfrac;
 
-		/** \brief Stator resistance (Ra).  Typical Value = 0. Default: nullptr */
+		/** \brief Stator resistance (Ra).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU ra;
 
-		/** \brief Circuit breaker operating time (Tbkr).  Typical Value = 0.08. Default: nullptr */
+		/** \brief Circuit breaker operating time (Tbkr).  Typical Value = 0.08. Default: 0.0 */
 		CIMPP::Seconds tbkr;
 
-		/** \brief Transient rotor time constant (Tpo) (not=0).  Typical Value = 1. Default: nullptr */
+		/** \brief Transient rotor time constant (Tpo) (not=0).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds tpo;
 
-		/** \brief Subtransient rotor time constant (Tppo).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Subtransient rotor time constant (Tppo).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Seconds tppo;
 
-		/** \brief Voltage trip pickup time (Tv).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Voltage trip pickup time (Tv).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Seconds tv;
 
-		/** \brief Voltage threshold for tripping (Vt).  Typical Value = 0.7. Default: nullptr */
+		/** \brief Voltage threshold for tripping (Vt).  Typical Value = 0.7. Default: 0.0 */
 		CIMPP::PU vt;
 
 		static const char debugName[];

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class WindAeroOneDimIEC;
@@ -31,22 +32,22 @@ namespace CIMPP
 		WindTurbineType3IEC();
 		~WindTurbineType3IEC() override;
 
-		/** \brief Wind aerodynamic model associated with this wind generator type 3 model. Default: 0 */
+		/** \brief Wind aerodynamic model associated with this wind generator type 3 model. Default: nullptr */
 		CIMPP::WindAeroOneDimIEC* WindAeroOneDimIEC;
 
-		/** \brief Wind aerodynamic model associated with this wind turbine type 3 model. Default: 0 */
+		/** \brief Wind aerodynamic model associated with this wind turbine type 3 model. Default: nullptr */
 		CIMPP::WindAeroTwoDimIEC* WindAeroTwoDimIEC;
 
-		/** \brief Wind control P type 3 model associated with this wind turbine type 3 model. Default: 0 */
+		/** \brief Wind control P type 3 model associated with this wind turbine type 3 model. Default: nullptr */
 		CIMPP::WindContPType3IEC* WindContPType3IEC;
 
-		/** \brief Wind control pitch angle model associated with this wind turbine type 3. Default: 0 */
+		/** \brief Wind control pitch angle model associated with this wind turbine type 3. Default: nullptr */
 		CIMPP::WindContPitchAngleIEC* WindContPitchAngleIEC;
 
-		/** \brief Wind generator type 3 model associated with this wind turbine type 3 model. Default: 0 */
+		/** \brief Wind generator type 3 model associated with this wind turbine type 3 model. Default: nullptr */
 		CIMPP::WindGenType3IEC* WindGenType3IEC;
 
-		/** \brief Wind mechanical model associated with this wind turbine type 3 model. Default: 0 */
+		/** \brief Wind mechanical model associated with this wind turbine type 3 model. Default: nullptr */
 		CIMPP::WindMechIEC* WindMechIEC;
 
 		static const char debugName[];

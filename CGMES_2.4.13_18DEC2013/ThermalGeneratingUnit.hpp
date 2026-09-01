@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class FossilFuel;
@@ -26,7 +27,7 @@ namespace CIMPP
 		ThermalGeneratingUnit();
 		~ThermalGeneratingUnit() override;
 
-		/** \brief A thermal generating unit may have one or more fossil fuels. Default: 0 */
+		/** \brief A thermal generating unit may have one or more fossil fuels. Default: {} */
 		std::list<CIMPP::FossilFuel*> FossilFuels;
 
 		static const char debugName[];

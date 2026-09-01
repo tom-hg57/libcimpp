@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class TransformerEnd;
@@ -26,7 +27,7 @@ namespace CIMPP
 		PhaseTapChanger();
 		~PhaseTapChanger() override;
 
-		/** \brief Phase tap changer associated with this transformer end. Default: 0 */
+		/** \brief Phase tap changer associated with this transformer end. Default: nullptr */
 		CIMPP::TransformerEnd* TransformerEnd;
 
 		static const char debugName[];

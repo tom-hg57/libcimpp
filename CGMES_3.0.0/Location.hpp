@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class CoordinateSystem;
@@ -29,13 +30,13 @@ namespace CIMPP
 		Location();
 		~Location() override;
 
-		/** \brief Coordinate system used to describe position points of this location. Default: 0 */
+		/** \brief Coordinate system used to describe position points of this location. Default: nullptr */
 		CIMPP::CoordinateSystem* CoordinateSystem;
 
-		/** \brief Sequence of position points describing this location, expressed in coordinate system `Location.CoordinateSystem`. Default: 0 */
+		/** \brief Sequence of position points describing this location, expressed in coordinate system `Location.CoordinateSystem`. Default: {} */
 		std::list<CIMPP::PositionPoint*> PositionPoints;
 
-		/** \brief All power system resources at this location. Default: 0 */
+		/** \brief All power system resources at this location. Default: nullptr */
 		CIMPP::PowerSystemResource* PowerSystemResources;
 
 		/** \brief Main address of the location. Default: nullptr */

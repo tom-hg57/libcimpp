@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "InputSignalKind.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,40 +29,40 @@ namespace CIMPP
 		PssIEEE1A();
 		~PssIEEE1A() override;
 
-		/** \brief PSS signal conditioning frequency filter constant (&lt;i&gt;A1&lt;/i&gt;).  Typical value = 0,061. Default: nullptr */
+		/** \brief PSS signal conditioning frequency filter constant (<i>A1</i>).  Typical value = 0,061. Default: 0.0 */
 		CIMPP::PU a1;
 
-		/** \brief PSS signal conditioning frequency filter constant (&lt;i&gt;A2&lt;/i&gt;).  Typical value = 0,0017. Default: nullptr */
+		/** \brief PSS signal conditioning frequency filter constant (<i>A2</i>).  Typical value = 0,0017. Default: 0.0 */
 		CIMPP::PU a2;
 
 		/** \brief Type of input signal (rotorAngularFrequencyDeviation, generatorElectricalPower, or busFrequencyDeviation).  Typical value = rotorAngularFrequencyDeviation. Default: 0 */
 		CIMPP::InputSignalKind inputSignalType;
 
-		/** \brief Stabilizer gain (&lt;i&gt;Ks&lt;/i&gt;).  Typical value = 5. Default: nullptr */
+		/** \brief Stabilizer gain (<i>Ks</i>).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU ks;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T1&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,3. Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T1</i>) (&gt;= 0).  Typical value = 0,3. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T2&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,03. Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T2</i>) (&gt;= 0).  Typical value = 0,03. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T3&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,3. Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T3</i>) (&gt;= 0).  Typical value = 0,3. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T4&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,03. Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T4</i>) (&gt;= 0).  Typical value = 0,03. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Washout time constant (&lt;i&gt;T5&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 10. Default: nullptr */
+		/** \brief Washout time constant (<i>T5</i>) (&gt;= 0).  Typical value = 10. Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Transducer time constant (&lt;i&gt;T6&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,01. Default: nullptr */
+		/** \brief Transducer time constant (<i>T6</i>) (&gt;= 0).  Typical value = 0,01. Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Maximum stabilizer output (&lt;i&gt;Vrmax&lt;/i&gt;) (&amp;gt; PssIEEE1A.vrmin).  Typical value = 0,05. Default: nullptr */
+		/** \brief Maximum stabilizer output (<i>Vrmax</i>) (&gt; PssIEEE1A.vrmin).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum stabilizer output (&lt;i&gt;Vrmin&lt;/i&gt;) (&amp;lt; PssIEEE1A.vrmax).  Typical value = -0,05. Default: nullptr */
+		/** \brief Minimum stabilizer output (<i>Vrmin</i>) (&lt; PssIEEE1A.vrmax).  Typical value = -0,05. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

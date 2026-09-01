@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,19 +28,19 @@ namespace CIMPP
 		AsynchronousMachineTimeConstantReactance();
 		~AsynchronousMachineTimeConstantReactance() override;
 
-		/** \brief Transient rotor time constant (T`o) (&gt; T``o).  Typical Value = 5. Default: nullptr */
+		/** \brief Transient rotor time constant (T`o) (> T``o).  Typical Value = 5. Default: 0.0 */
 		CIMPP::Seconds tpo;
 
-		/** \brief Subtransient rotor time constant (T``o) (&gt; 0).  Typical Value = 0.03. Default: nullptr */
+		/** \brief Subtransient rotor time constant (T``o) (> 0).  Typical Value = 0.03. Default: 0.0 */
 		CIMPP::Seconds tppo;
 
-		/** \brief Transient reactance (unsaturated) (X`) (&gt;=X``).  Typical Value = 0.5. Default: nullptr */
+		/** \brief Transient reactance (unsaturated) (X`) (>=X``).  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::PU xp;
 
-		/** \brief Subtransient reactance (unsaturated) (X``) (&gt; Xl).  Typical Value = 0.2. Default: nullptr */
+		/** \brief Subtransient reactance (unsaturated) (X``) (> Xl).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::PU xpp;
 
-		/** \brief Synchronous reactance (Xs) (&gt;= X`).  Typical Value = 1.8. Default: nullptr */
+		/** \brief Synchronous reactance (Xs) (>= X`).  Typical Value = 1.8. Default: 0.0 */
 		CIMPP::PU xs;
 
 		static const char debugName[];

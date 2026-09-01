@@ -40,7 +40,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "MutualCoupling.r0", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 		{ "MutualCoupling.x0", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 MutualCoupling::MutualCoupling() : First_Terminal(nullptr), Second_Terminal(nullptr) {}

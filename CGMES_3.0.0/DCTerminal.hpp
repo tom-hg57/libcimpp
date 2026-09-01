@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class DCConductingEquipment;
@@ -26,7 +27,7 @@ namespace CIMPP
 		DCTerminal();
 		~DCTerminal() override;
 
-		/** \brief An DC  terminal belong to a DC conducting equipment. Default: 0 */
+		/** \brief An DC  terminal belong to a DC conducting equipment. Default: nullptr */
 		CIMPP::DCConductingEquipment* DCConductingEquipment;
 
 		static const char debugName[];

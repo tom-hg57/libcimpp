@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class ExcitationSystemDynamics;
@@ -28,13 +29,13 @@ namespace CIMPP
 		PFVArControllerType1Dynamics();
 		~PFVArControllerType1Dynamics() override;
 
-		/** \brief Excitation system model with which this power actor or VAr controller type 1 model is associated. Default: 0 */
+		/** \brief Excitation system model with which this power actor or VAr controller type 1 model is associated. Default: nullptr */
 		CIMPP::ExcitationSystemDynamics* ExcitationSystemDynamics;
 
-		/** \brief Remote input signal used by this power factor or VAr controller type 1 model. Default: 0 */
+		/** \brief Remote input signal used by this power factor or VAr controller type 1 model. Default: nullptr */
 		CIMPP::RemoteInputSignal* RemoteInputSignal;
 
-		/** \brief Voltage adjuster model associated with this power factor or VAr controller type 1 model. Default: 0 */
+		/** \brief Voltage adjuster model associated with this power factor or VAr controller type 1 model. Default: nullptr */
 		CIMPP::VoltageAdjusterDynamics* VoltageAdjusterDynamics;
 
 		static const char debugName[];

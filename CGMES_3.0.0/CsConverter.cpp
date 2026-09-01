@@ -18,8 +18,8 @@ static const CimClassDetails& getCimClassDetails()
 		CsConverter(),
 		"http://iec.ch/TC57/CIM100#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::SSH,
 			CGMESProfile::SV,
 		},
@@ -48,7 +48,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "CsConverter.targetGamma", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SSH, } } },
 		{ "CsConverter.targetIdc", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SSH, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 CsConverter::CsConverter() : CSCDynamics(nullptr) {}

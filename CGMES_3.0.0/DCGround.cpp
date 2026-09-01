@@ -31,7 +31,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "DCGround.inductance", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "DCGround.r", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 DCGround::DCGround() {}

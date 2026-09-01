@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "CurrentFlow.hpp"
 #include "Integer.hpp"
@@ -39,58 +40,58 @@ namespace CIMPP
 		SynchronousMachine();
 		~SynchronousMachine() override;
 
-		/** \brief Synchronous machines using this curve as default. Default: 0 */
+		/** \brief Synchronous machines using this curve as default. Default: nullptr */
 		CIMPP::ReactiveCapabilityCurve* InitialReactiveCapabilityCurve;
 
-		/** \brief Synchronous machine dynamics model used to describe dynamic behavior of this synchronous machine. Default: 0 */
+		/** \brief Synchronous machine dynamics model used to describe dynamic behavior of this synchronous machine. Default: nullptr */
 		CIMPP::SynchronousMachineDynamics* SynchronousMachineDynamics;
 
 		/** \brief Indicates whether or not the generator is earthed. Used for short circuit data exchange according to IEC 60909 Default: false */
 		CIMPP::Boolean earthing;
 
-		/** \brief Generator star point earthing resistance (Re). Used for short circuit data exchange according to IEC 60909 Default: nullptr */
+		/** \brief Generator star point earthing resistance (Re). Used for short circuit data exchange according to IEC 60909 Default: 0.0 */
 		CIMPP::Resistance earthingStarPointR;
 
-		/** \brief Generator star point earthing reactance (Xe). Used for short circuit data exchange according to IEC 60909 Default: nullptr */
+		/** \brief Generator star point earthing reactance (Xe). Used for short circuit data exchange according to IEC 60909 Default: 0.0 */
 		CIMPP::Reactance earthingStarPointX;
 
-		/** \brief Steady-state short-circuit current (in A for the profile) of generator with compound excitation during 3-phase short circuit. - Ikk=0: Generator with no compound excitation. - Ikk?0: Generator with compound excitation. Ikk is used to calculate the minimum steady-state short-circuit current for generators with compound excitation (Section 4.6.1.2 in the IEC 60909-0) Used only for single fed short circuit on a generator. (Section 4.3.4.2. in the IEC 60909-0) Default: nullptr */
+		/** \brief Steady-state short-circuit current (in A for the profile) of generator with compound excitation during 3-phase short circuit. - Ikk=0: Generator with no compound excitation. - Ikk?0: Generator with compound excitation. Ikk is used to calculate the minimum steady-state short-circuit current for generators with compound excitation (Section 4.6.1.2 in the IEC 60909-0) Used only for single fed short circuit on a generator. (Section 4.3.4.2. in the IEC 60909-0) Default: 0.0 */
 		CIMPP::CurrentFlow ikk;
 
-		/** \brief Maximum reactive power limit. This is the maximum (nameplate) limit for the unit. Default: nullptr */
+		/** \brief Maximum reactive power limit. This is the maximum (nameplate) limit for the unit. Default: 0.0 */
 		CIMPP::ReactivePower maxQ;
 
-		/** \brief Minimum reactive power limit for the unit. Default: nullptr */
+		/** \brief Minimum reactive power limit for the unit. Default: 0.0 */
 		CIMPP::ReactivePower minQ;
 
-		/** \brief Factor to calculate the breaking current (Section 4.5.2.1 in the IEC 60909-0). Used only for single fed short circuit on a generator (Section 4.3.4.2. in the IEC 60909-0). Default: nullptr */
+		/** \brief Factor to calculate the breaking current (Section 4.5.2.1 in the IEC 60909-0). Used only for single fed short circuit on a generator (Section 4.3.4.2. in the IEC 60909-0). Default: 0.0 */
 		CIMPP::Simple_Float mu;
 
 		/** \brief Current mode of operation. Default: 0 */
 		CIMPP::SynchronousMachineOperatingMode operatingMode;
 
-		/** \brief Percent of the coordinated reactive control that comes from this machine. Default: nullptr */
+		/** \brief Percent of the coordinated reactive control that comes from this machine. Default: 0.0 */
 		CIMPP::PerCent qPercent;
 
-		/** \brief Equivalent resistance (RG) of generator. RG is considered for the calculation of all currents, except for the calculation of the peak current ip. Used for short circuit data exchange according to IEC 60909 Default: nullptr */
+		/** \brief Equivalent resistance (RG) of generator. RG is considered for the calculation of all currents, except for the calculation of the peak current ip. Used for short circuit data exchange according to IEC 60909 Default: 0.0 */
 		CIMPP::Resistance r;
 
-		/** \brief Zero sequence resistance of the synchronous machine. Default: nullptr */
+		/** \brief Zero sequence resistance of the synchronous machine. Default: 0.0 */
 		CIMPP::PU r0;
 
-		/** \brief Negative sequence resistance. Default: nullptr */
+		/** \brief Negative sequence resistance. Default: 0.0 */
 		CIMPP::PU r2;
 
 		/** \brief Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don t care (default) 1 = highest priority. 2 is less than 1 and so on. Default: 0 */
 		CIMPP::Integer referencePriority;
 
-		/** \brief Direct-axis subtransient reactance saturated, also known as Xd`sat. Default: nullptr */
+		/** \brief Direct-axis subtransient reactance saturated, also known as Xd`sat. Default: 0.0 */
 		CIMPP::PU satDirectSubtransX;
 
-		/** \brief Direct-axes saturated synchronous reactance (xdsat); reciprocal of short-circuit ration. Used for short circuit data exchange, only for single fed short circuit on a generator. (Section 4.3.4.2. in the IEC 60909-0). Default: nullptr */
+		/** \brief Direct-axes saturated synchronous reactance (xdsat); reciprocal of short-circuit ration. Used for short circuit data exchange, only for single fed short circuit on a generator. (Section 4.3.4.2. in the IEC 60909-0). Default: 0.0 */
 		CIMPP::PU satDirectSyncX;
 
-		/** \brief Saturated Direct-axis transient reactance. The attribute is primarily used for short circuit calculations according to ANSI. Default: nullptr */
+		/** \brief Saturated Direct-axis transient reactance. The attribute is primarily used for short circuit calculations according to ANSI. Default: 0.0 */
 		CIMPP::PU satDirectTransX;
 
 		/** \brief Type of rotor, used by short circuit applications, only for single fed short circuit according to IEC 60909. Default: 0 */
@@ -99,13 +100,13 @@ namespace CIMPP
 		/** \brief Modes that this synchronous machine can operate in. Default: 0 */
 		CIMPP::SynchronousMachineKind type;
 
-		/** \brief Range of generator voltage regulation (PG in the IEC 60909-0) used for calculation of the impedance correction factor KG defined in IEC 60909-0 This attribute is used to describe the operating voltage of the generating unit. Default: nullptr */
+		/** \brief Range of generator voltage regulation (PG in the IEC 60909-0) used for calculation of the impedance correction factor KG defined in IEC 60909-0 This attribute is used to describe the operating voltage of the generating unit. Default: 0.0 */
 		CIMPP::PerCent voltageRegulationRange;
 
-		/** \brief Zero sequence reactance of the synchronous machine. Default: nullptr */
+		/** \brief Zero sequence reactance of the synchronous machine. Default: 0.0 */
 		CIMPP::PU x0;
 
-		/** \brief Negative sequence reactance. Default: nullptr */
+		/** \brief Negative sequence reactance. Default: 0.0 */
 		CIMPP::PU x2;
 
 		static const char debugName[];

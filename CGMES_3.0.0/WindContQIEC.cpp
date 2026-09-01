@@ -54,7 +54,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindContQIEC.windUVRTQcontrolModesType", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "WindContQIEC.xdroop", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindContQIEC::WindContQIEC() : WindTurbineType3or4IEC(nullptr) {}

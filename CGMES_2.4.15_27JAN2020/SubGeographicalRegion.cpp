@@ -21,8 +21,8 @@ static const CimClassDetails& getCimClassDetails()
 		SubGeographicalRegion(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
-			CGMESProfile::EQ_BD,
 			CGMESProfile::EQ,
+			CGMESProfile::EQ_BD,
 		},
 		CGMESProfile::EQ
 	);
@@ -34,11 +34,11 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	static const std::map<std::string, AttrDetails> ClassAttrDetailsMap =
 	{
 		{ "SubGeographicalRegion.DCLines", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
-		{ "SubGeographicalRegion.Lines", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ_BD, CGMESProfile::EQ, } } },
-		{ "SubGeographicalRegion.Region", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ_BD, CGMESProfile::EQ, } } },
+		{ "SubGeographicalRegion.Lines", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, CGMESProfile::EQ_BD, } } },
+		{ "SubGeographicalRegion.Region", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, CGMESProfile::EQ_BD, } } },
 		{ "SubGeographicalRegion.Substations", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 SubGeographicalRegion::SubGeographicalRegion() : Region(nullptr) {}

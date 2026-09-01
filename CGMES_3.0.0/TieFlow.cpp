@@ -34,7 +34,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "TieFlow.Terminal", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "TieFlow.positiveFlowIn", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 TieFlow::TieFlow() : ControlArea(nullptr), Terminal(nullptr) {}

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,70 +29,70 @@ namespace CIMPP
 		GovHydroWPID();
 		~GovHydroWPID() override;
 
-		/** \brief Turbine damping factor (D).  Unit = delta P / delta speed. Default: nullptr */
+		/** \brief Turbine damping factor (D).  Unit = delta P / delta speed. Default: 0.0 */
 		CIMPP::PU d;
 
-		/** \brief Gate opening Limit Maximum (Gatmax). Default: nullptr */
+		/** \brief Gate opening Limit Maximum (Gatmax). Default: 0.0 */
 		CIMPP::PU gatmax;
 
-		/** \brief Gate opening Limit Minimum (Gatmin). Default: nullptr */
+		/** \brief Gate opening Limit Minimum (Gatmin). Default: 0.0 */
 		CIMPP::PU gatmin;
 
-		/** \brief Gate position 1 (Gv1). Default: nullptr */
+		/** \brief Gate position 1 (Gv1). Default: 0.0 */
 		CIMPP::PU gv1;
 
-		/** \brief Gate position 2 (Gv2). Default: nullptr */
+		/** \brief Gate position 2 (Gv2). Default: 0.0 */
 		CIMPP::PU gv2;
 
-		/** \brief Gate position 3 (Gv3). Default: nullptr */
+		/** \brief Gate position 3 (Gv3). Default: 0.0 */
 		CIMPP::PU gv3;
 
-		/** \brief Derivative gain (Kd).  Typical Value = 1.11. Default: nullptr */
+		/** \brief Derivative gain (Kd).  Typical Value = 1.11. Default: 0.0 */
 		CIMPP::PU kd;
 
-		/** \brief Reset gain (Ki).  Typical Value = 0.36. Default: nullptr */
+		/** \brief Reset gain (Ki).  Typical Value = 0.36. Default: 0.0 */
 		CIMPP::PU ki;
 
-		/** \brief Proportional gain (Kp).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Proportional gain (Kp).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief Base for power values  (MWbase) (&gt;0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values  (MWbase) (>0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Output at Gv1 PU of MWbase (Pgv1). Default: nullptr */
+		/** \brief Output at Gv1 PU of MWbase (Pgv1). Default: 0.0 */
 		CIMPP::PU pgv1;
 
-		/** \brief Output at Gv2 PU of MWbase (Pgv2). Default: nullptr */
+		/** \brief Output at Gv2 PU of MWbase (Pgv2). Default: 0.0 */
 		CIMPP::PU pgv2;
 
-		/** \brief Output at Gv3 PU of MWbase (Pgv3). Default: nullptr */
+		/** \brief Output at Gv3 PU of MWbase (Pgv3). Default: 0.0 */
 		CIMPP::PU pgv3;
 
-		/** \brief Maximum Power Output (Pmax). Default: nullptr */
+		/** \brief Maximum Power Output (Pmax). Default: 0.0 */
 		CIMPP::PU pmax;
 
-		/** \brief Minimum Power Output (Pmin). Default: nullptr */
+		/** \brief Minimum Power Output (Pmin). Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief Permanent drop (Reg). Default: nullptr */
+		/** \brief Permanent drop (Reg). Default: 0.0 */
 		CIMPP::PU reg;
 
-		/** \brief Controller time constant (Ta) (&gt;0).  Typical Value = 0. Default: nullptr */
+		/** \brief Controller time constant (Ta) (>0).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Gate servo time constant (Tb) (&gt;0).  Typical Value = 0. Default: nullptr */
+		/** \brief Gate servo time constant (Tb) (>0).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Speed detector time constant (Treg). Default: nullptr */
+		/** \brief Speed detector time constant (Treg). Default: 0.0 */
 		CIMPP::Seconds treg;
 
-		/** \brief Water inertia time constant (Tw) (&gt;0).  Typical Value = 0. Default: nullptr */
+		/** \brief Water inertia time constant (Tw) (>0).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tw;
 
-		/** \brief Maximum gate opening velocity (Velmax).  Unit = PU/sec.  Typical Value = 0. Default: nullptr */
+		/** \brief Maximum gate opening velocity (Velmax).  Unit = PU/sec.  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU velmax;
 
-		/** \brief Maximum gate closing velocity (Velmin).  Unit = PU/sec.  Typical Value = 0. Default: nullptr */
+		/** \brief Maximum gate closing velocity (Velmin).  Unit = PU/sec.  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU velmin;
 
 		static const char debugName[];

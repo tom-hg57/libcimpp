@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,37 +28,37 @@ namespace CIMPP
 		PssELIN2();
 		~PssELIN2() override;
 
-		/** \brief Coefficient (a_PSS).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Coefficient (a_PSS).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU apss;
 
-		/** \brief Gain (Ks1).  Typical Value = 1. Default: nullptr */
+		/** \brief Gain (Ks1).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU ks1;
 
-		/** \brief Gain (Ks2).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Gain (Ks2).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU ks2;
 
-		/** \brief Coefficient (p_PSS) (&gt;=0 and &lt;=4).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Coefficient (p_PSS) (>=0 and <=4).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU ppss;
 
-		/** \brief PSS limiter (psslim).  Typical Value = 0.1. Default: nullptr */
+		/** \brief PSS limiter (psslim).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU psslim;
 
-		/** \brief Time constant (Ts1).  Typical Value = 0. Default: nullptr */
+		/** \brief Time constant (Ts1).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ts1;
 
-		/** \brief Time constant (Ts2).  Typical Value = 1. Default: nullptr */
+		/** \brief Time constant (Ts2).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds ts2;
 
-		/** \brief Time constant (Ts3).  Typical Value = 1. Default: nullptr */
+		/** \brief Time constant (Ts3).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds ts3;
 
-		/** \brief Time constant (Ts4).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Time constant (Ts4).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Seconds ts4;
 
-		/** \brief Time constant (Ts5).  Typical Value = 0. Default: nullptr */
+		/** \brief Time constant (Ts5).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ts5;
 
-		/** \brief Time constant (Ts6).  Typical Value = 1. Default: nullptr */
+		/** \brief Time constant (Ts6).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds ts6;
 
 		static const char debugName[];

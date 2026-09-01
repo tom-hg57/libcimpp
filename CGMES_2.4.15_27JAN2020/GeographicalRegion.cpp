@@ -18,8 +18,8 @@ static const CimClassDetails& getCimClassDetails()
 		GeographicalRegion(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
-			CGMESProfile::EQ_BD,
 			CGMESProfile::EQ,
+			CGMESProfile::EQ_BD,
 		},
 		CGMESProfile::EQ
 	);
@@ -30,9 +30,9 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 {
 	static const std::map<std::string, AttrDetails> ClassAttrDetailsMap =
 	{
-		{ "GeographicalRegion.Regions", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ_BD, CGMESProfile::EQ, } } },
+		{ "GeographicalRegion.Regions", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, CGMESProfile::EQ_BD, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 GeographicalRegion::GeographicalRegion() {}

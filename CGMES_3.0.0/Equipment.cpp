@@ -19,8 +19,8 @@ static const CimClassDetails& getCimClassDetails()
 		Equipment(),
 		"http://iec.ch/TC57/CIM100#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::EQBD,
 			CGMESProfile::SC,
 			CGMESProfile::SSH,
@@ -40,7 +40,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Equipment.inService", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SSH, } } },
 		{ "Equipment.normallyInService", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Equipment::Equipment() : EquipmentContainer(nullptr) {}

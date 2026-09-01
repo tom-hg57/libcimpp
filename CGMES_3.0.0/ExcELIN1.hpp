@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,49 +28,49 @@ namespace CIMPP
 		ExcELIN1();
 		~ExcELIN1() override;
 
-		/** \brief Controller follow up deadband (&lt;i&gt;Dpnf&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Controller follow up deadband (<i>Dpnf</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU dpnf;
 
-		/** \brief Maximum open circuit excitation voltage (&lt;i&gt;Efmax&lt;/i&gt;) (&amp;gt; ExcELIN1.efmin).  Typical value = 5. Default: nullptr */
+		/** \brief Maximum open circuit excitation voltage (<i>Efmax</i>) (&gt; ExcELIN1.efmin).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU efmax;
 
-		/** \brief Minimum open circuit excitation voltage (&lt;i&gt;Efmin&lt;/i&gt;) (&amp;lt; ExcELIN1.efmax).  Typical value = -5. Default: nullptr */
+		/** \brief Minimum open circuit excitation voltage (<i>Efmin</i>) (&lt; ExcELIN1.efmax).  Typical value = -5. Default: 0.0 */
 		CIMPP::PU efmin;
 
-		/** \brief Stabilizer gain 1 (&lt;i&gt;Ks1&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Stabilizer gain 1 (<i>Ks1</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU ks1;
 
-		/** \brief Stabilizer gain 2 (&lt;i&gt;Ks2&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Stabilizer gain 2 (<i>Ks2</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU ks2;
 
-		/** \brief Stabilizer limit output (&lt;i&gt;smax&lt;/i&gt;).  Typical value = 0,1. Default: nullptr */
+		/** \brief Stabilizer limit output (<i>smax</i>).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::PU smax;
 
-		/** \brief Current transducer time constant (&lt;i&gt;Tfi&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Current transducer time constant (<i>Tfi</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tfi;
 
-		/** \brief Controller reset time constant (&lt;i&gt;Tnu&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 2. Default: nullptr */
+		/** \brief Controller reset time constant (<i>Tnu</i>) (&gt;= 0).  Typical value = 2. Default: 0.0 */
 		CIMPP::Seconds tnu;
 
-		/** \brief Stabilizer phase lag time constant (&lt;i&gt;Ts1&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1. Default: nullptr */
+		/** \brief Stabilizer phase lag time constant (<i>Ts1</i>) (&gt;= 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::Seconds ts1;
 
-		/** \brief Stabilizer filter time constant (&lt;i&gt;Ts2&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1. Default: nullptr */
+		/** \brief Stabilizer filter time constant (<i>Ts2</i>) (&gt;= 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::Seconds ts2;
 
-		/** \brief Stabilizer parameters (&lt;i&gt;Tsw&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 3. Default: nullptr */
+		/** \brief Stabilizer parameters (<i>Tsw</i>) (&gt;= 0).  Typical value = 3. Default: 0.0 */
 		CIMPP::Seconds tsw;
 
-		/** \brief Current controller gain (&lt;i&gt;Vpi&lt;/i&gt;).  Typical value = 12,45. Default: nullptr */
+		/** \brief Current controller gain (<i>Vpi</i>).  Typical value = 12,45. Default: 0.0 */
 		CIMPP::PU vpi;
 
-		/** \brief Controller follow up gain (&lt;i&gt;Vpnf&lt;/i&gt;).  Typical value = 2. Default: nullptr */
+		/** \brief Controller follow up gain (<i>Vpnf</i>).  Typical value = 2. Default: 0.0 */
 		CIMPP::PU vpnf;
 
-		/** \brief Voltage controller proportional gain (&lt;i&gt;Vpu&lt;/i&gt;).  Typical value = 34,5. Default: nullptr */
+		/** \brief Voltage controller proportional gain (<i>Vpu</i>).  Typical value = 34,5. Default: 0.0 */
 		CIMPP::PU vpu;
 
-		/** \brief Excitation transformer effective reactance (&lt;i&gt;Xe&lt;/i&gt;) (&amp;gt;= 0).  &lt;i&gt;Xe&lt;/i&gt; represents the regulation of the transformer/rectifier unit.  Typical value = 0,06. Default: nullptr */
+		/** \brief Excitation transformer effective reactance (<i>Xe</i>) (&gt;= 0).  <i>Xe</i> represents the regulation of the transformer/rectifier unit.  Typical value = 0,06. Default: 0.0 */
 		CIMPP::PU xe;
 
 		static const char debugName[];

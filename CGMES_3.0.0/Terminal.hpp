@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PhaseCode.hpp"
 
 namespace CIMPP
@@ -37,40 +38,40 @@ namespace CIMPP
 		Terminal();
 		~Terminal() override;
 
-		/** \brief The auxiliary equipment connected to the terminal. Default: 0 */
+		/** \brief The auxiliary equipment connected to the terminal. Default: {} */
 		std::list<CIMPP::AuxiliaryEquipment*> AuxiliaryEquipment;
 
-		/** \brief The conducting equipment of the terminal.  Conducting equipment have  terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes. Default: 0 */
+		/** \brief The conducting equipment of the terminal.  Conducting equipment have  terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes. Default: nullptr */
 		CIMPP::ConductingEquipment* ConductingEquipment;
 
-		/** \brief The connectivity node to which this terminal connects with zero impedance. Default: 0 */
+		/** \brief The connectivity node to which this terminal connects with zero impedance. Default: nullptr */
 		CIMPP::ConnectivityNode* ConnectivityNode;
 
-		/** \brief All converters` DC sides linked to this point of common coupling terminal. Default: 0 */
+		/** \brief All converters` DC sides linked to this point of common coupling terminal. Default: {} */
 		std::list<CIMPP::ACDCConverter*> ConverterDCSides;
 
-		/** \brief Mutual couplings associated with the branch as the first branch. Default: 0 */
+		/** \brief Mutual couplings associated with the branch as the first branch. Default: {} */
 		std::list<CIMPP::MutualCoupling*> HasFirstMutualCoupling;
 
-		/** \brief Mutual couplings with the branch associated as the first branch. Default: 0 */
+		/** \brief Mutual couplings with the branch associated as the first branch. Default: {} */
 		std::list<CIMPP::MutualCoupling*> HasSecondMutualCoupling;
 
-		/** \brief The controls regulating this terminal. Default: 0 */
+		/** \brief The controls regulating this terminal. Default: {} */
 		std::list<CIMPP::RegulatingControl*> RegulatingControl;
 
-		/** \brief Input signal coming from this terminal. Default: 0 */
+		/** \brief Input signal coming from this terminal. Default: {} */
 		std::list<CIMPP::RemoteInputSignal*> RemoteInputSignal;
 
-		/** \brief The power flow state variable associated with the terminal. Default: 0 */
+		/** \brief The power flow state variable associated with the terminal. Default: nullptr */
 		CIMPP::SvPowerFlow* SvPowerFlow;
 
-		/** \brief The control area tie flows to which this terminal associates. Default: 0 */
+		/** \brief The control area tie flows to which this terminal associates. Default: {} */
 		std::list<CIMPP::TieFlow*> TieFlow;
 
-		/** \brief The topological node associated with the terminal.   This can be used as an alternative to the connectivity node path to topological node, thus making it unnecessary to model connectivity nodes in some cases.   Note that the if connectivity nodes are in the model, this association would probably not be used as an input specification. Default: 0 */
+		/** \brief The topological node associated with the terminal.   This can be used as an alternative to the connectivity node path to topological node, thus making it unnecessary to model connectivity nodes in some cases.   Note that the if connectivity nodes are in the model, this association would probably not be used as an input specification. Default: nullptr */
 		CIMPP::TopologicalNode* TopologicalNode;
 
-		/** \brief All transformer ends connected at this terminal. Default: 0 */
+		/** \brief All transformer ends connected at this terminal. Default: {} */
 		std::list<CIMPP::TransformerEnd*> TransformerEnd;
 
 		/** \brief Represents the normal network phasing condition. If the attribute is missing, three phases (ABC) shall be assumed, except for terminals of grounding classes (specializations of EarthFaultCompensator, GroundDisconnector, and Ground) which will be assumed to be N. Therefore, phase code ABCN is explicitly declared when needed, e.g. for star point grounding equipment. The phase code on terminals connecting same ConnectivityNode or same TopologicalNode as well as for equipment between two terminals shall be consistent. Default: 0 */

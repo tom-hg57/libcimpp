@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,49 +28,49 @@ namespace CIMPP
 		UnderexcLimIEEE1();
 		~UnderexcLimIEEE1() override;
 
-		/** \brief UEL center setting (K).  Typical Value = 1.38. Default: nullptr */
+		/** \brief UEL center setting (K).  Typical Value = 1.38. Default: 0.0 */
 		CIMPP::PU kuc;
 
-		/** \brief UEL excitation system stabilizer gain (K).  Typical Value = 3.3. Default: nullptr */
+		/** \brief UEL excitation system stabilizer gain (K).  Typical Value = 3.3. Default: 0.0 */
 		CIMPP::PU kuf;
 
-		/** \brief UEL integral gain (K).  Typical Value = 0. Default: nullptr */
+		/** \brief UEL integral gain (K).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU kui;
 
-		/** \brief UEL proportional gain (K).  Typical Value = 100. Default: nullptr */
+		/** \brief UEL proportional gain (K).  Typical Value = 100. Default: 0.0 */
 		CIMPP::PU kul;
 
-		/** \brief UEL radius setting (K).  Typical Value = 1.95. Default: nullptr */
+		/** \brief UEL radius setting (K).  Typical Value = 1.95. Default: 0.0 */
 		CIMPP::PU kur;
 
-		/** \brief UEL lead time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief UEL lead time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tu1;
 
-		/** \brief UEL lag time constant (T).  Typical Value = 0.05. Default: nullptr */
+		/** \brief UEL lag time constant (T).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::Seconds tu2;
 
-		/** \brief UEL lead time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief UEL lead time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tu3;
 
-		/** \brief UEL lag time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief UEL lag time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tu4;
 
-		/** \brief UEL maximum limit for operating point phasor magnitude (V).  Typical Value = 5.8. Default: nullptr */
+		/** \brief UEL maximum limit for operating point phasor magnitude (V).  Typical Value = 5.8. Default: 0.0 */
 		CIMPP::PU vucmax;
 
-		/** \brief UEL integrator output maximum limit (V). Default: nullptr */
+		/** \brief UEL integrator output maximum limit (V). Default: 0.0 */
 		CIMPP::PU vuimax;
 
-		/** \brief UEL integrator output minimum limit (V). Default: nullptr */
+		/** \brief UEL integrator output minimum limit (V). Default: 0.0 */
 		CIMPP::PU vuimin;
 
-		/** \brief UEL output maximum limit (V).  Typical Value = 18. Default: nullptr */
+		/** \brief UEL output maximum limit (V).  Typical Value = 18. Default: 0.0 */
 		CIMPP::PU vulmax;
 
-		/** \brief UEL output minimum limit (V).  Typical Value = -18. Default: nullptr */
+		/** \brief UEL output minimum limit (V).  Typical Value = -18. Default: 0.0 */
 		CIMPP::PU vulmin;
 
-		/** \brief UEL maximum limit for radius phasor magnitude (V).  Typical Value = 5.8. Default: nullptr */
+		/** \brief UEL maximum limit for radius phasor magnitude (V).  Typical Value = 5.8. Default: 0.0 */
 		CIMPP::PU vurmax;
 
 		static const char debugName[];

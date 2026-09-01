@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ApparentPower.hpp"
 
 namespace CIMPP
@@ -26,7 +27,7 @@ namespace CIMPP
 		ApparentPowerLimit();
 		~ApparentPowerLimit() override;
 
-		/** \brief The apparent power limit. Default: nullptr */
+		/** \brief The apparent power limit. Default: 0.0 */
 		CIMPP::ApparentPower value;
 
 		static const char debugName[];

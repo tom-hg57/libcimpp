@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "SvSwitch.Switch", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SV, } } },
 		{ "SvSwitch.open", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SV, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 SvSwitch::SvSwitch() : Switch(nullptr) {}

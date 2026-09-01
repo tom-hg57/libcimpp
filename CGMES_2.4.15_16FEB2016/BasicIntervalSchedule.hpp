@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "DateTime.hpp"
 #include "UnitSymbol.hpp"
 
@@ -27,7 +28,7 @@ namespace CIMPP
 		BasicIntervalSchedule();
 		~BasicIntervalSchedule() override;
 
-		/** \brief The time for the first time point. Default: '' */
+		/** \brief The time for the first time point. Default: "" */
 		CIMPP::DateTime startTime;
 
 		/** \brief Value1 units of measure. Default: 0 */

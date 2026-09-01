@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Resistance.hpp"
 
 namespace CIMPP
@@ -26,7 +27,7 @@ namespace CIMPP
 		EarthFaultCompensator();
 		~EarthFaultCompensator() override;
 
-		/** \brief Nominal resistance of device. Default: nullptr */
+		/** \brief Nominal resistance of device. Default: 0.0 */
 		CIMPP::Resistance r;
 
 		static const char debugName[];

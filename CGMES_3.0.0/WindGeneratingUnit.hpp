@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "WindGenUnitKind.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		WindGeneratingUnit();
 		~WindGeneratingUnit() override;
 
-		/** \brief A wind power plant may have wind generating units. Default: 0 */
+		/** \brief A wind power plant may have wind generating units. Default: nullptr */
 		CIMPP::WindPowerPlant* WindPowerPlant;
 
 		/** \brief The kind of wind generating unit. Default: 0 */

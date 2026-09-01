@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "OrientationKind.hpp"
 
@@ -29,10 +30,10 @@ namespace CIMPP
 		Diagram();
 		~Diagram() override;
 
-		/** \brief A diagram is made up of multiple diagram objects. Default: 0 */
+		/** \brief A diagram is made up of multiple diagram objects. Default: {} */
 		std::list<CIMPP::DiagramObject*> DiagramElements;
 
-		/** \brief A Diagram may have a DiagramStyle. Default: 0 */
+		/** \brief A Diagram may have a DiagramStyle. Default: nullptr */
 		CIMPP::DiagramStyle* DiagramStyle;
 
 		/** \brief Coordinate system orientation of the diagram. A positive orientation gives standard `right-hand` orientation, with negative orientation indicating a `left-hand` orientation. For 2D diagrams, a positive orientation will result in X values increasing from left to right and Y values increasing from bottom to top. A negative orientation gives the `left-hand` orientation (favoured by computer graphics displays) with X values increasing from left to right and Y values increasing from top to bottom. Default: 0 */

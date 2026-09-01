@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "InputSignalKind.hpp"
 #include "PU.hpp"
@@ -29,70 +30,70 @@ namespace CIMPP
 		Pss1A();
 		~Pss1A() override;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Notch filter parameter (<i>A</i><i><sub>1</sub></i>). Default: 0.0 */
 		CIMPP::PU a1;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Notch filter parameter (<i>A</i><i><sub>2</sub></i>). Default: 0.0 */
 		CIMPP::PU a2;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Notch filter parameter (<i>A</i><i><sub>3</sub></i>). Default: 0.0 */
 		CIMPP::PU a3;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;4&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Notch filter parameter (<i>A</i><i><sub>4</sub></i>). Default: 0.0 */
 		CIMPP::PU a4;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;5&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Notch filter parameter (<i>A</i><i><sub>5</sub></i>). Default: 0.0 */
 		CIMPP::PU a5;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;6&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Notch filter parameter (<i>A</i><i><sub>6</sub></i>). Default: 0.0 */
 		CIMPP::PU a6;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;7&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Notch filter parameter (<i>A</i><i><sub>7</sub></i>). Default: 0.0 */
 		CIMPP::PU a7;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;8&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Notch filter parameter (<i>A</i><i><sub>8</sub></i>). Default: 0.0 */
 		CIMPP::PU a8;
 
 		/** \brief Type of input signal (rotorAngularFrequencyDeviation, busFrequencyDeviation, generatorElectricalPower, generatorAcceleratingPower, busVoltage, or busVoltageDerivative). Default: 0 */
 		CIMPP::InputSignalKind inputSignalType;
 
-		/** \brief Selector (&lt;i&gt;Kd&lt;/i&gt;).  true = e&lt;sup&gt;-sTdelay&lt;/sup&gt; used false = e&lt;sup&gt;-sTdelay&lt;/sup&gt; not used. Default: false */
+		/** \brief Selector (<i>Kd</i>).  true = e<sup>-sTdelay</sup> used false = e<sup>-sTdelay</sup> not used. Default: false */
 		CIMPP::Boolean kd;
 
-		/** \brief Stabilizer gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;s&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Stabilizer gain (<i>K</i><i><sub>s</sub></i>). Default: 0.0 */
 		CIMPP::PU ks;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T</i><i><sub>1</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T</i><i><sub>2</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T</i><i><sub>3</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;4&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T</i><i><sub>4</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Washout time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;5&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Washout time constant (<i>T</i><i><sub>5</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Transducer time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;6&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Transducer time constant (<i>T</i><i><sub>6</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Time constant (&lt;i&gt;Tdelay&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>Tdelay</i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds tdelay;
 
-		/** \brief Stabilizer input cutoff threshold (&lt;i&gt;Vcl&lt;/i&gt;). Default: nullptr */
+		/** \brief Stabilizer input cutoff threshold (<i>Vcl</i>). Default: 0.0 */
 		CIMPP::PU vcl;
 
-		/** \brief Stabilizer input cutoff threshold (&lt;i&gt;Vcu&lt;/i&gt;). Default: nullptr */
+		/** \brief Stabilizer input cutoff threshold (<i>Vcu</i>). Default: 0.0 */
 		CIMPP::PU vcu;
 
-		/** \brief Maximum stabilizer output (&lt;i&gt;Vrmax&lt;/i&gt;) (&amp;gt; Pss1A.vrmin). Default: nullptr */
+		/** \brief Maximum stabilizer output (<i>Vrmax</i>) (&gt; Pss1A.vrmin). Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum stabilizer output (&lt;i&gt;Vrmin&lt;/i&gt;) (&amp;lt; Pss1A.vrmax). Default: nullptr */
+		/** \brief Minimum stabilizer output (<i>Vrmin</i>) (&lt; Pss1A.vrmax). Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

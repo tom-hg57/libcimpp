@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "CrossCompoundTurbineGovernorDynamics.HighPressureSynchronousMachineDynamics", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "CrossCompoundTurbineGovernorDynamics.LowPressureSynchronousMachineDynamics", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 CrossCompoundTurbineGovernorDynamics::CrossCompoundTurbineGovernorDynamics() : HighPressureSynchronousMachineDynamics(nullptr), LowPressureSynchronousMachineDynamics(nullptr) {}

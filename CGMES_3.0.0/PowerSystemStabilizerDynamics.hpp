@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class ExcitationSystemDynamics;
@@ -27,10 +28,10 @@ namespace CIMPP
 		PowerSystemStabilizerDynamics();
 		~PowerSystemStabilizerDynamics() override;
 
-		/** \brief Excitation system model with which this power system stabilizer model is associated. Default: 0 */
+		/** \brief Excitation system model with which this power system stabilizer model is associated. Default: nullptr */
 		CIMPP::ExcitationSystemDynamics* ExcitationSystemDynamics;
 
-		/** \brief Remote input signal used by this power system stabilizer model. Default: 0 */
+		/** \brief Remote input signal used by this power system stabilizer model. Default: {} */
 		std::list<CIMPP::RemoteInputSignal*> RemoteInputSignal;
 
 		static const char debugName[];

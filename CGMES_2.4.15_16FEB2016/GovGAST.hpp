@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,34 +29,34 @@ namespace CIMPP
 		GovGAST();
 		~GovGAST() override;
 
-		/** \brief Ambient temperature load limit (Load Limit).  Typical Value = 1. Default: nullptr */
+		/** \brief Ambient temperature load limit (Load Limit).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU at;
 
-		/** \brief Turbine damping factor (Dturb).  Typical Value = 0.18. Default: nullptr */
+		/** \brief Turbine damping factor (Dturb).  Typical Value = 0.18. Default: 0.0 */
 		CIMPP::PU dturb;
 
-		/** \brief Temperature limiter gain (Kt).  Typical Value = 3. Default: nullptr */
+		/** \brief Temperature limiter gain (Kt).  Typical Value = 3. Default: 0.0 */
 		CIMPP::PU kt;
 
-		/** \brief Base for power values (MWbase) (&gt; 0). Default: nullptr */
+		/** \brief Base for power values (MWbase) (> 0). Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Permanent droop (R).  Typical Value = 0.04. Default: nullptr */
+		/** \brief Permanent droop (R).  Typical Value = 0.04. Default: 0.0 */
 		CIMPP::PU r;
 
-		/** \brief Governor mechanism time constant (T1).  T1 represents the natural valve positioning time constant of the governor for small disturbances, as seen when rate limiting is not in effect.  Typical Value = 0.5. Default: nullptr */
+		/** \brief Governor mechanism time constant (T1).  T1 represents the natural valve positioning time constant of the governor for small disturbances, as seen when rate limiting is not in effect.  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Turbine power time constant (T2).  T2 represents delay due to internal energy storage of the gas turbine engine. T2 can be used to give a rough approximation to the delay associated with acceleration of the compressor spool of a multi-shaft engine, or with the compressibility of gas in the plenum of a the free power turbine of an aero-derivative unit, for example.  Typical Value = 0.5. Default: nullptr */
+		/** \brief Turbine power time constant (T2).  T2 represents delay due to internal energy storage of the gas turbine engine. T2 can be used to give a rough approximation to the delay associated with acceleration of the compressor spool of a multi-shaft engine, or with the compressibility of gas in the plenum of a the free power turbine of an aero-derivative unit, for example.  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Turbine exhaust temperature time constant (T3).  Typical Value = 3. Default: nullptr */
+		/** \brief Turbine exhaust temperature time constant (T3).  Typical Value = 3. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Maximum turbine power, PU of MWbase (Vmax).  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum turbine power, PU of MWbase (Vmax).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU vmax;
 
-		/** \brief Minimum turbine power, PU of MWbase (Vmin).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum turbine power, PU of MWbase (Vmin).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU vmin;
 
 		static const char debugName[];

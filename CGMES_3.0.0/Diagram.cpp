@@ -38,7 +38,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Diagram.y1InitialView", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DL, } } },
 		{ "Diagram.y2InitialView", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Diagram::Diagram() : DiagramStyle(nullptr) {}

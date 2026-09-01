@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		AnalogLimit();
 		~AnalogLimit() override;
 
-		/** \brief The set of limits. Default: 0 */
+		/** \brief The set of limits. Default: nullptr */
 		CIMPP::AnalogLimitSet* LimitSet;
 
 		/** \brief The value to supervise against. Default: 0.0 */

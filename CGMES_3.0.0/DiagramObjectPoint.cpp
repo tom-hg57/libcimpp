@@ -37,7 +37,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "DiagramObjectPoint.yPosition", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DL, } } },
 		{ "DiagramObjectPoint.zPosition", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 DiagramObjectPoint::DiagramObjectPoint() : DiagramObject(nullptr), DiagramObjectGluePoint(nullptr) {}

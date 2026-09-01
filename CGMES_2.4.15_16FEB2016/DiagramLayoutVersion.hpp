@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Date.hpp"
 #include "String.hpp"
 
@@ -27,34 +28,34 @@ namespace CIMPP
 		DiagramLayoutVersion();
 		~DiagramLayoutVersion() override;
 
-		/** \brief Base UML provided by CIM model manager. Default: '' */
+		/** \brief Base UML provided by CIM model manager. Default: "" */
 		CIMPP::String baseUML;
 
-		/** \brief Profile URI used in the Model Exchange header and defined in IEC standards.  It uniquely identifies the Profile and its version. It is given for information only and to identify the closest IEC profile to which this CGMES profile is based on. Default: '' */
+		/** \brief Profile URI used in the Model Exchange header and defined in IEC standards.  It uniquely identifies the Profile and its version. It is given for information only and to identify the closest IEC profile to which this CGMES profile is based on. Default: "" */
 		CIMPP::String baseURI;
 
-		/** \brief Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: '' */
+		/** \brief Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: "" */
 		CIMPP::Date date;
 
-		/** \brief Difference model URI defined by IEC 61970-552. Default: '' */
+		/** \brief Difference model URI defined by IEC 61970-552. Default: "" */
 		CIMPP::String differenceModelURI;
 
-		/** \brief UML provided by ENTSO-E. Default: '' */
+		/** \brief UML provided by ENTSO-E. Default: "" */
 		CIMPP::String entsoeUML;
 
-		/** \brief Profile URI defined by ENTSO-E and used in the Model Exchange header.  It uniquely identifies the Profile and its version. The last two elements in the URI (http://entsoe.eu/CIM/DiagramLayout/yy/zzz) indicate major and minor versions where:  - yy - indicates a major version; - zzz - indicates a minor version. Default: '' */
+		/** \brief Profile URI defined by ENTSO-E and used in the Model Exchange header.  It uniquely identifies the Profile and its version. The last two elements in the URI (http://entsoe.eu/CIM/DiagramLayout/yy/zzz) indicate major and minor versions where:  - yy - indicates a major version; - zzz - indicates a minor version. Default: "" */
 		CIMPP::String entsoeURI;
 
-		/** \brief Model Description URI defined by IEC 61970-552. Default: '' */
+		/** \brief Model Description URI defined by IEC 61970-552. Default: "" */
 		CIMPP::String modelDescriptionURI;
 
-		/** \brief RDF namespace. Default: '' */
+		/** \brief RDF namespace. Default: "" */
 		CIMPP::String namespaceRDF;
 
-		/** \brief CIM UML namespace. Default: '' */
+		/** \brief CIM UML namespace. Default: "" */
 		CIMPP::String namespaceUML;
 
-		/** \brief The short name of the profile used in profile documentation. Default: '' */
+		/** \brief The short name of the profile used in profile documentation. Default: "" */
 		CIMPP::String shortName;
 
 		static const char debugName[];

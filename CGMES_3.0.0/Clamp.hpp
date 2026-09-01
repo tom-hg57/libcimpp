@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Length.hpp"
 
 namespace CIMPP
@@ -27,10 +28,10 @@ namespace CIMPP
 		Clamp();
 		~Clamp() override;
 
-		/** \brief The line segment to which the clamp is connected. Default: 0 */
+		/** \brief The line segment to which the clamp is connected. Default: nullptr */
 		CIMPP::ACLineSegment* ACLineSegment;
 
-		/** \brief The length to the place where the clamp is located starting from side one of the line segment, i.e. the line segment terminal with sequence number equal to 1. Default: nullptr */
+		/** \brief The length to the place where the clamp is located starting from side one of the line segment, i.e. the line segment terminal with sequence number equal to 1. Default: 0.0 */
 		CIMPP::Length lengthFromTerminal1;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Integer.hpp"
 #include "Reactance.hpp"
@@ -33,16 +34,16 @@ namespace CIMPP
 		TransformerEnd();
 		~TransformerEnd() override;
 
-		/** \brief Base voltage of the transformer end.  This is essential for PU calculation. Default: 0 */
+		/** \brief Base voltage of the transformer end.  This is essential for PU calculation. Default: nullptr */
 		CIMPP::BaseVoltage* BaseVoltage;
 
-		/** \brief Transformer end to which this phase tap changer belongs. Default: 0 */
+		/** \brief Transformer end to which this phase tap changer belongs. Default: nullptr */
 		CIMPP::PhaseTapChanger* PhaseTapChanger;
 
-		/** \brief Transformer end to which this ratio tap changer belongs. Default: 0 */
+		/** \brief Transformer end to which this ratio tap changer belongs. Default: nullptr */
 		CIMPP::RatioTapChanger* RatioTapChanger;
 
-		/** \brief Terminal of the power transformer to which this transformer end belongs. Default: 0 */
+		/** \brief Terminal of the power transformer to which this transformer end belongs. Default: nullptr */
 		CIMPP::Terminal* Terminal;
 
 		/** \brief Number for this transformer end, corresponding to the end`s order in the power transformer vector group or phase angle clock number.  Highest voltage winding should be 1.  Each end within a power transformer should have a unique subsequent end number.   Note the transformer end number need not match the terminal sequence number. Default: 0 */
@@ -51,10 +52,10 @@ namespace CIMPP
 		/** \brief (for Yn and Zn connections) True if the neutral is solidly grounded. Default: false */
 		CIMPP::Boolean grounded;
 
-		/** \brief (for Yn and Zn connections) Resistance part of neutral impedance where `grounded` is true. Default: nullptr */
+		/** \brief (for Yn and Zn connections) Resistance part of neutral impedance where `grounded` is true. Default: 0.0 */
 		CIMPP::Resistance rground;
 
-		/** \brief (for Yn and Zn connections) Reactive part of neutral impedance where `grounded` is true. Default: nullptr */
+		/** \brief (for Yn and Zn connections) Reactive part of neutral impedance where `grounded` is true. Default: 0.0 */
 		CIMPP::Reactance xground;
 
 		static const char debugName[];

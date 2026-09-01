@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 
 namespace CIMPP
@@ -26,19 +27,19 @@ namespace CIMPP
 		AsynchronousMachineEquivalentCircuit();
 		~AsynchronousMachineEquivalentCircuit() override;
 
-		/** \brief Damper 1 winding resistance. Default: nullptr */
+		/** \brief Damper 1 winding resistance. Default: 0.0 */
 		CIMPP::PU rr1;
 
-		/** \brief Damper 2 winding resistance. Default: nullptr */
+		/** \brief Damper 2 winding resistance. Default: 0.0 */
 		CIMPP::PU rr2;
 
-		/** \brief Damper 1 winding leakage reactance. Default: nullptr */
+		/** \brief Damper 1 winding leakage reactance. Default: 0.0 */
 		CIMPP::PU xlr1;
 
-		/** \brief Damper 2 winding leakage reactance. Default: nullptr */
+		/** \brief Damper 2 winding leakage reactance. Default: 0.0 */
 		CIMPP::PU xlr2;
 
-		/** \brief Magnetizing reactance. Default: nullptr */
+		/** \brief Magnetizing reactance. Default: 0.0 */
 		CIMPP::PU xm;
 
 		static const char debugName[];

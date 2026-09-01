@@ -26,8 +26,8 @@ static const CimClassDetails& getCimClassDetails()
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
 			CGMESProfile::SV,
-			CGMESProfile::TP_BD,
 			CGMESProfile::TP,
+			CGMESProfile::TP_BD,
 		},
 		CGMESProfile::TP
 	);
@@ -39,9 +39,9 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	static const std::map<std::string, AttrDetails> ClassAttrDetailsMap =
 	{
 		{ "TopologicalNode.AngleRefTopologicalIsland", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::SV, } } },
-		{ "TopologicalNode.BaseVoltage", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::TP_BD, CGMESProfile::TP, } } },
-		{ "TopologicalNode.ConnectivityNodeContainer", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::TP_BD, CGMESProfile::TP, } } },
-		{ "TopologicalNode.ConnectivityNodes", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::TP_BD, CGMESProfile::TP, } } },
+		{ "TopologicalNode.BaseVoltage", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::TP, CGMESProfile::TP_BD, } } },
+		{ "TopologicalNode.ConnectivityNodeContainer", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::TP, CGMESProfile::TP_BD, } } },
+		{ "TopologicalNode.ConnectivityNodes", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::TP, CGMESProfile::TP_BD, } } },
 		{ "TopologicalNode.ReportingGroup", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::TP, } } },
 		{ "TopologicalNode.SvInjection", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::SV, } } },
 		{ "TopologicalNode.SvVoltage", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::SV, } } },
@@ -55,7 +55,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "TopologicalNode.toEndName", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::TP_BD, } } },
 		{ "TopologicalNode.toEndNameTso", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::TP_BD, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 TopologicalNode::TopologicalNode() : AngleRefTopologicalIsland(nullptr), BaseVoltage(nullptr), ConnectivityNodeContainer(nullptr), ReportingGroup(nullptr), SvInjection(nullptr), SvVoltage(nullptr), TopologicalIsland(nullptr) {}

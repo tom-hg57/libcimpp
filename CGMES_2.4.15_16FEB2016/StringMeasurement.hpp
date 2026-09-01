@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class StringMeasurementValue;
@@ -26,7 +27,7 @@ namespace CIMPP
 		StringMeasurement();
 		~StringMeasurement() override;
 
-		/** \brief The values connected to this measurement. Default: 0 */
+		/** \brief The values connected to this measurement. Default: {} */
 		std::list<CIMPP::StringMeasurementValue*> StringMeasurementValues;
 
 		static const char debugName[];

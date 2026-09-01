@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 
@@ -27,19 +28,19 @@ namespace CIMPP
 		PFVArType2Common1();
 		~PFVArType2Common1() override;
 
-		/** \brief Selector (&lt;i&gt;J&lt;/i&gt;). true = control mode for reactive power false = control mode for power factor. Default: false */
+		/** \brief Selector (<i>J</i>). true = control mode for reactive power false = control mode for power factor. Default: false */
 		CIMPP::Boolean j;
 
-		/** \brief Reset gain (&lt;i&gt;Ki&lt;/i&gt;). Default: nullptr */
+		/** \brief Reset gain (<i>Ki</i>). Default: 0.0 */
 		CIMPP::PU ki;
 
-		/** \brief Proportional gain (&lt;i&gt;Kp&lt;/i&gt;). Default: nullptr */
+		/** \brief Proportional gain (<i>Kp</i>). Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief Output limit (&lt;i&gt;max&lt;/i&gt;). Default: nullptr */
+		/** \brief Output limit (<i>max</i>). Default: 0.0 */
 		CIMPP::PU max;
 
-		/** \brief Reference value of reactive power or power factor (&lt;i&gt;Ref&lt;/i&gt;). The reference value is initialised by this model. This initialisation can override the value exchanged by this attribute to represent a plant operator`s change of the reference setting. Default: nullptr */
+		/** \brief Reference value of reactive power or power factor (<i>Ref</i>). The reference value is initialised by this model. This initialisation can override the value exchanged by this attribute to represent a plant operator`s change of the reference setting. Default: 0.0 */
 		CIMPP::PU ref;
 
 		static const char debugName[];

@@ -51,7 +51,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindPlantReactiveControlIEC.xrefmax", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "WindPlantReactiveControlIEC.xrefmin", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindPlantReactiveControlIEC::WindPlantReactiveControlIEC() : WindPlantIEC(nullptr) {}

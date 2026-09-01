@@ -37,7 +37,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PFVArType1IEEEPFController.vvtmax", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "PFVArType1IEEEPFController.vvtmin", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PFVArType1IEEEPFController::PFVArType1IEEEPFController() {}

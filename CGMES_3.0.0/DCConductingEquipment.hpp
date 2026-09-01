@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Voltage.hpp"
 
 namespace CIMPP
@@ -27,10 +28,10 @@ namespace CIMPP
 		DCConductingEquipment();
 		~DCConductingEquipment() override;
 
-		/** \brief A DC conducting equipment has DC terminals. Default: 0 */
+		/** \brief A DC conducting equipment has DC terminals. Default: {} */
 		std::list<CIMPP::DCTerminal*> DCTerminals;
 
-		/** \brief Rated DC device voltage. The attribute shall be a positive value. It is configuration data used in power flow. Default: nullptr */
+		/** \brief Rated DC device voltage. The attribute shall be a positive value. It is configuration data used in power flow. Default: 0.0 */
 		CIMPP::Voltage ratedUdc;
 
 		static const char debugName[];

@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ValueToAlias.ValueAliasSet", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 		{ "ValueToAlias.value", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ValueToAlias::ValueToAlias() : ValueAliasSet(nullptr) {}

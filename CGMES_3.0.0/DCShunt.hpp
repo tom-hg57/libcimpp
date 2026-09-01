@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Capacitance.hpp"
 #include "Resistance.hpp"
 
@@ -27,10 +28,10 @@ namespace CIMPP
 		DCShunt();
 		~DCShunt() override;
 
-		/** \brief Capacitance of the DC shunt. Default: nullptr */
+		/** \brief Capacitance of the DC shunt. Default: 0.0 */
 		CIMPP::Capacitance capacitance;
 
-		/** \brief Resistance of the DC device. Default: nullptr */
+		/** \brief Resistance of the DC device. Default: 0.0 */
 		CIMPP::Resistance resistance;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,49 +28,49 @@ namespace CIMPP
 		UnderexcLimIEEE1();
 		~UnderexcLimIEEE1() override;
 
-		/** \brief UEL centre setting (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;UC&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,38. Default: nullptr */
+		/** \brief UEL centre setting (<i>K</i><i><sub>UC</sub></i>).  Typical value = 1,38. Default: 0.0 */
 		CIMPP::PU kuc;
 
-		/** \brief UEL excitation system stabilizer gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;UF&lt;/sub&gt;&lt;/i&gt;).  Typical value = 3,3. Default: nullptr */
+		/** \brief UEL excitation system stabilizer gain (<i>K</i><i><sub>UF</sub></i>).  Typical value = 3,3. Default: 0.0 */
 		CIMPP::PU kuf;
 
-		/** \brief UEL integral gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;UI&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief UEL integral gain (<i>K</i><i><sub>UI</sub></i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU kui;
 
-		/** \brief UEL proportional gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;UL&lt;/sub&gt;&lt;/i&gt;).  Typical value = 100. Default: nullptr */
+		/** \brief UEL proportional gain (<i>K</i><i><sub>UL</sub></i>).  Typical value = 100. Default: 0.0 */
 		CIMPP::PU kul;
 
-		/** \brief UEL radius setting (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;UR&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,95. Default: nullptr */
+		/** \brief UEL radius setting (<i>K</i><i><sub>UR</sub></i>).  Typical value = 1,95. Default: 0.0 */
 		CIMPP::PU kur;
 
-		/** \brief UEL lead time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;U1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief UEL lead time constant (<i>T</i><i><sub>U1</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tu1;
 
-		/** \brief UEL lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;U2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief UEL lag time constant (<i>T</i><i><sub>U2</sub></i>) (&gt;= 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::Seconds tu2;
 
-		/** \brief UEL lead time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;U3&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief UEL lead time constant (<i>T</i><i><sub>U3</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tu3;
 
-		/** \brief UEL lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;U4&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief UEL lag time constant (<i>T</i><i><sub>U4</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tu4;
 
-		/** \brief UEL maximum limit for operating point phasor magnitude (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;UCMAX&lt;/sub&gt;&lt;/i&gt;).  Typical value = 5,8. Default: nullptr */
+		/** \brief UEL maximum limit for operating point phasor magnitude (<i>V</i><i><sub>UCMAX</sub></i>).  Typical value = 5,8. Default: 0.0 */
 		CIMPP::PU vucmax;
 
-		/** \brief UEL integrator output maximum limit (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;UIMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; UnderexcLimIEEE1.vuimin). Default: nullptr */
+		/** \brief UEL integrator output maximum limit (<i>V</i><i><sub>UIMAX</sub></i>) (&gt; UnderexcLimIEEE1.vuimin). Default: 0.0 */
 		CIMPP::PU vuimax;
 
-		/** \brief UEL integrator output minimum limit (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;UIMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; UnderexcLimIEEE1.vuimax). Default: nullptr */
+		/** \brief UEL integrator output minimum limit (<i>V</i><i><sub>UIMIN</sub></i>) (&lt; UnderexcLimIEEE1.vuimax). Default: 0.0 */
 		CIMPP::PU vuimin;
 
-		/** \brief UEL output maximum limit (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;ULMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; UnderexcLimIEEE1.vulmin).  Typical value = 18. Default: nullptr */
+		/** \brief UEL output maximum limit (<i>V</i><i><sub>ULMAX</sub></i>) (&gt; UnderexcLimIEEE1.vulmin).  Typical value = 18. Default: 0.0 */
 		CIMPP::PU vulmax;
 
-		/** \brief UEL output minimum limit (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;ULMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; UnderexcLimIEEE1.vulmax).  Typical value = -18. Default: nullptr */
+		/** \brief UEL output minimum limit (<i>V</i><i><sub>ULMIN</sub></i>) (&lt; UnderexcLimIEEE1.vulmax).  Typical value = -18. Default: 0.0 */
 		CIMPP::PU vulmin;
 
-		/** \brief UEL maximum limit for radius phasor magnitude (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;URMAX&lt;/sub&gt;&lt;/i&gt;).  Typical value = 5,8. Default: nullptr */
+		/** \brief UEL maximum limit for radius phasor magnitude (<i>V</i><i><sub>URMAX</sub></i>).  Typical value = 5,8. Default: 0.0 */
 		CIMPP::PU vurmax;
 
 		static const char debugName[];

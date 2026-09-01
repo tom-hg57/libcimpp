@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "String.hpp"
 
 namespace CIMPP
@@ -27,22 +28,22 @@ namespace CIMPP
 		IdentifiedObject();
 		~IdentifiedObject() override;
 
-		/** \brief The domain object to which this diagram object is associated. Default: 0 */
+		/** \brief The domain object to which this diagram object is associated. Default: {} */
 		std::list<CIMPP::DiagramObject*> DiagramObjects;
 
-		/** \brief The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy. Default: '' */
+		/** \brief The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy. Default: "" */
 		CIMPP::String description;
 
-		/** \brief The attribute is used for an exchange of the EIC code (Energy identification Code). The length of the string is 16 characters as defined by the EIC code. References: Default: '' */
+		/** \brief The attribute is used for an exchange of the EIC code (Energy identification Code). The length of the string is 16 characters as defined by the EIC code. References: Default: "" */
 		CIMPP::String energyIdentCodeEic;
 
-		/** \brief Master resource identifier issued by a model authority. The mRID must semantically be a UUID as specified in RFC 4122. The mRID is globally unique. For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements. Default: '' */
+		/** \brief Master resource identifier issued by a model authority. The mRID must semantically be a UUID as specified in RFC 4122. The mRID is globally unique. For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements. Default: "" */
 		CIMPP::String mRID;
 
-		/** \brief The name is any free human readable and possibly non unique text naming the object. Default: '' */
+		/** \brief The name is any free human readable and possibly non unique text naming the object. Default: "" */
 		CIMPP::String name;
 
-		/** \brief The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum. Default: '' */
+		/** \brief The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum. Default: "" */
 		CIMPP::String shortName;
 
 		static const char debugName[];

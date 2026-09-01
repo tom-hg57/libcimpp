@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,37 +28,37 @@ namespace CIMPP
 		PssSK();
 		~PssSK() override;
 
-		/** \brief Gain P (K1).  Typical Value = -0.3. Default: nullptr */
+		/** \brief Gain P (K1).  Typical Value = -0.3. Default: 0.0 */
 		CIMPP::PU k1;
 
-		/** \brief Gain fe (K2).  Typical Value = -0.15. Default: nullptr */
+		/** \brief Gain fe (K2).  Typical Value = -0.15. Default: 0.0 */
 		CIMPP::PU k2;
 
-		/** \brief Gain If (K3).  Typical Value = 10. Default: nullptr */
+		/** \brief Gain If (K3).  Typical Value = 10. Default: 0.0 */
 		CIMPP::PU k3;
 
-		/** \brief Denominator time constant (T1).  Typical Value = 0.3. Default: nullptr */
+		/** \brief Denominator time constant (T1).  Typical Value = 0.3. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Filter time constant (T2).  Typical Value = 0.35. Default: nullptr */
+		/** \brief Filter time constant (T2).  Typical Value = 0.35. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Denominator time constant (T3).  Typical Value = 0.22. Default: nullptr */
+		/** \brief Denominator time constant (T3).  Typical Value = 0.22. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Filter time constant (T4).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Filter time constant (T4).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Denominator time constant (T5).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Denominator time constant (T5).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Filter time constant (T6).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Filter time constant (T6).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Stabilizer output max limit (Vsmax).  Typical Value = 0.4. Default: nullptr */
+		/** \brief Stabilizer output max limit (Vsmax).  Typical Value = 0.4. Default: 0.0 */
 		CIMPP::PU vsmax;
 
-		/** \brief Stabilizer output min limit (Vsmin).  Typical Value = -0.4. Default: nullptr */
+		/** \brief Stabilizer output min limit (Vsmin).  Typical Value = -0.4. Default: 0.0 */
 		CIMPP::PU vsmin;
 
 		static const char debugName[];

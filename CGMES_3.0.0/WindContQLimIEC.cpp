@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindContQLimIEC.qmax", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "WindContQLimIEC.qmin", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindContQLimIEC::WindContQLimIEC() : WindTurbineType3or4IEC(nullptr) {}

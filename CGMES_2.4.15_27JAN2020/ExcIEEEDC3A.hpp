@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -29,37 +30,37 @@ namespace CIMPP
 		ExcIEEEDC3A();
 		~ExcIEEEDC3A() override;
 
-		/** \brief Exciter voltage at which exciter saturation is defined (E).  Typical Value = 3.375. Default: nullptr */
+		/** \brief Exciter voltage at which exciter saturation is defined (E).  Typical Value = 3.375. Default: 0.0 */
 		CIMPP::PU efd1;
 
-		/** \brief Exciter voltage at which exciter saturation is defined (E).  Typical Value = 3.15. Default: nullptr */
+		/** \brief Exciter voltage at which exciter saturation is defined (E).  Typical Value = 3.15. Default: 0.0 */
 		CIMPP::PU efd2;
 
 		/** \brief (exclim).  IEEE standard is ambiguous about lower limit on exciter output. true = a lower limit of zero is applied to integrator output false = a lower limit of zero is not applied to integrator output. Typical Value = true. Default: false */
 		CIMPP::Boolean exclim;
 
-		/** \brief Exciter constant related to self-excited field (K).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Exciter constant related to self-excited field (K).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::PU ke;
 
-		/** \brief Fast raise/lower contact setting (K).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Fast raise/lower contact setting (K).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::PU kv;
 
-		/** \brief Exciter saturation function value at the corresponding exciter voltage, E (S[E]).  Typical Value = 0.267. Default: nullptr */
+		/** \brief Exciter saturation function value at the corresponding exciter voltage, E (S[E]).  Typical Value = 0.267. Default: 0.0 */
 		CIMPP::Simple_Float seefd1;
 
-		/** \brief Exciter saturation function value at the corresponding exciter voltage, E (S[E]).  Typical Value = 0.068. Default: nullptr */
+		/** \brief Exciter saturation function value at the corresponding exciter voltage, E (S[E]).  Typical Value = 0.068. Default: 0.0 */
 		CIMPP::Simple_Float seefd2;
 
-		/** \brief Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 0.5. Default: nullptr */
+		/** \brief Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Rheostat travel time (T).  Typical Value = 20. Default: nullptr */
+		/** \brief Rheostat travel time (T).  Typical Value = 20. Default: 0.0 */
 		CIMPP::Seconds trh;
 
-		/** \brief Maximum voltage regulator output (V).  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum voltage regulator output (V).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator output (V).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum voltage regulator output (V).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

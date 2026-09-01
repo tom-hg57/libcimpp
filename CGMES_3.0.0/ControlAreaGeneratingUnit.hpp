@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class ControlArea;
@@ -27,10 +28,10 @@ namespace CIMPP
 		ControlAreaGeneratingUnit();
 		~ControlAreaGeneratingUnit() override;
 
-		/** \brief The parent control area for the generating unit specifications. Default: 0 */
+		/** \brief The parent control area for the generating unit specifications. Default: nullptr */
 		CIMPP::ControlArea* ControlArea;
 
-		/** \brief The generating unit specified for this control area.  Note that a control area should include a GeneratingUnit only once. Default: 0 */
+		/** \brief The generating unit specified for this control area.  Note that a control area should include a GeneratingUnit only once. Default: nullptr */
 		CIMPP::GeneratingUnit* GeneratingUnit;
 
 		static const char debugName[];

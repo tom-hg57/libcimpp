@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "Voltage.hpp"
 
@@ -28,13 +29,13 @@ namespace CIMPP
 		SvVoltage();
 		~SvVoltage() override;
 
-		/** \brief The state voltage associated with the topological node. Default: 0 */
+		/** \brief The state voltage associated with the topological node. Default: nullptr */
 		CIMPP::TopologicalNode* TopologicalNode;
 
-		/** \brief The voltage angle of the topological node complex voltage with respect to system reference. Default: nullptr */
+		/** \brief The voltage angle of the topological node complex voltage with respect to system reference. Default: 0.0 */
 		CIMPP::AngleDegrees angle;
 
-		/** \brief The voltage magnitude of the topological node. Default: nullptr */
+		/** \brief The voltage magnitude of the topological node. Default: 0.0 */
 		CIMPP::Voltage v;
 
 		static const char debugName[];

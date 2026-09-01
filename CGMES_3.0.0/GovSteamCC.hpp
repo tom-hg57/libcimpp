@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,55 +29,55 @@ namespace CIMPP
 		GovSteamCC();
 		~GovSteamCC() override;
 
-		/** \brief HP damping factor (&lt;i&gt;Dhp&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief HP damping factor (<i>Dhp</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU dhp;
 
-		/** \brief LP damping factor (&lt;i&gt;Dlp&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief LP damping factor (<i>Dlp</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU dlp;
 
-		/** \brief Fraction of HP power ahead of reheater (&lt;i&gt;Fhp&lt;/i&gt;).  Typical value = 0,3. Default: nullptr */
+		/** \brief Fraction of HP power ahead of reheater (<i>Fhp</i>).  Typical value = 0,3. Default: 0.0 */
 		CIMPP::PU fhp;
 
-		/** \brief Fraction of LP power ahead of reheater (&lt;i&gt;Flp&lt;/i&gt;).  Typical value = 0,7. Default: nullptr */
+		/** \brief Fraction of LP power ahead of reheater (<i>Flp</i>).  Typical value = 0,7. Default: 0.0 */
 		CIMPP::PU flp;
 
-		/** \brief Base for power values (&lt;i&gt;MWbase&lt;/i&gt;) (&amp;gt; 0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (<i>MWbase</i>) (&gt; 0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Maximum HP value position (&lt;i&gt;Pmaxhp&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Maximum HP value position (<i>Pmaxhp</i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU pmaxhp;
 
-		/** \brief Maximum LP value position (&lt;i&gt;Pmaxlp&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Maximum LP value position (<i>Pmaxlp</i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU pmaxlp;
 
-		/** \brief HP governor droop (&lt;i&gt;Rhp&lt;/i&gt;) (&amp;gt; 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief HP governor droop (<i>Rhp</i>) (&gt; 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::PU rhp;
 
-		/** \brief LP governor droop (&lt;i&gt;Rlp&lt;/i&gt;) (&amp;gt; 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief LP governor droop (<i>Rlp</i>) (&gt; 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::PU rlp;
 
-		/** \brief HP governor time constant (&lt;i&gt;T1hp&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief HP governor time constant (<i>T1hp</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t1hp;
 
-		/** \brief LP governor time constant (&lt;i&gt;T1lp&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief LP governor time constant (<i>T1lp</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t1lp;
 
-		/** \brief HP turbine time constant (&lt;i&gt;T3hp&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief HP turbine time constant (<i>T3hp</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t3hp;
 
-		/** \brief LP turbine time constant (&lt;i&gt;T3lp&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief LP turbine time constant (<i>T3lp</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t3lp;
 
-		/** \brief HP turbine time constant (&lt;i&gt;T4hp&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief HP turbine time constant (<i>T4hp</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t4hp;
 
-		/** \brief LP turbine time constant (&lt;i&gt;T4lp&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief LP turbine time constant (<i>T4lp</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t4lp;
 
-		/** \brief HP reheater time constant (&lt;i&gt;T5hp&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 10. Default: nullptr */
+		/** \brief HP reheater time constant (<i>T5hp</i>) (&gt;= 0).  Typical value = 10. Default: 0.0 */
 		CIMPP::Seconds t5hp;
 
-		/** \brief LP reheater time constant (&lt;i&gt;T5lp&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 10. Default: nullptr */
+		/** \brief LP reheater time constant (<i>T5lp</i>) (&gt;= 0).  Typical value = 10. Default: 0.0 */
 		CIMPP::Seconds t5lp;
 
 		static const char debugName[];

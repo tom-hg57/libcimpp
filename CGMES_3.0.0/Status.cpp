@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Status.remark", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::GL, } } },
 		{ "Status.value", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::GL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Status::Status() {}

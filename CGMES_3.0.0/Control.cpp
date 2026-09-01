@@ -36,7 +36,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Control.unitMultiplier", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 		{ "Control.unitSymbol", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Control::Control() : PowerSystemResource(nullptr) {}

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Seconds.hpp"
 
 namespace CIMPP
@@ -26,10 +27,10 @@ namespace CIMPP
 		VCompIEEEType2();
 		~VCompIEEEType2() override;
 
-		/** \brief Compensation of this voltage compensator`s generator for current flow out of another generator. Default: 0 */
+		/** \brief Compensation of this voltage compensator`s generator for current flow out of another generator. Default: {} */
 		std::list<CIMPP::GenICompensationForGenJ*> GenICompensationForGenJ;
 
-		/** \brief  Default: nullptr */
+		/** \brief  Default: 0.0 */
 		CIMPP::Seconds tr;
 
 		static const char debugName[];

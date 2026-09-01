@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -28,16 +29,16 @@ namespace CIMPP
 		WindRefFrameRotIEC();
 		~WindRefFrameRotIEC() override;
 
-		/** \brief Wind turbine type 3 or type 4 model with which this reference frame rotation model is associated. Default: 0 */
+		/** \brief Wind turbine type 3 or type 4 model with which this reference frame rotation model is associated. Default: nullptr */
 		CIMPP::WindTurbineType3or4IEC* WindTurbineType3or4IEC;
 
-		/** \brief Time constant for PLL first order filter model (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PLL&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Time constant for PLL first order filter model (<i>T</i><i><sub>PLL</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tpll;
 
-		/** \brief Voltage below which the angle of the voltage is filtered and possibly also frozen (&lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PLL1&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Voltage below which the angle of the voltage is filtered and possibly also frozen (<i>u</i><i><sub>PLL1</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU upll1;
 
-		/** \brief Voltage (&lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PLL2&lt;/sub&gt;&lt;/i&gt;) below which the angle of the voltage is frozen if &lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PLL2&lt;/sub&gt;&lt;/i&gt;&lt;sub&gt; &lt;/sub&gt;is smaller or equal to &lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PLL1&lt;/sub&gt;&lt;/i&gt; . It is a type-dependent parameter. Default: nullptr */
+		/** \brief Voltage (<i>u</i><i><sub>PLL2</sub></i>) below which the angle of the voltage is frozen if <i>u</i><i><sub>PLL2</sub></i><sub> </sub>is smaller or equal to <i>u</i><i><sub>PLL1</sub></i> . It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU upll2;
 
 		static const char debugName[];

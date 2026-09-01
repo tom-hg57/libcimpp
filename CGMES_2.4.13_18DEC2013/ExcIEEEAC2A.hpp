@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 #include "Simple_Float.hpp"
@@ -28,67 +29,67 @@ namespace CIMPP
 		ExcIEEEAC2A();
 		~ExcIEEEAC2A() override;
 
-		/** \brief Voltage regulator gain (K).  Typical Value = 400. Default: nullptr */
+		/** \brief Voltage regulator gain (K).  Typical Value = 400. Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Second stage regulator gain (K).  Typical Value = 25. Default: nullptr */
+		/** \brief Second stage regulator gain (K).  Typical Value = 25. Default: 0.0 */
 		CIMPP::PU kb;
 
-		/** \brief Rectifier loading factor proportional to commutating reactance (K).  Typical Value = 0.28. Default: nullptr */
+		/** \brief Rectifier loading factor proportional to commutating reactance (K).  Typical Value = 0.28. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Demagnetizing factor, a function of exciter alternator reactances (K).  Typical Value = 0.35. Default: nullptr */
+		/** \brief Demagnetizing factor, a function of exciter alternator reactances (K).  Typical Value = 0.35. Default: 0.0 */
 		CIMPP::PU kd;
 
-		/** \brief Exciter constant related to self-excited field (K).  Typical Value = 1. Default: nullptr */
+		/** \brief Exciter constant related to self-excited field (K).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU ke;
 
-		/** \brief Excitation control system stabilizer gains (K).  Typical Value = 0.03. Default: nullptr */
+		/** \brief Excitation control system stabilizer gains (K).  Typical Value = 0.03. Default: 0.0 */
 		CIMPP::PU kf;
 
-		/** \brief Exciter field current feedback gain (K).  Typical Value = 1. Default: nullptr */
+		/** \brief Exciter field current feedback gain (K).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU kh;
 
-		/** \brief Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.037. Default: nullptr */
+		/** \brief Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.037. Default: 0.0 */
 		CIMPP::Simple_Float seve1;
 
-		/** \brief Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.012. Default: nullptr */
+		/** \brief Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.012. Default: 0.0 */
 		CIMPP::Simple_Float seve2;
 
-		/** \brief Voltage regulator time constant (T).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Voltage regulator time constant (T).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Voltage regulator time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Voltage regulator time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Voltage regulator time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Voltage regulator time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 0.6. Default: nullptr */
+		/** \brief Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 0.6. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Excitation control system stabilizer time constant (T).  Typical Value = 1. Default: nullptr */
+		/** \brief Excitation control system stabilizer time constant (T).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds tf;
 
-		/** \brief Maximum voltage regulator output (V).  Typical Value = 8. Default: nullptr */
+		/** \brief Maximum voltage regulator output (V).  Typical Value = 8. Default: 0.0 */
 		CIMPP::PU vamax;
 
-		/** \brief Minimum voltage regulator output (V).  Typical Value = -8. Default: nullptr */
+		/** \brief Minimum voltage regulator output (V).  Typical Value = -8. Default: 0.0 */
 		CIMPP::PU vamin;
 
-		/** \brief Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 4.4. Default: nullptr */
+		/** \brief Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 4.4. Default: 0.0 */
 		CIMPP::PU ve1;
 
-		/** \brief Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 3.3. Default: nullptr */
+		/** \brief Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 3.3. Default: 0.0 */
 		CIMPP::PU ve2;
 
-		/** \brief Exciter field current limit reference (V).  Typical Value = 4.4. Default: nullptr */
+		/** \brief Exciter field current limit reference (V).  Typical Value = 4.4. Default: 0.0 */
 		CIMPP::PU vfemax;
 
-		/** \brief Maximum voltage regulator outputs (V).  Typical Value = 105. Default: nullptr */
+		/** \brief Maximum voltage regulator outputs (V).  Typical Value = 105. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator outputs (V).  Typical Value = -95. Default: nullptr */
+		/** \brief Minimum voltage regulator outputs (V).  Typical Value = -95. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

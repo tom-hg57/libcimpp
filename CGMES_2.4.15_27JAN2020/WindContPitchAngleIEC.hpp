@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -30,37 +31,37 @@ namespace CIMPP
 		WindContPitchAngleIEC();
 		~WindContPitchAngleIEC() override;
 
-		/** \brief Wind turbine type 3 model with which this pitch control model is associated. Default: 0 */
+		/** \brief Wind turbine type 3 model with which this pitch control model is associated. Default: nullptr */
 		CIMPP::WindGenTurbineType3IEC* WindGenTurbineType3IEC;
 
-		/** \brief Maximum pitch positive ramp rate (d). It is type dependent parameter. Unit = degrees/sec. Default: nullptr */
+		/** \brief Maximum pitch positive ramp rate (d). It is type dependent parameter. Unit = degrees/sec. Default: 0.0 */
 		CIMPP::Simple_Float dthetamax;
 
-		/** \brief Maximum pitch negative ramp rate (d). It is type dependent parameter. Unit = degrees/sec. Default: nullptr */
+		/** \brief Maximum pitch negative ramp rate (d). It is type dependent parameter. Unit = degrees/sec. Default: 0.0 */
 		CIMPP::Simple_Float dthetamin;
 
-		/** \brief Power PI controller integration gain (). It is type dependent parameter. Default: nullptr */
+		/** \brief Power PI controller integration gain (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::PU kic;
 
-		/** \brief Speed PI controller integration gain (). It is type dependent parameter. Default: nullptr */
+		/** \brief Speed PI controller integration gain (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::PU kiomega;
 
-		/** \brief Power PI controller proportional gain (). It is type dependent parameter. Default: nullptr */
+		/** \brief Power PI controller proportional gain (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::PU kpc;
 
-		/** \brief Speed PI controller proportional gain (). It is type dependent parameter. Default: nullptr */
+		/** \brief Speed PI controller proportional gain (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::PU kpomega;
 
-		/** \brief Pitch cross coupling gain (K). It is type dependent parameter. Default: nullptr */
+		/** \brief Pitch cross coupling gain (K). It is type dependent parameter. Default: 0.0 */
 		CIMPP::PU kpx;
 
-		/** \brief Maximum pitch angle (). It is type dependent parameter. Default: nullptr */
+		/** \brief Maximum pitch angle (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::AngleDegrees thetamax;
 
-		/** \brief Minimum pitch angle (). It is type dependent parameter. Default: nullptr */
+		/** \brief Minimum pitch angle (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::AngleDegrees thetamin;
 
-		/** \brief Pitch time constant (t). It is type dependent parameter. Default: nullptr */
+		/** \brief Pitch time constant (t). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds ttheta;
 
 		static const char debugName[];

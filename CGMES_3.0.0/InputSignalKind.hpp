@@ -19,17 +19,17 @@ namespace CIMPP
 			rotorSpeed,
 			/** Input signal is rotor or shaft angular frequency deviation. */
 			rotorAngularFrequencyDeviation,
-			/** Input signal is bus voltage fr&lt;font color=&quot;#0f0f0f&quot;&gt;equency.  This could be a terminal frequency or remote frequency.&lt;/font&gt; */
+			/** Input signal is bus voltage fr<font color="#0f0f0f">equency.  This could be a terminal frequency or remote frequency.</font> */
 			busFrequency,
-			/** Input signal is deviation of bus voltage frequ&lt;font color=&quot;#0f0f0f&quot;&gt;ency.  This could be a terminal frequency deviation or remote frequency deviation.&lt;/font&gt; */
+			/** Input signal is deviation of bus voltage frequ<font color="#0f0f0f">ency.  This could be a terminal frequency deviation or remote frequency deviation.</font> */
 			busFrequencyDeviation,
-			/** Input signal is generator electrical power on rated &lt;i&gt;S&lt;/i&gt;. */
+			/** Input signal is generator electrical power on rated <i>S</i>. */
 			generatorElectricalPower,
 			/** Input signal is generator accelerating power. */
 			generatorAcceleratingPower,
-			/** Input signal &lt;font color=&quot;#0f0f0f&quot;&gt;is bus voltage.  This could be a terminal voltage or remote voltage.&lt;/font&gt; */
+			/** Input signal <font color="#0f0f0f">is bus voltage.  This could be a terminal voltage or remote voltage.</font> */
 			busVoltage,
-			/** Input signal is derivative of bus voltag&lt;font color=&quot;#0f0f0f&quot;&gt;e.  This could be a terminal voltage derivative or remote voltage derivative.&lt;/font&gt; */
+			/** Input signal is derivative of bus voltag<font color="#0f0f0f">e.  This could be a terminal voltage derivative or remote voltage derivative.</font> */
 			busVoltageDerivative,
 			/** Input signal is amplitude of remote branch current. */
 			branchCurrent,

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class WindContCurrLimIEC;
@@ -28,13 +29,13 @@ namespace CIMPP
 		WindTurbineType3or4IEC();
 		~WindTurbineType3or4IEC() override;
 
-		/** \brief Wind control Q model associated with this wind turbine type 3 or 4 model. Default: 0 */
+		/** \brief Wind control Q model associated with this wind turbine type 3 or 4 model. Default: nullptr */
 		CIMPP::WindContQIEC* WIndContQIEC;
 
-		/** \brief Wind control current limitation model associated with this wind turbine type 3 or 4 model. Default: 0 */
+		/** \brief Wind control current limitation model associated with this wind turbine type 3 or 4 model. Default: nullptr */
 		CIMPP::WindContCurrLimIEC* WindContCurrLimIEC;
 
-		/** \brief Wind turbune protection model associated with this wind generator type 3 or 4 model. Default: 0 */
+		/** \brief Wind turbune protection model associated with this wind generator type 3 or 4 model. Default: nullptr */
 		CIMPP::WindProtectionIEC* WindProtectionIEC;
 
 		static const char debugName[];

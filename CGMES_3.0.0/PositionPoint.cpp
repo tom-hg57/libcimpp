@@ -35,7 +35,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PositionPoint.yPosition", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::GL, } } },
 		{ "PositionPoint.zPosition", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::GL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PositionPoint::PositionPoint() : Location(nullptr) {}

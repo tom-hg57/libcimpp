@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Seconds.hpp"
 
 namespace CIMPP
@@ -28,16 +29,16 @@ namespace CIMPP
 		WindContQPQULimIEC();
 		~WindContQPQULimIEC() override;
 
-		/** \brief The wind dynamics lookup table associated with this QP and QU limitation model. Default: 0 */
+		/** \brief The wind dynamics lookup table associated with this QP and QU limitation model. Default: {} */
 		std::list<CIMPP::WindDynamicsLookupTable*> WindDynamicsLookupTable;
 
-		/** \brief Wind generator type 3 or type 4 model with which this QP and QU limitation model is associated. Default: 0 */
+		/** \brief Wind generator type 3 or type 4 model with which this QP and QU limitation model is associated. Default: nullptr */
 		CIMPP::WindTurbineType3or4IEC* WindTurbineType3or4IEC;
 
-		/** \brief Power measurement filter time constant for Q capacity (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;pfiltql&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Power measurement filter time constant for Q capacity (<i>T</i><i><sub>pfiltql</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tpfiltql;
 
-		/** \brief Voltage measurement filter time constant for Q capacity (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;ufiltql&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Voltage measurement filter time constant for Q capacity (<i>T</i><i><sub>ufiltql</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tufiltql;
 
 		static const char debugName[];

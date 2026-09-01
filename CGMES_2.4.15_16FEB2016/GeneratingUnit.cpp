@@ -52,7 +52,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "GeneratingUnit.totalEfficiency", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "GeneratingUnit.variableCost", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 GeneratingUnit::GeneratingUnit() {}

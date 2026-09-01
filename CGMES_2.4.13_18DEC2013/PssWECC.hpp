@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "InputSignalKind.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -34,52 +35,52 @@ namespace CIMPP
 		/** \brief Type of input signal #2. Default: 0 */
 		CIMPP::InputSignalKind inputSignal2Type;
 
-		/** \brief Input signal 1 gain  (K). Default: nullptr */
+		/** \brief Input signal 1 gain  (K). Default: 0.0 */
 		CIMPP::PU k1;
 
-		/** \brief Input signal 2 gain (K). Default: nullptr */
+		/** \brief Input signal 2 gain (K). Default: 0.0 */
 		CIMPP::PU k2;
 
-		/** \brief Input signal 1 transducer time constant (T). Default: nullptr */
+		/** \brief Input signal 1 transducer time constant (T). Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Lag time constant (T). Default: nullptr */
+		/** \brief Lag time constant (T). Default: 0.0 */
 		CIMPP::Seconds t10;
 
-		/** \brief Input signal 2 transducer time constant (T). Default: nullptr */
+		/** \brief Input signal 2 transducer time constant (T). Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Stabilizer washout time constant (T). Default: nullptr */
+		/** \brief Stabilizer washout time constant (T). Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Stabilizer washout time lag constant (T) (&gt;0). Default: nullptr */
+		/** \brief Stabilizer washout time lag constant (T) (>0). Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Lead time constant (T). Default: nullptr */
+		/** \brief Lead time constant (T). Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Lag time constant (T). Default: nullptr */
+		/** \brief Lag time constant (T). Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Lead time constant (T). Default: nullptr */
+		/** \brief Lead time constant (T). Default: 0.0 */
 		CIMPP::Seconds t7;
 
-		/** \brief Lag time constant (T). Default: nullptr */
+		/** \brief Lag time constant (T). Default: 0.0 */
 		CIMPP::Seconds t8;
 
-		/** \brief Lead time constant (T). Default: nullptr */
+		/** \brief Lead time constant (T). Default: 0.0 */
 		CIMPP::Seconds t9;
 
-		/** \brief Minimum value for voltage compensator output (V). Default: nullptr */
+		/** \brief Minimum value for voltage compensator output (V). Default: 0.0 */
 		CIMPP::PU vcl;
 
-		/** \brief Maximum value for voltage compensator output (V). Default: nullptr */
+		/** \brief Maximum value for voltage compensator output (V). Default: 0.0 */
 		CIMPP::PU vcu;
 
-		/** \brief Maximum output signal (Vsmax). Default: nullptr */
+		/** \brief Maximum output signal (Vsmax). Default: 0.0 */
 		CIMPP::PU vsmax;
 
-		/** \brief Minimum output signal (Vsmin). Default: nullptr */
+		/** \brief Minimum output signal (Vsmin). Default: 0.0 */
 		CIMPP::PU vsmin;
 
 		static const char debugName[];

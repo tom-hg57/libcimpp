@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -28,16 +29,16 @@ namespace CIMPP
 		WindContPType4aIEC();
 		~WindContPType4aIEC() override;
 
-		/** \brief Wind turbine type 4A model with which this wind control P type 4A model is associated. Default: 0 */
+		/** \brief Wind turbine type 4A model with which this wind control P type 4A model is associated. Default: nullptr */
 		CIMPP::WindTurbineType4aIEC* WindTurbineType4aIEC;
 
-		/** \brief Maximum wind turbine power ramp rate (&lt;i&gt;dp&lt;/i&gt;&lt;i&gt;&lt;sub&gt;maxp4A&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Maximum wind turbine power ramp rate (<i>dp</i><i><sub>maxp4A</sub></i>). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU dpmaxp4a;
 
-		/** \brief Time constant in power order lag (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;pordp4A&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Time constant in power order lag (<i>T</i><i><sub>pordp4A</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tpordp4a;
 
-		/** \brief Voltage measurement filter time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;ufiltp4A&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Voltage measurement filter time constant (<i>T</i><i><sub>ufiltp4A</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tufiltp4a;
 
 		static const char debugName[];

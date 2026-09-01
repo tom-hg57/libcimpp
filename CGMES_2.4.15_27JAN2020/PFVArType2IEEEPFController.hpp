@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Simple_Float.hpp"
@@ -31,22 +32,22 @@ namespace CIMPP
 		/** \brief Overexcitation or under excitation flag () true = 1 (not in the overexcitation or underexcitation state, integral action is active) false = 0 (in the overexcitation or underexcitation state, so integral action is disabled to allow the limiter to play its role). Default: false */
 		CIMPP::Boolean exlon;
 
-		/** \brief Integral gain of the pf controller ().  Typical Value = 1. Default: nullptr */
+		/** \brief Integral gain of the pf controller ().  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU ki;
 
-		/** \brief Proportional gain of the pf controller ().  Typical Value = 1. Default: nullptr */
+		/** \brief Proportional gain of the pf controller ().  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief Power factor reference (). Default: nullptr */
+		/** \brief Power factor reference (). Default: 0.0 */
 		CIMPP::PU pfref;
 
-		/** \brief Maximum output of the pf controller ().  Typical Value = 0.1. Default: nullptr */
+		/** \brief Maximum output of the pf controller ().  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU vclmt;
 
-		/** \brief Voltage regulator reference (). Default: nullptr */
+		/** \brief Voltage regulator reference (). Default: 0.0 */
 		CIMPP::PU vref;
 
-		/** \brief Generator sensing voltage (). Default: nullptr */
+		/** \brief Generator sensing voltage (). Default: 0.0 */
 		CIMPP::Simple_Float vs;
 
 		static const char debugName[];

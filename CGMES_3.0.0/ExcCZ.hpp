@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,34 +28,34 @@ namespace CIMPP
 		ExcCZ();
 		~ExcCZ() override;
 
-		/** \brief Exciter output maximum limit (&lt;i&gt;Efdmax&lt;/i&gt;) (&amp;gt; ExcCZ.efdmin). Default: nullptr */
+		/** \brief Exciter output maximum limit (<i>Efdmax</i>) (&gt; ExcCZ.efdmin). Default: 0.0 */
 		CIMPP::PU efdmax;
 
-		/** \brief Exciter output minimum limit (&lt;i&gt;Efdmin&lt;/i&gt;) (&amp;lt; ExcCZ.efdmax). Default: nullptr */
+		/** \brief Exciter output minimum limit (<i>Efdmin</i>) (&lt; ExcCZ.efdmax). Default: 0.0 */
 		CIMPP::PU efdmin;
 
-		/** \brief Regulator gain (&lt;i&gt;Ka&lt;/i&gt;). Default: nullptr */
+		/** \brief Regulator gain (<i>Ka</i>). Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Exciter constant related to self-excited field (&lt;i&gt;Ke&lt;/i&gt;). Default: nullptr */
+		/** \brief Exciter constant related to self-excited field (<i>Ke</i>). Default: 0.0 */
 		CIMPP::PU ke;
 
-		/** \brief Regulator proportional gain (&lt;i&gt;Kp&lt;/i&gt;). Default: nullptr */
+		/** \brief Regulator proportional gain (<i>Kp</i>). Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief Regulator time constant (&lt;i&gt;Ta&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Regulator time constant (<i>Ta</i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Regulator integral time constant (&lt;i&gt;Tc&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Regulator integral time constant (<i>Tc</i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Exciter time constant, integration rate associated with exciter control (&lt;i&gt;Te&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Exciter time constant, integration rate associated with exciter control (<i>Te</i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Voltage regulator maximum limit (&lt;i&gt;Vrmax&lt;/i&gt;) (&amp;gt; ExcCZ.vrmin). Default: nullptr */
+		/** \brief Voltage regulator maximum limit (<i>Vrmax</i>) (&gt; ExcCZ.vrmin). Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Voltage regulator minimum limit (&lt;i&gt;Vrmin&lt;/i&gt;) (&amp;lt; ExcCZ.vrmax). Default: nullptr */
+		/** \brief Voltage regulator minimum limit (<i>Vrmin</i>) (&lt; ExcCZ.vrmax). Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

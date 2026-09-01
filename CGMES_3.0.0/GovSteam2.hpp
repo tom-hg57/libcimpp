@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,28 +29,28 @@ namespace CIMPP
 		GovSteam2();
 		~GovSteam2() override;
 
-		/** \brief Frequency deadband (&lt;i&gt;DBF&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Frequency deadband (<i>DBF</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU dbf;
 
-		/** \brief Governor gain (reciprocal of droop) (&lt;i&gt;K&lt;/i&gt;).  Typical value = 20. Default: 0.0 */
+		/** \brief Governor gain (reciprocal of droop) (<i>K</i>).  Typical value = 20. Default: 0.0 */
 		CIMPP::Float k;
 
-		/** \brief Fuel flow maximum negative error value (&lt;i&gt;MN&lt;/i&gt;&lt;i&gt;&lt;sub&gt;EF&lt;/sub&gt;&lt;/i&gt;).  Typical value = -1. Default: nullptr */
+		/** \brief Fuel flow maximum negative error value (<i>MN</i><i><sub>EF</sub></i>).  Typical value = -1. Default: 0.0 */
 		CIMPP::PU mnef;
 
-		/** \brief Fuel flow maximum positive error value (&lt;i&gt;MX&lt;/i&gt;&lt;i&gt;&lt;sub&gt;EF&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Fuel flow maximum positive error value (<i>MX</i><i><sub>EF</sub></i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU mxef;
 
-		/** \brief Maximum fuel flow (&lt;i&gt;P&lt;/i&gt;&lt;i&gt;&lt;sub&gt;MAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; GovSteam2.pmin).  Typical value = 1. Default: nullptr */
+		/** \brief Maximum fuel flow (<i>P</i><i><sub>MAX</sub></i>) (&gt; GovSteam2.pmin).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU pmax;
 
-		/** \brief Minimum fuel flow (&lt;i&gt;P&lt;/i&gt;&lt;i&gt;&lt;sub&gt;MIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; GovSteam2.pmax).  Typical value = 0. Default: nullptr */
+		/** \brief Minimum fuel flow (<i>P</i><i><sub>MIN</sub></i>) (&lt; GovSteam2.pmax).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief Governor lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 0,45. Default: nullptr */
+		/** \brief Governor lag time constant (<i>T</i><i><sub>1</sub></i>) (&gt; 0).  Typical value = 0,45. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Governor lead time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Governor lead time constant (<i>T</i><i><sub>2</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds t2;
 
 		static const char debugName[];

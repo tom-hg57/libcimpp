@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,13 +28,13 @@ namespace CIMPP
 		ExcAVR5();
 		~ExcAVR5() override;
 
-		/** \brief Gain (Ka). Default: nullptr */
+		/** \brief Gain (Ka). Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Effective Output Resistance (Rex). Rex represents the effective output resistance seen by the excitation system. Default: nullptr */
+		/** \brief Effective Output Resistance (Rex). Rex represents the effective output resistance seen by the excitation system. Default: 0.0 */
 		CIMPP::PU rex;
 
-		/** \brief Time constant (Ta). Default: nullptr */
+		/** \brief Time constant (Ta). Default: 0.0 */
 		CIMPP::Seconds ta;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "HydroEnergyConversionKind.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		HydroGeneratingUnit();
 		~HydroGeneratingUnit() override;
 
-		/** \brief The hydro generating unit belongs to a hydro power plant. Default: 0 */
+		/** \brief The hydro generating unit belongs to a hydro power plant. Default: nullptr */
 		CIMPP::HydroPowerPlant* HydroPowerPlant;
 
 		/** \brief Energy conversion capability for generating. Default: 0 */

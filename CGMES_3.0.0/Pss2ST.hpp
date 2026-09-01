@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "InputSignalKind.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -34,52 +35,52 @@ namespace CIMPP
 		/** \brief Type of input signal #2 (rotorAngularFrequencyDeviation, busFrequencyDeviation, generatorElectricalPower, generatorAcceleratingPower, busVoltage, or busVoltageDerivative - shall be different than Pss2ST.inputSignal1Type).  Typical value = busVoltageDerivative. Default: 0 */
 		CIMPP::InputSignalKind inputSignal2Type;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Gain (<i>K</i><i><sub>1</sub></i>). Default: 0.0 */
 		CIMPP::PU k1;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Gain (<i>K</i><i><sub>2</sub></i>). Default: 0.0 */
 		CIMPP::PU k2;
 
-		/** \brief Limiter (&lt;i&gt;L&lt;/i&gt;&lt;i&gt;&lt;sub&gt;SMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; Pss2ST.lsmin). Default: nullptr */
+		/** \brief Limiter (<i>L</i><i><sub>SMAX</sub></i>) (&gt; Pss2ST.lsmin). Default: 0.0 */
 		CIMPP::PU lsmax;
 
-		/** \brief Limiter (&lt;i&gt;L&lt;/i&gt;&lt;i&gt;&lt;sub&gt;SMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; Pss2ST.lsmax). Default: nullptr */
+		/** \brief Limiter (<i>L</i><i><sub>SMIN</sub></i>) (&lt; Pss2ST.lsmax). Default: 0.0 */
 		CIMPP::PU lsmin;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>1</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;10&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>10</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t10;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>2</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>3</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;4&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>4</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;5&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>5</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;6&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>6</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;7&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>7</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t7;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;8&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>8</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t8;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;9&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>9</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t9;
 
-		/** \brief Cutoff limiter (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;CL&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Cutoff limiter (<i>V</i><i><sub>CL</sub></i>). Default: 0.0 */
 		CIMPP::PU vcl;
 
-		/** \brief Cutoff limiter (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;CU&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Cutoff limiter (<i>V</i><i><sub>CU</sub></i>). Default: 0.0 */
 		CIMPP::PU vcu;
 
 		static const char debugName[];

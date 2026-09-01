@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,28 +29,28 @@ namespace CIMPP
 		GovHydroIEEE0();
 		~GovHydroIEEE0() override;
 
-		/** \brief Governor gain (K. Default: nullptr */
+		/** \brief Governor gain (K. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief Base for power values (MWbase) (&gt; 0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Gate maximum (Pmax). Default: nullptr */
+		/** \brief Gate maximum (Pmax). Default: 0.0 */
 		CIMPP::PU pmax;
 
-		/** \brief Gate minimum (Pmin). Default: nullptr */
+		/** \brief Gate minimum (Pmin). Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief Governor lag time constant (T1).  Typical Value = 0.25. Default: nullptr */
+		/** \brief Governor lag time constant (T1).  Typical Value = 0.25. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Governor lead time constant (T2.  Typical Value = 0. Default: nullptr */
+		/** \brief Governor lead time constant (T2.  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Gate actuator time constant (T3).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Gate actuator time constant (T3).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Water starting time (T4). Default: nullptr */
+		/** \brief Water starting time (T4). Default: 0.0 */
 		CIMPP::Seconds t4;
 
 		static const char debugName[];

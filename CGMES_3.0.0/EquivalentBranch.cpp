@@ -46,7 +46,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "EquivalentBranch.zeroX12", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 		{ "EquivalentBranch.zeroX21", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 EquivalentBranch::EquivalentBranch() {}

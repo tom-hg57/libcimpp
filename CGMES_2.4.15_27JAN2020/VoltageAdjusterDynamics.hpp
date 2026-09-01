@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class PFVArControllerType1Dynamics;
@@ -26,7 +27,7 @@ namespace CIMPP
 		VoltageAdjusterDynamics();
 		~VoltageAdjusterDynamics() override;
 
-		/** \brief Power Factor or VAr controller Type I model with which this voltage adjuster is associated. Default: 0 */
+		/** \brief Power Factor or VAr controller Type I model with which this voltage adjuster is associated. Default: nullptr */
 		CIMPP::PFVArControllerType1Dynamics* PFVArControllerType1Dynamics;
 
 		static const char debugName[];

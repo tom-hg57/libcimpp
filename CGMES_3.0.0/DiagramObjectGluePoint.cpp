@@ -31,7 +31,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	{
 		{ "DiagramObjectGluePoint.DiagramObjectPoints", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 DiagramObjectGluePoint::DiagramObjectGluePoint() {}

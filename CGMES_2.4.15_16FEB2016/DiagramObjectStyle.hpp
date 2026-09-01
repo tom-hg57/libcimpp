@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class DiagramObject;
@@ -26,7 +27,7 @@ namespace CIMPP
 		DiagramObjectStyle();
 		~DiagramObjectStyle() override;
 
-		/** \brief A style can be assigned to multiple diagram objects. Default: 0 */
+		/** \brief A style can be assigned to multiple diagram objects. Default: {} */
 		std::list<CIMPP::DiagramObject*> StyledObjects;
 
 		static const char debugName[];

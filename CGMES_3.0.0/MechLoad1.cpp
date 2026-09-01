@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "MechLoad1.d", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "MechLoad1.e", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 MechLoad1::MechLoad1() {}

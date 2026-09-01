@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 #include "Simple_Float.hpp"
@@ -28,40 +29,40 @@ namespace CIMPP
 		ExcAVR1();
 		~ExcAVR1() override;
 
-		/** \brief Field voltage value 1  (E1).  Typical Value = 4.18. Default: nullptr */
+		/** \brief Field voltage value 1  (E1).  Typical Value = 4.18. Default: 0.0 */
 		CIMPP::PU e1;
 
-		/** \brief Field voltage value 2 (E2).  Typical Value = 3.14. Default: nullptr */
+		/** \brief Field voltage value 2 (E2).  Typical Value = 3.14. Default: 0.0 */
 		CIMPP::PU e2;
 
-		/** \brief AVR gain (K).  Typical Value = 500. Default: nullptr */
+		/** \brief AVR gain (K).  Typical Value = 500. Default: 0.0 */
 		CIMPP::Simple_Float ka;
 
-		/** \brief Rate feedback gain (K).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Rate feedback gain (K).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Simple_Float kf;
 
-		/** \brief Saturation factor at E1 (S(E1)).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Saturation factor at E1 (S(E1)).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Simple_Float se1;
 
-		/** \brief Saturation factor at E2 (S(E2)).  Typical Value = 0.03. Default: nullptr */
+		/** \brief Saturation factor at E2 (S(E2)).  Typical Value = 0.03. Default: 0.0 */
 		CIMPP::Simple_Float se2;
 
-		/** \brief AVR time constant (T).  Typical Value = 0.2. Default: nullptr */
+		/** \brief AVR time constant (T).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief AVR time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief AVR time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Exciter time constant (T).  Typical Value = 1. Default: nullptr */
+		/** \brief Exciter time constant (T).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Rate feedback time constant (T).  Typical Value = 1. Default: nullptr */
+		/** \brief Rate feedback time constant (T).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds tf;
 
-		/** \brief Maximum AVR output (V).  Typical Value = -6. Default: nullptr */
+		/** \brief Maximum AVR output (V).  Typical Value = -6. Default: 0.0 */
 		CIMPP::PU vrmn;
 
-		/** \brief Minimum AVR output (V).  Typical Value = 7. Default: nullptr */
+		/** \brief Minimum AVR output (V).  Typical Value = 7. Default: 0.0 */
 		CIMPP::PU vrmx;
 
 		static const char debugName[];

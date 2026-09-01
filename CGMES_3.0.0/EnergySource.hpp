@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "AngleRadians.hpp"
 #include "Reactance.hpp"
@@ -32,46 +33,46 @@ namespace CIMPP
 		EnergySource();
 		~EnergySource() override;
 
-		/** \brief Energy Scheduling Type of an Energy Source. Default: 0 */
+		/** \brief Energy Scheduling Type of an Energy Source. Default: nullptr */
 		CIMPP::EnergySchedulingType* EnergySchedulingType;
 
-		/** \brief High voltage source active injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: nullptr */
+		/** \brief High voltage source active injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0 */
 		CIMPP::ActivePower activePower;
 
-		/** \brief Phase-to-phase nominal voltage. Default: nullptr */
+		/** \brief Phase-to-phase nominal voltage. Default: 0.0 */
 		CIMPP::Voltage nominalVoltage;
 
-		/** \brief This is the maximum active power that can be produced by the source. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment. Default: nullptr */
+		/** \brief This is the maximum active power that can be produced by the source. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment. Default: 0.0 */
 		CIMPP::ActivePower pMax;
 
-		/** \brief This is the minimum active power that can be produced by the source. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment. Default: nullptr */
+		/** \brief This is the minimum active power that can be produced by the source. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment. Default: 0.0 */
 		CIMPP::ActivePower pMin;
 
-		/** \brief Positive sequence Thevenin resistance. Default: nullptr */
+		/** \brief Positive sequence Thevenin resistance. Default: 0.0 */
 		CIMPP::Resistance r;
 
-		/** \brief Zero sequence Thevenin resistance. Default: nullptr */
+		/** \brief Zero sequence Thevenin resistance. Default: 0.0 */
 		CIMPP::Resistance r0;
 
-		/** \brief High voltage source reactive injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: nullptr */
+		/** \brief High voltage source reactive injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0 */
 		CIMPP::ReactivePower reactivePower;
 
-		/** \brief Negative sequence Thevenin resistance. Default: nullptr */
+		/** \brief Negative sequence Thevenin resistance. Default: 0.0 */
 		CIMPP::Resistance rn;
 
-		/** \brief Phase angle of a-phase open circuit used when voltage characteristics need to be imposed at the node associated with the terminal of the energy source, such as when voltages and angles from the transmission level are used as input to the distribution network. The attribute shall be a positive value or zero. Default: nullptr */
+		/** \brief Phase angle of a-phase open circuit used when voltage characteristics need to be imposed at the node associated with the terminal of the energy source, such as when voltages and angles from the transmission level are used as input to the distribution network. The attribute shall be a positive value or zero. Default: 0.0 */
 		CIMPP::AngleRadians voltageAngle;
 
-		/** \brief Phase-to-phase open circuit voltage magnitude used when voltage characteristics need to be imposed at the node associated with the terminal of the energy source, such as when voltages and angles from the transmission level are used as input to the distribution network. The attribute shall be a positive value or zero. Default: nullptr */
+		/** \brief Phase-to-phase open circuit voltage magnitude used when voltage characteristics need to be imposed at the node associated with the terminal of the energy source, such as when voltages and angles from the transmission level are used as input to the distribution network. The attribute shall be a positive value or zero. Default: 0.0 */
 		CIMPP::Voltage voltageMagnitude;
 
-		/** \brief Positive sequence Thevenin reactance. Default: nullptr */
+		/** \brief Positive sequence Thevenin reactance. Default: 0.0 */
 		CIMPP::Reactance x;
 
-		/** \brief Zero sequence Thevenin reactance. Default: nullptr */
+		/** \brief Zero sequence Thevenin reactance. Default: 0.0 */
 		CIMPP::Reactance x0;
 
-		/** \brief Negative sequence Thevenin reactance. Default: nullptr */
+		/** \brief Negative sequence Thevenin reactance. Default: 0.0 */
 		CIMPP::Reactance xn;
 
 		static const char debugName[];

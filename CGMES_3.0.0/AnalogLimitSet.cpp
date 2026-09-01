@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "AnalogLimitSet.Limits", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 		{ "AnalogLimitSet.Measurements", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 AnalogLimitSet::AnalogLimitSet() {}

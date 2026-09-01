@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,58 +28,58 @@ namespace CIMPP
 		ExcST1A();
 		~ExcST1A() override;
 
-		/** \brief Exciter output current limit reference (Ilr).  Typical Value = 0. Default: nullptr */
+		/** \brief Exciter output current limit reference (Ilr).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU ilr;
 
-		/** \brief Voltage regulator gain (Ka).  Typical Value = 190. Default: nullptr */
+		/** \brief Voltage regulator gain (Ka).  Typical Value = 190. Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 0.05. Default: nullptr */
+		/** \brief Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 0.05. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Excitation control system stabilizer gains (Kf).  Typical Value = 0. Default: nullptr */
+		/** \brief Excitation control system stabilizer gains (Kf).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU kf;
 
-		/** \brief Exciter output current limiter gain (Klr).  Typical Value = 0. Default: nullptr */
+		/** \brief Exciter output current limiter gain (Klr).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU klr;
 
-		/** \brief Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Voltage regulator time constant (Tb).  Typical Value = 10. Default: nullptr */
+		/** \brief Voltage regulator time constant (Tb).  Typical Value = 10. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Voltage regulator time constant (Tb).  Typical Value = 0. Default: nullptr */
+		/** \brief Voltage regulator time constant (Tb).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tb1;
 
-		/** \brief Voltage regulator time constant (Tc).  Typical Value = 1. Default: nullptr */
+		/** \brief Voltage regulator time constant (Tc).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Voltage regulator time constant (Tc).  Typical Value = 0. Default: nullptr */
+		/** \brief Voltage regulator time constant (Tc).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tc1;
 
-		/** \brief Excitation control system stabilizer time constant (Tf).  Typical Value = 1. Default: nullptr */
+		/** \brief Excitation control system stabilizer time constant (Tf).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds tf;
 
-		/** \brief Maximum voltage regulator output (Vamax).  Typical Value = 999. Default: nullptr */
+		/** \brief Maximum voltage regulator output (Vamax).  Typical Value = 999. Default: 0.0 */
 		CIMPP::PU vamax;
 
-		/** \brief Minimum voltage regulator output (Vamin).  Typical Value = -999. Default: nullptr */
+		/** \brief Minimum voltage regulator output (Vamin).  Typical Value = -999. Default: 0.0 */
 		CIMPP::PU vamin;
 
-		/** \brief Maximum voltage regulator input limit (Vimax).  Typical Value = 999. Default: nullptr */
+		/** \brief Maximum voltage regulator input limit (Vimax).  Typical Value = 999. Default: 0.0 */
 		CIMPP::PU vimax;
 
-		/** \brief Minimum voltage regulator input limit (Vimin).  Typical Value = -999. Default: nullptr */
+		/** \brief Minimum voltage regulator input limit (Vimin).  Typical Value = -999. Default: 0.0 */
 		CIMPP::PU vimin;
 
-		/** \brief Maximum voltage regulator outputs (Vrmax).  Typical Value = 7.8. Default: nullptr */
+		/** \brief Maximum voltage regulator outputs (Vrmax).  Typical Value = 7.8. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator outputs (Vrmin).  Typical Value = -6.7. Default: nullptr */
+		/** \brief Minimum voltage regulator outputs (Vrmin).  Typical Value = -6.7. Default: 0.0 */
 		CIMPP::PU vrmin;
 
-		/** \brief Excitation xfmr effective reactance (Xe).  Typical Value = 0.04. Default: nullptr */
+		/** \brief Excitation xfmr effective reactance (Xe).  Typical Value = 0.04. Default: 0.0 */
 		CIMPP::PU xe;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Integer.hpp"
 
 namespace CIMPP
@@ -28,10 +29,10 @@ namespace CIMPP
 		BusNameMarker();
 		~BusNameMarker() override;
 
-		/** \brief The bus name markers that belong to this reporting group. Default: 0 */
+		/** \brief The bus name markers that belong to this reporting group. Default: nullptr */
 		CIMPP::ReportingGroup* ReportingGroup;
 
-		/** \brief The terminals associated with this bus name marker. Default: 0 */
+		/** \brief The terminals associated with this bus name marker. Default: {} */
 		std::list<CIMPP::ACDCTerminal*> Terminal;
 
 		/** \brief Priority of bus name marker for use as topology bus name.  Use 0 for don t care.  Use 1 for highest priority.  Use 2 as priority is less than 1 and so on. Default: 0 */

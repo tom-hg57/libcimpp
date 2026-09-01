@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class EquivalentInjection;
@@ -27,10 +28,10 @@ namespace CIMPP
 		ReactiveCapabilityCurve();
 		~ReactiveCapabilityCurve() override;
 
-		/** \brief The reactive capability curve used by this equivalent injection. Default: 0 */
+		/** \brief The reactive capability curve used by this equivalent injection. Default: {} */
 		std::list<CIMPP::EquivalentInjection*> EquivalentInjection;
 
-		/** \brief The default reactive capability curve for use by a synchronous machine. Default: 0 */
+		/** \brief The default reactive capability curve for use by a synchronous machine. Default: {} */
 		std::list<CIMPP::SynchronousMachine*> InitiallyUsedBySynchronousMachines;
 
 		static const char debugName[];

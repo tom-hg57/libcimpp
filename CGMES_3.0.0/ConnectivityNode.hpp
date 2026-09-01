@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class BoundaryPoint;
@@ -29,16 +30,16 @@ namespace CIMPP
 		ConnectivityNode();
 		~ConnectivityNode() override;
 
-		/** \brief The boundary point associated with the connectivity node. Default: 0 */
+		/** \brief The boundary point associated with the connectivity node. Default: nullptr */
 		CIMPP::BoundaryPoint* BoundaryPoint;
 
-		/** \brief Container of this connectivity node. Default: 0 */
+		/** \brief Container of this connectivity node. Default: nullptr */
 		CIMPP::ConnectivityNodeContainer* ConnectivityNodeContainer;
 
-		/** \brief Terminals interconnected with zero impedance at a this connectivity node. Default: 0 */
+		/** \brief Terminals interconnected with zero impedance at a this connectivity node. Default: {} */
 		std::list<CIMPP::Terminal*> Terminals;
 
-		/** \brief The topological node to which this connectivity node is assigned.  May depend on the current state of switches in the network. Default: 0 */
+		/** \brief The topological node to which this connectivity node is assigned.  May depend on the current state of switches in the network. Default: nullptr */
 		CIMPP::TopologicalNode* TopologicalNode;
 
 		static const char debugName[];

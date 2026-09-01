@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class EnergySource;
@@ -26,7 +27,7 @@ namespace CIMPP
 		EnergySchedulingType();
 		~EnergySchedulingType() override;
 
-		/** \brief Energy Source of a particular Energy Scheduling Type. Default: 0 */
+		/** \brief Energy Source of a particular Energy Scheduling Type. Default: {} */
 		std::list<CIMPP::EnergySource*> EnergySource;
 
 		static const char debugName[];

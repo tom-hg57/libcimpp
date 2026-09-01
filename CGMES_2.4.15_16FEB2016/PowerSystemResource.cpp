@@ -20,9 +20,9 @@ static const CimClassDetails& getCimClassDetails()
 		PowerSystemResource(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
+			CGMESProfile::EQ,
 			CGMESProfile::DY,
 			CGMESProfile::EQ_BD,
-			CGMESProfile::EQ,
 			CGMESProfile::GL,
 			CGMESProfile::SSH,
 		},
@@ -39,7 +39,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PowerSystemResource.Location", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::GL, } } },
 		{ "PowerSystemResource.Measurements", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PowerSystemResource::PowerSystemResource() : Location(nullptr) {}

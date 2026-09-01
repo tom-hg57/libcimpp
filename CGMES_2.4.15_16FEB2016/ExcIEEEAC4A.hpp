@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,31 +28,31 @@ namespace CIMPP
 		ExcIEEEAC4A();
 		~ExcIEEEAC4A() override;
 
-		/** \brief Voltage regulator gain (K).  Typical Value = 200. Default: nullptr */
+		/** \brief Voltage regulator gain (K).  Typical Value = 200. Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Rectifier loading factor proportional to commutating reactance (K).  Typical Value = 0. Default: nullptr */
+		/** \brief Rectifier loading factor proportional to commutating reactance (K).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Voltage regulator time constant (T).  Typical Value = 0.015. Default: nullptr */
+		/** \brief Voltage regulator time constant (T).  Typical Value = 0.015. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Voltage regulator time constant (T).  Typical Value = 10. Default: nullptr */
+		/** \brief Voltage regulator time constant (T).  Typical Value = 10. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Voltage regulator time constant (T).  Typical Value = 1. Default: nullptr */
+		/** \brief Voltage regulator time constant (T).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Maximum voltage regulator input limit (V).  Typical Value = 10. Default: nullptr */
+		/** \brief Maximum voltage regulator input limit (V).  Typical Value = 10. Default: 0.0 */
 		CIMPP::PU vimax;
 
-		/** \brief Minimum voltage regulator input limit (V).  Typical Value = -10. Default: nullptr */
+		/** \brief Minimum voltage regulator input limit (V).  Typical Value = -10. Default: 0.0 */
 		CIMPP::PU vimin;
 
-		/** \brief Maximum voltage regulator output (V).  Typical Value = 5.64. Default: nullptr */
+		/** \brief Maximum voltage regulator output (V).  Typical Value = 5.64. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator output (V).  Typical Value = -4.53. Default: nullptr */
+		/** \brief Minimum voltage regulator output (V).  Typical Value = -4.53. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

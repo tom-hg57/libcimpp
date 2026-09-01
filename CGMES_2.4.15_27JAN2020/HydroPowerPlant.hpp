@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "HydroPlantStorageKind.hpp"
 
 namespace CIMPP
@@ -28,10 +29,10 @@ namespace CIMPP
 		HydroPowerPlant();
 		~HydroPowerPlant() override;
 
-		/** \brief The hydro generating unit belongs to a hydro power plant. Default: 0 */
+		/** \brief The hydro generating unit belongs to a hydro power plant. Default: {} */
 		std::list<CIMPP::HydroGeneratingUnit*> HydroGeneratingUnits;
 
-		/** \brief The hydro pump may be a member of a pumped storage plant or a pump for distributing water. Default: 0 */
+		/** \brief The hydro pump may be a member of a pumped storage plant or a pump for distributing water. Default: {} */
 		std::list<CIMPP::HydroPump*> HydroPumps;
 
 		/** \brief The type of hydro power plant water storage. Default: 0 */

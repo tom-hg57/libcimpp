@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class VoltageLevel;
@@ -26,7 +27,7 @@ namespace CIMPP
 		Bay();
 		~Bay() override;
 
-		/** \brief The voltage level containing this bay. Default: 0 */
+		/** \brief The voltage level containing this bay. Default: nullptr */
 		CIMPP::VoltageLevel* VoltageLevel;
 
 		static const char debugName[];

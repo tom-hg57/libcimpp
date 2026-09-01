@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Area.hpp"
 #include "Boolean.hpp"
 #include "Frequency.hpp"
@@ -33,40 +34,40 @@ namespace CIMPP
 		GovHydroPelton();
 		~GovHydroPelton() override;
 
-		/** \brief Area of the surge tank (A). Unit = m. Typical Value = 30. Default: nullptr */
+		/** \brief Area of the surge tank (A). Unit = m. Typical Value = 30. Default: 0.0 */
 		CIMPP::Area av0;
 
-		/** \brief Area of the compensation tank (A). Unit = m. Typical Value = 700. Default: nullptr */
+		/** \brief Area of the compensation tank (A). Unit = m. Typical Value = 700. Default: 0.0 */
 		CIMPP::Area av1;
 
-		/** \brief Droop (bp).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Droop (bp).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::PU bp;
 
-		/** \brief Intentional dead-band width (DB1).  Unit = Hz.  Typical Value = 0. Default: nullptr */
+		/** \brief Intentional dead-band width (DB1).  Unit = Hz.  Typical Value = 0. Default: 0.0 */
 		CIMPP::Frequency db1;
 
-		/** \brief Intentional dead-band width of valve opening error (DB2). Unit = Hz.  Typical Value = 0.01. Default: nullptr */
+		/** \brief Intentional dead-band width of valve opening error (DB2). Unit = Hz.  Typical Value = 0.01. Default: 0.0 */
 		CIMPP::Frequency db2;
 
-		/** \brief Head of compensation chamber water level with respect to the level of penstock (H).  Unit = m. Typical Value = 4. Default: nullptr */
+		/** \brief Head of compensation chamber water level with respect to the level of penstock (H).  Unit = m. Typical Value = 4. Default: 0.0 */
 		CIMPP::Length h1;
 
-		/** \brief Head of surge tank water level with respect to the level of penstock (H).  Unit = m. Typical Value = 40. Default: nullptr */
+		/** \brief Head of surge tank water level with respect to the level of penstock (H).  Unit = m. Typical Value = 40. Default: 0.0 */
 		CIMPP::Length h2;
 
-		/** \brief Rated hydraulic head (H).  Unit = m. Typical Value = 250. Default: nullptr */
+		/** \brief Rated hydraulic head (H).  Unit = m. Typical Value = 250. Default: 0.0 */
 		CIMPP::Length hn;
 
-		/** \brief Penstock loss coefficient (due to friction) (Kc).  Typical Value = 0.025. Default: nullptr */
+		/** \brief Penstock loss coefficient (due to friction) (Kc).  Typical Value = 0.025. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Water tunnel and surge chamber loss coefficient (due to friction) (Kg).  Typical Value = -0.025. Default: nullptr */
+		/** \brief Water tunnel and surge chamber loss coefficient (due to friction) (Kg).  Typical Value = -0.025. Default: 0.0 */
 		CIMPP::PU kg;
 
-		/** \brief No-load turbine flow at nominal head (Qc0).  Typical Value = 0.05. Default: nullptr */
+		/** \brief No-load turbine flow at nominal head (Qc0).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::PU qc0;
 
-		/** \brief Rated flow (Q). Unit = m/s. Typical Value = 40. Default: nullptr */
+		/** \brief Rated flow (Q). Unit = m/s. Typical Value = 40. Default: 0.0 */
 		CIMPP::VolumeFlowRate qn;
 
 		/** \brief Simplified Pelton model simulation (Sflag). true = enable of simplified Pelton model simulation false = enable of complete Pelton model simulation (non linear gain). Typical Value = false. Default: false */
@@ -75,46 +76,46 @@ namespace CIMPP
 		/** \brief Static compensating characteristic (Cflag). true = enable of static compensating characteristic  false = inhibit of static compensating characteristic. Typical Value = false. Default: false */
 		CIMPP::Boolean staticCompensating;
 
-		/** \brief Derivative gain (accelerometer time constant) (Ta).  Typical Value = 3. Default: nullptr */
+		/** \brief Derivative gain (accelerometer time constant) (Ta).  Typical Value = 3. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Gate servo time constant (Ts).  Typical Value = 0.15. Default: nullptr */
+		/** \brief Gate servo time constant (Ts).  Typical Value = 0.15. Default: 0.0 */
 		CIMPP::Seconds ts;
 
-		/** \brief Servomotor integrator time constant (TV).  Typical Value = 0.3. Default: nullptr */
+		/** \brief Servomotor integrator time constant (TV).  Typical Value = 0.3. Default: 0.0 */
 		CIMPP::Seconds tv;
 
-		/** \brief Water inertia time constant (Twnc).  Typical Value = 1. Default: nullptr */
+		/** \brief Water inertia time constant (Twnc).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds twnc;
 
-		/** \brief Water tunnel and surge chamber inertia time constant (Twng). Typical Value = 3. Default: nullptr */
+		/** \brief Water tunnel and surge chamber inertia time constant (Twng). Typical Value = 3. Default: 0.0 */
 		CIMPP::Seconds twng;
 
-		/** \brief Electronic integrator time constant (Tx).  Typical Value = 0.5. Default: nullptr */
+		/** \brief Electronic integrator time constant (Tx).  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Seconds tx;
 
-		/** \brief Maximum gate opening velocity (Va).  Unit = PU/sec.  Typical Value = 0.016. Default: nullptr */
+		/** \brief Maximum gate opening velocity (Va).  Unit = PU/sec.  Typical Value = 0.016. Default: 0.0 */
 		CIMPP::Simple_Float va;
 
-		/** \brief Maximum gate opening (ValvMax).  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum gate opening (ValvMax).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU valvmax;
 
-		/** \brief Minimum gate opening (ValvMin).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum gate opening (ValvMin).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU valvmin;
 
-		/** \brief Maximum servomotor valve opening velocity (Vav).  Typical Value = 0.017. Default: nullptr */
+		/** \brief Maximum servomotor valve opening velocity (Vav).  Typical Value = 0.017. Default: 0.0 */
 		CIMPP::PU vav;
 
-		/** \brief Maximum gate closing velocity (Vc).  Unit = PU/sec.  Typical Value = -0.016. Default: nullptr */
+		/** \brief Maximum gate closing velocity (Vc).  Unit = PU/sec.  Typical Value = -0.016. Default: 0.0 */
 		CIMPP::Simple_Float vc;
 
-		/** \brief Maximum servomotor valve closing velocity (Vcv).  Typical Value = -0.017. Default: nullptr */
+		/** \brief Maximum servomotor valve closing velocity (Vcv).  Typical Value = -0.017. Default: 0.0 */
 		CIMPP::PU vcv;
 
 		/** \brief Water tunnel and surge chamber simulation (Tflag). true = enable of water tunnel and surge chamber simulation false = inhibit of water tunnel and surge chamber simulation. Typical Value = false. Default: false */
 		CIMPP::Boolean waterTunnelSurgeChamberSimulation;
 
-		/** \brief Head of upper water level with respect to the level of penstock (Zsfc).  Unit = m. Typical Value = 25. Default: nullptr */
+		/** \brief Head of upper water level with respect to the level of penstock (Zsfc).  Unit = m. Typical Value = 25. Default: 0.0 */
 		CIMPP::Length zsfc;
 
 		static const char debugName[];

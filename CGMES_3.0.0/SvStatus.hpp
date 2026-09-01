@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		SvStatus();
 		~SvStatus() override;
 
-		/** \brief The conducting equipment associated with the status state variable. Default: 0 */
+		/** \brief The conducting equipment associated with the status state variable. Default: nullptr */
 		CIMPP::ConductingEquipment* ConductingEquipment;
 
 		/** \brief The in service status as a result of topology processing.  It indicates if the equipment is considered as energized by the power flow. It reflects if the equipment is connected within a solvable island.  It does not necessarily reflect whether or not the island was solved by the power flow. Default: false */

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class Equipment;
@@ -26,7 +27,7 @@ namespace CIMPP
 		EquipmentContainer();
 		~EquipmentContainer() override;
 
-		/** \brief Contained equipment. Default: 0 */
+		/** \brief Contained equipment. Default: {} */
 		std::list<CIMPP::Equipment*> Equipments;
 
 		static const char debugName[];

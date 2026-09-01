@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "DateTime.hpp"
 #include "Seconds.hpp"
 
@@ -28,13 +29,13 @@ namespace CIMPP
 		RegularIntervalSchedule();
 		~RegularIntervalSchedule() override;
 
-		/** \brief The regular interval time point data values that define this schedule. Default: 0 */
+		/** \brief The regular interval time point data values that define this schedule. Default: {} */
 		std::list<CIMPP::RegularTimePoint*> TimePoints;
 
-		/** \brief The time for the last time point. Default: '' */
+		/** \brief The time for the last time point. Default: "" */
 		CIMPP::DateTime endTime;
 
-		/** \brief The time between each pair of subsequent regular time points in sequence order. Default: nullptr */
+		/** \brief The time between each pair of subsequent regular time points in sequence order. Default: 0.0 */
 		CIMPP::Seconds timeStep;
 
 		static const char debugName[];

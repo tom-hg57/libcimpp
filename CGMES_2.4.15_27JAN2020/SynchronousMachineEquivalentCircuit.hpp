@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 
 namespace CIMPP
@@ -26,37 +27,37 @@ namespace CIMPP
 		SynchronousMachineEquivalentCircuit();
 		~SynchronousMachineEquivalentCircuit() override;
 
-		/** \brief D-axis damper 1 winding resistance. Default: nullptr */
+		/** \brief D-axis damper 1 winding resistance. Default: 0.0 */
 		CIMPP::PU r1d;
 
-		/** \brief Q-axis damper 1 winding resistance. Default: nullptr */
+		/** \brief Q-axis damper 1 winding resistance. Default: 0.0 */
 		CIMPP::PU r1q;
 
-		/** \brief Q-axis damper 2 winding resistance. Default: nullptr */
+		/** \brief Q-axis damper 2 winding resistance. Default: 0.0 */
 		CIMPP::PU r2q;
 
-		/** \brief Field winding resistance. Default: nullptr */
+		/** \brief Field winding resistance. Default: 0.0 */
 		CIMPP::PU rfd;
 
-		/** \brief D-axis damper 1 winding leakage reactance. Default: nullptr */
+		/** \brief D-axis damper 1 winding leakage reactance. Default: 0.0 */
 		CIMPP::PU x1d;
 
-		/** \brief Q-axis damper 1 winding leakage reactance. Default: nullptr */
+		/** \brief Q-axis damper 1 winding leakage reactance. Default: 0.0 */
 		CIMPP::PU x1q;
 
-		/** \brief Q-axis damper 2 winding leakage reactance. Default: nullptr */
+		/** \brief Q-axis damper 2 winding leakage reactance. Default: 0.0 */
 		CIMPP::PU x2q;
 
-		/** \brief D-axis mutual reactance. Default: nullptr */
+		/** \brief D-axis mutual reactance. Default: 0.0 */
 		CIMPP::PU xad;
 
-		/** \brief Q-axis mutual reactance. Default: nullptr */
+		/** \brief Q-axis mutual reactance. Default: 0.0 */
 		CIMPP::PU xaq;
 
-		/** \brief Differential mutual (`Canay`) reactance. Default: nullptr */
+		/** \brief Differential mutual (`Canay`) reactance. Default: 0.0 */
 		CIMPP::PU xf1d;
 
-		/** \brief Field winding leakage reactance. Default: nullptr */
+		/** \brief Field winding leakage reactance. Default: 0.0 */
 		CIMPP::PU xfd;
 
 		static const char debugName[];

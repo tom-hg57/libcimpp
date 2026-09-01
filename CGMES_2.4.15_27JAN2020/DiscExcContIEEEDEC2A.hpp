@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,19 +28,19 @@ namespace CIMPP
 		DiscExcContIEEEDEC2A();
 		~DiscExcContIEEEDEC2A() override;
 
-		/** \brief Discontinuous controller time constant (). Default: nullptr */
+		/** \brief Discontinuous controller time constant (). Default: 0.0 */
 		CIMPP::Seconds td1;
 
-		/** \brief Discontinuous controller washout time constant (). Default: nullptr */
+		/** \brief Discontinuous controller washout time constant (). Default: 0.0 */
 		CIMPP::Seconds td2;
 
-		/** \brief Limiter (). Default: nullptr */
+		/** \brief Limiter (). Default: 0.0 */
 		CIMPP::PU vdmax;
 
-		/** \brief Limiter (). Default: nullptr */
+		/** \brief Limiter (). Default: 0.0 */
 		CIMPP::PU vdmin;
 
-		/** \brief Discontinuous controller input reference (). Default: nullptr */
+		/** \brief Discontinuous controller input reference (). Default: 0.0 */
 		CIMPP::PU vk;
 
 		static const char debugName[];

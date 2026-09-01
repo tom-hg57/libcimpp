@@ -34,7 +34,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PowerElectronicsUnit.maxP", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "PowerElectronicsUnit.minP", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PowerElectronicsUnit::PowerElectronicsUnit() : PowerElectronicsConnection(nullptr) {}

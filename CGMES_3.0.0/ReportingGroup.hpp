@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class BusNameMarker;
@@ -27,10 +28,10 @@ namespace CIMPP
 		ReportingGroup();
 		~ReportingGroup() override;
 
-		/** \brief The bus name markers that belong to this reporting group. Default: 0 */
+		/** \brief The bus name markers that belong to this reporting group. Default: {} */
 		std::list<CIMPP::BusNameMarker*> BusNameMarker;
 
-		/** \brief The topological nodes that belong to the reporting group. Default: 0 */
+		/** \brief The topological nodes that belong to the reporting group. Default: {} */
 		std::list<CIMPP::TopologicalNode*> TopologicalNode;
 
 		static const char debugName[];

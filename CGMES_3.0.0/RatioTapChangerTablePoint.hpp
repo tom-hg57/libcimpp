@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class RatioTapChangerTable;
@@ -26,7 +27,7 @@ namespace CIMPP
 		RatioTapChangerTablePoint();
 		~RatioTapChangerTablePoint() override;
 
-		/** \brief Table of this point. Default: 0 */
+		/** \brief Table of this point. Default: nullptr */
 		CIMPP::RatioTapChangerTable* RatioTapChangerTable;
 
 		static const char debugName[];

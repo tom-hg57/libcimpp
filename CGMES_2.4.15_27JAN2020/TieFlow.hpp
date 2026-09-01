@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 
 namespace CIMPP
@@ -28,10 +29,10 @@ namespace CIMPP
 		TieFlow();
 		~TieFlow() override;
 
-		/** \brief The control area of the tie flows. Default: 0 */
+		/** \brief The control area of the tie flows. Default: nullptr */
 		CIMPP::ControlArea* ControlArea;
 
-		/** \brief The terminal to which this tie flow belongs. Default: 0 */
+		/** \brief The terminal to which this tie flow belongs. Default: nullptr */
 		CIMPP::Terminal* Terminal;
 
 		/** \brief True if the flow into the terminal (load convention) is also flow into the control area.  For example, this attribute should be true if using the tie line terminal further away from the control area. For example to represent a tie to a shunt component (like a load or generator) in another area, this is the near end of a branch and this attribute would be specified as false. Default: false */

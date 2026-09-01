@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "Boolean.hpp"
 #include "CurrentFlow.hpp"
@@ -30,19 +31,19 @@ namespace CIMPP
 		PowerTransformer();
 		~PowerTransformer() override;
 
-		/** \brief The ends of this power transformer. Default: 0 */
+		/** \brief The ends of this power transformer. Default: {} */
 		std::list<CIMPP::PowerTransformerEnd*> PowerTransformerEnd;
 
-		/** \brief The highest operating current (Ib in IEC 60909-0) before short circuit (depends on network configuration and relevant reliability philosophy). It is used for calculation of the impedance correction factor KT defined in IEC 60909-0. Default: nullptr */
+		/** \brief The highest operating current (Ib in IEC 60909-0) before short circuit (depends on network configuration and relevant reliability philosophy). It is used for calculation of the impedance correction factor KT defined in IEC 60909-0. Default: 0.0 */
 		CIMPP::CurrentFlow beforeShCircuitHighestOperatingCurrent;
 
-		/** \brief The highest operating voltage (Ub in IEC 60909-0) before short circuit. It is used for calculation of the impedance correction factor KT defined in IEC 60909-0. This is worst case voltage on the low side winding (3.7.1 of IEC 60909:2001). Used to define operating conditions. Default: nullptr */
+		/** \brief The highest operating voltage (Ub in IEC 60909-0) before short circuit. It is used for calculation of the impedance correction factor KT defined in IEC 60909-0. This is worst case voltage on the low side winding (3.7.1 of IEC 60909:2001). Used to define operating conditions. Default: 0.0 */
 		CIMPP::Voltage beforeShCircuitHighestOperatingVoltage;
 
-		/** \brief The angle of power factor before short circuit (phib in IEC 60909-0). It is used for calculation of the impedance correction factor KT defined in IEC 60909-0. This is the worst case power factor. Used to define operating conditions. Default: nullptr */
+		/** \brief The angle of power factor before short circuit (phib in IEC 60909-0). It is used for calculation of the impedance correction factor KT defined in IEC 60909-0. This is the worst case power factor. Used to define operating conditions. Default: 0.0 */
 		CIMPP::AngleDegrees beforeShortCircuitAnglePf;
 
-		/** \brief The minimum operating voltage (uQmin in IEC 60909-0) at the high voltage side (Q side) of the unit transformer of the power station unit. A value well established from long-term operating experience of the system. It is used for calculation of the impedance correction factor KG defined in IEC 60909-0. Default: nullptr */
+		/** \brief The minimum operating voltage (uQmin in IEC 60909-0) at the high voltage side (Q side) of the unit transformer of the power station unit. A value well established from long-term operating experience of the system. It is used for calculation of the impedance correction factor KG defined in IEC 60909-0. Default: 0.0 */
 		CIMPP::Voltage highSideMinOperatingU;
 
 		/** \brief Indicates whether the machine is part of a power station unit. Used for short circuit data exchange according to IEC 60909.  It has an impact on how the correction factors are calculated for transformers, since the transformer is not necessarily part of a synchronous machine and generating unit. It is not always possible to derive this information from the model. This is why the attribute is necessary. Default: false */

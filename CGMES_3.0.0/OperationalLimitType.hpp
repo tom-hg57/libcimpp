@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "LimitKind.hpp"
 #include "OperationalLimitDirectionKind.hpp"
@@ -30,10 +31,10 @@ namespace CIMPP
 		OperationalLimitType();
 		~OperationalLimitType() override;
 
-		/** \brief The operational limits associated with this type of limit. Default: 0 */
+		/** \brief The operational limits associated with this type of limit. Default: {} */
 		std::list<CIMPP::OperationalLimit*> OperationalLimit;
 
-		/** \brief The nominal acceptable duration of the limit. Limits are commonly expressed in terms of the time limit for which the limit is normally acceptable. The actual acceptable duration of a specific limit may depend on other local factors such as temperature or wind speed. The attribute has meaning only if the flag isInfiniteDuration is set to false, hence it shall not be exchanged when isInfiniteDuration is set to true. Default: nullptr */
+		/** \brief The nominal acceptable duration of the limit. Limits are commonly expressed in terms of the time limit for which the limit is normally acceptable. The actual acceptable duration of a specific limit may depend on other local factors such as temperature or wind speed. The attribute has meaning only if the flag isInfiniteDuration is set to false, hence it shall not be exchanged when isInfiniteDuration is set to true. Default: 0.0 */
 		CIMPP::Seconds acceptableDuration;
 
 		/** \brief The direction of the limit. Default: 0 */

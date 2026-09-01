@@ -44,7 +44,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "RegulatingControl.targetValue", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SSH, } } },
 		{ "RegulatingControl.targetValueUnitMultiplier", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SSH, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 RegulatingControl::RegulatingControl() : Terminal(nullptr) {}

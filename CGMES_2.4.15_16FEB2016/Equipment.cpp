@@ -19,9 +19,9 @@ static const CimClassDetails& getCimClassDetails()
 		Equipment(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
+			CGMESProfile::EQ,
 			CGMESProfile::DY,
 			CGMESProfile::EQ_BD,
-			CGMESProfile::EQ,
 			CGMESProfile::SSH,
 		},
 		CGMESProfile::EQ
@@ -33,11 +33,11 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 {
 	static const std::map<std::string, AttrDetails> ClassAttrDetailsMap =
 	{
-		{ "Equipment.EquipmentContainer", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ_BD, CGMESProfile::EQ, } } },
+		{ "Equipment.EquipmentContainer", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, CGMESProfile::EQ_BD, } } },
 		{ "Equipment.OperationalLimitSet", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "Equipment.aggregate", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Equipment::Equipment() : EquipmentContainer(nullptr) {}

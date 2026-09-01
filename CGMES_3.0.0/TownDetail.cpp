@@ -34,7 +34,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "TownDetail.section", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::GL, } } },
 		{ "TownDetail.stateOrProvince", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::GL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 TownDetail::TownDetail() {}

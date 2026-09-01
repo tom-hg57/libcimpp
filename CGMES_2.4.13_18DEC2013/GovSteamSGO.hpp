@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,40 +29,40 @@ namespace CIMPP
 		GovSteamSGO();
 		~GovSteamSGO() override;
 
-		/** \brief One/per unit regulation (K1). Default: nullptr */
+		/** \brief One/per unit regulation (K1). Default: 0.0 */
 		CIMPP::PU k1;
 
-		/** \brief Fraction (K2). Default: nullptr */
+		/** \brief Fraction (K2). Default: 0.0 */
 		CIMPP::PU k2;
 
-		/** \brief Fraction (K3). Default: nullptr */
+		/** \brief Fraction (K3). Default: 0.0 */
 		CIMPP::PU k3;
 
-		/** \brief Base for power values (MWbase) (&gt;0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Upper power limit (Pmax). Default: nullptr */
+		/** \brief Upper power limit (Pmax). Default: 0.0 */
 		CIMPP::PU pmax;
 
-		/** \brief Lower power limit (Pmin). Default: nullptr */
+		/** \brief Lower power limit (Pmin). Default: 0.0 */
 		CIMPP::Seconds pmin;
 
-		/** \brief Controller lag (T1). Default: nullptr */
+		/** \brief Controller lag (T1). Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Controller lead compensation (T2). Default: nullptr */
+		/** \brief Controller lead compensation (T2). Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Governor lag (T3) (&gt;0). Default: nullptr */
+		/** \brief Governor lag (T3) (>0). Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Delay due to steam inlet volumes associated with steam chest and inlet piping (T4). Default: nullptr */
+		/** \brief Delay due to steam inlet volumes associated with steam chest and inlet piping (T4). Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Reheater delay including hot and cold leads (T5). Default: nullptr */
+		/** \brief Reheater delay including hot and cold leads (T5). Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Delay due to IP-LP turbine, crossover pipes and LP end hoods (T6). Default: nullptr */
+		/** \brief Delay due to IP-LP turbine, crossover pipes and LP end hoods (T6). Default: 0.0 */
 		CIMPP::Seconds t6;
 
 		static const char debugName[];

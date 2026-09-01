@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,37 +28,37 @@ namespace CIMPP
 		PssSB4();
 		~PssSB4() override;
 
-		/** \brief Gain (&lt;i&gt;Kx&lt;/i&gt;).  Typical value = 2,7. Default: nullptr */
+		/** \brief Gain (<i>Kx</i>).  Typical value = 2,7. Default: 0.0 */
 		CIMPP::PU kx;
 
-		/** \brief Time constant (&lt;i&gt;Ta&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,37. Default: nullptr */
+		/** \brief Time constant (<i>Ta</i>) (&gt;= 0).  Typical value = 0,37. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Time constant (&lt;i&gt;Tb&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,37. Default: nullptr */
+		/** \brief Time constant (<i>Tb</i>) (&gt;= 0).  Typical value = 0,37. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Time constant (&lt;i&gt;Tc&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,035. Default: nullptr */
+		/** \brief Time constant (<i>Tc</i>) (&gt;= 0).  Typical value = 0,035. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Time constant (&lt;i&gt;Td&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,0. Default: nullptr */
+		/** \brief Time constant (<i>Td</i>) (&gt;= 0).  Typical value = 0,0. Default: 0.0 */
 		CIMPP::Seconds td;
 
-		/** \brief Time constant (&lt;i&gt;Te&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,0169. Default: nullptr */
+		/** \brief Time constant (<i>Te</i>) (&gt;= 0).  Typical value = 0,0169. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Time constant (&lt;i&gt;Tt&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,18. Default: nullptr */
+		/** \brief Time constant (<i>Tt</i>) (&gt;= 0).  Typical value = 0,18. Default: 0.0 */
 		CIMPP::Seconds tt;
 
-		/** \brief Reset time constant (&lt;i&gt;Tx1&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,035. Default: nullptr */
+		/** \brief Reset time constant (<i>Tx1</i>) (&gt;= 0).  Typical value = 0,035. Default: 0.0 */
 		CIMPP::Seconds tx1;
 
-		/** \brief Time constant (&lt;i&gt;Tx2&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 5,0. Default: nullptr */
+		/** \brief Time constant (<i>Tx2</i>) (&gt;= 0).  Typical value = 5,0. Default: 0.0 */
 		CIMPP::Seconds tx2;
 
-		/** \brief Limiter (&lt;i&gt;Vsmax&lt;/i&gt;) (&amp;gt; PssSB4.vsmin).  Typical value = 0,062. Default: nullptr */
+		/** \brief Limiter (<i>Vsmax</i>) (&gt; PssSB4.vsmin).  Typical value = 0,062. Default: 0.0 */
 		CIMPP::PU vsmax;
 
-		/** \brief Limiter (&lt;i&gt;Vsmin&lt;/i&gt;) (&amp;lt; PssSB4.vsmax).  Typical value = -0,062. Default: nullptr */
+		/** \brief Limiter (<i>Vsmin</i>) (&lt; PssSB4.vsmax).  Typical value = -0,062. Default: 0.0 */
 		CIMPP::PU vsmin;
 
 		static const char debugName[];

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class NonConformLoad;
@@ -27,10 +28,10 @@ namespace CIMPP
 		NonConformLoadGroup();
 		~NonConformLoadGroup() override;
 
-		/** \brief Group of this ConformLoad. Default: 0 */
+		/** \brief Group of this ConformLoad. Default: {} */
 		std::list<CIMPP::NonConformLoad*> EnergyConsumers;
 
-		/** \brief The NonConformLoadSchedules in the NonConformLoadGroup. Default: 0 */
+		/** \brief The NonConformLoadSchedules in the NonConformLoadGroup. Default: {} */
 		std::list<CIMPP::NonConformLoadSchedule*> NonConformLoadSchedules;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Reactance.hpp"
 #include "ReactivePower.hpp"
 #include "SVCControlMode.hpp"
@@ -30,22 +31,22 @@ namespace CIMPP
 		StaticVarCompensator();
 		~StaticVarCompensator() override;
 
-		/** \brief Maximum available capacitive reactance. Default: nullptr */
+		/** \brief Maximum available capacitive reactance. Default: 0.0 */
 		CIMPP::Reactance capacitiveRating;
 
-		/** \brief Maximum available inductive reactance. Default: nullptr */
+		/** \brief Maximum available inductive reactance. Default: 0.0 */
 		CIMPP::Reactance inductiveRating;
 
-		/** \brief Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: nullptr */
+		/** \brief Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: 0.0 */
 		CIMPP::ReactivePower q;
 
 		/** \brief SVC control mode. Default: 0 */
 		CIMPP::SVCControlMode sVCControlMode;
 
-		/** \brief The characteristics slope of an SVC defines how the reactive power output changes in proportion to the difference between the regulated bus voltage and the voltage setpoint. Default: nullptr */
+		/** \brief The characteristics slope of an SVC defines how the reactive power output changes in proportion to the difference between the regulated bus voltage and the voltage setpoint. Default: 0.0 */
 		CIMPP::VoltagePerReactivePower slope;
 
-		/** \brief The reactive power output of the SVC is proportional to the difference between the voltage at the regulated bus and the voltage setpoint.  When the regulated bus voltage is equal to the voltage setpoint, the reactive power output is zero. Default: nullptr */
+		/** \brief The reactive power output of the SVC is proportional to the difference between the voltage at the regulated bus and the voltage setpoint.  When the regulated bus voltage is equal to the voltage setpoint, the reactive power output is zero. Default: 0.0 */
 		CIMPP::Voltage voltageSetPoint;
 
 		static const char debugName[];

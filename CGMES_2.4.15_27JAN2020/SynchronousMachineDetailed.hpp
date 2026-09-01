@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "CurrentFlow.hpp"
 #include "IfdBaseKind.hpp"
 #include "Simple_Float.hpp"
@@ -28,19 +29,19 @@ namespace CIMPP
 		SynchronousMachineDetailed();
 		~SynchronousMachineDetailed() override;
 
-		/** \brief Ratio of Efd bases of exciter and generator models.  Typical Value = 1. Default: nullptr */
+		/** \brief Ratio of Efd bases of exciter and generator models.  Typical Value = 1. Default: 0.0 */
 		CIMPP::Simple_Float efdBaseRatio;
 
 		/** \brief Excitation base system mode.  Typical Value = ifag. Default: 0 */
 		CIMPP::IfdBaseKind ifdBaseType;
 
-		/** \brief Ifd base current if .ifdBaseType = other. Not needed if .ifdBaseType not = other.   Unit = A.  Typical Value = 0. Default: nullptr */
+		/** \brief Ifd base current if .ifdBaseType = other. Not needed if .ifdBaseType not = other.   Unit = A.  Typical Value = 0. Default: 0.0 */
 		CIMPP::CurrentFlow ifdBaseValue;
 
-		/** \brief Q-axis saturation factor at 120% of rated terminal voltage (S12q) (&gt;=S1q).  Typical Value = 0.12. Default: nullptr */
+		/** \brief Q-axis saturation factor at 120% of rated terminal voltage (S12q) (>=S1q).  Typical Value = 0.12. Default: 0.0 */
 		CIMPP::Simple_Float saturationFactor120QAxis;
 
-		/** \brief Q-axis saturation factor at rated terminal voltage (S1q) (&gt;= 0). Typical Value = 0.02. Default: nullptr */
+		/** \brief Q-axis saturation factor at rated terminal voltage (S1q) (>= 0). Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Simple_Float saturationFactorQAxis;
 
 		static const char debugName[];

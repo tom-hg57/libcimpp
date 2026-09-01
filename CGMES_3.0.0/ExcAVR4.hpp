@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Float.hpp"
 #include "PU.hpp"
@@ -29,46 +30,46 @@ namespace CIMPP
 		ExcAVR4();
 		~ExcAVR4() override;
 
-		/** \brief AVR output voltage dependency selector (&lt;i&gt;I&lt;/i&gt;&lt;i&gt;&lt;sub&gt;MUL&lt;/sub&gt;&lt;/i&gt;). true = selector is connected false = selector is not connected. Typical value = true. Default: false */
+		/** \brief AVR output voltage dependency selector (<i>I</i><i><sub>MUL</sub></i>). true = selector is connected false = selector is not connected. Typical value = true. Default: false */
 		CIMPP::Boolean imul;
 
-		/** \brief AVR gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;A&lt;/sub&gt;&lt;/i&gt;).  Typical value = 300. Default: 0.0 */
+		/** \brief AVR gain (<i>K</i><i><sub>A</sub></i>).  Typical value = 300. Default: 0.0 */
 		CIMPP::Float ka;
 
-		/** \brief Exciter gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;E&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;)&lt;/i&gt;.  Typical value = 1. Default: 0.0 */
+		/** \brief Exciter gain (<i>K</i><i><sub>E</sub></i><i>)</i>.  Typical value = 1. Default: 0.0 */
 		CIMPP::Float ke;
 
-		/** \brief Exciter internal reactance (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;IF&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0. Default: 0.0 */
+		/** \brief Exciter internal reactance (<i>K</i><i><sub>IF</sub></i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::Float kif;
 
-		/** \brief AVR time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 4,8. Default: nullptr */
+		/** \brief AVR time constant (<i>T</i><i><sub>1</sub></i>) (&gt;= 0).  Typical value = 4,8. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Exciter current feedback time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1IF&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 60. Default: nullptr */
+		/** \brief Exciter current feedback time constant (<i>T</i><i><sub>1IF</sub></i>) (&gt;= 0).  Typical value = 60. Default: 0.0 */
 		CIMPP::Seconds t1if;
 
-		/** \brief AVR time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1,5. Default: nullptr */
+		/** \brief AVR time constant (<i>T</i><i><sub>2</sub></i>) (&gt;= 0).  Typical value = 1,5. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief AVR time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief AVR time constant (<i>T</i><i><sub>3</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief AVR time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;4&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief AVR time constant (<i>T</i><i><sub>4</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Exciter current feedback time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;IF&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Exciter current feedback time constant (<i>T</i><i><sub>IF</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tif;
 
-		/** \brief Minimum exciter output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;FMN&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Minimum exciter output (<i>V</i><i><sub>FMN</sub></i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU vfmn;
 
-		/** \brief Maximum exciter output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;FMX&lt;/sub&gt;&lt;/i&gt;).  Typical value = 5. Default: nullptr */
+		/** \brief Maximum exciter output (<i>V</i><i><sub>FMX</sub></i>).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU vfmx;
 
-		/** \brief Minimum AVR output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RMN&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Minimum AVR output (<i>V</i><i><sub>RMN</sub></i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU vrmn;
 
-		/** \brief Maximum AVR output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RMX&lt;/sub&gt;&lt;/i&gt;).  Typical value = 5. Default: nullptr */
+		/** \brief Maximum AVR output (<i>V</i><i><sub>RMX</sub></i>).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU vrmx;
 
 		static const char debugName[];

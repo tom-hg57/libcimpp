@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "Boolean.hpp"
 #include "Integer.hpp"
@@ -34,19 +35,19 @@ namespace CIMPP
 		DiagramObject();
 		~DiagramObject() override;
 
-		/** \brief A diagram object is part of a diagram. Default: 0 */
+		/** \brief A diagram object is part of a diagram. Default: nullptr */
 		CIMPP::Diagram* Diagram;
 
-		/** \brief A diagram object can have 0 or more points to reflect its layout position, routing (for polylines) or boundary (for polygons). Default: 0 */
+		/** \brief A diagram object can have 0 or more points to reflect its layout position, routing (for polylines) or boundary (for polygons). Default: {} */
 		std::list<CIMPP::DiagramObjectPoint*> DiagramObjectPoints;
 
-		/** \brief A diagram object has a style associated that provides a reference for the style used in the originating system. Default: 0 */
+		/** \brief A diagram object has a style associated that provides a reference for the style used in the originating system. Default: nullptr */
 		CIMPP::DiagramObjectStyle* DiagramObjectStyle;
 
-		/** \brief The diagram objects that are associated with the domain object. Default: 0 */
+		/** \brief The diagram objects that are associated with the domain object. Default: nullptr */
 		CIMPP::IdentifiedObject* IdentifiedObject;
 
-		/** \brief A diagram object can be part of multiple visibility layers. Default: 0 */
+		/** \brief A diagram object can be part of multiple visibility layers. Default: {} */
 		std::list<CIMPP::VisibilityLayer*> VisibilityLayers;
 
 		/** \brief The drawing order of this element. The higher the number, the later the element is drawn in sequence. This is used to ensure that elements that overlap are rendered in the correct order. Default: 0 */
@@ -55,13 +56,13 @@ namespace CIMPP
 		/** \brief Defines whether or not the diagram objects points define the boundaries of a polygon or the routing of a polyline. If this value is true then a receiving application should consider the first and last points to be connected. Default: false */
 		CIMPP::Boolean isPolygon;
 
-		/** \brief The offset in the X direction. This is used for defining the offset from centre for rendering an icon (the default is that a single point specifies the centre of the icon).  The offset is in per-unit with 0 indicating there is no offset from the horizontal centre of the icon.  -0.5 indicates it is offset by 50% to the left and 0.5 indicates an offset of 50% to the right. Default: nullptr */
+		/** \brief The offset in the X direction. This is used for defining the offset from centre for rendering an icon (the default is that a single point specifies the centre of the icon).  The offset is in per-unit with 0 indicating there is no offset from the horizontal centre of the icon.  -0.5 indicates it is offset by 50% to the left and 0.5 indicates an offset of 50% to the right. Default: 0.0 */
 		CIMPP::Simple_Float offsetX;
 
-		/** \brief The offset in the Y direction. This is used for defining the offset from centre for rendering an icon (the default is that a single point specifies the centre of the icon).  The offset is in per-unit with 0 indicating there is no offset from the vertical centre of the icon.  The offset direction is dependent on the orientation of the diagram, with -0.5 and 0.5 indicating an offset of +/- 50% on the vertical axis. Default: nullptr */
+		/** \brief The offset in the Y direction. This is used for defining the offset from centre for rendering an icon (the default is that a single point specifies the centre of the icon).  The offset is in per-unit with 0 indicating there is no offset from the vertical centre of the icon.  The offset direction is dependent on the orientation of the diagram, with -0.5 and 0.5 indicating an offset of +/- 50% on the vertical axis. Default: 0.0 */
 		CIMPP::Simple_Float offsetY;
 
-		/** \brief Sets the angle of rotation of the diagram object.  Zero degrees is pointing to the top of the diagram.  Rotation is clockwise. Default: nullptr */
+		/** \brief Sets the angle of rotation of the diagram object.  Zero degrees is pointing to the top of the diagram.  Rotation is clockwise. Default: 0.0 */
 		CIMPP::AngleDegrees rotation;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Integer.hpp"
 
 namespace CIMPP
@@ -28,10 +29,10 @@ namespace CIMPP
 		Command();
 		~Command() override;
 
-		/** \brief The Control variable associated with the MeasurementValue. Default: 0 */
+		/** \brief The Control variable associated with the MeasurementValue. Default: nullptr */
 		CIMPP::DiscreteValue* DiscreteValue;
 
-		/** \brief The ValueAliasSet used for translation of a Control value to a name. Default: 0 */
+		/** \brief The ValueAliasSet used for translation of a Control value to a name. Default: nullptr */
 		CIMPP::ValueAliasSet* ValueAliasSet;
 
 		/** \brief Normal value for Control.value e.g. used for percentage scaling. Default: 0 */

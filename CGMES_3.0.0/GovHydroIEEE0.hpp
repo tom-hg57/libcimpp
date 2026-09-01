@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,28 +29,28 @@ namespace CIMPP
 		GovHydroIEEE0();
 		~GovHydroIEEE0() override;
 
-		/** \brief Governor gain (&lt;i&gt;K)&lt;/i&gt;. Default: nullptr */
+		/** \brief Governor gain (<i>K)</i>. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief Base for power values (&lt;i&gt;MWbase&lt;/i&gt;) (&amp;gt; 0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (<i>MWbase</i>) (&gt; 0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Gate maximum (&lt;i&gt;Pmax&lt;/i&gt;) (&amp;gt; GovHydroIEEE0.pmin). Default: nullptr */
+		/** \brief Gate maximum (<i>Pmax</i>) (&gt; GovHydroIEEE0.pmin). Default: 0.0 */
 		CIMPP::PU pmax;
 
-		/** \brief Gate minimum (&lt;i&gt;Pmin&lt;/i&gt;) (&amp;lt; GovHydroIEEE.pmax). Default: nullptr */
+		/** \brief Gate minimum (<i>Pmin</i>) (&lt; GovHydroIEEE.pmax). Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief Governor lag time constant (&lt;i&gt;T1&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,25. Default: nullptr */
+		/** \brief Governor lag time constant (<i>T1</i>) (&gt;= 0).  Typical value = 0,25. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Governor lead time constant (&lt;i&gt;T2)&lt;/i&gt; (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Governor lead time constant (<i>T2)</i> (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Gate actuator time constant (&lt;i&gt;T3&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Gate actuator time constant (<i>T3</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Water starting time (&lt;i&gt;T4&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Water starting time (<i>T4</i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t4;
 
 		static const char debugName[];

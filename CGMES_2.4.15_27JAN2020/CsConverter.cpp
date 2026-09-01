@@ -18,8 +18,8 @@ static const CimClassDetails& getCimClassDetails()
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
 			CGMESProfile::EQ,
-			CGMESProfile::SV,
 			CGMESProfile::SSH,
+			CGMESProfile::SV,
 		},
 		CGMESProfile::EQ
 	);
@@ -45,7 +45,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "CsConverter.targetGamma", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::SSH, } } },
 		{ "CsConverter.targetIdc", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::SSH, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 CsConverter::CsConverter() {}

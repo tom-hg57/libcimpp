@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Integer.hpp"
 
 namespace CIMPP
@@ -28,10 +29,10 @@ namespace CIMPP
 		DiscreteValue();
 		~DiscreteValue() override;
 
-		/** \brief The MeasurementValue that is controlled. Default: 0 */
+		/** \brief The MeasurementValue that is controlled. Default: nullptr */
 		CIMPP::Command* Command;
 
-		/** \brief The values connected to this measurement. Default: 0 */
+		/** \brief The values connected to this measurement. Default: nullptr */
 		CIMPP::Discrete* Discrete;
 
 		/** \brief The value to supervise. Default: 0 */

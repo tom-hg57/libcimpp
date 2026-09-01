@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,37 +28,37 @@ namespace CIMPP
 		PssELIN2();
 		~PssELIN2() override;
 
-		/** \brief Coefficient (&lt;i&gt;a_PSS&lt;/i&gt;).  Typical value = 0,1. Default: nullptr */
+		/** \brief Coefficient (<i>a_PSS</i>).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::PU apss;
 
-		/** \brief Gain (&lt;i&gt;Ks1&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Gain (<i>Ks1</i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU ks1;
 
-		/** \brief Gain (&lt;i&gt;Ks2&lt;/i&gt;).  Typical value = 0,1. Default: nullptr */
+		/** \brief Gain (<i>Ks2</i>).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::PU ks2;
 
-		/** \brief Coefficient (&lt;i&gt;p_PSS&lt;/i&gt;) (&amp;gt;= 0 and &amp;lt;= 4).  Typical value = 0,1. Default: nullptr */
+		/** \brief Coefficient (<i>p_PSS</i>) (&gt;= 0 and &lt;= 4).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::PU ppss;
 
-		/** \brief PSS limiter (&lt;i&gt;psslim&lt;/i&gt;).  Typical value = 0,1. Default: nullptr */
+		/** \brief PSS limiter (<i>psslim</i>).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::PU psslim;
 
-		/** \brief Time constant (&lt;i&gt;Ts1&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Time constant (<i>Ts1</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds ts1;
 
-		/** \brief Time constant (&lt;i&gt;Ts2&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1. Default: nullptr */
+		/** \brief Time constant (<i>Ts2</i>) (&gt;= 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::Seconds ts2;
 
-		/** \brief Time constant (&lt;i&gt;Ts3&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1. Default: nullptr */
+		/** \brief Time constant (<i>Ts3</i>) (&gt;= 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::Seconds ts3;
 
-		/** \brief Time constant (&lt;i&gt;Ts4&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Time constant (<i>Ts4</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds ts4;
 
-		/** \brief Time constant (&lt;i&gt;Ts5&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Time constant (<i>Ts5</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds ts5;
 
-		/** \brief Time constant (&lt;i&gt;Ts6&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1. Default: nullptr */
+		/** \brief Time constant (<i>Ts6</i>) (&gt;= 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::Seconds ts6;
 
 		static const char debugName[];

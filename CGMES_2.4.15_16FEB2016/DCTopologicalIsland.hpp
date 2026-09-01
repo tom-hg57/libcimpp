@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class DCTopologicalNode;
@@ -26,7 +27,7 @@ namespace CIMPP
 		DCTopologicalIsland();
 		~DCTopologicalIsland() override;
 
-		/** \brief  Default: 0 */
+		/** \brief  Default: {} */
 		std::list<CIMPP::DCTopologicalNode*> DCTopologicalNodes;
 
 		static const char debugName[];

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class Command;
@@ -27,10 +28,10 @@ namespace CIMPP
 		DiscreteValue();
 		~DiscreteValue() override;
 
-		/** \brief The Control variable associated with the MeasurementValue. Default: 0 */
+		/** \brief The Control variable associated with the MeasurementValue. Default: nullptr */
 		CIMPP::Command* Command;
 
-		/** \brief Measurement to which this value is connected. Default: 0 */
+		/** \brief Measurement to which this value is connected. Default: nullptr */
 		CIMPP::Discrete* Discrete;
 
 		static const char debugName[];

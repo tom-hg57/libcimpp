@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		WindType3or4UserDefined();
 		~WindType3or4UserDefined() override;
 
-		/** \brief Parameter of this proprietary user-defined model. Default: 0 */
+		/** \brief Parameter of this proprietary user-defined model. Default: {} */
 		std::list<CIMPP::ProprietaryParameterDynamics*> ProprietaryParameterDynamics;
 
 		/** \brief Behaviour is based on a proprietary model as opposed to a detailed model. true = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes false = user-defined model is explicitly defined in terms of control blocks and their input and output signals. Default: false */

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "BatteryStateKind.hpp"
 #include "RealEnergy.hpp"
 
@@ -30,10 +31,10 @@ namespace CIMPP
 		/** \brief The current state of the battery (charging, full, etc.). Default: 0 */
 		CIMPP::BatteryStateKind batteryState;
 
-		/** \brief Full energy storage capacity of the battery. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Full energy storage capacity of the battery. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::RealEnergy ratedE;
 
-		/** \brief Amount of energy currently stored. The attribute shall be a positive value or zero and lower than BatteryUnit.ratedE. Default: nullptr */
+		/** \brief Amount of energy currently stored. The attribute shall be a positive value or zero and lower than BatteryUnit.ratedE. Default: 0.0 */
 		CIMPP::RealEnergy storedE;
 
 		static const char debugName[];

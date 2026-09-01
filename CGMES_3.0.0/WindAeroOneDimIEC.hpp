@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "Float.hpp"
 
@@ -28,13 +29,13 @@ namespace CIMPP
 		WindAeroOneDimIEC();
 		~WindAeroOneDimIEC() override;
 
-		/** \brief Wind turbine type 3 model with which this wind aerodynamic model is associated. Default: 0 */
+		/** \brief Wind turbine type 3 model with which this wind aerodynamic model is associated. Default: nullptr */
 		CIMPP::WindTurbineType3IEC* WindTurbineType3IEC;
 
-		/** \brief Aerodynamic gain (&lt;i&gt;k&lt;/i&gt;&lt;i&gt;&lt;sub&gt;a&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: 0.0 */
+		/** \brief Aerodynamic gain (<i>k</i><i><sub>a</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Float ka;
 
-		/** \brief Initial pitch angle (&lt;i&gt;theta&lt;/i&gt;&lt;i&gt;&lt;sub&gt;omega0&lt;/sub&gt;&lt;/i&gt;). It is a case-dependent parameter. Default: nullptr */
+		/** \brief Initial pitch angle (<i>theta</i><i><sub>omega0</sub></i>). It is a case-dependent parameter. Default: 0.0 */
 		CIMPP::AngleDegrees thetaomega;
 
 		static const char debugName[];

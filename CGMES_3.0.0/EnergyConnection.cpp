@@ -17,8 +17,8 @@ static const CimClassDetails& getCimClassDetails()
 		EnergyConnection(),
 		"http://iec.ch/TC57/CIM100#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::SC,
 			CGMESProfile::SSH,
 		},
@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	static const std::map<std::string, AttrDetails> ClassAttrDetailsMap =
 	{
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 EnergyConnection::EnergyConnection() {}

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,34 +29,34 @@ namespace CIMPP
 		PssRQB();
 		~PssRQB() override;
 
-		/** \brief Lead lag gain (&lt;i&gt;KDPM&lt;/i&gt;). Typical value = 0,185. Default: 0.0 */
+		/** \brief Lead lag gain (<i>KDPM</i>). Typical value = 0,185. Default: 0.0 */
 		CIMPP::Float kdpm;
 
-		/** \brief Speed input gain (&lt;i&gt;Ki2&lt;/i&gt;). Typical value = 3,43. Default: 0.0 */
+		/** \brief Speed input gain (<i>Ki2</i>). Typical value = 3,43. Default: 0.0 */
 		CIMPP::Float ki2;
 
-		/** \brief Electrical power input gain (&lt;i&gt;Ki3&lt;/i&gt;). Typical value = -11,45. Default: 0.0 */
+		/** \brief Electrical power input gain (<i>Ki3</i>). Typical value = -11,45. Default: 0.0 */
 		CIMPP::Float ki3;
 
-		/** \brief Mechanical power input gain (&lt;i&gt;Ki4&lt;/i&gt;). Typical value = 11,86. Default: 0.0 */
+		/** \brief Mechanical power input gain (<i>Ki4</i>). Typical value = 11,86. Default: 0.0 */
 		CIMPP::Float ki4;
 
-		/** \brief Speed deadband (&lt;i&gt;SIBV&lt;/i&gt;). Typical value = 0,006. Default: nullptr */
+		/** \brief Speed deadband (<i>SIBV</i>). Typical value = 0,006. Default: 0.0 */
 		CIMPP::PU sibv;
 
-		/** \brief Lead lag time constant (&lt;i&gt;T4F&lt;/i&gt;) (&amp;gt;= 0). Typical value = 0,045. Default: nullptr */
+		/** \brief Lead lag time constant (<i>T4F</i>) (&gt;= 0). Typical value = 0,045. Default: 0.0 */
 		CIMPP::Seconds t4f;
 
-		/** \brief Input time constant (&lt;i&gt;T4M&lt;/i&gt;) (&amp;gt;= 0). Typical value = 5. Default: nullptr */
+		/** \brief Input time constant (<i>T4M</i>) (&gt;= 0). Typical value = 5. Default: 0.0 */
 		CIMPP::Seconds t4m;
 
-		/** \brief Speed time constant (&lt;i&gt;T4MOM&lt;/i&gt;) (&amp;gt;= 0). Typical value = 1,27. Default: nullptr */
+		/** \brief Speed time constant (<i>T4MOM</i>) (&gt;= 0). Typical value = 1,27. Default: 0.0 */
 		CIMPP::Seconds t4mom;
 
-		/** \brief Speed delay (&lt;i&gt;TOMD&lt;/i&gt;) (&amp;gt;= 0). Typical value = 0,02. Default: nullptr */
+		/** \brief Speed delay (<i>TOMD</i>) (&gt;= 0). Typical value = 0,02. Default: 0.0 */
 		CIMPP::Seconds tomd;
 
-		/** \brief Speed time constant (&lt;i&gt;TOMSL&lt;/i&gt;) (&amp;gt;= 0). Typical value = 0,04. Default: nullptr */
+		/** \brief Speed time constant (<i>TOMSL</i>) (&gt;= 0). Typical value = 0,04. Default: 0.0 */
 		CIMPP::Seconds tomsl;
 
 		static const char debugName[];

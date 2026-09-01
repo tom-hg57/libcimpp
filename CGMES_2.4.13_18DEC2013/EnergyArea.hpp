@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class ControlArea;
@@ -26,7 +27,7 @@ namespace CIMPP
 		EnergyArea();
 		~EnergyArea() override;
 
-		/** \brief The control area specification that is used for the load forecast. Default: 0 */
+		/** \brief The control area specification that is used for the load forecast. Default: nullptr */
 		CIMPP::ControlArea* ControlArea;
 
 		static const char debugName[];

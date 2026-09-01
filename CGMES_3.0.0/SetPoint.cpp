@@ -31,7 +31,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "SetPoint.normalValue", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 		{ "SetPoint.value", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 SetPoint::SetPoint() {}

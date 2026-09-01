@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Conductance.hpp"
 #include "Susceptance.hpp"
 
@@ -27,10 +28,10 @@ namespace CIMPP
 		EquivalentShunt();
 		~EquivalentShunt() override;
 
-		/** \brief Positive sequence shunt susceptance. Default: nullptr */
+		/** \brief Positive sequence shunt susceptance. Default: 0.0 */
 		CIMPP::Susceptance b;
 
-		/** \brief Positive sequence shunt conductance. Default: nullptr */
+		/** \brief Positive sequence shunt conductance. Default: 0.0 */
 		CIMPP::Conductance g;
 
 		static const char debugName[];

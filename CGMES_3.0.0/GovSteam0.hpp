@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,28 +29,28 @@ namespace CIMPP
 		GovSteam0();
 		~GovSteam0() override;
 
-		/** \brief Turbine damping coefficient (&lt;i&gt;Dt&lt;/i&gt;).  Unit = delta P / delta speed. Typical value = 0. Default: nullptr */
+		/** \brief Turbine damping coefficient (<i>Dt</i>).  Unit = delta P / delta speed. Typical value = 0. Default: 0.0 */
 		CIMPP::PU dt;
 
-		/** \brief Base for power values (&lt;i&gt;MWbase&lt;/i&gt;) (&amp;gt; 0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (<i>MWbase</i>) (&gt; 0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Permanent droop (&lt;i&gt;R&lt;/i&gt;).  Typical value = 0,05. Default: nullptr */
+		/** \brief Permanent droop (<i>R</i>).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::PU r;
 
-		/** \brief Steam bowl time constant (&lt;i&gt;T1&lt;/i&gt;) (&amp;gt; 0).  Typical value = 0,5. Default: nullptr */
+		/** \brief Steam bowl time constant (<i>T1</i>) (&gt; 0).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Numerator time constant of &lt;i&gt;T2&lt;/i&gt;/&lt;i&gt;T3&lt;/i&gt; block (&lt;i&gt;T2&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 3. Default: nullptr */
+		/** \brief Numerator time constant of <i>T2</i>/<i>T3</i> block (<i>T2</i>) (&gt;= 0).  Typical value = 3. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Reheater time constant (&lt;i&gt;T3&lt;/i&gt;) (&amp;gt; 0).  Typical value = 10. Default: nullptr */
+		/** \brief Reheater time constant (<i>T3</i>) (&gt; 0).  Typical value = 10. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Maximum valve position, PU of &lt;i&gt;mwcap&lt;/i&gt; (&lt;i&gt;Vmax&lt;/i&gt;) (&amp;gt; GovSteam0.vmin).  Typical value = 1. Default: nullptr */
+		/** \brief Maximum valve position, PU of <i>mwcap</i> (<i>Vmax</i>) (&gt; GovSteam0.vmin).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU vmax;
 
-		/** \brief Minimum valve position, PU of &lt;i&gt;mwcap&lt;/i&gt; (&lt;i&gt;Vmin&lt;/i&gt;) (&amp;lt; GovSteam0.vmax).  Typical value = 0. Default: nullptr */
+		/** \brief Minimum valve position, PU of <i>mwcap</i> (<i>Vmin</i>) (&lt; GovSteam0.vmax).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU vmin;
 
 		static const char debugName[];

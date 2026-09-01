@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "Integer.hpp"
 
@@ -28,7 +29,7 @@ namespace CIMPP
 		RegularTimePoint();
 		~RegularTimePoint() override;
 
-		/** \brief Regular interval schedule containing this time point. Default: 0 */
+		/** \brief Regular interval schedule containing this time point. Default: nullptr */
 		CIMPP::RegularIntervalSchedule* IntervalSchedule;
 
 		/** \brief The position of the regular time point in the sequence. Note that time points don`t have to be sequential, i.e. time points may be omitted. The actual time for a RegularTimePoint is computed by multiplying the associated regular interval schedule`s time step with the regular time point sequence number and adding the associated schedules start time. To specify values for the start time, use sequence number 0.  The sequence number cannot be negative. Default: 0 */

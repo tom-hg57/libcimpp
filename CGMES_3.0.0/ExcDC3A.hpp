@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Float.hpp"
 #include "PU.hpp"
@@ -29,52 +30,52 @@ namespace CIMPP
 		ExcDC3A();
 		~ExcDC3A() override;
 
-		/** \brief Exciter voltage at which exciter saturation is defined (&lt;i&gt;Efd&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 2,6. Default: nullptr */
+		/** \brief Exciter voltage at which exciter saturation is defined (<i>Efd</i><i><sub>1</sub></i>) (&gt; 0).  Typical value = 2,6. Default: 0.0 */
 		CIMPP::PU efd1;
 
-		/** \brief Exciter voltage at which exciter saturation is defined (&lt;i&gt;Efd&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 3,45. Default: nullptr */
+		/** \brief Exciter voltage at which exciter saturation is defined (<i>Efd</i><i><sub>2</sub></i>) (&gt; 0).  Typical value = 3,45. Default: 0.0 */
 		CIMPP::PU efd2;
 
-		/** \brief (&lt;i&gt;Efdlim&lt;/i&gt;). true = exciter output limiter is active false = exciter output limiter not active. Typical value = true. Default: false */
+		/** \brief (<i>Efdlim</i>). true = exciter output limiter is active false = exciter output limiter not active. Typical value = true. Default: false */
 		CIMPP::Boolean efdlim;
 
-		/** \brief Maximum voltage exciter output limiter (&lt;i&gt;Efdmax&lt;/i&gt;) (&amp;gt; ExcDC3A.efdmin).  Typical value = 99. Default: nullptr */
+		/** \brief Maximum voltage exciter output limiter (<i>Efdmax</i>) (&gt; ExcDC3A.efdmin).  Typical value = 99. Default: 0.0 */
 		CIMPP::PU efdmax;
 
-		/** \brief Minimum voltage exciter output limiter (&lt;i&gt;Efdmin&lt;/i&gt;) (&amp;lt; ExcDC3A.efdmax).  Typical value = -99. Default: nullptr */
+		/** \brief Minimum voltage exciter output limiter (<i>Efdmin</i>) (&lt; ExcDC3A.efdmax).  Typical value = -99. Default: 0.0 */
 		CIMPP::PU efdmin;
 
-		/** \brief (&lt;i&gt;exclim&lt;/i&gt;).  IEEE standard is ambiguous about lower limit on exciter output. true = a lower limit of zero is applied to integrator output false = a lower limit of zero not applied to integrator output. Typical value = true. Default: false */
+		/** \brief (<i>exclim</i>).  IEEE standard is ambiguous about lower limit on exciter output. true = a lower limit of zero is applied to integrator output false = a lower limit of zero not applied to integrator output. Typical value = true. Default: false */
 		CIMPP::Boolean exclim;
 
-		/** \brief Exciter constant related to self-excited field (&lt;i&gt;Ke&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Exciter constant related to self-excited field (<i>Ke</i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU ke;
 
-		/** \brief Deadband (&lt;i&gt;Kr&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Deadband (<i>Kr</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU kr;
 
-		/** \brief Coefficient to allow different usage of the model-speed coefficient (&lt;i&gt;Ks&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Coefficient to allow different usage of the model-speed coefficient (<i>Ks</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU ks;
 
-		/** \brief Fast raise/lower contact setting (&lt;i&gt;Kv&lt;/i&gt;) (&amp;gt; 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief Fast raise/lower contact setting (<i>Kv</i>) (&gt; 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::PU kv;
 
-		/** \brief Exciter saturation function value at the corresponding exciter voltage, &lt;i&gt;Efd&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt; (&lt;i&gt;Se[Efd&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;]&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: 0.0 */
+		/** \brief Exciter saturation function value at the corresponding exciter voltage, <i>Efd</i><i><sub>1</sub></i> (<i>Se[Efd</i><i><sub>1</sub></i><i>]</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Float seefd1;
 
-		/** \brief Exciter saturation function value at the corresponding exciter voltage, &lt;i&gt;Efd&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt; (&lt;i&gt;Se[Efd&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;]&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,35. Default: 0.0 */
+		/** \brief Exciter saturation function value at the corresponding exciter voltage, <i>Efd</i><i><sub>2</sub></i> (<i>Se[Efd</i><i><sub>2</sub></i><i>]</i>) (&gt;= 0).  Typical value = 0,35. Default: 0.0 */
 		CIMPP::Float seefd2;
 
-		/** \brief Exciter time constant, integration rate associated with exciter control (&lt;i&gt;Te&lt;/i&gt;) (&amp;gt; 0).  Typical value = 1,83. Default: nullptr */
+		/** \brief Exciter time constant, integration rate associated with exciter control (<i>Te</i>) (&gt; 0).  Typical value = 1,83. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Rheostat travel time (&lt;i&gt;Trh&lt;/i&gt;) (&amp;gt; 0).  Typical value = 20. Default: nullptr */
+		/** \brief Rheostat travel time (<i>Trh</i>) (&gt; 0).  Typical value = 20. Default: 0.0 */
 		CIMPP::Seconds trh;
 
-		/** \brief Maximum voltage regulator output (&lt;i&gt;Vrmax&lt;/i&gt;) (&amp;gt; 0).  Typical value = 5. Default: nullptr */
+		/** \brief Maximum voltage regulator output (<i>Vrmax</i>) (&gt; 0).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator output (&lt;i&gt;Vrmin&lt;/i&gt;) (&amp;lt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Minimum voltage regulator output (<i>Vrmin</i>) (&lt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

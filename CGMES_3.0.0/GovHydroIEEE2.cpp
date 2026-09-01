@@ -55,7 +55,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "GovHydroIEEE2.uc", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "GovHydroIEEE2.uo", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 GovHydroIEEE2::GovHydroIEEE2() {}

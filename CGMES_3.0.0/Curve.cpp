@@ -35,7 +35,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Curve.y1Unit", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "Curve.y2Unit", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Curve::Curve() {}

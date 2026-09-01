@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Simple_Float.hpp"
 
 namespace CIMPP
@@ -28,13 +29,13 @@ namespace CIMPP
 		AnalogValue();
 		~AnalogValue() override;
 
-		/** \brief The values connected to this measurement. Default: 0 */
+		/** \brief The values connected to this measurement. Default: nullptr */
 		CIMPP::Analog* Analog;
 
-		/** \brief The MeasurementValue that is controlled. Default: 0 */
+		/** \brief The MeasurementValue that is controlled. Default: nullptr */
 		CIMPP::AnalogControl* AnalogControl;
 
-		/** \brief The value to supervise. Default: nullptr */
+		/** \brief The value to supervise. Default: 0.0 */
 		CIMPP::Simple_Float value;
 
 		static const char debugName[];

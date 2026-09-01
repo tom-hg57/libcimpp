@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "CurrentFlow.hpp"
 #include "PU.hpp"
@@ -36,22 +37,22 @@ namespace CIMPP
 		VsConverter();
 		~VsConverter() override;
 
-		/** \brief All converters with this capability curve. Default: 0 */
+		/** \brief All converters with this capability curve. Default: nullptr */
 		CIMPP::VsCapabilityCurve* CapabilityCurve;
 
-		/** \brief Angle between uf and uc. Converter state variable used in power flow. Default: nullptr */
+		/** \brief Angle between uf and uc. Converter state variable used in power flow. Default: 0.0 */
 		CIMPP::AngleDegrees delta;
 
-		/** \brief Droop constant; pu value is obtained as D [kV^2 / MW] x Sb / Ubdc^2. Default: nullptr */
+		/** \brief Droop constant; pu value is obtained as D [kV^2 / MW] x Sb / Ubdc^2. Default: 0.0 */
 		CIMPP::PU droop;
 
-		/** \brief Compensation (resistance) constant. Used to compensate for voltage drop when controlling voltage at a distant bus. Default: nullptr */
+		/** \brief Compensation (resistance) constant. Used to compensate for voltage drop when controlling voltage at a distant bus. Default: 0.0 */
 		CIMPP::Resistance droopCompensation;
 
-		/** \brief The max quotient between the AC converter voltage (Uc) and DC voltage (Ud). A factor typically less than 1. VSC configuration data used in power flow. Default: nullptr */
+		/** \brief The max quotient between the AC converter voltage (Uc) and DC voltage (Ud). A factor typically less than 1. VSC configuration data used in power flow. Default: 0.0 */
 		CIMPP::Simple_Float maxModulationIndex;
 
-		/** \brief The maximum current through a valve. This current limit is the basis for calculating the capability diagram. VSC  configuration data. Default: nullptr */
+		/** \brief The maximum current through a valve. This current limit is the basis for calculating the capability diagram. VSC  configuration data. Default: 0.0 */
 		CIMPP::CurrentFlow maxValveCurrent;
 
 		/** \brief Kind of control of real power and/or DC voltage. Default: 0 */
@@ -60,16 +61,16 @@ namespace CIMPP
 		/** \brief  Default: 0 */
 		CIMPP::VsQpccControlKind qPccControl;
 
-		/** \brief Reactive power sharing factor among parallel converters on Uac control. Default: nullptr */
+		/** \brief Reactive power sharing factor among parallel converters on Uac control. Default: 0.0 */
 		CIMPP::PerCent qShare;
 
-		/** \brief Reactive power injection target in AC grid, at point of common coupling. Default: nullptr */
+		/** \brief Reactive power injection target in AC grid, at point of common coupling. Default: 0.0 */
 		CIMPP::ReactivePower targetQpcc;
 
-		/** \brief Voltage target in AC grid, at point of common coupling. Default: nullptr */
+		/** \brief Voltage target in AC grid, at point of common coupling. Default: 0.0 */
 		CIMPP::Voltage targetUpcc;
 
-		/** \brief Filter bus voltage. Converter state variable, result from power flow. Default: nullptr */
+		/** \brief Filter bus voltage. Converter state variable, result from power flow. Default: 0.0 */
 		CIMPP::Voltage uf;
 
 		static const char debugName[];

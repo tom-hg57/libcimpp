@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Integer.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		VisibilityLayer();
 		~VisibilityLayer() override;
 
-		/** \brief A visibility layer can contain one or more diagram objects. Default: 0 */
+		/** \brief A visibility layer can contain one or more diagram objects. Default: {} */
 		std::list<CIMPP::DiagramObject*> VisibleObjects;
 
 		/** \brief The drawing order for this layer.  The higher the number, the later the layer and the objects within it are rendered. Default: 0 */

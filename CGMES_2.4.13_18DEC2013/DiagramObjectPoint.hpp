@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Integer.hpp"
 #include "Simple_Float.hpp"
 
@@ -29,22 +30,22 @@ namespace CIMPP
 		DiagramObjectPoint();
 		~DiagramObjectPoint() override;
 
-		/** \brief The diagram object with which the points are associated. Default: 0 */
+		/** \brief The diagram object with which the points are associated. Default: nullptr */
 		CIMPP::DiagramObject* DiagramObject;
 
-		/** \brief A diagram object glue point is associated with 2 or more object points that are considered to be `glued` together. Default: 0 */
+		/** \brief A diagram object glue point is associated with 2 or more object points that are considered to be `glued` together. Default: nullptr */
 		CIMPP::DiagramObjectGluePoint* DiagramObjectGluePoint;
 
 		/** \brief The sequence position of the point, used for defining the order of points for diagram objects acting as a polyline or polygon with more than one point. Default: 0 */
 		CIMPP::Integer sequenceNumber;
 
-		/** \brief The X coordinate of this point. Default: nullptr */
+		/** \brief The X coordinate of this point. Default: 0.0 */
 		CIMPP::Simple_Float xPosition;
 
-		/** \brief The Y coordinate of this point. Default: nullptr */
+		/** \brief The Y coordinate of this point. Default: 0.0 */
 		CIMPP::Simple_Float yPosition;
 
-		/** \brief The Z coordinate of this point. Default: nullptr */
+		/** \brief The Z coordinate of this point. Default: 0.0 */
 		CIMPP::Simple_Float zPosition;
 
 		static const char debugName[];

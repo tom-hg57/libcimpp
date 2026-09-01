@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ExcST6BOELselectorKind.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,46 +29,46 @@ namespace CIMPP
 		ExcIEEEST6B();
 		~ExcIEEEST6B() override;
 
-		/** \brief Exciter output current limit reference (&lt;i&gt;I&lt;/i&gt;&lt;i&gt;&lt;sub&gt;LR&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 4,164. Default: nullptr */
+		/** \brief Exciter output current limit reference (<i>I</i><i><sub>LR</sub></i>) (&gt; 0).  Typical value = 4,164. Default: 0.0 */
 		CIMPP::PU ilr;
 
-		/** \brief Exciter output current limit adjustment (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;CI&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 1,0577. Default: nullptr */
+		/** \brief Exciter output current limit adjustment (<i>K</i><i><sub>CI</sub></i>) (&gt; 0).  Typical value = 1,0577. Default: 0.0 */
 		CIMPP::PU kci;
 
-		/** \brief Pre-control gain constant of the inner loop field regulator (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;FF&lt;/sub&gt;&lt;/i&gt;). Typical value = 1. Default: nullptr */
+		/** \brief Pre-control gain constant of the inner loop field regulator (<i>K</i><i><sub>FF</sub></i>). Typical value = 1. Default: 0.0 */
 		CIMPP::PU kff;
 
-		/** \brief Feedback gain constant of the inner loop field regulator (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;G&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1. Default: nullptr */
+		/** \brief Feedback gain constant of the inner loop field regulator (<i>K</i><i><sub>G</sub></i>) (&gt;= 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU kg;
 
-		/** \brief Voltage regulator integral gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;IA&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 45,094. Default: nullptr */
+		/** \brief Voltage regulator integral gain (<i>K</i><i><sub>IA</sub></i>) (&gt; 0).  Typical value = 45,094. Default: 0.0 */
 		CIMPP::PU kia;
 
-		/** \brief Exciter output current limiter gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;LR&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 17,33. Default: nullptr */
+		/** \brief Exciter output current limiter gain (<i>K</i><i><sub>LR</sub></i>) (&gt; 0).  Typical value = 17,33. Default: 0.0 */
 		CIMPP::PU klr;
 
-		/** \brief Forward gain constant of the inner loop field regulator (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;M&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Forward gain constant of the inner loop field regulator (<i>K</i><i><sub>M</sub></i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU km;
 
-		/** \brief Voltage regulator proportional gain (&lt;u&gt;K&lt;/u&gt;&lt;u&gt;&lt;sub&gt;PA&lt;/sub&gt;&lt;/u&gt;) (&amp;gt; 0).  Typical value = 18,038. Default: nullptr */
+		/** \brief Voltage regulator proportional gain (<u>K</u><u><sub>PA</sub></u>) (&gt; 0).  Typical value = 18,038. Default: 0.0 */
 		CIMPP::PU kpa;
 
-		/** \brief OEL input selector (&lt;i&gt;OELin&lt;/i&gt;). Typical value = noOELinput. Default: 0 */
+		/** \brief OEL input selector (<i>OELin</i>). Typical value = noOELinput. Default: 0 */
 		CIMPP::ExcST6BOELselectorKind oelin;
 
-		/** \brief Feedback time constant of inner loop field voltage regulator (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;G&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Typical value = 0,02. Default: nullptr */
+		/** \brief Feedback time constant of inner loop field voltage regulator (<i>T</i><i><sub>G</sub></i>) (&gt;= 0). Typical value = 0,02. Default: 0.0 */
 		CIMPP::Seconds tg;
 
-		/** \brief Maximum voltage regulator output (V&lt;i&gt;&lt;sub&gt;AMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 4,81. Default: nullptr */
+		/** \brief Maximum voltage regulator output (V<i><sub>AMAX</sub></i>) (&gt; 0).  Typical value = 4,81. Default: 0.0 */
 		CIMPP::PU vamax;
 
-		/** \brief Minimum voltage regulator output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;AMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; 0).  Typical value = -3,85. Default: nullptr */
+		/** \brief Minimum voltage regulator output (<i>V</i><i><sub>AMIN</sub></i>) (&lt; 0).  Typical value = -3,85. Default: 0.0 */
 		CIMPP::PU vamin;
 
-		/** \brief Maximum voltage regulator output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 4,81. Default: nullptr */
+		/** \brief Maximum voltage regulator output (<i>V</i><i><sub>RMAX</sub></i>) (&gt; 0).  Typical value = 4,81. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; 0).  Typical value = -3,85. Default: nullptr */
+		/** \brief Minimum voltage regulator output (<i>V</i><i><sub>RMIN</sub></i>) (&lt; 0).  Typical value = -3,85. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

@@ -42,7 +42,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "LoadResponseCharacteristic.qFrequencyExponent", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "LoadResponseCharacteristic.qVoltageExponent", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 LoadResponseCharacteristic::LoadResponseCharacteristic() {}

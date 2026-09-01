@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,58 +28,58 @@ namespace CIMPP
 		DiscExcContIEEEDEC1A();
 		~DiscExcContIEEEDEC1A() override;
 
-		/** \brief Speed change reference ().  Typical Value = 0.0015. Default: nullptr */
+		/** \brief Speed change reference ().  Typical Value = 0.0015. Default: 0.0 */
 		CIMPP::PU esc;
 
-		/** \brief Discontinuous controller gain ().  Typical Value = 400. Default: nullptr */
+		/** \brief Discontinuous controller gain ().  Typical Value = 400. Default: 0.0 */
 		CIMPP::PU kan;
 
-		/** \brief Terminal voltage limiter gain ().  Typical Value = 47. Default: nullptr */
+		/** \brief Terminal voltage limiter gain ().  Typical Value = 47. Default: 0.0 */
 		CIMPP::PU ketl;
 
-		/** \brief Discontinuous controller time constant ().  Typical Value = 0.08. Default: nullptr */
+		/** \brief Discontinuous controller time constant ().  Typical Value = 0.08. Default: 0.0 */
 		CIMPP::Seconds tan;
 
-		/** \brief Time constant ().  Typical Value = 0.03. Default: nullptr */
+		/** \brief Time constant ().  Typical Value = 0.03. Default: 0.0 */
 		CIMPP::Seconds td;
 
-		/** \brief Time constant ().  Typical Value = 0.025. Default: nullptr */
+		/** \brief Time constant ().  Typical Value = 0.025. Default: 0.0 */
 		CIMPP::Seconds tl1;
 
-		/** \brief Time constant ().  Typical Value = 1.25. Default: nullptr */
+		/** \brief Time constant ().  Typical Value = 1.25. Default: 0.0 */
 		CIMPP::Seconds tl2;
 
-		/** \brief DEC washout time constant ().  Typical Value = 5. Default: nullptr */
+		/** \brief DEC washout time constant ().  Typical Value = 5. Default: 0.0 */
 		CIMPP::Seconds tw5;
 
-		/** \brief Regulator voltage reference ().  Typical Value = 5.5. Default: nullptr */
+		/** \brief Regulator voltage reference ().  Typical Value = 5.5. Default: 0.0 */
 		CIMPP::PU val;
 
-		/** \brief Limiter for Van (). Default: nullptr */
+		/** \brief Limiter for Van (). Default: 0.0 */
 		CIMPP::PU vanmax;
 
-		/** \brief Limiter ().  Typical Value = 0.3. Default: nullptr */
+		/** \brief Limiter ().  Typical Value = 0.3. Default: 0.0 */
 		CIMPP::PU vomax;
 
-		/** \brief Limiter ().  Typical Value = 0.1. Default: nullptr */
+		/** \brief Limiter ().  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU vomin;
 
-		/** \brief Limiter ().  Typical Value = 0.2. Default: nullptr */
+		/** \brief Limiter ().  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::PU vsmax;
 
-		/** \brief Limiter ().  Typical Value = -0.066. Default: nullptr */
+		/** \brief Limiter ().  Typical Value = -0.066. Default: 0.0 */
 		CIMPP::PU vsmin;
 
-		/** \brief Terminal voltage level reference ().  Typical Value = 0.95. Default: nullptr */
+		/** \brief Terminal voltage level reference ().  Typical Value = 0.95. Default: 0.0 */
 		CIMPP::PU vtc;
 
-		/** \brief Voltage reference ().  Typical Value = 1.1. Default: nullptr */
+		/** \brief Voltage reference ().  Typical Value = 1.1. Default: 0.0 */
 		CIMPP::PU vtlmt;
 
-		/** \brief Voltage limits ().  Typical Value = 1.13. Default: nullptr */
+		/** \brief Voltage limits ().  Typical Value = 1.13. Default: 0.0 */
 		CIMPP::PU vtm;
 
-		/** \brief Voltage limits ().  Typical Value = 1.12. Default: nullptr */
+		/** \brief Voltage limits ().  Typical Value = 1.12. Default: 0.0 */
 		CIMPP::PU vtn;
 
 		static const char debugName[];

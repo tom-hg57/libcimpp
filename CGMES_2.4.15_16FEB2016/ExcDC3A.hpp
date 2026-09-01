@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -29,52 +30,52 @@ namespace CIMPP
 		ExcDC3A();
 		~ExcDC3A() override;
 
-		/** \brief Maximum voltage exciter output limiter (Efdmax).  Typical Value = 99. Default: nullptr */
+		/** \brief Maximum voltage exciter output limiter (Efdmax).  Typical Value = 99. Default: 0.0 */
 		CIMPP::PU edfmax;
 
-		/** \brief Exciter voltage at which exciter saturation is defined (Efd1).  Typical Value = 2.6. Default: nullptr */
+		/** \brief Exciter voltage at which exciter saturation is defined (Efd1).  Typical Value = 2.6. Default: 0.0 */
 		CIMPP::PU efd1;
 
-		/** \brief Exciter voltage at which exciter saturation is defined (Efd2).  Typical Value = 3.45. Default: nullptr */
+		/** \brief Exciter voltage at which exciter saturation is defined (Efd2).  Typical Value = 3.45. Default: 0.0 */
 		CIMPP::PU efd2;
 
 		/** \brief (Efdlim). true = exciter output limiter is active false = exciter output limiter not active. Typical Value = true. Default: false */
 		CIMPP::Boolean efdlim;
 
-		/** \brief Minimum voltage exciter output limiter (Efdmin).  Typical Value = -99. Default: nullptr */
+		/** \brief Minimum voltage exciter output limiter (Efdmin).  Typical Value = -99. Default: 0.0 */
 		CIMPP::PU efdmin;
 
 		/** \brief (exclim).  IEEE standard is ambiguous about lower limit on exciter output. true = a lower limit of zero is applied to integrator output false = a lower limit of zero not applied to integrator output. Typical Value = true. Default: false */
 		CIMPP::Boolean exclim;
 
-		/** \brief Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: nullptr */
+		/** \brief Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU ke;
 
-		/** \brief Death band (Kr).  If Kr is not zero, the voltage regulator input changes at a constant rate if Verr &gt; Kr or Verr &lt; -Kr as per the IEEE (1968) Type 4 model. If Kr is zero, the error signal drives the voltage regulator continuously as per the IEEE (1980) DC3 and IEEE (1992, 2005) DC3A models.  Typical Value = 0. Default: nullptr */
+		/** \brief Death band (Kr).  If Kr is not zero, the voltage regulator input changes at a constant rate if Verr > Kr or Verr < -Kr as per the IEEE (1968) Type 4 model. If Kr is zero, the error signal drives the voltage regulator continuously as per the IEEE (1980) DC3 and IEEE (1992, 2005) DC3A models.  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU kr;
 
-		/** \brief Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: nullptr */
+		/** \brief Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU ks;
 
-		/** \brief Fast raise/lower contact setting (Kv).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Fast raise/lower contact setting (Kv).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::PU kv;
 
-		/** \brief Exciter saturation function value at the corresponding exciter voltage, Efd1 (Se[Eefd1]).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Exciter saturation function value at the corresponding exciter voltage, Efd1 (Se[Eefd1]).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Simple_Float seefd1;
 
-		/** \brief Exciter saturation function value at the corresponding exciter voltage, Efd2 (Se[Efd2]).  Typical Value = 0.35. Default: nullptr */
+		/** \brief Exciter saturation function value at the corresponding exciter voltage, Efd2 (Se[Efd2]).  Typical Value = 0.35. Default: 0.0 */
 		CIMPP::Simple_Float seefd2;
 
-		/** \brief Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 1.83. Default: nullptr */
+		/** \brief Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 1.83. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Rheostat travel time (Trh).  Typical Value = 20. Default: nullptr */
+		/** \brief Rheostat travel time (Trh).  Typical Value = 20. Default: 0.0 */
 		CIMPP::Seconds trh;
 
-		/** \brief Maximum voltage regulator output (Vrmax).  Typical Value = 5. Default: nullptr */
+		/** \brief Maximum voltage regulator output (Vrmax).  Typical Value = 5. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator output (Vrmin).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum voltage regulator output (Vrmin).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

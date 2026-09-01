@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class BaseVoltage;
@@ -28,13 +29,13 @@ namespace CIMPP
 		ConductingEquipment();
 		~ConductingEquipment() override;
 
-		/** \brief All conducting equipment with this base voltage.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers. Default: 0 */
+		/** \brief All conducting equipment with this base voltage.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers. Default: nullptr */
 		CIMPP::BaseVoltage* BaseVoltage;
 
-		/** \brief The status state variable associated with this conducting equipment. Default: 0 */
+		/** \brief The status state variable associated with this conducting equipment. Default: nullptr */
 		CIMPP::SvStatus* SvStatus;
 
-		/** \brief Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes. Default: 0 */
+		/** \brief Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes. Default: {} */
 		std::list<CIMPP::Terminal*> Terminals;
 
 		static const char debugName[];

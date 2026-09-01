@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class EquivalentNetwork;
@@ -26,7 +27,7 @@ namespace CIMPP
 		EquivalentEquipment();
 		~EquivalentEquipment() override;
 
-		/** \brief The equivalent where the reduced model belongs. Default: 0 */
+		/** \brief The equivalent where the reduced model belongs. Default: nullptr */
 		CIMPP::EquivalentNetwork* EquivalentNetwork;
 
 		static const char debugName[];

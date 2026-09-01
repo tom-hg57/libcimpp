@@ -39,7 +39,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "OverexcLimX1.t3", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "OverexcLimX1.vlow", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 OverexcLimX1::OverexcLimX1() {}

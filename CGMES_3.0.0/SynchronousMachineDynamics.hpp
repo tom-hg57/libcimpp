@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class CrossCompoundTurbineGovernorDynamics;
@@ -31,25 +32,25 @@ namespace CIMPP
 		SynchronousMachineDynamics();
 		~SynchronousMachineDynamics() override;
 
-		/** \brief The cross-compound turbine governor with which this high-pressure synchronous machine is associated. Default: 0 */
+		/** \brief The cross-compound turbine governor with which this high-pressure synchronous machine is associated. Default: nullptr */
 		CIMPP::CrossCompoundTurbineGovernorDynamics* CrossCompoundTurbineGovernorDyanmics;
 
-		/** \brief The cross-compound turbine governor with which this low-pressure synchronous machine is associated. Default: 0 */
+		/** \brief The cross-compound turbine governor with which this low-pressure synchronous machine is associated. Default: nullptr */
 		CIMPP::CrossCompoundTurbineGovernorDynamics* CrossCompoundTurbineGovernorDynamics;
 
-		/** \brief Excitation system model associated with this synchronous machine model. Default: 0 */
+		/** \brief Excitation system model associated with this synchronous machine model. Default: nullptr */
 		CIMPP::ExcitationSystemDynamics* ExcitationSystemDynamics;
 
-		/** \brief Compensation of voltage compensator`s generator for current flow out of this  generator. Default: 0 */
+		/** \brief Compensation of voltage compensator`s generator for current flow out of this  generator. Default: {} */
 		std::list<CIMPP::GenICompensationForGenJ*> GenICompensationForGenJ;
 
-		/** \brief Mechanical load model associated with this synchronous machine model. Default: 0 */
+		/** \brief Mechanical load model associated with this synchronous machine model. Default: nullptr */
 		CIMPP::MechanicalLoadDynamics* MechanicalLoadDynamics;
 
-		/** \brief Synchronous machine to which synchronous machine dynamics model applies. Default: 0 */
+		/** \brief Synchronous machine to which synchronous machine dynamics model applies. Default: nullptr */
 		CIMPP::SynchronousMachine* SynchronousMachine;
 
-		/** \brief Turbine-governor model associated with this synchronous machine model. Multiplicity of greater than one is intended to support hydro units that have multiple turbines on one generator. Default: 0 */
+		/** \brief Turbine-governor model associated with this synchronous machine model. Multiplicity of greater than one is intended to support hydro units that have multiple turbines on one generator. Default: {} */
 		std::list<CIMPP::TurbineGovernorDynamics*> TurbineGovernorDynamics;
 
 		static const char debugName[];

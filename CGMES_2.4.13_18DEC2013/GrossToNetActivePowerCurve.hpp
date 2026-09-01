@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class GeneratingUnit;
@@ -26,7 +27,7 @@ namespace CIMPP
 		GrossToNetActivePowerCurve();
 		~GrossToNetActivePowerCurve() override;
 
-		/** \brief A generating unit may have a gross active power to net active power curve, describing the losses and auxiliary power requirements of the unit. Default: 0 */
+		/** \brief A generating unit may have a gross active power to net active power curve, describing the losses and auxiliary power requirements of the unit. Default: nullptr */
 		CIMPP::GeneratingUnit* GeneratingUnit;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -32,25 +33,25 @@ namespace CIMPP
 		/** \brief Power source switch (Cswitch). true = fixed voltage of 1.0 PU false = generator terminal voltage. Default: false */
 		CIMPP::Boolean cswitch;
 
-		/** \brief Maximum field voltage output (Emax).  Typical Value = 5. Default: nullptr */
+		/** \brief Maximum field voltage output (Emax).  Typical Value = 5. Default: 0.0 */
 		CIMPP::PU emax;
 
-		/** \brief Minimum field voltage output (Emin).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum field voltage output (Emin).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU emin;
 
-		/** \brief Gain (K) (&gt;0).  Typical Value = 200. Default: nullptr */
+		/** \brief Gain (K) (>0).  Typical Value = 200. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief Rc/Rfd - ratio of field discharge resistance to field winding resistance (RcRfd).  Typical Value = 0. Default: nullptr */
+		/** \brief Rc/Rfd - ratio of field discharge resistance to field winding resistance (RcRfd).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Simple_Float rcrfd;
 
-		/** \brief Ta/Tb - gain reduction ratio of lag-lead element (TaTb). The parameter Ta is not defined explicitly.  Typical Value = 0.1. Default: nullptr */
+		/** \brief Ta/Tb - gain reduction ratio of lag-lead element (TaTb). The parameter Ta is not defined explicitly.  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Simple_Float tatb;
 
-		/** \brief Denominator time constant of lag-lead block (Tb).  Typical Value = 10. Default: nullptr */
+		/** \brief Denominator time constant of lag-lead block (Tb).  Typical Value = 10. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Time constant of gain block (Te) (&gt;0).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Time constant of gain block (Te) (>0).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Seconds te;
 
 		static const char debugName[];

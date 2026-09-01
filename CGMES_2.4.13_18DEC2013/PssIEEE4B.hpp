@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 #include "Simple_Float.hpp"
@@ -28,187 +29,187 @@ namespace CIMPP
 		PssIEEE4B();
 		~PssIEEE4B() override;
 
-		/** \brief Three dB bandwidth (B). Default: nullptr */
+		/** \brief Three dB bandwidth (B). Default: 0.0 */
 		CIMPP::Simple_Float bwi;
 
-		/** \brief High band gain (K).  Typical Value = 120. Default: nullptr */
+		/** \brief High band gain (K).  Typical Value = 120. Default: 0.0 */
 		CIMPP::PU kh;
 
-		/** \brief High band differential filter gain (K).  Typical Value = 66. Default: nullptr */
+		/** \brief High band differential filter gain (K).  Typical Value = 66. Default: 0.0 */
 		CIMPP::PU kh1;
 
-		/** \brief High band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: nullptr */
+		/** \brief High band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU kh11;
 
-		/** \brief High band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: nullptr */
+		/** \brief High band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU kh17;
 
-		/** \brief High band differential filter gain (K).  Typical Value = 66. Default: nullptr */
+		/** \brief High band differential filter gain (K).  Typical Value = 66. Default: 0.0 */
 		CIMPP::PU kh2;
 
-		/** \brief Intermediate band gain (K).  Typical Value = 30. Default: nullptr */
+		/** \brief Intermediate band gain (K).  Typical Value = 30. Default: 0.0 */
 		CIMPP::PU ki;
 
-		/** \brief Intermediate band differential filter gain (K).  Typical Value = 66. Default: nullptr */
+		/** \brief Intermediate band differential filter gain (K).  Typical Value = 66. Default: 0.0 */
 		CIMPP::PU ki1;
 
-		/** \brief Intermediate band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: nullptr */
+		/** \brief Intermediate band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU ki11;
 
-		/** \brief Intermediate band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: nullptr */
+		/** \brief Intermediate band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU ki17;
 
-		/** \brief Intermediate band differential filter gain (K).  Typical Value = 66. Default: nullptr */
+		/** \brief Intermediate band differential filter gain (K).  Typical Value = 66. Default: 0.0 */
 		CIMPP::PU ki2;
 
-		/** \brief Low band gain (K).  Typical Value = 7.5. Default: nullptr */
+		/** \brief Low band gain (K).  Typical Value = 7.5. Default: 0.0 */
 		CIMPP::PU kl;
 
-		/** \brief Low band differential filter gain (K).  Typical Value = 66. Default: nullptr */
+		/** \brief Low band differential filter gain (K).  Typical Value = 66. Default: 0.0 */
 		CIMPP::PU kl1;
 
-		/** \brief Low band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: nullptr */
+		/** \brief Low band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU kl11;
 
-		/** \brief Low band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: nullptr */
+		/** \brief Low band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU kl17;
 
-		/** \brief Low band differential filter gain (K).  Typical Value = 66. Default: nullptr */
+		/** \brief Low band differential filter gain (K).  Typical Value = 66. Default: 0.0 */
 		CIMPP::PU kl2;
 
-		/** \brief Notch filter: filter frequency (omega). Default: nullptr */
+		/** \brief Notch filter: filter frequency (omega). Default: 0.0 */
 		CIMPP::Simple_Float omegani;
 
-		/** \brief High band time constant (T).  Typical Value = 0.01513. Default: nullptr */
+		/** \brief High band time constant (T).  Typical Value = 0.01513. Default: 0.0 */
 		CIMPP::Seconds th1;
 
-		/** \brief High band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief High band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds th10;
 
-		/** \brief High band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief High band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds th11;
 
-		/** \brief High band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief High band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds th12;
 
-		/** \brief High band time constant (T).  Typical Value = 0.01816. Default: nullptr */
+		/** \brief High band time constant (T).  Typical Value = 0.01816. Default: 0.0 */
 		CIMPP::Seconds th2;
 
-		/** \brief High band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief High band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds th3;
 
-		/** \brief High band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief High band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds th4;
 
-		/** \brief High band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief High band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds th5;
 
-		/** \brief High band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief High band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds th6;
 
-		/** \brief High band time constant (T).  Typical Value = 0.01816. Default: nullptr */
+		/** \brief High band time constant (T).  Typical Value = 0.01816. Default: 0.0 */
 		CIMPP::Seconds th7;
 
-		/** \brief High band time constant (T).  Typical Value = 0.02179. Default: nullptr */
+		/** \brief High band time constant (T).  Typical Value = 0.02179. Default: 0.0 */
 		CIMPP::Seconds th8;
 
-		/** \brief High band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief High band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds th9;
 
-		/** \brief Intermediate band time constant (T).  Typical Value = 0.173. Default: nullptr */
+		/** \brief Intermediate band time constant (T).  Typical Value = 0.173. Default: 0.0 */
 		CIMPP::Seconds ti1;
 
-		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ti10;
 
-		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ti11;
 
-		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ti12;
 
-		/** \brief Intermediate band time constant (T).  Typical Value = 0.2075. Default: nullptr */
+		/** \brief Intermediate band time constant (T).  Typical Value = 0.2075. Default: 0.0 */
 		CIMPP::Seconds ti2;
 
-		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ti3;
 
-		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ti4;
 
-		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ti5;
 
-		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ti6;
 
-		/** \brief Intermediate band time constant (T).  Typical Value = 0.2075. Default: nullptr */
+		/** \brief Intermediate band time constant (T).  Typical Value = 0.2075. Default: 0.0 */
 		CIMPP::Seconds ti7;
 
-		/** \brief Intermediate band time constant (T).  Typical Value = 0.2491. Default: nullptr */
+		/** \brief Intermediate band time constant (T).  Typical Value = 0.2491. Default: 0.0 */
 		CIMPP::Seconds ti8;
 
-		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Intermediate band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ti9;
 
-		/** \brief Low band time constant (T).  Typical Value = 1.73. Default: nullptr */
+		/** \brief Low band time constant (T).  Typical Value = 1.73. Default: 0.0 */
 		CIMPP::Seconds tl1;
 
-		/** \brief Low band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Low band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tl10;
 
-		/** \brief Low band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Low band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tl11;
 
-		/** \brief Low band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Low band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tl12;
 
-		/** \brief Low band time constant (T).  Typical Value = 2.075. Default: nullptr */
+		/** \brief Low band time constant (T).  Typical Value = 2.075. Default: 0.0 */
 		CIMPP::Seconds tl2;
 
-		/** \brief Low band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Low band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tl3;
 
-		/** \brief Low band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Low band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tl4;
 
-		/** \brief Low band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Low band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tl5;
 
-		/** \brief Low band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Low band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tl6;
 
-		/** \brief Low band time constant (T).  Typical Value = 2.075. Default: nullptr */
+		/** \brief Low band time constant (T).  Typical Value = 2.075. Default: 0.0 */
 		CIMPP::Seconds tl7;
 
-		/** \brief Low band time constant (T).  Typical Value = 2.491. Default: nullptr */
+		/** \brief Low band time constant (T).  Typical Value = 2.491. Default: 0.0 */
 		CIMPP::Seconds tl8;
 
-		/** \brief Low band time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Low band time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tl9;
 
-		/** \brief High band output maximum limit (V).  Typical Value = 0.6. Default: nullptr */
+		/** \brief High band output maximum limit (V).  Typical Value = 0.6. Default: 0.0 */
 		CIMPP::PU vhmax;
 
-		/** \brief High band output minimum limit (V).  Typical Value = -0.6. Default: nullptr */
+		/** \brief High band output minimum limit (V).  Typical Value = -0.6. Default: 0.0 */
 		CIMPP::PU vhmin;
 
-		/** \brief Intermediate band output maximum limit (V).  Typical Value = 0.6. Default: nullptr */
+		/** \brief Intermediate band output maximum limit (V).  Typical Value = 0.6. Default: 0.0 */
 		CIMPP::PU vimax;
 
-		/** \brief Intermediate band output minimum limit (V).  Typical Value = -0.6. Default: nullptr */
+		/** \brief Intermediate band output minimum limit (V).  Typical Value = -0.6. Default: 0.0 */
 		CIMPP::PU vimin;
 
-		/** \brief Low band output maximum limit (V).  Typical Value = 0.075. Default: nullptr */
+		/** \brief Low band output maximum limit (V).  Typical Value = 0.075. Default: 0.0 */
 		CIMPP::PU vlmax;
 
-		/** \brief Low band output minimum limit (V).  Typical Value = -0.075. Default: nullptr */
+		/** \brief Low band output minimum limit (V).  Typical Value = -0.075. Default: 0.0 */
 		CIMPP::PU vlmin;
 
-		/** \brief PSS output maximum limit (V).  Typical Value = 0.15. Default: nullptr */
+		/** \brief PSS output maximum limit (V).  Typical Value = 0.15. Default: 0.0 */
 		CIMPP::PU vstmax;
 
-		/** \brief PSS output minimum limit (V).  Typical Value = -0.15. Default: nullptr */
+		/** \brief PSS output minimum limit (V).  Typical Value = -0.15. Default: 0.0 */
 		CIMPP::PU vstmin;
 
 		static const char debugName[];

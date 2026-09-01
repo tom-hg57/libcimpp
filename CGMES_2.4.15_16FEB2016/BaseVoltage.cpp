@@ -21,10 +21,10 @@ static const CimClassDetails& getCimClassDetails()
 		BaseVoltage(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
-			CGMESProfile::EQ_BD,
 			CGMESProfile::EQ,
-			CGMESProfile::TP_BD,
+			CGMESProfile::EQ_BD,
 			CGMESProfile::TP,
+			CGMESProfile::TP_BD,
 		},
 		CGMESProfile::EQ
 	);
@@ -36,12 +36,12 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	static const std::map<std::string, AttrDetails> ClassAttrDetailsMap =
 	{
 		{ "BaseVoltage.ConductingEquipment", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
-		{ "BaseVoltage.TopologicalNode", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::TP_BD, CGMESProfile::TP, } } },
+		{ "BaseVoltage.TopologicalNode", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::TP, CGMESProfile::TP_BD, } } },
 		{ "BaseVoltage.TransformerEnds", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "BaseVoltage.VoltageLevel", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
-		{ "BaseVoltage.nominalVoltage", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ_BD, CGMESProfile::EQ, } } },
+		{ "BaseVoltage.nominalVoltage", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, CGMESProfile::EQ_BD, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 BaseVoltage::BaseVoltage() {}

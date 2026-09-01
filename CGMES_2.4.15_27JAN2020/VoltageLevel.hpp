@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Voltage.hpp"
 
 namespace CIMPP
@@ -29,19 +30,19 @@ namespace CIMPP
 		VoltageLevel();
 		~VoltageLevel() override;
 
-		/** \brief The base voltage used for all equipment within the voltage level. Default: 0 */
+		/** \brief The base voltage used for all equipment within the voltage level. Default: nullptr */
 		CIMPP::BaseVoltage* BaseVoltage;
 
-		/** \brief The bays within this voltage level. Default: 0 */
+		/** \brief The bays within this voltage level. Default: {} */
 		std::list<CIMPP::Bay*> Bays;
 
-		/** \brief The substation of the voltage level. Default: 0 */
+		/** \brief The substation of the voltage level. Default: nullptr */
 		CIMPP::Substation* Substation;
 
-		/** \brief The bus bar`s high voltage limit Default: nullptr */
+		/** \brief The bus bar`s high voltage limit Default: 0.0 */
 		CIMPP::Voltage highVoltageLimit;
 
-		/** \brief The bus bar`s low voltage limit Default: nullptr */
+		/** \brief The bus bar`s low voltage limit Default: 0.0 */
 		CIMPP::Voltage lowVoltageLimit;
 
 		static const char debugName[];

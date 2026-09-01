@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -30,34 +31,34 @@ namespace CIMPP
 		WindPitchContPowerIEC();
 		~WindPitchContPowerIEC() override;
 
-		/** \brief The wind dynamics lookup table associated with this pitch control power model. Default: 0 */
+		/** \brief The wind dynamics lookup table associated with this pitch control power model. Default: {} */
 		std::list<CIMPP::WindDynamicsLookupTable*> WindDynamicsLookupTable;
 
-		/** \brief Wind turbine type 1B model with which this pitch control power model is associated. Default: 0 */
+		/** \brief Wind turbine type 1B model with which this pitch control power model is associated. Default: nullptr */
 		CIMPP::WindGenTurbineType1bIEC* WindGenTurbineType1bIEC;
 
-		/** \brief Wind turbine type 2 model with which this pitch control power model is associated. Default: 0 */
+		/** \brief Wind turbine type 2 model with which this pitch control power model is associated. Default: nullptr */
 		CIMPP::WindGenTurbineType2IEC* WindGenTurbineType2IEC;
 
-		/** \brief Rate limit for increasing power (&lt;i&gt;dp&lt;/i&gt;&lt;i&gt;&lt;sub&gt;max&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; WindPitchContPowerIEC.dpmin). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Rate limit for increasing power (<i>dp</i><i><sub>max</sub></i>) (&gt; WindPitchContPowerIEC.dpmin). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU dpmax;
 
-		/** \brief Rate limit for decreasing power (&lt;i&gt;dp&lt;/i&gt;&lt;i&gt;&lt;sub&gt;min&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; WindPitchContPowerIEC.dpmax). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Rate limit for decreasing power (<i>dp</i><i><sub>min</sub></i>) (&lt; WindPitchContPowerIEC.dpmax). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU dpmin;
 
-		/** \brief Minimum power setting (&lt;i&gt;p&lt;/i&gt;&lt;i&gt;&lt;sub&gt;min&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Minimum power setting (<i>p</i><i><sub>min</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief If &lt;i&gt;p&lt;/i&gt;&lt;i&gt;&lt;sub&gt;init&lt;/sub&gt;&lt;/i&gt;&lt;sub&gt; &lt;/sub&gt;&amp;lt; &lt;i&gt;p&lt;/i&gt;&lt;i&gt;&lt;sub&gt;set&lt;/sub&gt;&lt;/i&gt;&lt;sub&gt; &lt;/sub&gt;then power will be ramped down to &lt;i&gt;p&lt;/i&gt;&lt;i&gt;&lt;sub&gt;min&lt;/sub&gt;&lt;/i&gt;. It is (&lt;i&gt;p&lt;/i&gt;&lt;i&gt;&lt;sub&gt;set&lt;/sub&gt;&lt;/i&gt;) in the IEC 61400-27-1:2015. It is a type-dependent parameter. Default: nullptr */
+		/** \brief If <i>p</i><i><sub>init</sub></i><sub> </sub>&lt; <i>p</i><i><sub>set</sub></i><sub> </sub>then power will be ramped down to <i>p</i><i><sub>min</sub></i>. It is (<i>p</i><i><sub>set</sub></i>) in the IEC 61400-27-1:2015. It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU pset;
 
-		/** \brief Lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Lag time constant (<i>T</i><i><sub>1</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Voltage measurement time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;r&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Voltage measurement time constant (<i>T</i><i><sub>r</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tr;
 
-		/** \brief Dip detection threshold (&lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;UVRT&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Dip detection threshold (<i>u</i><i><sub>UVRT</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU uuvrt;
 
 		static const char debugName[];

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class DCLine;
@@ -29,16 +30,16 @@ namespace CIMPP
 		SubGeographicalRegion();
 		~SubGeographicalRegion() override;
 
-		/** \brief The DC lines in this sub-geographical region. Default: 0 */
+		/** \brief The DC lines in this sub-geographical region. Default: {} */
 		std::list<CIMPP::DCLine*> DCLines;
 
-		/** \brief The lines within the sub-geographical region. Default: 0 */
+		/** \brief The lines within the sub-geographical region. Default: {} */
 		std::list<CIMPP::Line*> Lines;
 
-		/** \brief The geographical region which this sub-geographical region is within. Default: 0 */
+		/** \brief The geographical region which this sub-geographical region is within. Default: nullptr */
 		CIMPP::GeographicalRegion* Region;
 
-		/** \brief The substations in this sub-geographical region. Default: 0 */
+		/** \brief The substations in this sub-geographical region. Default: {} */
 		std::list<CIMPP::Substation*> Substations;
 
 		static const char debugName[];

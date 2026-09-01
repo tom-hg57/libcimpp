@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "Integer.hpp"
 
@@ -29,10 +30,10 @@ namespace CIMPP
 		DiagramObjectPoint();
 		~DiagramObjectPoint() override;
 
-		/** \brief The diagram object with which the points are associated. Default: 0 */
+		/** \brief The diagram object with which the points are associated. Default: nullptr */
 		CIMPP::DiagramObject* DiagramObject;
 
-		/** \brief The `glue` point to which this point is associated. Default: 0 */
+		/** \brief The `glue` point to which this point is associated. Default: nullptr */
 		CIMPP::DiagramObjectGluePoint* DiagramObjectGluePoint;
 
 		/** \brief The sequence position of the point, used for defining the order of points for diagram objects acting as a polyline or polygon with more than one point. The attribute shall be a positive value. Default: 0 */

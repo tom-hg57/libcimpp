@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Voltage.hpp"
 
 namespace CIMPP
@@ -30,19 +31,19 @@ namespace CIMPP
 		BaseVoltage();
 		~BaseVoltage() override;
 
-		/** \brief All conducting equipment with this base voltage.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers. Default: 0 */
+		/** \brief All conducting equipment with this base voltage.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers. Default: {} */
 		std::list<CIMPP::ConductingEquipment*> ConductingEquipment;
 
-		/** \brief The topological nodes at the base voltage. Default: 0 */
+		/** \brief The topological nodes at the base voltage. Default: {} */
 		std::list<CIMPP::TopologicalNode*> TopologicalNode;
 
-		/** \brief Transformer ends at the base voltage.  This is essential for PU calculation. Default: 0 */
+		/** \brief Transformer ends at the base voltage.  This is essential for PU calculation. Default: {} */
 		std::list<CIMPP::TransformerEnd*> TransformerEnds;
 
-		/** \brief The voltage levels having this base voltage. Default: 0 */
+		/** \brief The voltage levels having this base voltage. Default: {} */
 		std::list<CIMPP::VoltageLevel*> VoltageLevel;
 
-		/** \brief The power system resource`s base voltage.  Shall be a positive value and not zero. Default: nullptr */
+		/** \brief The power system resource`s base voltage.  Shall be a positive value and not zero. Default: 0.0 */
 		CIMPP::Voltage nominalVoltage;
 
 		static const char debugName[];

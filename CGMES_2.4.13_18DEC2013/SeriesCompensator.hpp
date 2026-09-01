@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "CurrentFlow.hpp"
 #include "Reactance.hpp"
@@ -30,25 +31,25 @@ namespace CIMPP
 		SeriesCompensator();
 		~SeriesCompensator() override;
 
-		/** \brief Positive sequence resistance. Default: nullptr */
+		/** \brief Positive sequence resistance. Default: 0.0 */
 		CIMPP::Resistance r;
 
-		/** \brief Zero sequence resistance. Default: nullptr */
+		/** \brief Zero sequence resistance. Default: 0.0 */
 		CIMPP::Resistance r0;
 
 		/** \brief Describe if a metal oxide varistor (mov) for over voltage protection is configured at the series compensator. Default: false */
 		CIMPP::Boolean varistorPresent;
 
-		/** \brief The maximum current the varistor is designed to handle at specified duration. Default: nullptr */
+		/** \brief The maximum current the varistor is designed to handle at specified duration. Default: 0.0 */
 		CIMPP::CurrentFlow varistorRatedCurrent;
 
-		/** \brief The dc voltage at which the varistor start conducting. Default: nullptr */
+		/** \brief The dc voltage at which the varistor start conducting. Default: 0.0 */
 		CIMPP::Voltage varistorVoltageThreshold;
 
-		/** \brief Positive sequence reactance. Default: nullptr */
+		/** \brief Positive sequence reactance. Default: 0.0 */
 		CIMPP::Reactance x;
 
-		/** \brief Zero sequence reactance. Default: nullptr */
+		/** \brief Zero sequence reactance. Default: 0.0 */
 		CIMPP::Reactance x0;
 
 		static const char debugName[];

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class DiscontinuousExcitationControlDynamics;
@@ -33,28 +34,28 @@ namespace CIMPP
 		ExcitationSystemDynamics();
 		~ExcitationSystemDynamics() override;
 
-		/** \brief Discontinuous excitation control model associated with this excitation system model. Default: 0 */
+		/** \brief Discontinuous excitation control model associated with this excitation system model. Default: nullptr */
 		CIMPP::DiscontinuousExcitationControlDynamics* DiscontinuousExcitationControlDynamics;
 
-		/** \brief Overexcitation limiter model associated with this excitation system model. Default: 0 */
+		/** \brief Overexcitation limiter model associated with this excitation system model. Default: nullptr */
 		CIMPP::OverexcitationLimiterDynamics* OverexcitationLimiterDynamics;
 
-		/** \brief Power Factor or VAr controller Type I model associated with this excitation system model. Default: 0 */
+		/** \brief Power Factor or VAr controller Type I model associated with this excitation system model. Default: nullptr */
 		CIMPP::PFVArControllerType1Dynamics* PFVArControllerType1Dynamics;
 
-		/** \brief Power Factor or VAr controller Type II model associated with this excitation system model. Default: 0 */
+		/** \brief Power Factor or VAr controller Type II model associated with this excitation system model. Default: nullptr */
 		CIMPP::PFVArControllerType2Dynamics* PFVArControllerType2Dynamics;
 
-		/** \brief Power system stabilizer model associated with this excitation system model. Default: 0 */
+		/** \brief Power system stabilizer model associated with this excitation system model. Default: nullptr */
 		CIMPP::PowerSystemStabilizerDynamics* PowerSystemStabilizerDynamics;
 
-		/** \brief Synchronous machine model with which this excitation system model is associated. Default: 0 */
+		/** \brief Synchronous machine model with which this excitation system model is associated. Default: nullptr */
 		CIMPP::SynchronousMachineDynamics* SynchronousMachineDynamics;
 
-		/** \brief Undrexcitation limiter model associated with this excitation system model. Default: 0 */
+		/** \brief Undrexcitation limiter model associated with this excitation system model. Default: nullptr */
 		CIMPP::UnderexcitationLimiterDynamics* UnderexcitationLimiterDynamics;
 
-		/** \brief Voltage compensator model associated with this excitation system model. Default: 0 */
+		/** \brief Voltage compensator model associated with this excitation system model. Default: nullptr */
 		CIMPP::VoltageCompensatorDynamics* VoltageCompensatorDynamics;
 
 		static const char debugName[];

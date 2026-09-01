@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,55 +28,55 @@ namespace CIMPP
 		ExcIEEEST5B();
 		~ExcIEEEST5B() override;
 
-		/** \brief Rectifier regulation factor (K).  Typical Value = 0.004. Default: nullptr */
+		/** \brief Rectifier regulation factor (K).  Typical Value = 0.004. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Regulator gain (K).  Typical Value = 200. Default: nullptr */
+		/** \brief Regulator gain (K).  Typical Value = 200. Default: 0.0 */
 		CIMPP::PU kr;
 
-		/** \brief Firing circuit time constant (T1).  Typical Value = 0.004. Default: nullptr */
+		/** \brief Firing circuit time constant (T1).  Typical Value = 0.004. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Regulator lag time constant (T).  Typical Value = 6. Default: nullptr */
+		/** \brief Regulator lag time constant (T).  Typical Value = 6. Default: 0.0 */
 		CIMPP::Seconds tb1;
 
-		/** \brief Regulator lag time constant (T).  Typical Value = 0.01. Default: nullptr */
+		/** \brief Regulator lag time constant (T).  Typical Value = 0.01. Default: 0.0 */
 		CIMPP::Seconds tb2;
 
-		/** \brief Regulator lead time constant (T).  Typical Value = 0.8. Default: nullptr */
+		/** \brief Regulator lead time constant (T).  Typical Value = 0.8. Default: 0.0 */
 		CIMPP::Seconds tc1;
 
-		/** \brief Regulator lead time constant (T).  Typical Value = 0.08. Default: nullptr */
+		/** \brief Regulator lead time constant (T).  Typical Value = 0.08. Default: 0.0 */
 		CIMPP::Seconds tc2;
 
-		/** \brief OEL lag time constant (T).  Typical Value = 2. Default: nullptr */
+		/** \brief OEL lag time constant (T).  Typical Value = 2. Default: 0.0 */
 		CIMPP::Seconds tob1;
 
-		/** \brief OEL lag time constant (T).  Typical Value = 0.08. Default: nullptr */
+		/** \brief OEL lag time constant (T).  Typical Value = 0.08. Default: 0.0 */
 		CIMPP::Seconds tob2;
 
-		/** \brief OEL lead time constant (T).  Typical Value = 0.1. Default: nullptr */
+		/** \brief OEL lead time constant (T).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Seconds toc1;
 
-		/** \brief OEL lead time constant (T).  Typical Value = 0.08. Default: nullptr */
+		/** \brief OEL lead time constant (T).  Typical Value = 0.08. Default: 0.0 */
 		CIMPP::Seconds toc2;
 
-		/** \brief UEL lag time constant (T).  Typical Value = 10. Default: nullptr */
+		/** \brief UEL lag time constant (T).  Typical Value = 10. Default: 0.0 */
 		CIMPP::Seconds tub1;
 
-		/** \brief UEL lag time constant (T).  Typical Value = 0.05. Default: nullptr */
+		/** \brief UEL lag time constant (T).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::Seconds tub2;
 
-		/** \brief UEL lead time constant (T).  Typical Value = 2. Default: nullptr */
+		/** \brief UEL lead time constant (T).  Typical Value = 2. Default: 0.0 */
 		CIMPP::Seconds tuc1;
 
-		/** \brief UEL lead time constant (T).  Typical Value = 0.1. Default: nullptr */
+		/** \brief UEL lead time constant (T).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Seconds tuc2;
 
-		/** \brief Maximum voltage regulator output (V).  Typical Value = 5. Default: nullptr */
+		/** \brief Maximum voltage regulator output (V).  Typical Value = 5. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator output (V).  Typical Value = -4. Default: nullptr */
+		/** \brief Minimum voltage regulator output (V).  Typical Value = -4. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

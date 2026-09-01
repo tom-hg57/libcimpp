@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 
 namespace CIMPP
@@ -27,13 +28,13 @@ namespace CIMPP
 		WindContQLimIEC();
 		~WindContQLimIEC() override;
 
-		/** \brief Wind generator type 3 or type 4 model with which this constant Q limitation model is associated. Default: 0 */
+		/** \brief Wind generator type 3 or type 4 model with which this constant Q limitation model is associated. Default: nullptr */
 		CIMPP::WindTurbineType3or4IEC* WindTurbineType3or4IEC;
 
-		/** \brief Maximum reactive power (&lt;i&gt;q&lt;/i&gt;&lt;i&gt;&lt;sub&gt;max&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; WindContQLimIEC.qmin). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Maximum reactive power (<i>q</i><i><sub>max</sub></i>) (&gt; WindContQLimIEC.qmin). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU qmax;
 
-		/** \brief Minimum reactive power (&lt;i&gt;q&lt;/i&gt;&lt;i&gt;&lt;sub&gt;min&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; WindContQLimIEC.qmax). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Minimum reactive power (<i>q</i><i><sub>min</sub></i>) (&lt; WindContQLimIEC.qmax). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU qmin;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,34 +28,34 @@ namespace CIMPP
 		ExcCZ();
 		~ExcCZ() override;
 
-		/** \brief Exciter output maximum limit (Efdmax). Default: nullptr */
+		/** \brief Exciter output maximum limit (Efdmax). Default: 0.0 */
 		CIMPP::PU efdmax;
 
-		/** \brief Exciter output minimum limit (Efdmin). Default: nullptr */
+		/** \brief Exciter output minimum limit (Efdmin). Default: 0.0 */
 		CIMPP::PU efdmin;
 
-		/** \brief Regulator gain (Ka). Default: nullptr */
+		/** \brief Regulator gain (Ka). Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Exciter constant related to self-excited field (Ke). Default: nullptr */
+		/** \brief Exciter constant related to self-excited field (Ke). Default: 0.0 */
 		CIMPP::PU ke;
 
-		/** \brief Regulator proportional gain (Kp). Default: nullptr */
+		/** \brief Regulator proportional gain (Kp). Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief Regulator time constant (Ta). Default: nullptr */
+		/** \brief Regulator time constant (Ta). Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Regulator integral time constant (Tc). Default: nullptr */
+		/** \brief Regulator integral time constant (Tc). Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Exciter time constant, integration rate associated with exciter control (Te). Default: nullptr */
+		/** \brief Exciter time constant, integration rate associated with exciter control (Te). Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Voltage regulator maximum limit (Vrmax). Default: nullptr */
+		/** \brief Voltage regulator maximum limit (Vrmax). Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Voltage regulator minimum limit (Vrmin). Default: nullptr */
+		/** \brief Voltage regulator minimum limit (Vrmin). Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

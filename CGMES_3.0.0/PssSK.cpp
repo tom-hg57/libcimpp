@@ -40,7 +40,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PssSK.vsmax", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "PssSK.vsmin", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PssSK::PssSK() {}

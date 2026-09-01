@@ -18,8 +18,8 @@ static const CimClassDetails& getCimClassDetails()
 		RegulatingCondEq(),
 		"http://iec.ch/TC57/CIM100#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::SC,
 			CGMESProfile::SSH,
 		},
@@ -35,7 +35,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "RegulatingCondEq.RegulatingControl", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "RegulatingCondEq.controlEnabled", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SSH, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 RegulatingCondEq::RegulatingCondEq() : RegulatingControl(nullptr) {}

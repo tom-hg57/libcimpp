@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 #include "Simple_Float.hpp"
@@ -28,34 +29,34 @@ namespace CIMPP
 		ExcSEXS();
 		~ExcSEXS() override;
 
-		/** \brief Field voltage clipping maximum limit (Efdmax).  Typical Value = 5. Default: nullptr */
+		/** \brief Field voltage clipping maximum limit (Efdmax).  Typical Value = 5. Default: 0.0 */
 		CIMPP::PU efdmax;
 
-		/** \brief Field voltage clipping minimum limit (Efdmin).  Typical Value = -5. Default: nullptr */
+		/** \brief Field voltage clipping minimum limit (Efdmin).  Typical Value = -5. Default: 0.0 */
 		CIMPP::PU efdmin;
 
-		/** \brief Maximum field voltage output (Emax).  Typical Value = 5. Default: nullptr */
+		/** \brief Maximum field voltage output (Emax).  Typical Value = 5. Default: 0.0 */
 		CIMPP::PU emax;
 
-		/** \brief Minimum field voltage output (Emin).  Typical Value = -5. Default: nullptr */
+		/** \brief Minimum field voltage output (Emin).  Typical Value = -5. Default: 0.0 */
 		CIMPP::PU emin;
 
-		/** \brief Gain (K) (&gt;0).  Typical Value = 100. Default: nullptr */
+		/** \brief Gain (K) (>0).  Typical Value = 100. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief PI controller gain (Kc).  Typical Value = 0.08. Default: nullptr */
+		/** \brief PI controller gain (Kc).  Typical Value = 0.08. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Ta/Tb - gain reduction ratio of lag-lead element (TaTb).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Ta/Tb - gain reduction ratio of lag-lead element (TaTb).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Simple_Float tatb;
 
-		/** \brief Denominator time constant of lag-lead block (Tb).  Typical Value = 10. Default: nullptr */
+		/** \brief Denominator time constant of lag-lead block (Tb).  Typical Value = 10. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief PI controller phase lead time constant (Tc).  Typical Value = 0. Default: nullptr */
+		/** \brief PI controller phase lead time constant (Tc).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Time constant of gain block (Te).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Time constant of gain block (Te).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::Seconds te;
 
 		static const char debugName[];

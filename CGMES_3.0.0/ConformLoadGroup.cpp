@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ConformLoadGroup.ConformLoadSchedules", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "ConformLoadGroup.EnergyConsumers", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ConformLoadGroup::ConformLoadGroup() {}

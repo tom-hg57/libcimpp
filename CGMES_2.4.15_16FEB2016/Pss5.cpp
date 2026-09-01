@@ -46,7 +46,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Pss5.vsmn", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "Pss5.vsmx", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Pss5::Pss5() {}

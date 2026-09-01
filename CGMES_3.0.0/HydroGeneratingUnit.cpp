@@ -35,7 +35,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "HydroGeneratingUnit.energyConversionCapability", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "HydroGeneratingUnit.turbineType", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 HydroGeneratingUnit::HydroGeneratingUnit() : HydroPowerPlant(nullptr) {}

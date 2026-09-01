@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 #include "Simple_Float.hpp"
@@ -28,28 +29,28 @@ namespace CIMPP
 		GovSteam2();
 		~GovSteam2() override;
 
-		/** \brief Frequency dead band (DBF).  Typical Value = 0. Default: nullptr */
+		/** \brief Frequency dead band (DBF).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU dbf;
 
-		/** \brief Governor gain (reciprocal of droop) (K).  Typical Value = 20. Default: nullptr */
+		/** \brief Governor gain (reciprocal of droop) (K).  Typical Value = 20. Default: 0.0 */
 		CIMPP::Simple_Float k;
 
-		/** \brief Fuel flow maximum negative error value (MN).  Typical Value = -1. Default: nullptr */
+		/** \brief Fuel flow maximum negative error value (MN).  Typical Value = -1. Default: 0.0 */
 		CIMPP::PU mnef;
 
-		/** \brief Fuel flow maximum positive error value (MX).  Typical Value = 1. Default: nullptr */
+		/** \brief Fuel flow maximum positive error value (MX).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU mxef;
 
-		/** \brief Maximum fuel flow (P).  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum fuel flow (P).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU pmax;
 
-		/** \brief Minimum fuel flow (P).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum fuel flow (P).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief Governor lag time constant (T) (&gt;0).  Typical Value = 0.45. Default: nullptr */
+		/** \brief Governor lag time constant (T) (>0).  Typical Value = 0.45. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Governor lead time constant (T) (may be 0).  Typical Value = 0. Default: nullptr */
+		/** \brief Governor lead time constant (T) (may be 0).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t2;
 
 		static const char debugName[];

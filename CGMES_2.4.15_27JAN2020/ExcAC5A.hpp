@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 #include "Simple_Float.hpp"
@@ -28,58 +29,58 @@ namespace CIMPP
 		ExcAC5A();
 		~ExcAC5A() override;
 
-		/** \brief Coefficient to allow different usage of the model (a).  Typical Value = 1. Default: nullptr */
+		/** \brief Coefficient to allow different usage of the model (a).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Simple_Float a;
 
-		/** \brief Exciter voltage at which exciter saturation is defined (Efd1).  Typical Value = 5.6. Default: nullptr */
+		/** \brief Exciter voltage at which exciter saturation is defined (Efd1).  Typical Value = 5.6. Default: 0.0 */
 		CIMPP::PU efd1;
 
-		/** \brief Exciter voltage at which exciter saturation is defined (Efd2).  Typical Value = 4.2. Default: nullptr */
+		/** \brief Exciter voltage at which exciter saturation is defined (Efd2).  Typical Value = 4.2. Default: 0.0 */
 		CIMPP::PU efd2;
 
-		/** \brief Voltage regulator gain (Ka).  Typical Value = 400. Default: nullptr */
+		/** \brief Voltage regulator gain (Ka).  Typical Value = 400. Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: nullptr */
+		/** \brief Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU ke;
 
-		/** \brief Excitation control system stabilizer gains (Kf).  Typical Value = 0.03. Default: nullptr */
+		/** \brief Excitation control system stabilizer gains (Kf).  Typical Value = 0.03. Default: 0.0 */
 		CIMPP::PU kf;
 
-		/** \brief Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: nullptr */
+		/** \brief Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU ks;
 
-		/** \brief Exciter saturation function value at the corresponding exciter voltage, Efd1 (S[Efd1]).  Typical Value = 0.86. Default: nullptr */
+		/** \brief Exciter saturation function value at the corresponding exciter voltage, Efd1 (S[Efd1]).  Typical Value = 0.86. Default: 0.0 */
 		CIMPP::Simple_Float seefd1;
 
-		/** \brief Exciter saturation function value at the corresponding exciter voltage, Efd2 (S[Efd2]).  Typical Value = 0.5. Default: nullptr */
+		/** \brief Exciter saturation function value at the corresponding exciter voltage, Efd2 (S[Efd2]).  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Simple_Float seefd2;
 
-		/** \brief Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Voltage regulator time constant (Tb).  Typical Value = 0. Default: nullptr */
+		/** \brief Voltage regulator time constant (Tb).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Voltage regulator time constant (Tc).  Typical Value = 0. Default: nullptr */
+		/** \brief Voltage regulator time constant (Tc).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 0.8. Default: nullptr */
+		/** \brief Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 0.8. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Excitation control system stabilizer time constant (Tf1).  Typical Value  = 1. Default: nullptr */
+		/** \brief Excitation control system stabilizer time constant (Tf1).  Typical Value  = 1. Default: 0.0 */
 		CIMPP::Seconds tf1;
 
-		/** \brief Excitation control system stabilizer time constant (Tf2).  Typical Value = 0.8. Default: nullptr */
+		/** \brief Excitation control system stabilizer time constant (Tf2).  Typical Value = 0.8. Default: 0.0 */
 		CIMPP::Seconds tf2;
 
-		/** \brief Excitation control system stabilizer time constant (Tf3).  Typical Value = 0. Default: nullptr */
+		/** \brief Excitation control system stabilizer time constant (Tf3).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tf3;
 
-		/** \brief Maximum voltage regulator output (Vrmax).  Typical Value = 7.3. Default: nullptr */
+		/** \brief Maximum voltage regulator output (Vrmax).  Typical Value = 7.3. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator output (Vrmin).  Typical Value =-7.3. Default: nullptr */
+		/** \brief Minimum voltage regulator output (Vrmin).  Typical Value =-7.3. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

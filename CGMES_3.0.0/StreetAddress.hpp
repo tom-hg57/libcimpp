@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "String.hpp"
 
 namespace CIMPP
@@ -29,13 +30,13 @@ namespace CIMPP
 		StreetAddress();
 		~StreetAddress() override;
 
-		/** \brief The language in which the address is specified, using ISO 639-1 two digit language code. Default: '' */
+		/** \brief The language in which the address is specified, using ISO 639-1 two digit language code. Default: "" */
 		CIMPP::String language;
 
-		/** \brief Post office box. Default: '' */
+		/** \brief Post office box. Default: "" */
 		CIMPP::String poBox;
 
-		/** \brief Postal code for the address. Default: '' */
+		/** \brief Postal code for the address. Default: "" */
 		CIMPP::String postalCode;
 
 		/** \brief Status of this address. Default: nullptr */

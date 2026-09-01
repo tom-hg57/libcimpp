@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Simple_Float.hpp"
 
@@ -27,22 +28,22 @@ namespace CIMPP
 		OverexcLimIEEE();
 		~OverexcLimIEEE() override;
 
-		/** \brief OEL pickup/drop-out hysteresis (HYST).  Typical Value = 0.03. Default: nullptr */
+		/** \brief OEL pickup/drop-out hysteresis (HYST).  Typical Value = 0.03. Default: 0.0 */
 		CIMPP::PU hyst;
 
-		/** \brief OEL timed field current limit (I).  Typical Value = 1.05. Default: nullptr */
+		/** \brief OEL timed field current limit (I).  Typical Value = 1.05. Default: 0.0 */
 		CIMPP::PU ifdlim;
 
-		/** \brief OEL instantaneous field current limit (I).  Typical Value = 1.5. Default: nullptr */
+		/** \brief OEL instantaneous field current limit (I).  Typical Value = 1.5. Default: 0.0 */
 		CIMPP::PU ifdmax;
 
-		/** \brief OEL timed field current limiter pickup level (I).  Typical Value = 1.05. Default: nullptr */
+		/** \brief OEL timed field current limiter pickup level (I).  Typical Value = 1.05. Default: 0.0 */
 		CIMPP::PU itfpu;
 
-		/** \brief OEL cooldown gain (K).  Typical Value = 1. Default: nullptr */
+		/** \brief OEL cooldown gain (K).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU kcd;
 
-		/** \brief OEL ramped limit rate (K).  Unit = PU/sec.  Typical Value = 10. Default: nullptr */
+		/** \brief OEL ramped limit rate (K).  Unit = PU/sec.  Typical Value = 10. Default: 0.0 */
 		CIMPP::Simple_Float kramp;
 
 		static const char debugName[];

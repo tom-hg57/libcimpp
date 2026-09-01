@@ -20,8 +20,8 @@ static const CimClassDetails& getCimClassDetails()
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
 			CGMESProfile::EQ,
-			CGMESProfile::SV,
 			CGMESProfile::SSH,
+			CGMESProfile::SV,
 		},
 		CGMESProfile::EQ
 	);
@@ -52,7 +52,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ACDCConverter.udc", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::SV, } } },
 		{ "ACDCConverter.valveU0", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ACDCConverter::ACDCConverter() : PccTerminal(nullptr) {}

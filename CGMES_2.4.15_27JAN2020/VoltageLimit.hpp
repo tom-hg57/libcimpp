@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Voltage.hpp"
 
 namespace CIMPP
@@ -26,7 +27,7 @@ namespace CIMPP
 		VoltageLimit();
 		~VoltageLimit() override;
 
-		/** \brief Limit on voltage. High or low limit nature of the limit depends upon the properties of the operational limit type. Default: nullptr */
+		/** \brief Limit on voltage. High or low limit nature of the limit depends upon the properties of the operational limit type. Default: 0.0 */
 		CIMPP::Voltage value;
 
 		static const char debugName[];

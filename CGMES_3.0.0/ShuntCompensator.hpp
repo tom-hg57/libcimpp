@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Float.hpp"
 #include "Integer.hpp"
@@ -32,10 +33,10 @@ namespace CIMPP
 		ShuntCompensator();
 		~ShuntCompensator() override;
 
-		/** \brief The state for the number of shunt compensator sections in service. Default: 0 */
+		/** \brief The state for the number of shunt compensator sections in service. Default: nullptr */
 		CIMPP::SvShuntCompensatorSections* SvShuntCompensatorSections;
 
-		/** \brief An automatic voltage regulation delay (AVRDelay) which is the time delay from a change in voltage to when the capacitor is allowed to change state. This filters out temporary changes in voltage. Default: nullptr */
+		/** \brief An automatic voltage regulation delay (AVRDelay) which is the time delay from a change in voltage to when the capacitor is allowed to change state. This filters out temporary changes in voltage. Default: 0.0 */
 		CIMPP::Seconds aVRDelay;
 
 		/** \brief Used for Yn and Zn connections. True if the neutral is solidly grounded. Default: false */
@@ -44,7 +45,7 @@ namespace CIMPP
 		/** \brief The maximum number of sections that may be switched in. Default: 0 */
 		CIMPP::Integer maximumSections;
 
-		/** \brief The voltage at which the nominal reactive power may be calculated. This should normally be within 10% of the voltage at which the capacitor is connected to the network. Default: nullptr */
+		/** \brief The voltage at which the nominal reactive power may be calculated. This should normally be within 10% of the voltage at which the capacitor is connected to the network. Default: 0.0 */
 		CIMPP::Voltage nomU;
 
 		/** \brief The normal number of sections switched in. The value shall be between zero and ShuntCompensator.maximumSections. Default: 0 */
@@ -53,7 +54,7 @@ namespace CIMPP
 		/** \brief Shunt compensator sections in use. Starting value for steady state solution. The attribute shall be a positive value or zero. Non integer values are allowed to support continuous variables. The reasons for continuous value are to support study cases where no discrete shunt compensators has yet been designed, a solutions where a narrow voltage band force the sections to oscillate or accommodate for a continuous solution as input.  For LinearShuntConpensator the value shall be between zero and ShuntCompensator.maximumSections. At value zero the shunt compensator conductance and admittance is zero. Linear interpolation of conductance and admittance between the previous and next integer section is applied in case of non-integer values. For NonlinearShuntCompensator-s shall only be set to one of the NonlinearShuntCompenstorPoint.sectionNumber. There is no interpolation between NonlinearShuntCompenstorPoint-s. Default: 0.0 */
 		CIMPP::Float sections;
 
-		/** \brief Voltage sensitivity required for the device to regulate the bus voltage, in voltage/reactive power. Default: nullptr */
+		/** \brief Voltage sensitivity required for the device to regulate the bus voltage, in voltage/reactive power. Default: 0.0 */
 		CIMPP::VoltagePerReactivePower voltageSensitivity;
 
 		static const char debugName[];

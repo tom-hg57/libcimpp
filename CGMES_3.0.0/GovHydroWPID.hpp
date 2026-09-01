@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,70 +29,70 @@ namespace CIMPP
 		GovHydroWPID();
 		~GovHydroWPID() override;
 
-		/** \brief Turbine damping factor (&lt;i&gt;D&lt;/i&gt;).  Unit = delta P / delta speed. Default: nullptr */
+		/** \brief Turbine damping factor (<i>D</i>).  Unit = delta P / delta speed. Default: 0.0 */
 		CIMPP::PU d;
 
-		/** \brief Gate opening limit maximum (&lt;i&gt;Gatmax&lt;/i&gt;) (&amp;gt; GovHydroWPID.gatmin). Default: nullptr */
+		/** \brief Gate opening limit maximum (<i>Gatmax</i>) (&gt; GovHydroWPID.gatmin). Default: 0.0 */
 		CIMPP::PU gatmax;
 
-		/** \brief Gate opening limit minimum (&lt;i&gt;Gatmin&lt;/i&gt;) (&amp;lt; GovHydroWPID.gatmax). Default: nullptr */
+		/** \brief Gate opening limit minimum (<i>Gatmin</i>) (&lt; GovHydroWPID.gatmax). Default: 0.0 */
 		CIMPP::PU gatmin;
 
-		/** \brief Gate position 1 (&lt;i&gt;Gv1&lt;/i&gt;). Default: nullptr */
+		/** \brief Gate position 1 (<i>Gv1</i>). Default: 0.0 */
 		CIMPP::PU gv1;
 
-		/** \brief Gate position 2 (&lt;i&gt;Gv2&lt;/i&gt;). Default: nullptr */
+		/** \brief Gate position 2 (<i>Gv2</i>). Default: 0.0 */
 		CIMPP::PU gv2;
 
-		/** \brief Gate position 3 (&lt;i&gt;Gv3&lt;/i&gt;) (= 1,0). Default: nullptr */
+		/** \brief Gate position 3 (<i>Gv3</i>) (= 1,0). Default: 0.0 */
 		CIMPP::PU gv3;
 
-		/** \brief Derivative gain (&lt;i&gt;Kd&lt;/i&gt;).  Typical value = 1,11. Default: nullptr */
+		/** \brief Derivative gain (<i>Kd</i>).  Typical value = 1,11. Default: 0.0 */
 		CIMPP::PU kd;
 
-		/** \brief Reset gain (&lt;i&gt;Ki&lt;/i&gt;).  Typical value = 0,36. Default: nullptr */
+		/** \brief Reset gain (<i>Ki</i>).  Typical value = 0,36. Default: 0.0 */
 		CIMPP::PU ki;
 
-		/** \brief Proportional gain (&lt;i&gt;Kp&lt;/i&gt;).  Typical value = 0,1. Default: nullptr */
+		/** \brief Proportional gain (<i>Kp</i>).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief Base for power values  (&lt;i&gt;MWbase&lt;/i&gt;) (&amp;gt; 0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values  (<i>MWbase</i>) (&gt; 0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Output at &lt;i&gt;Gv1&lt;/i&gt; PU of &lt;i&gt;MWbase&lt;/i&gt; (&lt;i&gt;Pgv1&lt;/i&gt;). Default: nullptr */
+		/** \brief Output at <i>Gv1</i> PU of <i>MWbase</i> (<i>Pgv1</i>). Default: 0.0 */
 		CIMPP::PU pgv1;
 
-		/** \brief Output at &lt;i&gt;Gv2&lt;/i&gt; PU of &lt;i&gt;MWbase&lt;/i&gt; (&lt;i&gt;Pgv2&lt;/i&gt;). Default: nullptr */
+		/** \brief Output at <i>Gv2</i> PU of <i>MWbase</i> (<i>Pgv2</i>). Default: 0.0 */
 		CIMPP::PU pgv2;
 
-		/** \brief Output at &lt;i&gt;Gv3&lt;/i&gt; PU of &lt;i&gt;MWbase&lt;/i&gt; (&lt;i&gt;Pgv3&lt;/i&gt;). Default: nullptr */
+		/** \brief Output at <i>Gv3</i> PU of <i>MWbase</i> (<i>Pgv3</i>). Default: 0.0 */
 		CIMPP::PU pgv3;
 
-		/** \brief Maximum power output (&lt;i&gt;Pmax&lt;/i&gt;) (&amp;gt; GovHydroWPID.pmin). Default: nullptr */
+		/** \brief Maximum power output (<i>Pmax</i>) (&gt; GovHydroWPID.pmin). Default: 0.0 */
 		CIMPP::PU pmax;
 
-		/** \brief Minimum power output (&lt;i&gt;Pmin&lt;/i&gt;) (&amp;lt; GovHydroWPID.pmax). Default: nullptr */
+		/** \brief Minimum power output (<i>Pmin</i>) (&lt; GovHydroWPID.pmax). Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief Permanent drop (&lt;i&gt;Reg&lt;/i&gt;). Default: nullptr */
+		/** \brief Permanent drop (<i>Reg</i>). Default: 0.0 */
 		CIMPP::PU reg;
 
-		/** \brief Controller time constant (&lt;i&gt;Ta&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Controller time constant (<i>Ta</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Gate servo time constant (&lt;i&gt;Tb&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Gate servo time constant (<i>Tb</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Speed detector time constant (&lt;i&gt;Treg&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Speed detector time constant (<i>Treg</i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds treg;
 
-		/** \brief Water inertia time constant (&lt;i&gt;Tw&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Water inertia time constant (<i>Tw</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tw;
 
-		/** \brief Maximum gate opening velocity (&lt;i&gt;Velmax&lt;/i&gt;) (&amp;gt; GovHydroWPID.velmin).  Unit = PU / s.  Typical value = 0. Default: nullptr */
+		/** \brief Maximum gate opening velocity (<i>Velmax</i>) (&gt; GovHydroWPID.velmin).  Unit = PU / s.  Typical value = 0. Default: 0.0 */
 		CIMPP::PU velmax;
 
-		/** \brief Maximum gate closing velocity (&lt;i&gt;Velmin&lt;/i&gt;) (&amp;lt; GovHydroWPID.velmax).  Unit = PU / s.  Typical value = 0. Default: nullptr */
+		/** \brief Maximum gate closing velocity (<i>Velmin</i>) (&lt; GovHydroWPID.velmax).  Unit = PU / s.  Typical value = 0. Default: 0.0 */
 		CIMPP::PU velmin;
 
 		static const char debugName[];

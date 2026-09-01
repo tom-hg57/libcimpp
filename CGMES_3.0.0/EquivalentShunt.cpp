@@ -31,7 +31,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "EquivalentShunt.b", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "EquivalentShunt.g", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 EquivalentShunt::EquivalentShunt() {}

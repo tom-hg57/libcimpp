@@ -31,7 +31,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	{
 		{ "VoltageAdjusterDynamics.PFVArControllerType1Dynamics", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 VoltageAdjusterDynamics::VoltageAdjusterDynamics() : PFVArControllerType1Dynamics(nullptr) {}

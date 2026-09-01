@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 
 namespace CIMPP
@@ -30,22 +31,22 @@ namespace CIMPP
 		WindGenTurbineType3IEC();
 		~WindGenTurbineType3IEC() override;
 
-		/** \brief Wind aerodynamic model associated with this wind generator type 3 model. Default: 0 */
+		/** \brief Wind aerodynamic model associated with this wind generator type 3 model. Default: nullptr */
 		CIMPP::WindAeroLinearIEC* WindAeroLinearIEC;
 
-		/** \brief Wind control P type 3 model associated with this wind turbine type 3 model. Default: 0 */
+		/** \brief Wind control P type 3 model associated with this wind turbine type 3 model. Default: nullptr */
 		CIMPP::WindContPType3IEC* WindContPType3IEC;
 
-		/** \brief Wind control pitch angle model associated with this wind turbine type 3. Default: 0 */
+		/** \brief Wind control pitch angle model associated with this wind turbine type 3. Default: nullptr */
 		CIMPP::WindContPitchAngleIEC* WindContPitchAngleIEC;
 
-		/** \brief Wind mechanical model associated with this wind turbine Type 3 model. Default: 0 */
+		/** \brief Wind mechanical model associated with this wind turbine Type 3 model. Default: nullptr */
 		CIMPP::WindMechIEC* WindMechIEC;
 
-		/** \brief Maximum active current ramp rate (di). It is project dependent parameter. Default: nullptr */
+		/** \brief Maximum active current ramp rate (di). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU dipmax;
 
-		/** \brief Maximum reactive current ramp rate (di). It is project dependent parameter. Default: nullptr */
+		/** \brief Maximum reactive current ramp rate (di). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU diqmax;
 
 		static const char debugName[];

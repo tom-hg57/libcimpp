@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "Seconds.hpp"
 
@@ -28,13 +29,13 @@ namespace CIMPP
 		WindGenType3aIEC();
 		~WindGenType3aIEC() override;
 
-		/** \brief Wind turbine type 4 model with which this wind generator type 3A model is associated. Default: 0 */
+		/** \brief Wind turbine type 4 model with which this wind generator type 3A model is associated. Default: nullptr */
 		CIMPP::WindTurbineType4IEC* WindTurbineType4IEC;
 
-		/** \brief Current PI controller proportional gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;Pc&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: 0.0 */
+		/** \brief Current PI controller proportional gain (<i>K</i><i><sub>Pc</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Float kpc;
 
-		/** \brief Current PI controller integration time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;Ic&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Current PI controller integration time constant (<i>T</i><i><sub>Ic</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tic;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "Integer.hpp"
 #include "WindLookupTableFunctionKind.hpp"
@@ -37,43 +38,43 @@ namespace CIMPP
 		WindDynamicsLookupTable();
 		~WindDynamicsLookupTable() override;
 
-		/** \brief The current control limitation model with which this wind dynamics lookup table is associated. Default: 0 */
+		/** \brief The current control limitation model with which this wind dynamics lookup table is associated. Default: nullptr */
 		CIMPP::WindContCurrLimIEC* WindContCurrLimIEC;
 
-		/** \brief The P control type 3 model with which this wind dynamics lookup table is associated. Default: 0 */
+		/** \brief The P control type 3 model with which this wind dynamics lookup table is associated. Default: nullptr */
 		CIMPP::WindContPType3IEC* WindContPType3IEC;
 
-		/** \brief The QP and QU limitation model with which this wind dynamics lookup table is associated. Default: 0 */
+		/** \brief The QP and QU limitation model with which this wind dynamics lookup table is associated. Default: nullptr */
 		CIMPP::WindContQPQULimIEC* WindContQPQULimIEC;
 
-		/** \brief The rotor resistance control model with which this wind dynamics lookup table is associated. Default: 0 */
+		/** \brief The rotor resistance control model with which this wind dynamics lookup table is associated. Default: nullptr */
 		CIMPP::WindContRotorRIEC* WindContRotorRIEC;
 
-		/** \brief The generator type 3B model with which this wind dynamics lookup table is associated. Default: 0 */
+		/** \brief The generator type 3B model with which this wind dynamics lookup table is associated. Default: nullptr */
 		CIMPP::WindGenType3bIEC* WindGenType3bIEC;
 
-		/** \brief The pitch control power model with which this wind dynamics lookup table is associated. Default: 0 */
+		/** \brief The pitch control power model with which this wind dynamics lookup table is associated. Default: nullptr */
 		CIMPP::WindPitchContPowerIEC* WindPitchContPowerIEC;
 
-		/** \brief The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: 0 */
+		/** \brief The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: nullptr */
 		CIMPP::WindPlantFreqPcontrolIEC* WindPlantFreqPcontrolIEC;
 
-		/** \brief The voltage and reactive power wind plant control model with which this wind dynamics lookup table is associated. Default: 0 */
+		/** \brief The voltage and reactive power wind plant control model with which this wind dynamics lookup table is associated. Default: nullptr */
 		CIMPP::WindPlantReactiveControlIEC* WindPlantReactiveControlIEC;
 
-		/** \brief The grid protection model with which this wind dynamics lookup table is associated. Default: 0 */
+		/** \brief The grid protection model with which this wind dynamics lookup table is associated. Default: nullptr */
 		CIMPP::WindProtectionIEC* WindProtectionIEC;
 
-		/** \brief Input value (&lt;i&gt;x&lt;/i&gt;) for the lookup table function. Default: 0.0 */
+		/** \brief Input value (<i>x</i>) for the lookup table function. Default: 0.0 */
 		CIMPP::Float input;
 
 		/** \brief Type of the lookup table function. Default: 0 */
 		CIMPP::WindLookupTableFunctionKind lookupTableFunctionType;
 
-		/** \brief Output value (&lt;i&gt;y&lt;/i&gt;) for the lookup table function. Default: 0.0 */
+		/** \brief Output value (<i>y</i>) for the lookup table function. Default: 0.0 */
 		CIMPP::Float output;
 
-		/** \brief Sequence numbers of the pairs of the input (&lt;i&gt;x&lt;/i&gt;) and the output (&lt;i&gt;y&lt;/i&gt;) of the lookup table function. Default: 0 */
+		/** \brief Sequence numbers of the pairs of the input (<i>x</i>) and the output (<i>y</i>) of the lookup table function. Default: 0 */
 		CIMPP::Integer sequence;
 
 		static const char debugName[];

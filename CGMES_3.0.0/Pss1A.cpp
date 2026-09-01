@@ -51,7 +51,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Pss1A.vrmax", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "Pss1A.vrmin", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Pss1A::Pss1A() {}

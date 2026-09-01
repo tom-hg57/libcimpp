@@ -48,7 +48,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "EquivalentInjection.x0", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 		{ "EquivalentInjection.x2", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 EquivalentInjection::EquivalentInjection() : ReactiveCapabilityCurve(nullptr) {}

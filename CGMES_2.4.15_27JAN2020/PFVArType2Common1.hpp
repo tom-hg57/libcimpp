@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 
@@ -30,16 +31,16 @@ namespace CIMPP
 		/** \brief Selector (J). true = control mode for reactive power false = control mode for power factor. Default: false */
 		CIMPP::Boolean j;
 
-		/** \brief Reset gain (Ki). Default: nullptr */
+		/** \brief Reset gain (Ki). Default: 0.0 */
 		CIMPP::PU ki;
 
-		/** \brief Proportional gain (Kp). Default: nullptr */
+		/** \brief Proportional gain (Kp). Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief Output limit (max). Default: nullptr */
+		/** \brief Output limit (max). Default: 0.0 */
 		CIMPP::PU max;
 
-		/** \brief Reference value of reactive power or power factor (Ref). The reference value is initialised by this model. This initialisation may override the value exchanged by this attribute to represent a plant operator`s change of the reference setting. Default: nullptr */
+		/** \brief Reference value of reactive power or power factor (Ref). The reference value is initialised by this model. This initialisation may override the value exchanged by this attribute to represent a plant operator`s change of the reference setting. Default: 0.0 */
 		CIMPP::PU ref;
 
 		static const char debugName[];

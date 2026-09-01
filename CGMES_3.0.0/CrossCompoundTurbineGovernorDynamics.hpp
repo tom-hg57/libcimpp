@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class SynchronousMachineDynamics;
@@ -26,10 +27,10 @@ namespace CIMPP
 		CrossCompoundTurbineGovernorDynamics();
 		~CrossCompoundTurbineGovernorDynamics() override;
 
-		/** \brief High-pressure synchronous machine with which this cross-compound turbine governor is associated. Default: 0 */
+		/** \brief High-pressure synchronous machine with which this cross-compound turbine governor is associated. Default: nullptr */
 		CIMPP::SynchronousMachineDynamics* HighPressureSynchronousMachineDynamics;
 
-		/** \brief Low-pressure synchronous machine with which this cross-compound turbine governor is associated. Default: 0 */
+		/** \brief Low-pressure synchronous machine with which this cross-compound turbine governor is associated. Default: nullptr */
 		CIMPP::SynchronousMachineDynamics* LowPressureSynchronousMachineDynamics;
 
 		static const char debugName[];

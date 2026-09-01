@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "BasicIntervalSchedule.value1Unit", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "BasicIntervalSchedule.value2Unit", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 BasicIntervalSchedule::BasicIntervalSchedule() {}

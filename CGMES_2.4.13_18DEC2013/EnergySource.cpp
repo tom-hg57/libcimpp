@@ -19,8 +19,8 @@ static const CimClassDetails& getCimClassDetails()
 		EnergySource(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::SSH,
 		},
 		CGMESProfile::EQ
@@ -46,7 +46,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "EnergySource.x0", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "EnergySource.xn", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 EnergySource::EnergySource() : EnergySchedulingType(nullptr), WindTurbineType3or4Dynamics(nullptr) {}

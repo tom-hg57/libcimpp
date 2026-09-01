@@ -38,7 +38,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PowerTransformer.isPartOfGeneratorUnit", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 		{ "PowerTransformer.operationalValuesConsidered", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PowerTransformer::PowerTransformer() {}

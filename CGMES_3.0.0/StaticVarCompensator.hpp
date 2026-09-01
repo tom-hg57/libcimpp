@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Reactance.hpp"
 #include "ReactivePower.hpp"
 #include "SVCControlMode.hpp"
@@ -31,25 +32,25 @@ namespace CIMPP
 		StaticVarCompensator();
 		~StaticVarCompensator() override;
 
-		/** \brief Static Var Compensator dynamics model used to describe dynamic behaviour of this Static Var Compensator. Default: 0 */
+		/** \brief Static Var Compensator dynamics model used to describe dynamic behaviour of this Static Var Compensator. Default: nullptr */
 		CIMPP::StaticVarCompensatorDynamics* StaticVarCompensatorDynamics;
 
-		/** \brief Capacitive reactance at maximum capacitive reactive power.  Shall always be positive. Default: nullptr */
+		/** \brief Capacitive reactance at maximum capacitive reactive power.  Shall always be positive. Default: 0.0 */
 		CIMPP::Reactance capacitiveRating;
 
-		/** \brief Inductive reactance at maximum inductive reactive power.  Shall always be negative. Default: nullptr */
+		/** \brief Inductive reactance at maximum inductive reactive power.  Shall always be negative. Default: 0.0 */
 		CIMPP::Reactance inductiveRating;
 
-		/** \brief Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: nullptr */
+		/** \brief Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: 0.0 */
 		CIMPP::ReactivePower q;
 
 		/** \brief SVC control mode. Default: 0 */
 		CIMPP::SVCControlMode sVCControlMode;
 
-		/** \brief The characteristics slope of an SVC defines how the reactive power output changes in proportion to the difference between the regulated bus voltage and the voltage setpoint. The attribute shall be a positive value or zero. Default: nullptr */
+		/** \brief The characteristics slope of an SVC defines how the reactive power output changes in proportion to the difference between the regulated bus voltage and the voltage setpoint. The attribute shall be a positive value or zero. Default: 0.0 */
 		CIMPP::VoltagePerReactivePower slope;
 
-		/** \brief The reactive power output of the SVC is proportional to the difference between the voltage at the regulated bus and the voltage setpoint.  When the regulated bus voltage is equal to the voltage setpoint, the reactive power output is zero. Default: nullptr */
+		/** \brief The reactive power output of the SVC is proportional to the difference between the voltage at the regulated bus and the voltage setpoint.  When the regulated bus voltage is equal to the voltage setpoint, the reactive power output is zero. Default: 0.0 */
 		CIMPP::Voltage voltageSetPoint;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -30,25 +31,25 @@ namespace CIMPP
 		WindMechIEC();
 		~WindMechIEC() override;
 
-		/** \brief Wind turbine Type 3 model with which this wind mechanical model is associated. Default: 0 */
+		/** \brief Wind turbine Type 3 model with which this wind mechanical model is associated. Default: nullptr */
 		CIMPP::WindGenTurbineType3IEC* WindGenTurbineType3IEC;
 
-		/** \brief Wind generator type 1 or 2 model with which this wind mechanical model is associated. Default: 0 */
+		/** \brief Wind generator type 1 or 2 model with which this wind mechanical model is associated. Default: nullptr */
 		CIMPP::WindTurbineType1or2IEC* WindTurbineType1or2IEC;
 
-		/** \brief Wind turbine type 4B model with which this wind mechanical model is associated. Default: 0 */
+		/** \brief Wind turbine type 4B model with which this wind mechanical model is associated. Default: nullptr */
 		CIMPP::WindTurbineType4bIEC* WindTurbineType4bIEC;
 
-		/** \brief Drive train damping (. It is type dependent parameter. Default: nullptr */
+		/** \brief Drive train damping (. It is type dependent parameter. Default: 0.0 */
 		CIMPP::PU cdrt;
 
-		/** \brief Inertia constant of generator (). It is type dependent parameter. Default: nullptr */
+		/** \brief Inertia constant of generator (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds hgen;
 
-		/** \brief Inertia constant of wind turbine rotor (). It is type dependent parameter. Default: nullptr */
+		/** \brief Inertia constant of wind turbine rotor (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds hwtr;
 
-		/** \brief Drive train stiffness (). It is type dependent parameter. Default: nullptr */
+		/** \brief Drive train stiffness (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::PU kdrt;
 
 		static const char debugName[];

@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "SynchronousMachineDetailed.saturationFactor120QAxis", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "SynchronousMachineDetailed.saturationFactorQAxis", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 SynchronousMachineDetailed::SynchronousMachineDetailed() {}

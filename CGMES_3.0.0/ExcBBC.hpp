@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,37 +29,37 @@ namespace CIMPP
 		ExcBBC();
 		~ExcBBC() override;
 
-		/** \brief Maximum open circuit exciter voltage (&lt;i&gt;Efdmax&lt;/i&gt;) (&amp;gt; ExcBBC.efdmin).  Typical value = 5. Default: nullptr */
+		/** \brief Maximum open circuit exciter voltage (<i>Efdmax</i>) (&gt; ExcBBC.efdmin).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU efdmax;
 
-		/** \brief Minimum open circuit exciter voltage (&lt;i&gt;Efdmin&lt;/i&gt;) (&amp;lt; ExcBBC.efdmax).  Typical value = -5. Default: nullptr */
+		/** \brief Minimum open circuit exciter voltage (<i>Efdmin</i>) (&lt; ExcBBC.efdmax).  Typical value = -5. Default: 0.0 */
 		CIMPP::PU efdmin;
 
-		/** \brief Steady state gain (&lt;i&gt;K&lt;/i&gt;) (not = 0).  Typical value = 300. Default: nullptr */
+		/** \brief Steady state gain (<i>K</i>) (not = 0).  Typical value = 300. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief Supplementary signal routing selector (&lt;i&gt;switch&lt;/i&gt;). true = &lt;i&gt;Vs&lt;/i&gt; connected to 3rd summing point false =  &lt;i&gt;Vs&lt;/i&gt; connected to 1st summing point (see diagram). Typical value = false. Default: false */
-		CIMPP::Boolean _switch;
+		/** \brief Supplementary signal routing selector (<i>switch</i>). true = <i>Vs</i> connected to 3rd summing point false =  <i>Vs</i> connected to 1st summing point (see diagram). Typical value = false. Default: false */
+		CIMPP::Boolean switch_;
 
-		/** \brief Controller time constant (&lt;i&gt;T1&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 6. Default: nullptr */
+		/** \brief Controller time constant (<i>T1</i>) (&gt;= 0).  Typical value = 6. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Controller time constant (&lt;i&gt;T2&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1. Default: nullptr */
+		/** \brief Controller time constant (<i>T2</i>) (&gt;= 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T3&lt;/i&gt;) (&amp;gt;= 0).  If = 0, block is bypassed.  Typical value = 0,05. Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T3</i>) (&gt;= 0).  If = 0, block is bypassed.  Typical value = 0,05. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T4&lt;/i&gt;) (&amp;gt;= 0).  If = 0, block is bypassed.  Typical value = 0,01. Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T4</i>) (&gt;= 0).  If = 0, block is bypassed.  Typical value = 0,01. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Maximum control element output (&lt;i&gt;Vrmax&lt;/i&gt;) (&amp;gt; ExcBBC.vrmin).  Typical value = 5. Default: nullptr */
+		/** \brief Maximum control element output (<i>Vrmax</i>) (&gt; ExcBBC.vrmin).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum control element output (&lt;i&gt;Vrmin&lt;/i&gt;) (&amp;lt; ExcBBC.vrmax).  Typical value = -5. Default: nullptr */
+		/** \brief Minimum control element output (<i>Vrmin</i>) (&lt; ExcBBC.vrmax).  Typical value = -5. Default: 0.0 */
 		CIMPP::PU vrmin;
 
-		/** \brief Effective excitation transformer reactance (&lt;i&gt;Xe&lt;/i&gt;) (&amp;gt;= 0).  &lt;i&gt;Xe&lt;/i&gt; models the regulation of the transformer/rectifier unit.  Typical value = 0,05. Default: nullptr */
+		/** \brief Effective excitation transformer reactance (<i>Xe</i>) (&gt;= 0).  <i>Xe</i> models the regulation of the transformer/rectifier unit.  Typical value = 0,05. Default: 0.0 */
 		CIMPP::PU xe;
 
 		static const char debugName[];

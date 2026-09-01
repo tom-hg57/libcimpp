@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "GenericNonLinearLoadModelKind.hpp"
 #include "Seconds.hpp"
 #include "Simple_Float.hpp"
@@ -28,31 +29,31 @@ namespace CIMPP
 		LoadGenericNonLinear();
 		~LoadGenericNonLinear() override;
 
-		/** \brief Steady state voltage index for reactive power (BS). Default: nullptr */
+		/** \brief Steady state voltage index for reactive power (BS). Default: 0.0 */
 		CIMPP::Simple_Float bs;
 
-		/** \brief Transient voltage index for reactive power (BT). Default: nullptr */
+		/** \brief Transient voltage index for reactive power (BT). Default: 0.0 */
 		CIMPP::Simple_Float bt;
 
 		/** \brief Type of generic non-linear load model. Default: 0 */
 		CIMPP::GenericNonLinearLoadModelKind genericNonLinearLoadModelType;
 
-		/** \brief Steady state voltage index for active power (LS). Default: nullptr */
+		/** \brief Steady state voltage index for active power (LS). Default: 0.0 */
 		CIMPP::Simple_Float ls;
 
-		/** \brief Transient voltage index for active power (LT). Default: nullptr */
+		/** \brief Transient voltage index for active power (LT). Default: 0.0 */
 		CIMPP::Simple_Float lt;
 
-		/** \brief Dynamic portion of active load (P). Default: nullptr */
+		/** \brief Dynamic portion of active load (P). Default: 0.0 */
 		CIMPP::Simple_Float pt;
 
-		/** \brief Dynamic portion of reactive load (Q). Default: nullptr */
+		/** \brief Dynamic portion of reactive load (Q). Default: 0.0 */
 		CIMPP::Simple_Float qt;
 
-		/** \brief Time constant of lag function of active power (T). Default: nullptr */
+		/** \brief Time constant of lag function of active power (T). Default: 0.0 */
 		CIMPP::Seconds tp;
 
-		/** \brief Time constant of lag function of reactive power (T). Default: nullptr */
+		/** \brief Time constant of lag function of reactive power (T). Default: 0.0 */
 		CIMPP::Seconds tq;
 
 		static const char debugName[];

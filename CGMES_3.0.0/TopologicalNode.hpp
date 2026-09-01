@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class BaseVoltage;
@@ -33,31 +34,31 @@ namespace CIMPP
 		TopologicalNode();
 		~TopologicalNode() override;
 
-		/** \brief The island for which the node is an angle reference.   Normally there is one angle reference node for each island. Default: 0 */
+		/** \brief The island for which the node is an angle reference.   Normally there is one angle reference node for each island. Default: nullptr */
 		CIMPP::TopologicalIsland* AngleRefTopologicalIsland;
 
-		/** \brief The base voltage of the topological node. Default: 0 */
+		/** \brief The base voltage of the topological node. Default: nullptr */
 		CIMPP::BaseVoltage* BaseVoltage;
 
-		/** \brief The connectivity node container to which the topological node belongs. Default: 0 */
+		/** \brief The connectivity node container to which the topological node belongs. Default: nullptr */
 		CIMPP::ConnectivityNodeContainer* ConnectivityNodeContainer;
 
-		/** \brief The connectivity nodes combine together to form this topological node.  May depend on the current state of switches in the network. Default: 0 */
+		/** \brief The connectivity nodes combine together to form this topological node.  May depend on the current state of switches in the network. Default: {} */
 		std::list<CIMPP::ConnectivityNode*> ConnectivityNodes;
 
-		/** \brief The reporting group to which the topological node belongs. Default: 0 */
+		/** \brief The reporting group to which the topological node belongs. Default: nullptr */
 		CIMPP::ReportingGroup* ReportingGroup;
 
-		/** \brief The injection flows state variables associated with the topological node. Default: 0 */
+		/** \brief The injection flows state variables associated with the topological node. Default: nullptr */
 		CIMPP::SvInjection* SvInjection;
 
-		/** \brief The state voltage associated with the topological node. Default: 0 */
+		/** \brief The state voltage associated with the topological node. Default: nullptr */
 		CIMPP::SvVoltage* SvVoltage;
 
-		/** \brief The terminals associated with the topological node.   This can be used as an alternative to the connectivity node path to terminal, thus making it unnecessary to model connectivity nodes in some cases.   Note that if connectivity nodes are in the model, this association would probably not be used as an input specification. Default: 0 */
+		/** \brief The terminals associated with the topological node.   This can be used as an alternative to the connectivity node path to terminal, thus making it unnecessary to model connectivity nodes in some cases.   Note that if connectivity nodes are in the model, this association would probably not be used as an input specification. Default: {} */
 		std::list<CIMPP::Terminal*> Terminal;
 
-		/** \brief A topological node belongs to a topological island. Default: 0 */
+		/** \brief A topological node belongs to a topological island. Default: nullptr */
 		CIMPP::TopologicalIsland* TopologicalIsland;
 
 		static const char debugName[];

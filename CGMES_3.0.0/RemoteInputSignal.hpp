@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "RemoteSignalKind.hpp"
 
 namespace CIMPP
@@ -35,31 +36,31 @@ namespace CIMPP
 		RemoteInputSignal();
 		~RemoteInputSignal() override;
 
-		/** \brief Discontinuous excitation control model using this remote input signal. Default: 0 */
+		/** \brief Discontinuous excitation control model using this remote input signal. Default: nullptr */
 		CIMPP::DiscontinuousExcitationControlDynamics* DiscontinuousExcitationControlDynamics;
 
-		/** \brief Power factor or VAr controller type 1 model using this remote input signal. Default: 0 */
+		/** \brief Power factor or VAr controller type 1 model using this remote input signal. Default: nullptr */
 		CIMPP::PFVArControllerType1Dynamics* PFVArControllerType1Dynamics;
 
-		/** \brief Power system stabilizer model using this remote input signal. Default: 0 */
+		/** \brief Power system stabilizer model using this remote input signal. Default: nullptr */
 		CIMPP::PowerSystemStabilizerDynamics* PowerSystemStabilizerDynamics;
 
-		/** \brief Remote terminal with which this input signal is associated. Default: 0 */
+		/** \brief Remote terminal with which this input signal is associated. Default: nullptr */
 		CIMPP::Terminal* Terminal;
 
-		/** \brief Underexcitation limiter model using this remote input signal. Default: 0 */
+		/** \brief Underexcitation limiter model using this remote input signal. Default: nullptr */
 		CIMPP::UnderexcitationLimiterDynamics* UnderexcitationLimiterDynamics;
 
-		/** \brief Voltage compensator model using this remote input signal. Default: 0 */
+		/** \brief Voltage compensator model using this remote input signal. Default: nullptr */
 		CIMPP::VoltageCompensatorDynamics* VoltageCompensatorDynamics;
 
-		/** \brief The wind plant using the remote signal. Default: 0 */
+		/** \brief The wind plant using the remote signal. Default: nullptr */
 		CIMPP::WindPlantDynamics* WindPlantDynamics;
 
-		/** \brief Wind generator type 1 or type 2 model using this remote input signal. Default: 0 */
+		/** \brief Wind generator type 1 or type 2 model using this remote input signal. Default: nullptr */
 		CIMPP::WindTurbineType1or2Dynamics* WindTurbineType1or2Dynamics;
 
-		/** \brief Wind turbine type 3 or type 4 models using this remote input signal. Default: 0 */
+		/** \brief Wind turbine type 3 or type 4 models using this remote input signal. Default: nullptr */
 		CIMPP::WindTurbineType3or4Dynamics* WindTurbineType3or4Dynamics;
 
 		/** \brief Type of input signal. Default: 0 */

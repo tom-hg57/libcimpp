@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "DateTime.hpp"
 #include "String.hpp"
 
@@ -27,16 +28,16 @@ namespace CIMPP
 		Status();
 		~Status() override;
 
-		/** \brief Date and time for which status `value` applies. Default: '' */
+		/** \brief Date and time for which status `value` applies. Default: "" */
 		CIMPP::DateTime dateTime;
 
-		/** \brief Reason code or explanation for why an object went to the current status `value`. Default: '' */
+		/** \brief Reason code or explanation for why an object went to the current status `value`. Default: "" */
 		CIMPP::String reason;
 
-		/** \brief Pertinent information regarding the current `value`, as free form text. Default: '' */
+		/** \brief Pertinent information regarding the current `value`, as free form text. Default: "" */
 		CIMPP::String remark;
 
-		/** \brief Status value at `dateTime`; prior status changes may have been kept in instances of activity records associated with the object to which this status applies. Default: '' */
+		/** \brief Status value at `dateTime`; prior status changes may have been kept in instances of activity records associated with the object to which this status applies. Default: "" */
 		CIMPP::String value;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -30,25 +31,25 @@ namespace CIMPP
 		WindMechIEC();
 		~WindMechIEC() override;
 
-		/** \brief Wind generator type 1 or type 2 model with which this wind mechanical model is associated. Default: 0 */
+		/** \brief Wind generator type 1 or type 2 model with which this wind mechanical model is associated. Default: nullptr */
 		CIMPP::WindTurbineType1or2IEC* WindTurbineType1or2IEC;
 
-		/** \brief Wind turbine type 3 model with which this wind mechanical model is associated. Default: 0 */
+		/** \brief Wind turbine type 3 model with which this wind mechanical model is associated. Default: nullptr */
 		CIMPP::WindTurbineType3IEC* WindTurbineType3IEC;
 
-		/** \brief Wind turbine type 4B model with which this wind mechanical model is associated. Default: 0 */
+		/** \brief Wind turbine type 4B model with which this wind mechanical model is associated. Default: nullptr */
 		CIMPP::WindTurbineType4bIEC* WindTurbineType4bIEC;
 
-		/** \brief Drive train damping (&lt;i&gt;c&lt;/i&gt;&lt;i&gt;&lt;sub&gt;drt&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;)&lt;/i&gt;. It is a type-dependent parameter. Default: nullptr */
+		/** \brief Drive train damping (<i>c</i><i><sub>drt</sub></i><i>)</i>. It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU cdrt;
 
-		/** \brief Inertia constant of generator (&lt;i&gt;H&lt;/i&gt;&lt;i&gt;&lt;sub&gt;gen&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Inertia constant of generator (<i>H</i><i><sub>gen</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds hgen;
 
-		/** \brief Inertia constant of wind turbine rotor (&lt;i&gt;H&lt;/i&gt;&lt;i&gt;&lt;sub&gt;WTR&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Inertia constant of wind turbine rotor (<i>H</i><i><sub>WTR</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds hwtr;
 
-		/** \brief Drive train stiffness (&lt;i&gt;k&lt;/i&gt;&lt;i&gt;&lt;sub&gt;drt&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Drive train stiffness (<i>k</i><i><sub>drt</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU kdrt;
 
 		static const char debugName[];

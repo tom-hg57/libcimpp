@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class DCBaseTerminal;
@@ -29,16 +30,16 @@ namespace CIMPP
 		DCTopologicalNode();
 		~DCTopologicalNode() override;
 
-		/** \brief The connectivity node container to which the topological node belongs. Default: 0 */
+		/** \brief The connectivity node container to which the topological node belongs. Default: nullptr */
 		CIMPP::DCEquipmentContainer* DCEquipmentContainer;
 
-		/** \brief The DC connectivity nodes combined together to form this DC topological node.  May depend on the current state of switches in the network. Default: 0 */
+		/** \brief The DC connectivity nodes combined together to form this DC topological node.  May depend on the current state of switches in the network. Default: {} */
 		std::list<CIMPP::DCNode*> DCNodes;
 
-		/** \brief See association end TopologicalNode.Terminal. Default: 0 */
+		/** \brief See association end TopologicalNode.Terminal. Default: {} */
 		std::list<CIMPP::DCBaseTerminal*> DCTerminals;
 
-		/** \brief A DC topological node belongs to a DC topological island. Default: 0 */
+		/** \brief A DC topological node belongs to a DC topological island. Default: nullptr */
 		CIMPP::DCTopologicalIsland* DCTopologicalIsland;
 
 		static const char debugName[];

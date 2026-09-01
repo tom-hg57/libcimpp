@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class MeasurementValue;
@@ -26,7 +27,7 @@ namespace CIMPP
 		MeasurementValueSource();
 		~MeasurementValueSource() override;
 
-		/** \brief A reference to the type of source that updates the MeasurementValue, e.g. SCADA, CCLink, manual, etc. User conventions for the names of sources are contained in the introduction to IEC 61970-301. Default: 0 */
+		/** \brief A reference to the type of source that updates the MeasurementValue, e.g. SCADA, CCLink, manual, etc. User conventions for the names of sources are contained in the introduction to IEC 61970-301. Default: {} */
 		std::list<CIMPP::MeasurementValue*> MeasurementValues;
 
 		static const char debugName[];

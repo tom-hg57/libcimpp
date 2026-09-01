@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Integer.hpp"
 #include "String.hpp"
 
@@ -28,19 +29,19 @@ namespace CIMPP
 		PositionPoint();
 		~PositionPoint() override;
 
-		/** \brief Location described by this position point. Default: 0 */
+		/** \brief Location described by this position point. Default: nullptr */
 		CIMPP::Location* Location;
 
 		/** \brief Zero-relative sequence number of this point within a series of points. Default: 0 */
 		CIMPP::Integer sequenceNumber;
 
-		/** \brief X axis position. Default: '' */
+		/** \brief X axis position. Default: "" */
 		CIMPP::String xPosition;
 
-		/** \brief Y axis position. Default: '' */
+		/** \brief Y axis position. Default: "" */
 		CIMPP::String yPosition;
 
-		/** \brief (if applicable) Z axis position. Default: '' */
+		/** \brief (if applicable) Z axis position. Default: "" */
 		CIMPP::String zPosition;
 
 		static const char debugName[];

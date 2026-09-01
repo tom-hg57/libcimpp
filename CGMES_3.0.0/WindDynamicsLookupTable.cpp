@@ -51,7 +51,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindDynamicsLookupTable.output", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "WindDynamicsLookupTable.sequence", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindDynamicsLookupTable::WindDynamicsLookupTable() : WindContCurrLimIEC(nullptr), WindContPType3IEC(nullptr), WindContQPQULimIEC(nullptr), WindContRotorRIEC(nullptr), WindGenType3bIEC(nullptr), WindPitchContPowerIEC(nullptr), WindPlantFreqPcontrolIEC(nullptr), WindPlantReactiveControlIEC(nullptr), WindProtectionIEC(nullptr) {}

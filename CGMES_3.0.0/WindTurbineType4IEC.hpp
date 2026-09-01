@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class WindGenType3aIEC;
@@ -26,7 +27,7 @@ namespace CIMPP
 		WindTurbineType4IEC();
 		~WindTurbineType4IEC() override;
 
-		/** \brief Wind generator type 3A model associated with this wind turbine type 4 model. Default: 0 */
+		/** \brief Wind generator type 3A model associated with this wind turbine type 4 model. Default: nullptr */
 		CIMPP::WindGenType3aIEC* WindGenType3aIEC;
 
 		static const char debugName[];

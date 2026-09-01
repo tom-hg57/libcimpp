@@ -20,11 +20,11 @@ static const CimClassDetails& getCimClassDetails()
 		ConductingEquipment(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
+			CGMESProfile::EQ,
 			CGMESProfile::DY,
 			CGMESProfile::EQ_BD,
-			CGMESProfile::EQ,
-			CGMESProfile::SV,
 			CGMESProfile::SSH,
+			CGMESProfile::SV,
 		},
 		CGMESProfile::EQ
 	);
@@ -37,9 +37,9 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	{
 		{ "ConductingEquipment.BaseVoltage", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "ConductingEquipment.SvStatus", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::SV, } } },
-		{ "ConductingEquipment.Terminals", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, CGMESProfile::EQ_BD, CGMESProfile::EQ, } } },
+		{ "ConductingEquipment.Terminals", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, CGMESProfile::DY, CGMESProfile::EQ_BD, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ConductingEquipment::ConductingEquipment() : BaseVoltage(nullptr), SvStatus(nullptr) {}

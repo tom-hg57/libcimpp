@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "Boolean.hpp"
 #include "Reactance.hpp"
@@ -32,34 +33,34 @@ namespace CIMPP
 		EquivalentInjection();
 		~EquivalentInjection() override;
 
-		/** \brief The equivalent injection using this reactive capability curve. Default: 0 */
+		/** \brief The equivalent injection using this reactive capability curve. Default: nullptr */
 		CIMPP::ReactiveCapabilityCurve* ReactiveCapabilityCurve;
 
-		/** \brief Maximum active power of the injection. Default: nullptr */
+		/** \brief Maximum active power of the injection. Default: 0.0 */
 		CIMPP::ActivePower maxP;
 
-		/** \brief Used for modeling of infeed for load flow exchange. Not used for short circuit modeling.  If maxQ and minQ are not used ReactiveCapabilityCurve can be used. Default: nullptr */
+		/** \brief Used for modeling of infeed for load flow exchange. Not used for short circuit modeling.  If maxQ and minQ are not used ReactiveCapabilityCurve can be used. Default: 0.0 */
 		CIMPP::ReactivePower maxQ;
 
-		/** \brief Minimum active power of the injection. Default: nullptr */
+		/** \brief Minimum active power of the injection. Default: 0.0 */
 		CIMPP::ActivePower minP;
 
-		/** \brief Used for modeling of infeed for load flow exchange. Not used for short circuit modeling.  If maxQ and minQ are not used ReactiveCapabilityCurve can be used. Default: nullptr */
+		/** \brief Used for modeling of infeed for load flow exchange. Not used for short circuit modeling.  If maxQ and minQ are not used ReactiveCapabilityCurve can be used. Default: 0.0 */
 		CIMPP::ReactivePower minQ;
 
-		/** \brief Equivalent active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: nullptr */
+		/** \brief Equivalent active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0 */
 		CIMPP::ActivePower p;
 
-		/** \brief Equivalent reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: nullptr */
+		/** \brief Equivalent reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0 */
 		CIMPP::ReactivePower q;
 
-		/** \brief Positive sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: nullptr */
+		/** \brief Positive sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0 */
 		CIMPP::Resistance r;
 
-		/** \brief Zero sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: nullptr */
+		/** \brief Zero sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0 */
 		CIMPP::Resistance r0;
 
-		/** \brief Negative sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: nullptr */
+		/** \brief Negative sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0 */
 		CIMPP::Resistance r2;
 
 		/** \brief Specifies whether or not the EquivalentInjection has the capability to regulate the local voltage. Default: false */
@@ -68,16 +69,16 @@ namespace CIMPP
 		/** \brief Specifies the default regulation status of the EquivalentInjection.  True is regulating.  False is not regulating. Default: false */
 		CIMPP::Boolean regulationStatus;
 
-		/** \brief The target voltage for voltage regulation. Default: nullptr */
+		/** \brief The target voltage for voltage regulation. Default: 0.0 */
 		CIMPP::Voltage regulationTarget;
 
-		/** \brief Positive sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: nullptr */
+		/** \brief Positive sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0 */
 		CIMPP::Reactance x;
 
-		/** \brief Zero sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: nullptr */
+		/** \brief Zero sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0 */
 		CIMPP::Reactance x0;
 
-		/** \brief Negative sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: nullptr */
+		/** \brief Negative sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0 */
 		CIMPP::Reactance x2;
 
 		static const char debugName[];

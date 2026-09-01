@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class WindContRotorRIEC;
@@ -27,10 +28,10 @@ namespace CIMPP
 		WindGenTurbineType2IEC();
 		~WindGenTurbineType2IEC() override;
 
-		/** \brief Wind control rotor resistance model associated with wind turbine type 2 model. Default: 0 */
+		/** \brief Wind control rotor resistance model associated with wind turbine type 2 model. Default: nullptr */
 		CIMPP::WindContRotorRIEC* WindContRotorRIEC;
 
-		/** \brief Pitch control power model associated with this wind turbine type 2 model. Default: 0 */
+		/** \brief Pitch control power model associated with this wind turbine type 2 model. Default: nullptr */
 		CIMPP::WindPitchContPowerIEC* WindPitchContPowerIEC;
 
 		static const char debugName[];

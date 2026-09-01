@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,61 +28,61 @@ namespace CIMPP
 		ExcOEX3T();
 		~ExcOEX3T() override;
 
-		/** \brief Saturation parameter (E). Default: nullptr */
+		/** \brief Saturation parameter (E). Default: 0.0 */
 		CIMPP::PU e1;
 
-		/** \brief Saturation parameter (E). Default: nullptr */
+		/** \brief Saturation parameter (E). Default: 0.0 */
 		CIMPP::PU e2;
 
-		/** \brief Gain (K). Default: nullptr */
+		/** \brief Gain (K). Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Gain (K). Default: nullptr */
+		/** \brief Gain (K). Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Gain (K). Default: nullptr */
+		/** \brief Gain (K). Default: 0.0 */
 		CIMPP::PU kd;
 
-		/** \brief Gain (K). Default: nullptr */
+		/** \brief Gain (K). Default: 0.0 */
 		CIMPP::PU ke;
 
-		/** \brief Gain (K). Default: nullptr */
+		/** \brief Gain (K). Default: 0.0 */
 		CIMPP::PU kf;
 
-		/** \brief Saturation parameter (S(E)). Default: nullptr */
+		/** \brief Saturation parameter (S(E)). Default: 0.0 */
 		CIMPP::PU see1;
 
-		/** \brief Saturation parameter (S(E)). Default: nullptr */
+		/** \brief Saturation parameter (S(E)). Default: 0.0 */
 		CIMPP::PU see2;
 
-		/** \brief Time constant (T). Default: nullptr */
+		/** \brief Time constant (T). Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Time constant (T). Default: nullptr */
+		/** \brief Time constant (T). Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Time constant (T). Default: nullptr */
+		/** \brief Time constant (T). Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Time constant (T). Default: nullptr */
+		/** \brief Time constant (T). Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Time constant (T). Default: nullptr */
+		/** \brief Time constant (T). Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Time constant (T). Default: nullptr */
+		/** \brief Time constant (T). Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Time constant (T). Default: nullptr */
+		/** \brief Time constant (T). Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Time constant (T). Default: nullptr */
+		/** \brief Time constant (T). Default: 0.0 */
 		CIMPP::Seconds tf;
 
-		/** \brief Limiter (V). Default: nullptr */
+		/** \brief Limiter (V). Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Limiter (V). Default: nullptr */
+		/** \brief Limiter (V). Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PhaseTapChangerLinear.xMax", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "PhaseTapChangerLinear.xMin", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PhaseTapChangerLinear::PhaseTapChangerLinear() {}

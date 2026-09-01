@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "String.hpp"
 
@@ -27,40 +28,40 @@ namespace CIMPP
 		StreetDetail();
 		~StreetDetail() override;
 
-		/** \brief First line of a free form address or some additional address information (for example a mail stop). Default: '' */
+		/** \brief First line of a free form address or some additional address information (for example a mail stop). Default: "" */
 		CIMPP::String addressGeneral;
 
-		/** \brief (if applicable) Second line of a free form address. Default: '' */
+		/** \brief (if applicable) Second line of a free form address. Default: "" */
 		CIMPP::String addressGeneral2;
 
-		/** \brief (if applicable) Third line of a free form address. Default: '' */
+		/** \brief (if applicable) Third line of a free form address. Default: "" */
 		CIMPP::String addressGeneral3;
 
-		/** \brief (if applicable) In certain cases the physical location of the place of interest does not have a direct point of entry from the street, but may be located inside a larger structure such as a building, complex, office block, apartment, etc. Default: '' */
+		/** \brief (if applicable) In certain cases the physical location of the place of interest does not have a direct point of entry from the street, but may be located inside a larger structure such as a building, complex, office block, apartment, etc. Default: "" */
 		CIMPP::String buildingName;
 
-		/** \brief (if applicable) Utilities often make use of external reference systems, such as those of the town-planner`s department or surveyor general`s mapping system, that allocate global reference codes to streets. Default: '' */
+		/** \brief (if applicable) Utilities often make use of external reference systems, such as those of the town-planner`s department or surveyor general`s mapping system, that allocate global reference codes to streets. Default: "" */
 		CIMPP::String code;
 
-		/** \brief The identification by name or number, expressed as text, of the floor in the building as part of this address. Default: '' */
+		/** \brief The identification by name or number, expressed as text, of the floor in the building as part of this address. Default: "" */
 		CIMPP::String floorIdentification;
 
-		/** \brief Name of the street. Default: '' */
+		/** \brief Name of the street. Default: "" */
 		CIMPP::String name;
 
-		/** \brief Designator of the specific location on the street. Default: '' */
+		/** \brief Designator of the specific location on the street. Default: "" */
 		CIMPP::String number;
 
-		/** \brief Prefix to the street name. For example: North, South, East, West. Default: '' */
+		/** \brief Prefix to the street name. For example: North, South, East, West. Default: "" */
 		CIMPP::String prefix;
 
-		/** \brief Suffix to the street name. For example: North, South, East, West. Default: '' */
+		/** \brief Suffix to the street name. For example: North, South, East, West. Default: "" */
 		CIMPP::String suffix;
 
-		/** \brief Number of the apartment or suite. Default: '' */
+		/** \brief Number of the apartment or suite. Default: "" */
 		CIMPP::String suiteNumber;
 
-		/** \brief Type of street. Examples include: street, circle, boulevard, avenue, road, drive, etc. Default: '' */
+		/** \brief Type of street. Examples include: street, circle, boulevard, avenue, road, drive, etc. Default: "" */
 		CIMPP::String type;
 
 		/** \brief True if this street is within the legal geographical boundaries of the specified town (default). Default: false */

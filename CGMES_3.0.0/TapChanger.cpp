@@ -45,7 +45,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "TapChanger.normalStep", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "TapChanger.step", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SSH, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 TapChanger::TapChanger() : SvTapStep(nullptr), TapChangerControl(nullptr) {}

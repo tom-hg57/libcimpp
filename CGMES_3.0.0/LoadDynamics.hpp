@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class EnergyConsumer;
@@ -26,7 +27,7 @@ namespace CIMPP
 		LoadDynamics();
 		~LoadDynamics() override;
 
-		/** \brief Energy consumer to which this dynamics load model applies. Default: 0 */
+		/** \brief Energy consumer to which this dynamics load model applies. Default: {} */
 		std::list<CIMPP::EnergyConsumer*> EnergyConsumer;
 
 		static const char debugName[];

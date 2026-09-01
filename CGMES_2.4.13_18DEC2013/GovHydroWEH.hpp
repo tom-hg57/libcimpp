@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "Boolean.hpp"
 #include "PU.hpp"
@@ -30,157 +31,157 @@ namespace CIMPP
 		GovHydroWEH();
 		~GovHydroWEH() override;
 
-		/** \brief Speed Dead Band (db). Default: nullptr */
+		/** \brief Speed Dead Band (db). Default: 0.0 */
 		CIMPP::PU db;
 
-		/** \brief Value to allow the integral controller to advance beyond the gate limits (Dicn). Default: nullptr */
+		/** \brief Value to allow the integral controller to advance beyond the gate limits (Dicn). Default: 0.0 */
 		CIMPP::PU dicn;
 
-		/** \brief Value to allow the Pilot valve controller to advance beyond the gate limits (Dpv). Default: nullptr */
+		/** \brief Value to allow the Pilot valve controller to advance beyond the gate limits (Dpv). Default: 0.0 */
 		CIMPP::PU dpv;
 
-		/** \brief Turbine damping factor (Dturb).  Unit = delta P (PU of MWbase) / delta speed (PU). Default: nullptr */
+		/** \brief Turbine damping factor (Dturb).  Unit = delta P (PU of MWbase) / delta speed (PU). Default: 0.0 */
 		CIMPP::PU dturb;
 
 		/** \brief Feedback signal selection (Sw). true = PID Output (if R-Perm-Gate=droop and R-Perm-Pe=0) false = Electrical Power (if R-Perm-Gate=0 and R-Perm-Pe=droop) or false = Gate Position (if R-Perm-Gate=droop and R-Perm-Pe=0). Default: false */
 		CIMPP::Boolean feedbackSignal;
 
-		/** \brief Flow Gate 1 (Fl1).  Flow value for gate position point 1 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: nullptr */
+		/** \brief Flow Gate 1 (Fl1).  Flow value for gate position point 1 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0 */
 		CIMPP::PU fl1;
 
-		/** \brief Flow Gate 2 (Fl2).  Flow value for gate position point 2 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: nullptr */
+		/** \brief Flow Gate 2 (Fl2).  Flow value for gate position point 2 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0 */
 		CIMPP::PU fl2;
 
-		/** \brief Flow Gate 3 (Fl3).  Flow value for gate position point 3 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: nullptr */
+		/** \brief Flow Gate 3 (Fl3).  Flow value for gate position point 3 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0 */
 		CIMPP::PU fl3;
 
-		/** \brief Flow Gate 4 (Fl4).  Flow value for gate position point 4 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: nullptr */
+		/** \brief Flow Gate 4 (Fl4).  Flow value for gate position point 4 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0 */
 		CIMPP::PU fl4;
 
-		/** \brief Flow Gate 5 (Fl5).  Flow value for gate position point 5 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: nullptr */
+		/** \brief Flow Gate 5 (Fl5).  Flow value for gate position point 5 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0 */
 		CIMPP::PU fl5;
 
-		/** \brief Flow P1 (Fp1).  Turbine Flow value for point 1 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Flow P1 (Fp1).  Turbine Flow value for point 1 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU fp1;
 
-		/** \brief Flow P10 (Fp10).  Turbine Flow value for point 10 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Flow P10 (Fp10).  Turbine Flow value for point 10 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU fp10;
 
-		/** \brief Flow P2 (Fp2).  Turbine Flow value for point 2 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Flow P2 (Fp2).  Turbine Flow value for point 2 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU fp2;
 
-		/** \brief Flow P3 (Fp3).  Turbine Flow value for point 3 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Flow P3 (Fp3).  Turbine Flow value for point 3 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU fp3;
 
-		/** \brief Flow P4 (Fp4).  Turbine Flow value for point 4 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Flow P4 (Fp4).  Turbine Flow value for point 4 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU fp4;
 
-		/** \brief Flow P5 (Fp5).  Turbine Flow value for point 5 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Flow P5 (Fp5).  Turbine Flow value for point 5 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU fp5;
 
-		/** \brief Flow P6 (Fp6).  Turbine Flow value for point 6 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Flow P6 (Fp6).  Turbine Flow value for point 6 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU fp6;
 
-		/** \brief Flow P7 (Fp7).  Turbine Flow value for point 7 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Flow P7 (Fp7).  Turbine Flow value for point 7 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU fp7;
 
-		/** \brief Flow P8 (Fp8).  Turbine Flow value for point 8 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Flow P8 (Fp8).  Turbine Flow value for point 8 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU fp8;
 
-		/** \brief Flow P9 (Fp9).  Turbine Flow value for point 9 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Flow P9 (Fp9).  Turbine Flow value for point 9 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU fp9;
 
-		/** \brief Maximum Gate Position (Gmax). Default: nullptr */
+		/** \brief Maximum Gate Position (Gmax). Default: 0.0 */
 		CIMPP::PU gmax;
 
-		/** \brief Minimum Gate Position (Gmin). Default: nullptr */
+		/** \brief Minimum Gate Position (Gmin). Default: 0.0 */
 		CIMPP::PU gmin;
 
-		/** \brief Maximum gate closing rate (Gtmxcl). Default: nullptr */
+		/** \brief Maximum gate closing rate (Gtmxcl). Default: 0.0 */
 		CIMPP::PU gtmxcl;
 
-		/** \brief Maximum gate opening rate (Gtmxop). Default: nullptr */
+		/** \brief Maximum gate opening rate (Gtmxop). Default: 0.0 */
 		CIMPP::PU gtmxop;
 
-		/** \brief Gate 1 (Gv1).  Gate Position value for point 1 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: nullptr */
+		/** \brief Gate 1 (Gv1).  Gate Position value for point 1 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0 */
 		CIMPP::PU gv1;
 
-		/** \brief Gate 2 (Gv2).  Gate Position value for point 2 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: nullptr */
+		/** \brief Gate 2 (Gv2).  Gate Position value for point 2 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0 */
 		CIMPP::PU gv2;
 
-		/** \brief Gate 3 (Gv3).  Gate Position value for point 3 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: nullptr */
+		/** \brief Gate 3 (Gv3).  Gate Position value for point 3 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0 */
 		CIMPP::PU gv3;
 
-		/** \brief Gate 4 (Gv4).  Gate Position value for point 4 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: nullptr */
+		/** \brief Gate 4 (Gv4).  Gate Position value for point 4 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0 */
 		CIMPP::PU gv4;
 
-		/** \brief Gate 5 (Gv5).  Gate Position value for point 5 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: nullptr */
+		/** \brief Gate 5 (Gv5).  Gate Position value for point 5 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0 */
 		CIMPP::PU gv5;
 
-		/** \brief Derivative controller derivative gain (Kd). Default: nullptr */
+		/** \brief Derivative controller derivative gain (Kd). Default: 0.0 */
 		CIMPP::PU kd;
 
-		/** \brief Derivative controller Integral gain (Ki). Default: nullptr */
+		/** \brief Derivative controller Integral gain (Ki). Default: 0.0 */
 		CIMPP::PU ki;
 
-		/** \brief Derivative control gain (Kp). Default: nullptr */
+		/** \brief Derivative control gain (Kp). Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief Base for power values (MWbase) (&gt;0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Pmss Flow P1 (Pmss1).  Mechanical Power output Pmss for Turbine Flow point 1 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Pmss Flow P1 (Pmss1).  Mechanical Power output Pmss for Turbine Flow point 1 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU pmss1;
 
-		/** \brief Pmss Flow P10 (Pmss10).  Mechanical Power output Pmss for Turbine Flow point 10 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Pmss Flow P10 (Pmss10).  Mechanical Power output Pmss for Turbine Flow point 10 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU pmss10;
 
-		/** \brief Pmss Flow P2 (Pmss2).  Mechanical Power output Pmss for Turbine Flow point 2 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Pmss Flow P2 (Pmss2).  Mechanical Power output Pmss for Turbine Flow point 2 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU pmss2;
 
-		/** \brief Pmss Flow P3 (Pmss3).  Mechanical Power output Pmss for Turbine Flow point 3 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Pmss Flow P3 (Pmss3).  Mechanical Power output Pmss for Turbine Flow point 3 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU pmss3;
 
-		/** \brief Pmss Flow P4 (Pmss4).  Mechanical Power output Pmss for Turbine Flow point 4 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Pmss Flow P4 (Pmss4).  Mechanical Power output Pmss for Turbine Flow point 4 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU pmss4;
 
-		/** \brief Pmss Flow P5 (Pmss5).  Mechanical Power output Pmss for Turbine Flow point 5 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Pmss Flow P5 (Pmss5).  Mechanical Power output Pmss for Turbine Flow point 5 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU pmss5;
 
-		/** \brief Pmss Flow P6 (Pmss6).  Mechanical Power output Pmss for Turbine Flow point 6 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Pmss Flow P6 (Pmss6).  Mechanical Power output Pmss for Turbine Flow point 6 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU pmss6;
 
-		/** \brief Pmss Flow P7 (Pmss7).  Mechanical Power output Pmss for Turbine Flow point 7 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Pmss Flow P7 (Pmss7).  Mechanical Power output Pmss for Turbine Flow point 7 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU pmss7;
 
-		/** \brief Pmss Flow P8 (Pmss8).  Mechanical Power output Pmss for Turbine Flow point 8 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Pmss Flow P8 (Pmss8).  Mechanical Power output Pmss for Turbine Flow point 8 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU pmss8;
 
-		/** \brief Pmss Flow P9 (Pmss9).  Mechanical Power output Pmss for Turbine Flow point 9 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: nullptr */
+		/** \brief Pmss Flow P9 (Pmss9).  Mechanical Power output Pmss for Turbine Flow point 9 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0 */
 		CIMPP::PU pmss9;
 
-		/** \brief Permanent droop for governor output feedback (R-Perm-Gate). Default: nullptr */
+		/** \brief Permanent droop for governor output feedback (R-Perm-Gate). Default: 0.0 */
 		CIMPP::Simple_Float rpg;
 
-		/** \brief Permanent droop for electrical power feedback (R-Perm-Pe). Default: nullptr */
+		/** \brief Permanent droop for electrical power feedback (R-Perm-Pe). Default: 0.0 */
 		CIMPP::Simple_Float rpp;
 
-		/** \brief Derivative controller time constant to limit the derivative characteristic beyond a breakdown frequency to avoid amplification of high-frequency noise (Td). Default: nullptr */
+		/** \brief Derivative controller time constant to limit the derivative characteristic beyond a breakdown frequency to avoid amplification of high-frequency noise (Td). Default: 0.0 */
 		CIMPP::Seconds td;
 
-		/** \brief Distributive Valve time lag time constant (Tdv). Default: nullptr */
+		/** \brief Distributive Valve time lag time constant (Tdv). Default: 0.0 */
 		CIMPP::Seconds tdv;
 
-		/** \brief Value to allow the Distribution valve controller to advance beyond the gate movement rate limit (Tg). Default: nullptr */
+		/** \brief Value to allow the Distribution valve controller to advance beyond the gate movement rate limit (Tg). Default: 0.0 */
 		CIMPP::Seconds tg;
 
-		/** \brief Pilot Valve time lag time constant (Tp). Default: nullptr */
+		/** \brief Pilot Valve time lag time constant (Tp). Default: 0.0 */
 		CIMPP::Seconds tp;
 
-		/** \brief Electrical power droop time constant (Tpe). Default: nullptr */
+		/** \brief Electrical power droop time constant (Tpe). Default: 0.0 */
 		CIMPP::Seconds tpe;
 
-		/** \brief Water inertia time constant (Tw) (&gt;0). Default: nullptr */
+		/** \brief Water inertia time constant (Tw) (>0). Default: 0.0 */
 		CIMPP::Seconds tw;
 
 		static const char debugName[];

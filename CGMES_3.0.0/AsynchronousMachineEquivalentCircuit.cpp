@@ -34,7 +34,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "AsynchronousMachineEquivalentCircuit.xlr2", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "AsynchronousMachineEquivalentCircuit.xm", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 AsynchronousMachineEquivalentCircuit::AsynchronousMachineEquivalentCircuit() {}

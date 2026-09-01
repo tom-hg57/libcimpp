@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class Command;
@@ -29,16 +30,16 @@ namespace CIMPP
 		ValueAliasSet();
 		~ValueAliasSet() override;
 
-		/** \brief The Commands using the set for translation. Default: 0 */
+		/** \brief The Commands using the set for translation. Default: {} */
 		std::list<CIMPP::Command*> Commands;
 
-		/** \brief The Measurements using the set for translation. Default: 0 */
+		/** \brief The Measurements using the set for translation. Default: {} */
 		std::list<CIMPP::Discrete*> Discretes;
 
-		/** \brief The Commands using the set for translation. Default: 0 */
+		/** \brief The Commands using the set for translation. Default: {} */
 		std::list<CIMPP::RaiseLowerCommand*> RaiseLowerCommands;
 
-		/** \brief The ValueAliasSet having the ValueToAlias mappings. Default: 0 */
+		/** \brief The ValueAliasSet having the ValueToAlias mappings. Default: {} */
 		std::list<CIMPP::ValueToAlias*> Values;
 
 		static const char debugName[];

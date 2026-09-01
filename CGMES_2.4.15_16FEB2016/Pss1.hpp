@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -29,49 +30,49 @@ namespace CIMPP
 		Pss1();
 		~Pss1() override;
 
-		/** \brief Frequency power input gain (K).  Typical Value = 5. Default: nullptr */
+		/** \brief Frequency power input gain (K).  Typical Value = 5. Default: 0.0 */
 		CIMPP::Simple_Float kf;
 
-		/** \brief Electric power input gain (K).  Typical Value = 0.3. Default: nullptr */
+		/** \brief Electric power input gain (K).  Typical Value = 0.3. Default: 0.0 */
 		CIMPP::Simple_Float kpe;
 
-		/** \brief PSS gain (K).  Typical Value = 1. Default: nullptr */
+		/** \brief PSS gain (K).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Simple_Float ks;
 
-		/** \brief Shaft speed power input gain (K).  Typical Value = 0. Default: nullptr */
+		/** \brief Shaft speed power input gain (K).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Simple_Float kw;
 
-		/** \brief Minimum power PSS enabling (P).  Typical Value = 0.25. Default: nullptr */
+		/** \brief Minimum power PSS enabling (P).  Typical Value = 0.25. Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief Lead/lag time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Lead/lag time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t10;
 
-		/** \brief Washout (T).  Typical Value = 3.5. Default: nullptr */
+		/** \brief Washout (T).  Typical Value = 3.5. Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Filter time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Filter time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Lead/lag time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Lead/lag time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t7;
 
-		/** \brief Lead/lag time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Lead/lag time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t8;
 
-		/** \brief Lead/lag time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Lead/lag time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t9;
 
-		/** \brief Electric power filter time constant (T).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Electric power filter time constant (T).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::Seconds tpe;
 
 		/** \brief  Default: false */
 		CIMPP::Boolean vadat;
 
-		/** \brief Stabilizer output max limit (V).  Typical Value = -0.06. Default: nullptr */
+		/** \brief Stabilizer output max limit (V).  Typical Value = -0.06. Default: 0.0 */
 		CIMPP::PU vsmn;
 
-		/** \brief Stabilizer output min limit (V).  Typical Value = 0.06. Default: nullptr */
+		/** \brief Stabilizer output min limit (V).  Typical Value = 0.06. Default: 0.0 */
 		CIMPP::PU vsmx;
 
 		static const char debugName[];

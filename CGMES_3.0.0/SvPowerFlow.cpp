@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "SvPowerFlow.p", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SV, } } },
 		{ "SvPowerFlow.q", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SV, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 SvPowerFlow::SvPowerFlow() : Terminal(nullptr) {}

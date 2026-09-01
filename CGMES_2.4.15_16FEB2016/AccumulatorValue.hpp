@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Integer.hpp"
 
 namespace CIMPP
@@ -28,10 +29,10 @@ namespace CIMPP
 		AccumulatorValue();
 		~AccumulatorValue() override;
 
-		/** \brief The values connected to this measurement. Default: 0 */
+		/** \brief The values connected to this measurement. Default: nullptr */
 		CIMPP::Accumulator* Accumulator;
 
-		/** \brief The command that reset the accumulator value. Default: 0 */
+		/** \brief The command that reset the accumulator value. Default: nullptr */
 		CIMPP::AccumulatorReset* AccumulatorReset;
 
 		/** \brief The value to supervise. The value is positive. Default: 0 */

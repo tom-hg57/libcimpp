@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 
 namespace CIMPP
@@ -27,13 +28,13 @@ namespace CIMPP
 		PowerElectronicsUnit();
 		~PowerElectronicsUnit() override;
 
-		/** \brief A power electronics unit has a connection to the AC network. Default: 0 */
+		/** \brief A power electronics unit has a connection to the AC network. Default: nullptr */
 		CIMPP::PowerElectronicsConnection* PowerElectronicsConnection;
 
-		/** \brief Maximum active power limit. This is the maximum (nameplate) limit for the unit. Default: nullptr */
+		/** \brief Maximum active power limit. This is the maximum (nameplate) limit for the unit. Default: 0.0 */
 		CIMPP::ActivePower maxP;
 
-		/** \brief Minimum active power limit. This is the minimum (nameplate) limit for the unit. Default: nullptr */
+		/** \brief Minimum active power limit. This is the minimum (nameplate) limit for the unit. Default: 0.0 */
 		CIMPP::ActivePower minP;
 
 		static const char debugName[];

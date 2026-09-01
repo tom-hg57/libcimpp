@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class ThermalGeneratingUnit;
@@ -26,7 +27,7 @@ namespace CIMPP
 		CombinedCyclePlant();
 		~CombinedCyclePlant() override;
 
-		/** \brief A thermal generating unit may be a member of a combined cycle plant. Default: 0 */
+		/** \brief A thermal generating unit may be a member of a combined cycle plant. Default: {} */
 		std::list<CIMPP::ThermalGeneratingUnit*> ThermalGeneratingUnits;
 
 		static const char debugName[];

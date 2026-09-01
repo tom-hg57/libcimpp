@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "Float.hpp"
 #include "PU.hpp"
@@ -29,67 +30,67 @@ namespace CIMPP
 		GovSteamIEEE1();
 		~GovSteamIEEE1() override;
 
-		/** \brief Governor gain (reciprocal of droop) (&lt;i&gt;K&lt;/i&gt;) (&amp;gt; 0).  Typical value = 25. Default: nullptr */
+		/** \brief Governor gain (reciprocal of droop) (<i>K</i>) (&gt; 0).  Typical value = 25. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief Fraction of HP shaft power after first boiler pass (&lt;i&gt;K1&lt;/i&gt;).  Typical value = 0,2. Default: 0.0 */
+		/** \brief Fraction of HP shaft power after first boiler pass (<i>K1</i>).  Typical value = 0,2. Default: 0.0 */
 		CIMPP::Float k1;
 
-		/** \brief Fraction of LP shaft power after first boiler pass (&lt;i&gt;K2&lt;/i&gt;).  Typical value = 0. Default: 0.0 */
+		/** \brief Fraction of LP shaft power after first boiler pass (<i>K2</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::Float k2;
 
-		/** \brief Fraction of HP shaft power after second boiler pass (&lt;i&gt;K3&lt;/i&gt;).  Typical value = 0,3. Default: 0.0 */
+		/** \brief Fraction of HP shaft power after second boiler pass (<i>K3</i>).  Typical value = 0,3. Default: 0.0 */
 		CIMPP::Float k3;
 
-		/** \brief Fraction of LP shaft power after second boiler pass (&lt;i&gt;K4&lt;/i&gt;).  Typical value = 0. Default: 0.0 */
+		/** \brief Fraction of LP shaft power after second boiler pass (<i>K4</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::Float k4;
 
-		/** \brief Fraction of HP shaft power after third boiler pass (&lt;i&gt;K5&lt;/i&gt;).  Typical value = 0,5. Default: 0.0 */
+		/** \brief Fraction of HP shaft power after third boiler pass (<i>K5</i>).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::Float k5;
 
-		/** \brief Fraction of LP shaft power after third boiler pass (&lt;i&gt;K6&lt;/i&gt;).  Typical value = 0. Default: 0.0 */
+		/** \brief Fraction of LP shaft power after third boiler pass (<i>K6</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::Float k6;
 
-		/** \brief Fraction of HP shaft power after fourth boiler pass (&lt;i&gt;K7&lt;/i&gt;).  Typical value = 0. Default: 0.0 */
+		/** \brief Fraction of HP shaft power after fourth boiler pass (<i>K7</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::Float k7;
 
-		/** \brief Fraction of LP shaft power after fourth boiler pass (&lt;i&gt;K8&lt;/i&gt;).  Typical value = 0. Default: 0.0 */
+		/** \brief Fraction of LP shaft power after fourth boiler pass (<i>K8</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::Float k8;
 
-		/** \brief Base for power values (&lt;i&gt;MWbase&lt;/i&gt;) (&amp;gt; 0)&lt;i&gt;. &lt;/i&gt;Unit = MW. Default: nullptr */
+		/** \brief Base for power values (<i>MWbase</i>) (&gt; 0)<i>. </i>Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Maximum valve opening (&lt;i&gt;Pmax&lt;/i&gt;) (&amp;gt; GovSteamIEEE1.pmin).  Typical value = 1. Default: nullptr */
+		/** \brief Maximum valve opening (<i>Pmax</i>) (&gt; GovSteamIEEE1.pmin).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU pmax;
 
-		/** \brief Minimum valve opening (&lt;i&gt;Pmin&lt;/i&gt;) (&amp;gt;= 0 and &amp;lt; GovSteamIEEE1.pmax).  Typical value = 0. Default: nullptr */
+		/** \brief Minimum valve opening (<i>Pmin</i>) (&gt;= 0 and &lt; GovSteamIEEE1.pmax).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief Governor lag time constant (&lt;i&gt;T1&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Governor lag time constant (<i>T1</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Governor lead time constant (&lt;i&gt;T2&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Governor lead time constant (<i>T2</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Valve positioner time constant (&lt;i&gt;T3&lt;/i&gt;) (&amp;gt; 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Valve positioner time constant (<i>T3</i>) (&gt; 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Inlet piping/steam bowl time constant (&lt;i&gt;T4&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,3. Default: nullptr */
+		/** \brief Inlet piping/steam bowl time constant (<i>T4</i>) (&gt;= 0).  Typical value = 0,3. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Time constant of second boiler pass (&lt;i&gt;T5&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 5. Default: nullptr */
+		/** \brief Time constant of second boiler pass (<i>T5</i>) (&gt;= 0).  Typical value = 5. Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Time constant of third boiler pass (&lt;i&gt;T6&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,5. Default: nullptr */
+		/** \brief Time constant of third boiler pass (<i>T6</i>) (&gt;= 0).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Time constant of fourth boiler pass (&lt;i&gt;T7&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Time constant of fourth boiler pass (<i>T7</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds t7;
 
-		/** \brief Maximum valve closing velocity (&lt;i&gt;Uc&lt;/i&gt;) (&amp;lt; 0).  Unit = PU / s.  Typical value = -10. Default: 0.0 */
+		/** \brief Maximum valve closing velocity (<i>Uc</i>) (&lt; 0).  Unit = PU / s.  Typical value = -10. Default: 0.0 */
 		CIMPP::Float uc;
 
-		/** \brief Maximum valve opening velocity (&lt;i&gt;Uo&lt;/i&gt;) (&amp;gt; 0).  Unit = PU / s.  Typical value = 1. Default: 0.0 */
+		/** \brief Maximum valve opening velocity (<i>Uo</i>) (&gt; 0).  Unit = PU / s.  Typical value = 1. Default: 0.0 */
 		CIMPP::Float uo;
 
 		static const char debugName[];

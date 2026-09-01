@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Seconds.hpp"
 
@@ -28,16 +29,16 @@ namespace CIMPP
 		WindGenType3bIEC();
 		~WindGenType3bIEC() override;
 
-		/** \brief The wind dynamics lookup table associated with this generator type 3B model. Default: 0 */
+		/** \brief The wind dynamics lookup table associated with this generator type 3B model. Default: {} */
 		std::list<CIMPP::WindDynamicsLookupTable*> WindDynamicsLookupTable;
 
-		/** \brief Crowbar control mode (&lt;i&gt;M&lt;/i&gt;&lt;i&gt;&lt;sub&gt;WTcwp&lt;/sub&gt;&lt;/i&gt;). It is a case-dependent parameter. true = 1 in the IEC model false = 0 in the IEC model. Default: false */
+		/** \brief Crowbar control mode (<i>M</i><i><sub>WTcwp</sub></i>). It is a case-dependent parameter. true = 1 in the IEC model false = 0 in the IEC model. Default: false */
 		CIMPP::Boolean mwtcwp;
 
-		/** \brief Current generation time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;g&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Current generation time constant (<i>T</i><i><sub>g</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tg;
 
-		/** \brief Time constant for crowbar washout filter (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;wo&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a case-dependent parameter. Default: nullptr */
+		/** \brief Time constant for crowbar washout filter (<i>T</i><i><sub>wo</sub></i>) (&gt;= 0). It is a case-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds two;
 
 		static const char debugName[];

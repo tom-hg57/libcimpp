@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "ControlAreaTypeKind.hpp"
 
@@ -30,19 +31,19 @@ namespace CIMPP
 		ControlArea();
 		~ControlArea() override;
 
-		/** \brief The generating unit specifications for the control area. Default: 0 */
+		/** \brief The generating unit specifications for the control area. Default: {} */
 		std::list<CIMPP::ControlAreaGeneratingUnit*> ControlAreaGeneratingUnit;
 
-		/** \brief The energy area that is forecast from this control area specification. Default: 0 */
+		/** \brief The energy area that is forecast from this control area specification. Default: nullptr */
 		CIMPP::EnergyArea* EnergyArea;
 
-		/** \brief The tie flows associated with the control area. Default: 0 */
+		/** \brief The tie flows associated with the control area. Default: {} */
 		std::list<CIMPP::TieFlow*> TieFlow;
 
-		/** \brief The specified positive net interchange into the control area, i.e. positive sign means flow into the area. Default: nullptr */
+		/** \brief The specified positive net interchange into the control area, i.e. positive sign means flow into the area. Default: 0.0 */
 		CIMPP::ActivePower netInterchange;
 
-		/** \brief Active power net interchange tolerance. The attribute shall be a positive value or zero. Default: nullptr */
+		/** \brief Active power net interchange tolerance. The attribute shall be a positive value or zero. Default: 0.0 */
 		CIMPP::ActivePower pTolerance;
 
 		/** \brief The primary type of control area definition used to determine if this is used for automatic generation control, for planning interchange control, or other purposes.   A control area specified with primary type of automatic generation control could still be forecast and used as an interchange area in power flow analysis. Default: 0 */

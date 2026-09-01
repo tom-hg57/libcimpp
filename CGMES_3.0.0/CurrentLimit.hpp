@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "CurrentFlow.hpp"
 
 namespace CIMPP
@@ -26,10 +27,10 @@ namespace CIMPP
 		CurrentLimit();
 		~CurrentLimit() override;
 
-		/** \brief The normal value for limit on current flow. The attribute shall be a positive value or zero. Default: nullptr */
+		/** \brief The normal value for limit on current flow. The attribute shall be a positive value or zero. Default: 0.0 */
 		CIMPP::CurrentFlow normalValue;
 
-		/** \brief Limit on current flow. The attribute shall be a positive value or zero. Default: nullptr */
+		/** \brief Limit on current flow. The attribute shall be a positive value or zero. Default: 0.0 */
 		CIMPP::CurrentFlow value;
 
 		static const char debugName[];

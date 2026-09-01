@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class Control;
@@ -28,13 +29,13 @@ namespace CIMPP
 		PowerSystemResource();
 		~PowerSystemResource() override;
 
-		/** \brief Regulating device governed by this control output. Default: 0 */
+		/** \brief Regulating device governed by this control output. Default: {} */
 		std::list<CIMPP::Control*> Controls;
 
-		/** \brief Location of this power system resource. Default: 0 */
+		/** \brief Location of this power system resource. Default: nullptr */
 		CIMPP::Location* Location;
 
-		/** \brief The power system resource that contains the measurement. Default: 0 */
+		/** \brief The power system resource that contains the measurement. Default: {} */
 		std::list<CIMPP::Measurement*> Measurements;
 
 		static const char debugName[];

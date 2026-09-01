@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class StaticVarCompensator;
@@ -26,7 +27,7 @@ namespace CIMPP
 		StaticVarCompensatorDynamics();
 		~StaticVarCompensatorDynamics() override;
 
-		/** \brief Static Var Compensator to which Static Var Compensator dynamics model applies. Default: 0 */
+		/** \brief Static Var Compensator to which Static Var Compensator dynamics model applies. Default: nullptr */
 		CIMPP::StaticVarCompensator* StaticVarCompensator;
 
 		static const char debugName[];

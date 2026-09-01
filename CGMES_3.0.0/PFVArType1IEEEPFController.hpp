@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Float.hpp"
 #include "PU.hpp"
@@ -29,28 +30,28 @@ namespace CIMPP
 		PFVArType1IEEEPFController();
 		~PFVArType1IEEEPFController() override;
 
-		/** \brief Overexcitation Flag (&lt;i&gt;OVEX&lt;/i&gt;) true = overexcited false = underexcited. Default: false */
+		/** \brief Overexcitation Flag (<i>OVEX</i>) true = overexcited false = underexcited. Default: false */
 		CIMPP::Boolean ovex;
 
-		/** \brief PF controller time delay (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PFC&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 5. Default: nullptr */
+		/** \brief PF controller time delay (<i>T</i><i><sub>PFC</sub></i>) (&gt;= 0).  Typical value = 5. Default: 0.0 */
 		CIMPP::Seconds tpfc;
 
-		/** \brief Minimum machine terminal current needed to enable pf/var controller (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;ITMIN&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Minimum machine terminal current needed to enable pf/var controller (<i>V</i><i><sub>ITMIN</sub></i>). Default: 0.0 */
 		CIMPP::PU vitmin;
 
-		/** \brief Synchronous machine power factor (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PF&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Synchronous machine power factor (<i>V</i><i><sub>PF</sub></i>). Default: 0.0 */
 		CIMPP::PU vpf;
 
-		/** \brief PF controller deadband (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PFC_BW&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,05. Default: 0.0 */
+		/** \brief PF controller deadband (<i>V</i><i><sub>PFC_BW</sub></i>).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::Float vpfcbw;
 
-		/** \brief PF controller reference (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PFREF&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief PF controller reference (<i>V</i><i><sub>PFREF</sub></i>). Default: 0.0 */
 		CIMPP::PU vpfref;
 
-		/** \brief Maximum machine terminal voltage needed for pf/var controller to be enabled (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;VTMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; PFVArType1IEEEPFController.vvtmin). Default: nullptr */
+		/** \brief Maximum machine terminal voltage needed for pf/var controller to be enabled (<i>V</i><i><sub>VTMAX</sub></i>) (&gt; PFVArType1IEEEPFController.vvtmin). Default: 0.0 */
 		CIMPP::PU vvtmax;
 
-		/** \brief Minimum machine terminal voltage needed to enable pf/var controller (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;VTMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; PFVArType1IEEEPFController.vvtmax). Default: nullptr */
+		/** \brief Minimum machine terminal voltage needed to enable pf/var controller (<i>V</i><i><sub>VTMIN</sub></i>) (&lt; PFVArType1IEEEPFController.vvtmax). Default: 0.0 */
 		CIMPP::PU vvtmin;
 
 		static const char debugName[];

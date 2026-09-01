@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "CsOperatingModeKind.hpp"
 #include "CsPpccControlKind.hpp"
@@ -30,31 +31,31 @@ namespace CIMPP
 		CsConverter();
 		~CsConverter() override;
 
-		/** \brief Current source converter dynamics model used to describe dynamic behaviour of this converter. Default: 0 */
+		/** \brief Current source converter dynamics model used to describe dynamic behaviour of this converter. Default: nullptr */
 		CIMPP::CSCDynamics* CSCDynamics;
 
-		/** \brief Firing angle that determines the dc voltage at the converter dc terminal. Typical value between 10 degrees and 18 degrees for a rectifier. It is converter`s state variable, result from power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Firing angle that determines the dc voltage at the converter dc terminal. Typical value between 10 degrees and 18 degrees for a rectifier. It is converter`s state variable, result from power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::AngleDegrees alpha;
 
-		/** \brief Extinction angle. It is used to limit the dc voltage at the inverter if needed. Typical value between 17 degrees and 20 degrees for an inverter. It is converter`s state variable, result from power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Extinction angle. It is used to limit the dc voltage at the inverter if needed. Typical value between 17 degrees and 20 degrees for an inverter. It is converter`s state variable, result from power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::AngleDegrees gamma;
 
-		/** \brief Maximum firing angle. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Maximum firing angle. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::AngleDegrees maxAlpha;
 
-		/** \brief Maximum extinction angle. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Maximum extinction angle. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::AngleDegrees maxGamma;
 
-		/** \brief The maximum direct current (Id) on the DC side at which the converter should operate. It is converter`s configuration data use in power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief The maximum direct current (Id) on the DC side at which the converter should operate. It is converter`s configuration data use in power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::CurrentFlow maxIdc;
 
-		/** \brief Minimum firing angle. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Minimum firing angle. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::AngleDegrees minAlpha;
 
-		/** \brief Minimum extinction angle. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Minimum extinction angle. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::AngleDegrees minGamma;
 
-		/** \brief The minimum direct current (Id) on the DC side at which the converter should operate. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief The minimum direct current (Id) on the DC side at which the converter should operate. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::CurrentFlow minIdc;
 
 		/** \brief Indicates whether the DC pole is operating as an inverter or as a rectifier. It is converter`s control variable used in power flow. Default: 0 */
@@ -63,16 +64,16 @@ namespace CIMPP
 		/** \brief Kind of active power control. Default: 0 */
 		CIMPP::CsPpccControlKind pPccControl;
 
-		/** \brief Rated converter DC current, also called IdN. The attribute shall be a positive value. It is converter`s configuration data used in power flow. Default: nullptr */
+		/** \brief Rated converter DC current, also called IdN. The attribute shall be a positive value. It is converter`s configuration data used in power flow. Default: 0.0 */
 		CIMPP::CurrentFlow ratedIdc;
 
-		/** \brief Target firing angle. It is converter`s control variable used in power flow. It is only applicable for rectifier if continuous tap changer control is used. Allowed values are within the range minAlpha&amp;lt;=targetAlpha&amp;lt;=maxAlpha. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Target firing angle. It is converter`s control variable used in power flow. It is only applicable for rectifier if continuous tap changer control is used. Allowed values are within the range minAlpha&lt;=targetAlpha&lt;=maxAlpha. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::AngleDegrees targetAlpha;
 
-		/** \brief Target extinction angle. It is converter`s control variable used in power flow. It is only applicable for inverter if continuous tap changer control is used. Allowed values are within the range minGamma&amp;lt;=targetGamma&amp;lt;=maxGamma. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Target extinction angle. It is converter`s control variable used in power flow. It is only applicable for inverter if continuous tap changer control is used. Allowed values are within the range minGamma&lt;=targetGamma&lt;=maxGamma. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::AngleDegrees targetGamma;
 
-		/** \brief DC current target value. It is converter`s control variable used in power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief DC current target value. It is converter`s control variable used in power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::CurrentFlow targetIdc;
 
 		static const char debugName[];

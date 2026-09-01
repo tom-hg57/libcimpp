@@ -37,7 +37,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Location.PowerSystemResources", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::GL, } } },
 		{ "Location.mainAddress", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::GL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Location::Location() : CoordinateSystem(nullptr), PowerSystemResources(nullptr), mainAddress(nullptr) {}
