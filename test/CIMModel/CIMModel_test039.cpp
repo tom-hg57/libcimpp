@@ -7,7 +7,8 @@
 
 BOOST_AUTO_TEST_CASE(CIMModel_test039)
 {
-  // Check replacing enum attributes
+  // Check parsing one object with changing type (maybe not CGMES conform)
+  // Measurement object with enum attributes has to be changed to Analog
   CIMModel model;
   model.setDependencyCheckOff();
 

@@ -50,7 +50,7 @@ BOOST_AUTO_TEST_CASE(CIMWriter_test005)
     BOOST_REQUIRE_EQUAL("    <cim:IdentifiedObject.name>EST</cim:IdentifiedObject.name>", lines[4]);
     BOOST_REQUIRE_EQUAL("  </entsoe:EnergySchedulingType>", lines[5]);
   }
-  else if (CimVersion == "cgmes_v3_0_0")
+  else // cgmes_v3_0_0, ...
   {
     CIMModel model;
     model.setDependencyCheckOff();

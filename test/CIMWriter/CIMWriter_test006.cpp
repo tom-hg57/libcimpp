@@ -45,7 +45,7 @@ BOOST_AUTO_TEST_CASE(CIMWriter_test006)
                         lines[2]);
     BOOST_REQUIRE_EQUAL("  </cim:OperationalLimitType>", lines[3]);
   }
-  else if (CimVersion == "cgmes_v3_0_0")
+  else // cgmes_v3_0_0, ...
   {
     CIMModel model;
     model.setDependencyCheckOff();

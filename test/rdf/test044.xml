@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:cim="http://iec.ch/TC57/2013/CIM-schema-cim16#">
+  <cim:DiagramObject rdf:ID="_DO1">
+    <cim:IdentifiedObject.name>DO1</cim:IdentifiedObject.name>
+  </cim:DiagramObject>
+  <cim:DiagramObject rdf:ID="_DO2">
+    <cim:IdentifiedObject.name>DO2</cim:IdentifiedObject.name>
+  </cim:DiagramObject>
+  <cim:DiagramObject rdf:ID="_DO3">
+    <cim:IdentifiedObject.name>DO3</cim:IdentifiedObject.name>
+  </cim:DiagramObject>
+  <cim:VisibilityLayer rdf:ID="_VL1">
+    <cim:VisibilityLayer.VisibleObjects rdf:resource="#_DO1" />
+    <cim:VisibilityLayer.VisibleObjects rdf:resource="#_DO2" />
+    <cim:IdentifiedObject.name>VL1</cim:IdentifiedObject.name>
+  </cim:VisibilityLayer>
+  <cim:VisibilityLayer rdf:ID="_VL2">
+    <cim:VisibilityLayer.VisibleObjects rdf:resource="#_DO2" />
+    <cim:VisibilityLayer.VisibleObjects rdf:resource="#_DO3" />
+    <cim:IdentifiedObject.name>VL2</cim:IdentifiedObject.name>
+  </cim:VisibilityLayer>
+  <cim:VisibilityLayer rdf:ID="_VL3">
+    <cim:VisibilityLayer.VisibleObjects rdf:resource="#_DO1" />
+    <cim:VisibilityLayer.VisibleObjects rdf:resource="#_DO3" />
+    <cim:IdentifiedObject.name>VL3</cim:IdentifiedObject.name>
+  </cim:VisibilityLayer>
+</rdf:RDF>

@@ -24,7 +24,7 @@ BOOST_AUTO_TEST_CASE(CGMESProfile_getProfileURIs)
     BOOST_REQUIRE_EQUAL(1, uris.size());
     BOOST_REQUIRE_EQUAL("http://entsoe.eu/CIM/Topology/4/1", uris.front());
   }
-  else if (CimVersion == "cgmes_v3_0_0")
+  else // cgmes_v3_0_0, ...
   {
     auto uris = getProfileURIs(CGMESProfile::EQ);
     BOOST_REQUIRE_EQUAL(1, uris.size());

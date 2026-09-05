@@ -56,7 +56,7 @@ BOOST_AUTO_TEST_CASE(CIMModel_test005)
       BOOST_REQUIRE_EQUAL("EST", stream.str());
     }
   }
-  else if (CimVersion == "cgmes_v3_0_0")
+  else // cgmes_v3_0_0, ...
   {
     CIMModel model;
     model.setDependencyCheckOff();
