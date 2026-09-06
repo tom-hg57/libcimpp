@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class DiscreteValue;
@@ -27,10 +28,10 @@ namespace CIMPP
 		Discrete();
 		~Discrete() override;
 
-		/** \brief The values connected to this measurement. Default: 0 */
+		/** \brief The values connected to this measurement. Default: {} */
 		std::list<CIMPP::DiscreteValue*> DiscreteValues;
 
-		/** \brief The ValueAliasSet used for translation of a MeasurementValue.value to a name. Default: 0 */
+		/** \brief The ValueAliasSet used for translation of a MeasurementValue.value to a name. Default: nullptr */
 		CIMPP::ValueAliasSet* ValueAliasSet;
 
 		static const char debugName[];

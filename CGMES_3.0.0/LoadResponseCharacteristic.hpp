@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Float.hpp"
 
@@ -28,7 +29,7 @@ namespace CIMPP
 		LoadResponseCharacteristic();
 		~LoadResponseCharacteristic() override;
 
-		/** \brief The set of loads that have the response characteristics. Default: 0 */
+		/** \brief The set of loads that have the response characteristics. Default: {} */
 		std::list<CIMPP::EnergyConsumer*> EnergyConsumer;
 
 		/** \brief Indicates the exponential voltage dependency model is to be used. If false, the coefficient model is to be used. The exponential voltage dependency model consist of the attributes: - pVoltageExponent - qVoltageExponent - pFrequencyExponent - qFrequencyExponent. The coefficient model consist of the attributes: - pConstantImpedance - pConstantCurrent - pConstantPower - qConstantImpedance - qConstantCurrent - qConstantPower. The sum of pConstantImpedance, pConstantCurrent and pConstantPower shall equal 1. The sum of qConstantImpedance, qConstantCurrent and qConstantPower shall equal 1. Default: false */

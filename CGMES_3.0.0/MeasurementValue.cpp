@@ -35,7 +35,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "MeasurementValue.sensorAccuracy", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 		{ "MeasurementValue.timeStamp", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 MeasurementValue::MeasurementValue() : MeasurementValueQuality(nullptr), MeasurementValueSource(nullptr) {}

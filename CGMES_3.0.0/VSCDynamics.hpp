@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class VsConverter;
@@ -26,7 +27,7 @@ namespace CIMPP
 		VSCDynamics();
 		~VSCDynamics() override;
 
-		/** \brief Voltage source converter to which voltage source converter dynamics model applies. Default: 0 */
+		/** \brief Voltage source converter to which voltage source converter dynamics model applies. Default: nullptr */
 		CIMPP::VsConverter* VsConverter;
 
 		static const char debugName[];

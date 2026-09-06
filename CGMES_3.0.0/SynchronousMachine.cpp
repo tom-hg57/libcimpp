@@ -19,8 +19,8 @@ static const CimClassDetails& getCimClassDetails()
 		SynchronousMachine(),
 		"http://iec.ch/TC57/CIM100#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::SC,
 			CGMESProfile::SSH,
 		},
@@ -57,7 +57,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "SynchronousMachine.x0", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 		{ "SynchronousMachine.x2", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 SynchronousMachine::SynchronousMachine() : InitialReactiveCapabilityCurve(nullptr), SynchronousMachineDynamics(nullptr) {}

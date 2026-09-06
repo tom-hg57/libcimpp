@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 
 namespace CIMPP
@@ -26,25 +27,25 @@ namespace CIMPP
 		UnderexcLim2Simplified();
 		~UnderexcLim2Simplified() override;
 
-		/** \brief Gain Under excitation limiter (Kui).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Gain Under excitation limiter (Kui).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU kui;
 
-		/** \brief Segment P initial point (P0).  Typical Value = 0. Default: nullptr */
+		/** \brief Segment P initial point (P0).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU p0;
 
-		/** \brief Segment P end point (P1).  Typical Value = 1. Default: nullptr */
+		/** \brief Segment P end point (P1).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU p1;
 
-		/** \brief Segment Q initial point (Q0).  Typical Value = -0.31. Default: nullptr */
+		/** \brief Segment Q initial point (Q0).  Typical Value = -0.31. Default: 0.0 */
 		CIMPP::PU q0;
 
-		/** \brief Segment Q end point (Q1).  Typical Value = -0.1. Default: nullptr */
+		/** \brief Segment Q end point (Q1).  Typical Value = -0.1. Default: 0.0 */
 		CIMPP::PU q1;
 
-		/** \brief Maximum error signal (V).  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum error signal (V).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU vuimax;
 
-		/** \brief Minimum error signal (V).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum error signal (V).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU vuimin;
 
 		static const char debugName[];

@@ -36,7 +36,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "UnderexcLim2Simplified.vuimax", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "UnderexcLim2Simplified.vuimin", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 UnderexcLim2Simplified::UnderexcLim2Simplified() {}

@@ -44,7 +44,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PowerTransformerEnd.x", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "PowerTransformerEnd.x0", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PowerTransformerEnd::PowerTransformerEnd() : PowerTransformer(nullptr) {}

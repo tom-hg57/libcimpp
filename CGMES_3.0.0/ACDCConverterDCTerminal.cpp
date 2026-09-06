@@ -34,7 +34,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ACDCConverterDCTerminal.DCConductingEquipment", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "ACDCConverterDCTerminal.polarity", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ACDCConverterDCTerminal::ACDCConverterDCTerminal() : DCConductingEquipment(nullptr) {}

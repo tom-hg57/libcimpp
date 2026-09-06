@@ -19,10 +19,10 @@ static const CimClassDetails& getCimClassDetails()
 		ConnectivityNodeContainer(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
-			CGMESProfile::EQ_BD,
 			CGMESProfile::EQ,
-			CGMESProfile::TP_BD,
+			CGMESProfile::EQ_BD,
 			CGMESProfile::TP,
+			CGMESProfile::TP_BD,
 		},
 		CGMESProfile::EQ
 	);
@@ -33,10 +33,10 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 {
 	static const std::map<std::string, AttrDetails> ClassAttrDetailsMap =
 	{
-		{ "ConnectivityNodeContainer.ConnectivityNodes", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ_BD, CGMESProfile::EQ, } } },
-		{ "ConnectivityNodeContainer.TopologicalNode", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::TP_BD, CGMESProfile::TP, } } },
+		{ "ConnectivityNodeContainer.ConnectivityNodes", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, CGMESProfile::EQ_BD, } } },
+		{ "ConnectivityNodeContainer.TopologicalNode", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::TP, CGMESProfile::TP_BD, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ConnectivityNodeContainer::ConnectivityNodeContainer() {}

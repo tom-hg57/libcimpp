@@ -37,7 +37,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Measurement.unitMultiplier", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 		{ "Measurement.unitSymbol", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Measurement::Measurement() : PowerSystemResource(nullptr), Terminal(nullptr) {}

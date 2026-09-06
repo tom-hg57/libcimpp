@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Float.hpp"
 #include "Integer.hpp"
@@ -49,67 +50,67 @@ namespace CIMPP
 		ProprietaryParameterDynamics();
 		~ProprietaryParameterDynamics() override;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::AsynchronousMachineUserDefined* AsynchronousMachineUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::CSCUserDefined* CSCUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::DiscontinuousExcitationControlUserDefined* DiscontinuousExcitationControlUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::ExcitationSystemUserDefined* ExcitationSystemUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::LoadUserDefined* LoadUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::MechanicalLoadUserDefined* MechanicalLoadUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::OverexcitationLimiterUserDefined* OverexcitationLimiterUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::PFVArControllerType1UserDefined* PFVArControllerType1UserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::PFVArControllerType2UserDefined* PFVArControllerType2UserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::PowerSystemStabilizerUserDefined* PowerSystemStabilizerUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::SVCUserDefined* SVCUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::SynchronousMachineUserDefined* SynchronousMachineUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::TurbineGovernorUserDefined* TurbineGovernorUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::TurbineLoadControllerUserDefined* TurbineLoadControllerUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::UnderexcitationLimiterUserDefined* UnderexcitationLimiterUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::VSCUserDefined* VSCUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::VoltageAdjusterUserDefined* VoltageAdjusterUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::VoltageCompensatorUserDefined* VoltageCompensatorUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::WindPlantUserDefined* WindPlantUserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::WindType1or2UserDefined* WindType1or2UserDefined;
 
-		/** \brief Proprietary user-defined model with which this parameter is associated. Default: 0 */
+		/** \brief Proprietary user-defined model with which this parameter is associated. Default: nullptr */
 		CIMPP::WindType3or4UserDefined* WindType3or4UserDefined;
 
 		/** \brief Boolean parameter value. If this attribute is populated, integerParameterValue and floatParameterValue will not be. Default: false */

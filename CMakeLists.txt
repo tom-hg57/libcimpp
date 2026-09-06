@@ -27,7 +27,7 @@ else()
 endif()
 
 set(libcimpp_MAJOR_VERSION 2)
-set(libcimpp_MINOR_VERSION 2)
+set(libcimpp_MINOR_VERSION 3)
 set(libcimpp_PATCH_VERSION 0)
 set(libcimpp_VERSION ${libcimpp_MAJOR_VERSION}.${libcimpp_MINOR_VERSION}.${libcimpp_PATCH_VERSION})
 
@@ -60,6 +60,8 @@ target_include_directories(${PROJECT_NAME} PUBLIC $<BUILD_INTERFACE:${CMAKE_CURR
 target_include_directories(${PROJECT_NAME} PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/static>)
 target_include_directories(${PROJECT_NAME} PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>)
 target_link_libraries(${PROJECT_NAME} PUBLIC arabica)
+target_link_options(${PROJECT_NAME} PRIVATE -Wl,--no-warn-search-mismatch)
+target_link_options(arabica PRIVATE -Wl,--no-warn-search-mismatch)
 set_property(TARGET arabica PROPERTY POSITION_INDEPENDENT_CODE ON)
 
 include(GNUInstallDirs)

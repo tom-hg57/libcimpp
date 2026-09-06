@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class SeasonDayTypeSchedule;
@@ -26,7 +27,7 @@ namespace CIMPP
 		DayType();
 		~DayType() override;
 
-		/** \brief Schedules that use this DayType. Default: 0 */
+		/** \brief Schedules that use this DayType. Default: {} */
 		std::list<CIMPP::SeasonDayTypeSchedule*> SeasonDayTypeSchedules;
 
 		static const char debugName[];

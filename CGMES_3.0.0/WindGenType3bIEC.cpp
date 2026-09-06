@@ -34,7 +34,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindGenType3bIEC.tg", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "WindGenType3bIEC.two", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindGenType3bIEC::WindGenType3bIEC() {}

@@ -31,7 +31,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	{
 		{ "DiagramObjectStyle.StyledObjects", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 DiagramObjectStyle::DiagramObjectStyle() {}

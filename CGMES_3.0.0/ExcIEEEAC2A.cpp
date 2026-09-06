@@ -50,7 +50,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ExcIEEEAC2A.vrmax", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "ExcIEEEAC2A.vrmin", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ExcIEEEAC2A::ExcIEEEAC2A() {}

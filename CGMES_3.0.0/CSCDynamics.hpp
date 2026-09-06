@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class CsConverter;
@@ -26,7 +27,7 @@ namespace CIMPP
 		CSCDynamics();
 		~CSCDynamics() override;
 
-		/** \brief Current source converter to which current source converter dynamics model applies. Default: 0 */
+		/** \brief Current source converter to which current source converter dynamics model applies. Default: nullptr */
 		CIMPP::CsConverter* CSConverter;
 
 		static const char debugName[];

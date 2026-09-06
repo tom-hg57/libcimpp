@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class TurbineGovernorDynamics;
@@ -26,7 +27,7 @@ namespace CIMPP
 		TurbineLoadControllerDynamics();
 		~TurbineLoadControllerDynamics() override;
 
-		/** \brief Turbine-governor controlled by this turbine load controller. Default: 0 */
+		/** \brief Turbine-governor controlled by this turbine load controller. Default: nullptr */
 		CIMPP::TurbineGovernorDynamics* TurbineGovernorDynamics;
 
 		static const char debugName[];

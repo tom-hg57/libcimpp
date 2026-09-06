@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Simple_Float.hpp"
 
 namespace CIMPP
@@ -27,10 +28,10 @@ namespace CIMPP
 		SvTapStep();
 		~SvTapStep() override;
 
-		/** \brief The tap changer associated with the tap step state. Default: 0 */
+		/** \brief The tap changer associated with the tap step state. Default: nullptr */
 		CIMPP::TapChanger* TapChanger;
 
-		/** \brief The floating point tap position.   This is not the tap ratio, but rather the tap step position as defined by the related tap changer model and normally is constrained to be within the range of minimum and maximum tap positions. Default: nullptr */
+		/** \brief The floating point tap position.   This is not the tap ratio, but rather the tap step position as defined by the related tap changer model and normally is constrained to be within the range of minimum and maximum tap positions. Default: 0.0 */
 		CIMPP::Simple_Float position;
 
 		static const char debugName[];

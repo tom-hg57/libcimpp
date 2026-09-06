@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "Boolean.hpp"
 #include "PU.hpp"
@@ -31,97 +32,97 @@ namespace CIMPP
 		GovGAST2();
 		~GovGAST2() override;
 
-		/** \brief Valve positioner (A). Default: nullptr */
+		/** \brief Valve positioner (A). Default: 0.0 */
 		CIMPP::Simple_Float a;
 
-		/** \brief Exhaust temperature Parameter (Af1).  Unit = per unit temperature.  Based on temperature in degrees C. Default: nullptr */
+		/** \brief Exhaust temperature Parameter (Af1).  Unit = per unit temperature.  Based on temperature in degrees C. Default: 0.0 */
 		CIMPP::PU af1;
 
-		/** \brief Coefficient equal to 0.5(1-speed) (Af2). Default: nullptr */
+		/** \brief Coefficient equal to 0.5(1-speed) (Af2). Default: 0.0 */
 		CIMPP::PU af2;
 
-		/** \brief Valve positioner (B). Default: nullptr */
+		/** \brief Valve positioner (B). Default: 0.0 */
 		CIMPP::Simple_Float b;
 
-		/** \brief (Bf1).  Bf1 = E(1-w) where E (speed sensitivity coefficient) is 0.55 to 0.65 x Tr.  Unit = per unit temperature.  Based on temperature in degrees C. Default: nullptr */
+		/** \brief (Bf1).  Bf1 = E(1-w) where E (speed sensitivity coefficient) is 0.55 to 0.65 x Tr.  Unit = per unit temperature.  Based on temperature in degrees C. Default: 0.0 */
 		CIMPP::PU bf1;
 
-		/** \brief Turbine Torque Coefficient K (depends on heating value of fuel stream in combustion chamber) (Bf2). Default: nullptr */
+		/** \brief Turbine Torque Coefficient K (depends on heating value of fuel stream in combustion chamber) (Bf2). Default: 0.0 */
 		CIMPP::PU bf2;
 
-		/** \brief Valve positioner (C). Default: nullptr */
+		/** \brief Valve positioner (C). Default: 0.0 */
 		CIMPP::Simple_Float c;
 
-		/** \brief Coefficient defining fuel flow where power output is 0% (Cf2).  Synchronous but no output.  Typically 0.23 x K (23% fuel flow). Default: nullptr */
+		/** \brief Coefficient defining fuel flow where power output is 0% (Cf2).  Synchronous but no output.  Typically 0.23 x K (23% fuel flow). Default: 0.0 */
 		CIMPP::PU cf2;
 
-		/** \brief Combustion reaction time delay (Ecr). Default: nullptr */
+		/** \brief Combustion reaction time delay (Ecr). Default: 0.0 */
 		CIMPP::Seconds ecr;
 
-		/** \brief Turbine and exhaust delay (Etd). Default: nullptr */
+		/** \brief Turbine and exhaust delay (Etd). Default: 0.0 */
 		CIMPP::Seconds etd;
 
-		/** \brief Ratio of Fuel Adjustment (K3). Default: nullptr */
+		/** \brief Ratio of Fuel Adjustment (K3). Default: 0.0 */
 		CIMPP::PU k3;
 
-		/** \brief Gain of radiation shield (K4). Default: nullptr */
+		/** \brief Gain of radiation shield (K4). Default: 0.0 */
 		CIMPP::PU k4;
 
-		/** \brief Gain of radiation shield (K5). Default: nullptr */
+		/** \brief Gain of radiation shield (K5). Default: 0.0 */
 		CIMPP::PU k5;
 
-		/** \brief Minimum fuel flow (K6). Default: nullptr */
+		/** \brief Minimum fuel flow (K6). Default: 0.0 */
 		CIMPP::PU k6;
 
-		/** \brief Fuel system feedback (Kf). Default: nullptr */
+		/** \brief Fuel system feedback (Kf). Default: 0.0 */
 		CIMPP::PU kf;
 
-		/** \brief Base for power values (MWbase) (&gt; 0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Fuel Control Time Constant (T). Default: nullptr */
+		/** \brief Fuel Control Time Constant (T). Default: 0.0 */
 		CIMPP::Seconds t;
 
-		/** \brief Radiation shield time constant (T3). Default: nullptr */
+		/** \brief Radiation shield time constant (T3). Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Thermocouple time constant (T4). Default: nullptr */
+		/** \brief Thermocouple time constant (T4). Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Temperature control time constant (T5). Default: nullptr */
+		/** \brief Temperature control time constant (T5). Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Temperature control (Tc).  Unit = [SYMBOL REMOVED]F or [SYMBOL REMOVED]C depending on constants Af1 and Bf1. Default: nullptr */
+		/** \brief Temperature control (Tc).  Unit = [SYMBOL REMOVED]F or [SYMBOL REMOVED]C depending on constants Af1 and Bf1. Default: 0.0 */
 		CIMPP::Temperature tc;
 
-		/** \brief Compressor discharge time constant (Tcd). Default: nullptr */
+		/** \brief Compressor discharge time constant (Tcd). Default: 0.0 */
 		CIMPP::Seconds tcd;
 
-		/** \brief Fuel system time constant (Tf). Default: nullptr */
+		/** \brief Fuel system time constant (Tf). Default: 0.0 */
 		CIMPP::Seconds tf;
 
-		/** \brief Maximum Turbine limit (Tmax). Default: nullptr */
+		/** \brief Maximum Turbine limit (Tmax). Default: 0.0 */
 		CIMPP::PU tmax;
 
-		/** \brief Minimum Turbine limit (Tmin). Default: nullptr */
+		/** \brief Minimum Turbine limit (Tmin). Default: 0.0 */
 		CIMPP::PU tmin;
 
-		/** \brief Rated temperature (Tr).  Unit = [SYMBOL REMOVED]C depending on parameters Af1 and Bf1. Default: nullptr */
+		/** \brief Rated temperature (Tr).  Unit = [SYMBOL REMOVED]C depending on parameters Af1 and Bf1. Default: 0.0 */
 		CIMPP::Temperature tr;
 
-		/** \brief Turbine rating (Trate).  Unit = MW. Default: nullptr */
+		/** \brief Turbine rating (Trate).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower trate;
 
-		/** \brief Temperature controller integration rate (Tt). Default: nullptr */
+		/** \brief Temperature controller integration rate (Tt). Default: 0.0 */
 		CIMPP::Seconds tt;
 
-		/** \brief Governor gain (1/droop) on turbine rating (W). Default: nullptr */
+		/** \brief Governor gain (1/droop) on turbine rating (W). Default: 0.0 */
 		CIMPP::PU w;
 
-		/** \brief Governor lead time constant (X). Default: nullptr */
+		/** \brief Governor lead time constant (X). Default: 0.0 */
 		CIMPP::Seconds x;
 
-		/** \brief Governor lag time constant (Y) (&gt;0). Default: nullptr */
+		/** \brief Governor lag time constant (Y) (>0). Default: 0.0 */
 		CIMPP::Seconds y;
 
 		/** \brief Governor mode (Z). true = Droop false = ISO. Default: false */

@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindPlantDynamics.RemoteInputSignal", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "WindPlantDynamics.WindTurbineType3or4Dynamics", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindPlantDynamics::WindPlantDynamics() : RemoteInputSignal(nullptr) {}

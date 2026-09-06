@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "LoadAggregate.LoadMotor", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "LoadAggregate.LoadStatic", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 LoadAggregate::LoadAggregate() : LoadMotor(nullptr), LoadStatic(nullptr) {}

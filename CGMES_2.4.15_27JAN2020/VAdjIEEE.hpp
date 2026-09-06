@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 #include "Simple_Float.hpp"
@@ -28,22 +29,22 @@ namespace CIMPP
 		VAdjIEEE();
 		~VAdjIEEE() override;
 
-		/** \brief Rate at which output of adjuster changes ().  Unit = sec./PU.  Typical Value = 300. Default: nullptr */
+		/** \brief Rate at which output of adjuster changes ().  Unit = sec./PU.  Typical Value = 300. Default: 0.0 */
 		CIMPP::Simple_Float adjslew;
 
-		/** \brief Time that adjuster pulses are off ().  Typical Value = 0.5. Default: nullptr */
+		/** \brief Time that adjuster pulses are off ().  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Seconds taoff;
 
-		/** \brief Time that adjuster pulses are on ().  Typical Value = 0.1. Default: nullptr */
+		/** \brief Time that adjuster pulses are on ().  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Seconds taon;
 
-		/** \brief Set high to provide a continuous raise or lower (). Default: nullptr */
+		/** \brief Set high to provide a continuous raise or lower (). Default: 0.0 */
 		CIMPP::Simple_Float vadjf;
 
-		/** \brief Maximum output of the adjuster ().  Typical Value = 1.1. Default: nullptr */
+		/** \brief Maximum output of the adjuster ().  Typical Value = 1.1. Default: 0.0 */
 		CIMPP::PU vadjmax;
 
-		/** \brief Minimum output of the adjuster ().  Typical Value = 0.9. Default: nullptr */
+		/** \brief Minimum output of the adjuster ().  Typical Value = 0.9. Default: 0.0 */
 		CIMPP::PU vadjmin;
 
 		static const char debugName[];

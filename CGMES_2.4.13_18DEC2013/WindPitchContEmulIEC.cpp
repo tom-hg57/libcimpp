@@ -41,7 +41,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindPitchContEmulIEC.t2", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "WindPitchContEmulIEC.tpe", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindPitchContEmulIEC::WindPitchContEmulIEC() : WindGenTurbineType2IEC(nullptr) {}

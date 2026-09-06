@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class ExcitationSystemDynamics;
@@ -26,7 +27,7 @@ namespace CIMPP
 		PFVArControllerType2Dynamics();
 		~PFVArControllerType2Dynamics() override;
 
-		/** \brief Excitation system model with which this power factor or VAr controller type 2 is associated. Default: 0 */
+		/** \brief Excitation system model with which this power factor or VAr controller type 2 is associated. Default: nullptr */
 		CIMPP::ExcitationSystemDynamics* ExcitationSystemDynamics;
 
 		static const char debugName[];

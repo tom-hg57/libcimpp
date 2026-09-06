@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,22 +29,22 @@ namespace CIMPP
 		VAdjIEEE();
 		~VAdjIEEE() override;
 
-		/** \brief Rate at which output of adjuster changes (&lt;i&gt;ADJ_SLEW&lt;/i&gt;).  Unit = s / PU.  Typical value = 300. Default: 0.0 */
+		/** \brief Rate at which output of adjuster changes (<i>ADJ_SLEW</i>).  Unit = s / PU.  Typical value = 300. Default: 0.0 */
 		CIMPP::Float adjslew;
 
-		/** \brief Time that adjuster pulses are off (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;AOFF&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,5. Default: nullptr */
+		/** \brief Time that adjuster pulses are off (<i>T</i><i><sub>AOFF</sub></i>) (&gt;= 0).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::Seconds taoff;
 
-		/** \brief Time that adjuster pulses are on (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;AON&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Time that adjuster pulses are on (<i>T</i><i><sub>AON</sub></i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds taon;
 
-		/** \brief Set high to provide a continuous raise or lower (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;ADJF&lt;/sub&gt;&lt;/i&gt;). Default: 0.0 */
+		/** \brief Set high to provide a continuous raise or lower (<i>V</i><i><sub>ADJF</sub></i>). Default: 0.0 */
 		CIMPP::Float vadjf;
 
-		/** \brief Maximum output of the adjuster (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;ADJMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; VAdjIEEE.vadjmin).  Typical value = 1,1. Default: nullptr */
+		/** \brief Maximum output of the adjuster (<i>V</i><i><sub>ADJMAX</sub></i>) (&gt; VAdjIEEE.vadjmin).  Typical value = 1,1. Default: 0.0 */
 		CIMPP::PU vadjmax;
 
-		/** \brief Minimum output of the adjuster (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;ADJMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; VAdjIEEE.vadjmax).  Typical value = 0,9. Default: nullptr */
+		/** \brief Minimum output of the adjuster (<i>V</i><i><sub>ADJMIN</sub></i>) (&lt; VAdjIEEE.vadjmax).  Typical value = 0,9. Default: 0.0 */
 		CIMPP::PU vadjmin;
 
 		static const char debugName[];

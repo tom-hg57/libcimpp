@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class DCNode;
@@ -27,10 +28,10 @@ namespace CIMPP
 		DCBaseTerminal();
 		~DCBaseTerminal() override;
 
-		/** \brief The DC connectivity node to which this DC base terminal connects with zero impedance. Default: 0 */
+		/** \brief The DC connectivity node to which this DC base terminal connects with zero impedance. Default: nullptr */
 		CIMPP::DCNode* DCNode;
 
-		/** \brief See association end Terminal.TopologicalNode. Default: 0 */
+		/** \brief See association end Terminal.TopologicalNode. Default: nullptr */
 		CIMPP::DCTopologicalNode* DCTopologicalNode;
 
 		static const char debugName[];

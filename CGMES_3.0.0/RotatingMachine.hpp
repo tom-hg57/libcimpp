@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "ApparentPower.hpp"
 #include "Float.hpp"
@@ -32,25 +33,25 @@ namespace CIMPP
 		RotatingMachine();
 		~RotatingMachine() override;
 
-		/** \brief A synchronous machine may operate as a generator and as such becomes a member of a generating unit. Default: 0 */
+		/** \brief A synchronous machine may operate as a generator and as such becomes a member of a generating unit. Default: nullptr */
 		CIMPP::GeneratingUnit* GeneratingUnit;
 
-		/** \brief The synchronous machine drives the turbine which moves the water from a low elevation to a higher elevation. The direction of machine rotation for pumping may or may not be the same as for generating. Default: 0 */
+		/** \brief The synchronous machine drives the turbine which moves the water from a low elevation to a higher elevation. The direction of machine rotation for pumping may or may not be the same as for generating. Default: nullptr */
 		CIMPP::HydroPump* HydroPump;
 
-		/** \brief Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: nullptr */
+		/** \brief Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: 0.0 */
 		CIMPP::ActivePower p;
 
-		/** \brief Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: nullptr */
+		/** \brief Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: 0.0 */
 		CIMPP::ReactivePower q;
 
 		/** \brief Power factor (nameplate data). It is primarily used for short circuit data exchange according to IEC 60909. The attribute cannot be a negative value. Default: 0.0 */
 		CIMPP::Float ratedPowerFactor;
 
-		/** \brief Nameplate apparent power rating for the unit. The attribute shall have a positive value. Default: nullptr */
+		/** \brief Nameplate apparent power rating for the unit. The attribute shall have a positive value. Default: 0.0 */
 		CIMPP::ApparentPower ratedS;
 
-		/** \brief Rated voltage (nameplate data, Ur in IEC 60909-0). It is primarily used for short circuit data exchange according to IEC 60909. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Rated voltage (nameplate data, Ur in IEC 60909-0). It is primarily used for short circuit data exchange according to IEC 60909. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Voltage ratedU;
 
 		static const char debugName[];

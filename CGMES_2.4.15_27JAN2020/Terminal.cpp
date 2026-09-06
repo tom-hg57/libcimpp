@@ -27,11 +27,11 @@ static const CimClassDetails& getCimClassDetails()
 		Terminal(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
+			CGMESProfile::EQ,
 			CGMESProfile::DY,
 			CGMESProfile::EQ_BD,
-			CGMESProfile::EQ,
-			CGMESProfile::SV,
 			CGMESProfile::SSH,
+			CGMESProfile::SV,
 			CGMESProfile::TP,
 		},
 		CGMESProfile::EQ
@@ -43,7 +43,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 {
 	static const std::map<std::string, AttrDetails> ClassAttrDetailsMap =
 	{
-		{ "Terminal.ConductingEquipment", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, CGMESProfile::EQ_BD, CGMESProfile::EQ, } } },
+		{ "Terminal.ConductingEquipment", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, CGMESProfile::DY, CGMESProfile::EQ_BD, } } },
 		{ "Terminal.ConnectivityNode", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "Terminal.ConverterDCSides", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "Terminal.HasFirstMutualCoupling", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
@@ -56,7 +56,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Terminal.TransformerEnd", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "Terminal.phases", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Terminal::Terminal() : ConductingEquipment(nullptr), ConnectivityNode(nullptr), RegulatingControl(nullptr), SvPowerFlow(nullptr), TopologicalNode(nullptr) {}

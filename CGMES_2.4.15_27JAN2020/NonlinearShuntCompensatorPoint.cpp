@@ -36,7 +36,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "NonlinearShuntCompensatorPoint.g0", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "NonlinearShuntCompensatorPoint.sectionNumber", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 NonlinearShuntCompensatorPoint::NonlinearShuntCompensatorPoint() : NonlinearShuntCompensator(nullptr) {}

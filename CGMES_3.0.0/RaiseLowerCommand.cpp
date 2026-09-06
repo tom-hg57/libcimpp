@@ -31,7 +31,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	{
 		{ "RaiseLowerCommand.ValueAliasSet", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 RaiseLowerCommand::RaiseLowerCommand() : ValueAliasSet(nullptr) {}

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "OrientationKind.hpp"
 #include "Simple_Float.hpp"
 
@@ -29,25 +30,25 @@ namespace CIMPP
 		Diagram();
 		~Diagram() override;
 
-		/** \brief A diagram is made up of multiple diagram objects. Default: 0 */
+		/** \brief A diagram is made up of multiple diagram objects. Default: {} */
 		std::list<CIMPP::DiagramObject*> DiagramElements;
 
-		/** \brief A Diagram may have a DiagramStyle. Default: 0 */
+		/** \brief A Diagram may have a DiagramStyle. Default: nullptr */
 		CIMPP::DiagramStyle* DiagramStyle;
 
 		/** \brief Coordinate system orientation of the diagram. Default: 0 */
 		CIMPP::OrientationKind orientation;
 
-		/** \brief X coordinate of the first corner of the initial view. Default: nullptr */
+		/** \brief X coordinate of the first corner of the initial view. Default: 0.0 */
 		CIMPP::Simple_Float x1InitialView;
 
-		/** \brief X coordinate of the second corner of the initial view. Default: nullptr */
+		/** \brief X coordinate of the second corner of the initial view. Default: 0.0 */
 		CIMPP::Simple_Float x2InitialView;
 
-		/** \brief Y coordinate of the first corner of the initial view. Default: nullptr */
+		/** \brief Y coordinate of the first corner of the initial view. Default: 0.0 */
 		CIMPP::Simple_Float y1InitialView;
 
-		/** \brief Y coordinate of the second corner of the initial view. Default: nullptr */
+		/** \brief Y coordinate of the second corner of the initial view. Default: 0.0 */
 		CIMPP::Simple_Float y2InitialView;
 
 		static const char debugName[];

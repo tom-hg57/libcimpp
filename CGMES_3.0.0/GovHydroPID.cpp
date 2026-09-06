@@ -62,7 +62,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "GovHydroPID.velcl", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "GovHydroPID.velop", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 GovHydroPID::GovHydroPID() {}

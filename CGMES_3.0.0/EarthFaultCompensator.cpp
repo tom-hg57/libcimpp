@@ -31,7 +31,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	{
 		{ "EarthFaultCompensator.r", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 EarthFaultCompensator::EarthFaultCompensator() {}

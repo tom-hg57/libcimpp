@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -29,19 +30,19 @@ namespace CIMPP
 		WindGenTurbineType3bIEC();
 		~WindGenTurbineType3bIEC() override;
 
-		/** \brief Crowbar duration versus voltage variation look-up table (f()). It is case dependent parameter. Default: nullptr */
+		/** \brief Crowbar duration versus voltage variation look-up table (f()). It is case dependent parameter. Default: 0.0 */
 		CIMPP::Simple_Float fducw;
 
 		/** \brief Crowbar control mode ().   The parameter is case dependent parameter. Default: false */
 		CIMPP::Boolean mwtcwp;
 
-		/** \brief Current generation Time constant (). It is type dependent parameter. Default: nullptr */
+		/** \brief Current generation Time constant (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tg;
 
-		/** \brief Time constant for crowbar washout filter (). It is case dependent parameter. Default: nullptr */
+		/** \brief Time constant for crowbar washout filter (). It is case dependent parameter. Default: 0.0 */
 		CIMPP::Seconds two;
 
-		/** \brief Electromagnetic transient reactance (x). It is type dependent parameter. Default: nullptr */
+		/** \brief Electromagnetic transient reactance (x). It is type dependent parameter. Default: 0.0 */
 		CIMPP::PU xs;
 
 		static const char debugName[];

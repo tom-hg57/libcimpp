@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,31 +28,31 @@ namespace CIMPP
 		ExcAC4A();
 		~ExcAC4A() override;
 
-		/** \brief Voltage regulator gain (&lt;i&gt;Ka&lt;/i&gt;) (&amp;gt; 0).  Typical value = 200. Default: nullptr */
+		/** \brief Voltage regulator gain (<i>Ka</i>) (&gt; 0).  Typical value = 200. Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Rectifier loading factor proportional to commutating reactance (&lt;i&gt;Kc&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Rectifier loading factor proportional to commutating reactance (<i>Kc</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Voltage regulator time constant (&lt;i&gt;Ta&lt;/i&gt;) (&amp;gt; 0).  Typical value = 0,015. Default: nullptr */
+		/** \brief Voltage regulator time constant (<i>Ta</i>) (&gt; 0).  Typical value = 0,015. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Voltage regulator time constant (&lt;i&gt;Tb&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 10. Default: nullptr */
+		/** \brief Voltage regulator time constant (<i>Tb</i>) (&gt;= 0).  Typical value = 10. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Voltage regulator time constant (&lt;i&gt;Tc&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1. Default: nullptr */
+		/** \brief Voltage regulator time constant (<i>Tc</i>) (&gt;= 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Maximum voltage regulator input limit (&lt;i&gt;Vimax&lt;/i&gt;)  (&amp;gt; 0).  Typical value = 10. Default: nullptr */
+		/** \brief Maximum voltage regulator input limit (<i>Vimax</i>)  (&gt; 0).  Typical value = 10. Default: 0.0 */
 		CIMPP::PU vimax;
 
-		/** \brief Minimum voltage regulator input limit (&lt;i&gt;Vimin&lt;/i&gt;) (&amp;lt; 0).  Typical value = -10. Default: nullptr */
+		/** \brief Minimum voltage regulator input limit (<i>Vimin</i>) (&lt; 0).  Typical value = -10. Default: 0.0 */
 		CIMPP::PU vimin;
 
-		/** \brief Maximum voltage regulator output (&lt;i&gt;Vrmax&lt;/i&gt;) (&amp;gt; 0).  Typical value = 5,64. Default: nullptr */
+		/** \brief Maximum voltage regulator output (<i>Vrmax</i>) (&gt; 0).  Typical value = 5,64. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator output (&lt;i&gt;Vrmin&lt;/i&gt;) (&amp;lt; 0).  Typical value = -4,53. Default: nullptr */
+		/** \brief Minimum voltage regulator output (<i>Vrmin</i>) (&lt; 0).  Typical value = -4,53. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

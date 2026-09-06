@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "RegulatingControlModeKind.hpp"
 #include "Simple_Float.hpp"
@@ -32,13 +33,13 @@ namespace CIMPP
 		RegulatingControl();
 		~RegulatingControl() override;
 
-		/** \brief The equipment that participates in this regulating control scheme. Default: 0 */
+		/** \brief The equipment that participates in this regulating control scheme. Default: {} */
 		std::list<CIMPP::RegulatingCondEq*> RegulatingCondEq;
 
-		/** \brief Schedule for this Regulating regulating control. Default: 0 */
+		/** \brief Schedule for this Regulating regulating control. Default: {} */
 		std::list<CIMPP::RegulationSchedule*> RegulationSchedule;
 
-		/** \brief The controls regulating this terminal. Default: 0 */
+		/** \brief The controls regulating this terminal. Default: nullptr */
 		CIMPP::Terminal* Terminal;
 
 		/** \brief The regulation is performed in a discrete mode. This applies to equipment with discrete controls, e.g. tap changers and shunt compensators. Default: false */
@@ -50,10 +51,10 @@ namespace CIMPP
 		/** \brief The regulating control mode presently available.  This specification allows for determining the kind of regulation without need for obtaining the units from a schedule. Default: 0 */
 		CIMPP::RegulatingControlModeKind mode;
 
-		/** \brief This is a deadband used with discrete control to avoid excessive update of controls like tap changers and shunt compensator banks while regulating. The units of those appropriate for the mode. Default: nullptr */
+		/** \brief This is a deadband used with discrete control to avoid excessive update of controls like tap changers and shunt compensator banks while regulating. The units of those appropriate for the mode. Default: 0.0 */
 		CIMPP::Simple_Float targetDeadband;
 
-		/** \brief The target value specified for case input.   This value can be used for the target value without the use of schedules. The value has the units appropriate to the mode attribute. Default: nullptr */
+		/** \brief The target value specified for case input.   This value can be used for the target value without the use of schedules. The value has the units appropriate to the mode attribute. Default: 0.0 */
 		CIMPP::Simple_Float targetValue;
 
 		/** \brief Specify the multiplier for used for the targetValue. Default: 0 */

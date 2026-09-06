@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "Float.hpp"
 #include "PU.hpp"
@@ -36,19 +37,19 @@ namespace CIMPP
 		VsConverter();
 		~VsConverter() override;
 
-		/** \brief Capability curve of this converter. Default: 0 */
+		/** \brief Capability curve of this converter. Default: nullptr */
 		CIMPP::VsCapabilityCurve* CapabilityCurve;
 
-		/** \brief Voltage source converter dynamics model used to describe dynamic behaviour of this converter. Default: 0 */
+		/** \brief Voltage source converter dynamics model used to describe dynamic behaviour of this converter. Default: nullptr */
 		CIMPP::VSCDynamics* VSCDynamics;
 
-		/** \brief Angle between VsConverter.uv and ACDCConverter.uc. It is converter`s state variable used in power flow. The attribute shall be a positive value or zero. Default: nullptr */
+		/** \brief Angle between VsConverter.uv and ACDCConverter.uc. It is converter`s state variable used in power flow. The attribute shall be a positive value or zero. Default: 0.0 */
 		CIMPP::AngleDegrees delta;
 
-		/** \brief Droop constant. The pu value is obtained as D [kV/MW] x Sb / Ubdc. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Droop constant. The pu value is obtained as D [kV/MW] x Sb / Ubdc. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::PU droop;
 
-		/** \brief Compensation constant. Used to compensate for voltage drop when controlling voltage at a distant bus. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Compensation constant. Used to compensate for voltage drop when controlling voltage at a distant bus. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Resistance droopCompensation;
 
 		/** \brief The maximum quotient between the AC converter voltage (Uc) and DC voltage (Ud). A factor typically less than 1. It is converter`s configuration data used in power flow. Default: 0.0 */
@@ -60,25 +61,25 @@ namespace CIMPP
 		/** \brief Kind of reactive power control. Default: 0 */
 		CIMPP::VsQpccControlKind qPccControl;
 
-		/** \brief Reactive power sharing factor among parallel converters on Uac control. The attribute shall be a positive value or zero. Default: nullptr */
+		/** \brief Reactive power sharing factor among parallel converters on Uac control. The attribute shall be a positive value or zero. Default: 0.0 */
 		CIMPP::PerCent qShare;
 
 		/** \brief Magnitude of pulse-modulation factor. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Float targetPWMfactor;
 
-		/** \brief Phase target at AC side, at point of common coupling. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Phase target at AC side, at point of common coupling. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::AngleDegrees targetPhasePcc;
 
 		/** \brief Power factor target at the AC side, at point of common coupling. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Float targetPowerFactorPcc;
 
-		/** \brief Reactive power injection target in AC grid, at point of common coupling.  Load sign convention is used, i.e. positive sign means flow out from a node. Default: nullptr */
+		/** \brief Reactive power injection target in AC grid, at point of common coupling.  Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0 */
 		CIMPP::ReactivePower targetQpcc;
 
-		/** \brief Voltage target in AC grid, at point of common coupling. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Voltage target in AC grid, at point of common coupling. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Voltage targetUpcc;
 
-		/** \brief Line-to-line voltage on the valve side of the converter transformer. It is converter`s state variable, result from power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Line-to-line voltage on the valve side of the converter transformer. It is converter`s state variable, result from power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Voltage uv;
 
 		static const char debugName[];

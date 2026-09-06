@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Inductance.hpp"
 #include "Resistance.hpp"
 
@@ -27,10 +28,10 @@ namespace CIMPP
 		DCGround();
 		~DCGround() override;
 
-		/** \brief Inductance to ground. Default: nullptr */
+		/** \brief Inductance to ground. Default: 0.0 */
 		CIMPP::Inductance inductance;
 
-		/** \brief Resistance to ground. Default: nullptr */
+		/** \brief Resistance to ground. Default: 0.0 */
 		CIMPP::Resistance r;
 
 		static const char debugName[];

@@ -47,7 +47,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PssWECC.vsmax", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "PssWECC.vsmin", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PssWECC::PssWECC() {}

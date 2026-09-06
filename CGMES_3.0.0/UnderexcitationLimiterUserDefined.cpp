@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "UnderexcitationLimiterUserDefined.ProprietaryParameterDynamics", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "UnderexcitationLimiterUserDefined.proprietary", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 UnderexcitationLimiterUserDefined::UnderexcitationLimiterUserDefined() {}

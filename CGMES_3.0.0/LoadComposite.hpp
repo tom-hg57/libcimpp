@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "Seconds.hpp"
 
@@ -27,37 +28,37 @@ namespace CIMPP
 		LoadComposite();
 		~LoadComposite() override;
 
-		/** \brief Active load-frequency dependence index (dynamic) (&lt;i&gt;Epfd&lt;/i&gt;).  Typical value = 1,5. Default: 0.0 */
+		/** \brief Active load-frequency dependence index (dynamic) (<i>Epfd</i>).  Typical value = 1,5. Default: 0.0 */
 		CIMPP::Float epfd;
 
-		/** \brief Active load-frequency dependence index (static) (&lt;i&gt;Epfs&lt;/i&gt;).  Typical value = 1,5. Default: 0.0 */
+		/** \brief Active load-frequency dependence index (static) (<i>Epfs</i>).  Typical value = 1,5. Default: 0.0 */
 		CIMPP::Float epfs;
 
-		/** \brief Active load-voltage dependence index (dynamic) (&lt;i&gt;Epvd&lt;/i&gt;).  Typical value = 0,7. Default: 0.0 */
+		/** \brief Active load-voltage dependence index (dynamic) (<i>Epvd</i>).  Typical value = 0,7. Default: 0.0 */
 		CIMPP::Float epvd;
 
-		/** \brief Active load-voltage dependence index (static) (&lt;i&gt;Epvs&lt;/i&gt;).  Typical value = 0,7. Default: 0.0 */
+		/** \brief Active load-voltage dependence index (static) (<i>Epvs</i>).  Typical value = 0,7. Default: 0.0 */
 		CIMPP::Float epvs;
 
-		/** \brief Reactive load-frequency dependence index (dynamic) (&lt;i&gt;Eqfd&lt;/i&gt;).  Typical value = 0. Default: 0.0 */
+		/** \brief Reactive load-frequency dependence index (dynamic) (<i>Eqfd</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::Float eqfd;
 
-		/** \brief Reactive load-frequency dependence index (static) (&lt;i&gt;Eqfs&lt;/i&gt;).  Typical value = 0. Default: 0.0 */
+		/** \brief Reactive load-frequency dependence index (static) (<i>Eqfs</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::Float eqfs;
 
-		/** \brief Reactive load-voltage dependence index (dynamic) (&lt;i&gt;Eqvd&lt;/i&gt;).  Typical value = 2. Default: 0.0 */
+		/** \brief Reactive load-voltage dependence index (dynamic) (<i>Eqvd</i>).  Typical value = 2. Default: 0.0 */
 		CIMPP::Float eqvd;
 
-		/** \brief Reactive load-voltage dependence index (static) (&lt;i&gt;Eqvs&lt;/i&gt;).  Typical value = 2. Default: 0.0 */
+		/** \brief Reactive load-voltage dependence index (static) (<i>Eqvs</i>).  Typical value = 2. Default: 0.0 */
 		CIMPP::Float eqvs;
 
-		/** \brief Inertia constant (&lt;i&gt;H&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 2,5. Default: nullptr */
+		/** \brief Inertia constant (<i>H</i>) (&gt;= 0).  Typical value = 2,5. Default: 0.0 */
 		CIMPP::Seconds h;
 
-		/** \brief Loading factor (&lt;i&gt;L&lt;/i&gt;&lt;i&gt;&lt;sub&gt;fac&lt;/sub&gt;&lt;/i&gt;). The ratio of initial &lt;i&gt;P&lt;/i&gt; to motor MVA base.  Typical value = 0,8. Default: 0.0 */
+		/** \brief Loading factor (<i>L</i><i><sub>fac</sub></i>). The ratio of initial <i>P</i> to motor MVA base.  Typical value = 0,8. Default: 0.0 */
 		CIMPP::Float lfac;
 
-		/** \brief Fraction of constant-power load to be represented by this motor model (&lt;i&gt;P&lt;/i&gt;&lt;i&gt;&lt;sub&gt;FRAC&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0,0 and &amp;lt;= 1,0).  Typical value = 0,5. Default: 0.0 */
+		/** \brief Fraction of constant-power load to be represented by this motor model (<i>P</i><i><sub>FRAC</sub></i>) (&gt;= 0,0 and &lt;= 1,0).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::Float pfrac;
 
 		static const char debugName[];

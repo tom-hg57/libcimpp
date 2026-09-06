@@ -19,8 +19,8 @@ static const CimClassDetails& getCimClassDetails()
 		RotatingMachine(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::SSH,
 		},
 		CGMESProfile::EQ
@@ -40,7 +40,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "RotatingMachine.ratedS", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "RotatingMachine.ratedU", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 RotatingMachine::RotatingMachine() : GeneratingUnit(nullptr), HydroPump(nullptr) {}

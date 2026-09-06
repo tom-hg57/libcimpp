@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "CoordinateSystem.Location", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::GL, } } },
 		{ "CoordinateSystem.crsUrn", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::GL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 CoordinateSystem::CoordinateSystem() {}

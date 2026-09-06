@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PhaseTapChangerTablePoint.PhaseTapChangerTable", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "PhaseTapChangerTablePoint.angle", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PhaseTapChangerTablePoint::PhaseTapChangerTablePoint() : PhaseTapChangerTable(nullptr) {}

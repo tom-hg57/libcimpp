@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "VisibilityLayer.VisibleObjects", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DL, } } },
 		{ "VisibilityLayer.drawingOrder", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 VisibilityLayer::VisibilityLayer() {}

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "FuelType.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		FossilFuel();
 		~FossilFuel() override;
 
-		/** \brief A thermal generating unit may have one or more fossil fuels. Default: 0 */
+		/** \brief A thermal generating unit may have one or more fossil fuels. Default: nullptr */
 		CIMPP::ThermalGeneratingUnit* ThermalGeneratingUnit;
 
 		/** \brief The type of fossil fuel, such as coal, oil, or gas. Default: 0 */

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "Float.hpp"
 #include "PU.hpp"
@@ -30,37 +31,37 @@ namespace CIMPP
 		WindContPitchAngleIEC();
 		~WindContPitchAngleIEC() override;
 
-		/** \brief Wind turbine type 3 model with which this pitch control model is associated. Default: 0 */
+		/** \brief Wind turbine type 3 model with which this pitch control model is associated. Default: nullptr */
 		CIMPP::WindTurbineType3IEC* WindTurbineType3IEC;
 
-		/** \brief Maximum pitch positive ramp rate (&lt;i&gt;dtheta&lt;/i&gt;&lt;i&gt;&lt;sub&gt;max&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; WindContPitchAngleIEC.dthetamin). It is a type-dependent parameter. Unit = degrees / s. Default: 0.0 */
+		/** \brief Maximum pitch positive ramp rate (<i>dtheta</i><i><sub>max</sub></i>) (&gt; WindContPitchAngleIEC.dthetamin). It is a type-dependent parameter. Unit = degrees / s. Default: 0.0 */
 		CIMPP::Float dthetamax;
 
-		/** \brief Maximum pitch negative ramp rate (&lt;i&gt;dtheta&lt;/i&gt;&lt;i&gt;&lt;sub&gt;min&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;)&lt;/i&gt; (&amp;lt; WindContPitchAngleIEC.dthetamax). It is a type-dependent parameter. Unit = degrees / s. Default: 0.0 */
+		/** \brief Maximum pitch negative ramp rate (<i>dtheta</i><i><sub>min</sub></i><i>)</i> (&lt; WindContPitchAngleIEC.dthetamax). It is a type-dependent parameter. Unit = degrees / s. Default: 0.0 */
 		CIMPP::Float dthetamin;
 
-		/** \brief Power PI controller integration gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;Ic&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Power PI controller integration gain (<i>K</i><i><sub>Ic</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU kic;
 
-		/** \brief Speed PI controller integration gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;Iomega&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Speed PI controller integration gain (<i>K</i><i><sub>Iomega</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU kiomega;
 
-		/** \brief Power PI controller proportional gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;Pc&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Power PI controller proportional gain (<i>K</i><i><sub>Pc</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU kpc;
 
-		/** \brief Speed PI controller proportional gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;Pomega&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Speed PI controller proportional gain (<i>K</i><i><sub>Pomega</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU kpomega;
 
-		/** \brief Pitch cross coupling gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PX&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Pitch cross coupling gain (<i>K</i><i><sub>PX</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU kpx;
 
-		/** \brief Maximum pitch angle (&lt;i&gt;theta&lt;/i&gt;&lt;i&gt;&lt;sub&gt;max&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; WindContPitchAngleIEC.thetamin). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Maximum pitch angle (<i>theta</i><i><sub>max</sub></i>) (&gt; WindContPitchAngleIEC.thetamin). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::AngleDegrees thetamax;
 
-		/** \brief Minimum pitch angle (&lt;i&gt;theta&lt;/i&gt;&lt;i&gt;&lt;sub&gt;min&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; WindContPitchAngleIEC.thetamax). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Minimum pitch angle (<i>theta</i><i><sub>min</sub></i>) (&lt; WindContPitchAngleIEC.thetamax). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::AngleDegrees thetamin;
 
-		/** \brief Pitch time constant (&lt;i&gt;ttheta&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Pitch time constant (<i>ttheta</i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds ttheta;
 
 		static const char debugName[];

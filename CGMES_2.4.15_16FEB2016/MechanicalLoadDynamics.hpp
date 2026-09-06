@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class AsynchronousMachineDynamics;
@@ -27,10 +28,10 @@ namespace CIMPP
 		MechanicalLoadDynamics();
 		~MechanicalLoadDynamics() override;
 
-		/** \brief Asynchronous machine model with which this mechanical load model is associated. Default: 0 */
+		/** \brief Asynchronous machine model with which this mechanical load model is associated. Default: nullptr */
 		CIMPP::AsynchronousMachineDynamics* AsynchronousMachineDynamics;
 
-		/** \brief Synchronous machine model with which this mechanical load model is associated. Default: 0 */
+		/** \brief Synchronous machine model with which this mechanical load model is associated. Default: nullptr */
 		CIMPP::SynchronousMachineDynamics* SynchronousMachineDynamics;
 
 		static const char debugName[];

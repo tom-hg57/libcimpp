@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "ExcIEEEST1AUELselectorKind.hpp"
 #include "PU.hpp"
@@ -29,61 +30,61 @@ namespace CIMPP
 		ExcIEEEST1A();
 		~ExcIEEEST1A() override;
 
-		/** \brief Exciter output current limit reference (&lt;i&gt;I&lt;/i&gt;&lt;i&gt;&lt;sub&gt;LR&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;)&lt;/i&gt;.  Typical value = 0. Default: nullptr */
+		/** \brief Exciter output current limit reference (<i>I</i><i><sub>LR</sub></i><i>)</i>.  Typical value = 0. Default: 0.0 */
 		CIMPP::PU ilr;
 
-		/** \brief Voltage regulator gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;A&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 190. Default: nullptr */
+		/** \brief Voltage regulator gain (<i>K</i><i><sub>A</sub></i>) (&gt; 0).  Typical value = 190. Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Rectifier loading factor proportional to commutating reactance (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;C&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Typical value = 0,08. Default: nullptr */
+		/** \brief Rectifier loading factor proportional to commutating reactance (<i>K</i><i><sub>C</sub></i>) (&gt;= 0). Typical value = 0,08. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Excitation control system stabilizer gains (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;F&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Excitation control system stabilizer gains (<i>K</i><i><sub>F</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU kf;
 
-		/** \brief Exciter output current limiter gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;LR&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Exciter output current limiter gain (<i>K</i><i><sub>LR</sub></i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU klr;
 
-		/** \brief Selector of the Power System Stabilizer (PSS) input (&lt;i&gt;PSSin&lt;/i&gt;). true = PSS input (&lt;i&gt;Vs&lt;/i&gt;) added to error signal false = PSS input (&lt;i&gt;Vs&lt;/i&gt;) added to voltage regulator output. Typical value = true. Default: false */
+		/** \brief Selector of the Power System Stabilizer (PSS) input (<i>PSSin</i>). true = PSS input (<i>Vs</i>) added to error signal false = PSS input (<i>Vs</i>) added to voltage regulator output. Typical value = true. Default: false */
 		CIMPP::Boolean pssin;
 
-		/** \brief Voltage regulator time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;A&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Voltage regulator time constant (<i>T</i><i><sub>A</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Voltage regulator time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;B&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 10. Default: nullptr */
+		/** \brief Voltage regulator time constant (<i>T</i><i><sub>B</sub></i>) (&gt;= 0).  Typical value = 10. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Voltage regulator time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;B1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Voltage regulator time constant (<i>T</i><i><sub>B1</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tb1;
 
-		/** \brief Voltage regulator time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;C&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1. Default: nullptr */
+		/** \brief Voltage regulator time constant (<i>T</i><i><sub>C</sub></i>) (&gt;= 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Voltage regulator time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;C1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Voltage regulator time constant (<i>T</i><i><sub>C1</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tc1;
 
-		/** \brief Excitation control system stabilizer time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;F&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1. Default: nullptr */
+		/** \brief Excitation control system stabilizer time constant (<i>T</i><i><sub>F</sub></i>) (&gt;= 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::Seconds tf;
 
-		/** \brief Selector of the connection of the UEL input (&lt;i&gt;UELin&lt;/i&gt;).  Typical value = ignoreUELsignal. Default: 0 */
+		/** \brief Selector of the connection of the UEL input (<i>UELin</i>).  Typical value = ignoreUELsignal. Default: 0 */
 		CIMPP::ExcIEEEST1AUELselectorKind uelin;
 
-		/** \brief Maximum voltage regulator output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;AMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 14,5. Default: nullptr */
+		/** \brief Maximum voltage regulator output (<i>V</i><i><sub>AMAX</sub></i>) (&gt; 0).  Typical value = 14,5. Default: 0.0 */
 		CIMPP::PU vamax;
 
-		/** \brief Minimum voltage regulator output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;AMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; 0).  Typical value = -14,5. Default: nullptr */
+		/** \brief Minimum voltage regulator output (<i>V</i><i><sub>AMIN</sub></i>) (&lt; 0).  Typical value = -14,5. Default: 0.0 */
 		CIMPP::PU vamin;
 
-		/** \brief Maximum voltage regulator input limit (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;IMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 999. Default: nullptr */
+		/** \brief Maximum voltage regulator input limit (<i>V</i><i><sub>IMAX</sub></i>) (&gt; 0).  Typical value = 999. Default: 0.0 */
 		CIMPP::PU vimax;
 
-		/** \brief Minimum voltage regulator input limit (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;IMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; 0).  Typical value = -999. Default: nullptr */
+		/** \brief Minimum voltage regulator input limit (<i>V</i><i><sub>IMIN</sub></i>) (&lt; 0).  Typical value = -999. Default: 0.0 */
 		CIMPP::PU vimin;
 
-		/** \brief Maximum voltage regulator outputs (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 7,8. Default: nullptr */
+		/** \brief Maximum voltage regulator outputs (<i>V</i><i><sub>RMAX</sub></i>) (&gt; 0).  Typical value = 7,8. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator outputs (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; 0).  Typical value = -6,7. Default: nullptr */
+		/** \brief Minimum voltage regulator outputs (<i>V</i><i><sub>RMIN</sub></i>) (&lt; 0).  Typical value = -6,7. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

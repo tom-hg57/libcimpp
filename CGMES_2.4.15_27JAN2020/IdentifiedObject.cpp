@@ -18,15 +18,15 @@ static const CimClassDetails& getCimClassDetails()
 		IdentifiedObject(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
+			CGMESProfile::EQ,
 			CGMESProfile::DL,
 			CGMESProfile::DY,
 			CGMESProfile::EQ_BD,
-			CGMESProfile::EQ,
 			CGMESProfile::GL,
-			CGMESProfile::SV,
 			CGMESProfile::SSH,
-			CGMESProfile::TP_BD,
+			CGMESProfile::SV,
 			CGMESProfile::TP,
+			CGMESProfile::TP_BD,
 		},
 		CGMESProfile::EQ
 	);
@@ -38,13 +38,13 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	static const std::map<std::string, AttrDetails> ClassAttrDetailsMap =
 	{
 		{ "IdentifiedObject.DiagramObjects", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DL, } } },
-		{ "IdentifiedObject.description", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, CGMESProfile::EQ_BD, CGMESProfile::EQ, CGMESProfile::TP_BD, CGMESProfile::TP, } } },
-		{ "IdentifiedObject.energyIdentCodeEic", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::EQ_BD, CGMESProfile::EQ, CGMESProfile::TP_BD, CGMESProfile::TP, } } },
-		{ "IdentifiedObject.mRID", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DL, CGMESProfile::DY, CGMESProfile::EQ_BD, CGMESProfile::EQ, CGMESProfile::GL, CGMESProfile::SV, CGMESProfile::SSH, CGMESProfile::TP_BD, CGMESProfile::TP, } } },
-		{ "IdentifiedObject.name", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DL, CGMESProfile::DY, CGMESProfile::EQ_BD, CGMESProfile::EQ, CGMESProfile::GL, CGMESProfile::SV, CGMESProfile::SSH, CGMESProfile::TP_BD, CGMESProfile::TP, } } },
-		{ "IdentifiedObject.shortName", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::EQ_BD, CGMESProfile::EQ, CGMESProfile::TP_BD, CGMESProfile::TP, } } },
+		{ "IdentifiedObject.description", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, CGMESProfile::DY, CGMESProfile::EQ_BD, CGMESProfile::TP, CGMESProfile::TP_BD, } } },
+		{ "IdentifiedObject.energyIdentCodeEic", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::EQ, CGMESProfile::EQ_BD, CGMESProfile::TP, CGMESProfile::TP_BD, } } },
+		{ "IdentifiedObject.mRID", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, CGMESProfile::DL, CGMESProfile::DY, CGMESProfile::EQ_BD, CGMESProfile::GL, CGMESProfile::SSH, CGMESProfile::SV, CGMESProfile::TP, CGMESProfile::TP_BD, } } },
+		{ "IdentifiedObject.name", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, CGMESProfile::DL, CGMESProfile::DY, CGMESProfile::EQ_BD, CGMESProfile::GL, CGMESProfile::SSH, CGMESProfile::SV, CGMESProfile::TP, CGMESProfile::TP_BD, } } },
+		{ "IdentifiedObject.shortName", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::EQ, CGMESProfile::EQ_BD, CGMESProfile::TP, CGMESProfile::TP_BD, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 IdentifiedObject::IdentifiedObject() {}

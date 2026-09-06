@@ -34,7 +34,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindRefFrameRotIEC.upll1", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "WindRefFrameRotIEC.upll2", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindRefFrameRotIEC::WindRefFrameRotIEC() : WindTurbineType3or4IEC(nullptr) {}

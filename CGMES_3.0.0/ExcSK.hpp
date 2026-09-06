@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ApparentPower.hpp"
 #include "Boolean.hpp"
 #include "PU.hpp"
@@ -29,100 +30,100 @@ namespace CIMPP
 		ExcSK();
 		~ExcSK() override;
 
-		/** \brief Field voltage clipping upper level limit (&lt;i&gt;Efdmax&lt;/i&gt;) (&amp;gt; ExcSK.efdmin). Default: nullptr */
+		/** \brief Field voltage clipping upper level limit (<i>Efdmax</i>) (&gt; ExcSK.efdmin). Default: 0.0 */
 		CIMPP::PU efdmax;
 
-		/** \brief Field voltage clipping lower level limit (&lt;i&gt;Efdmin&lt;/i&gt;) (&amp;lt; ExcSK.efdmax). Default: nullptr */
+		/** \brief Field voltage clipping lower level limit (<i>Efdmin</i>) (&lt; ExcSK.efdmax). Default: 0.0 */
 		CIMPP::PU efdmin;
 
-		/** \brief Maximum field voltage output (&lt;i&gt;Emax&lt;/i&gt;) (&amp;gt; ExcSK.emin).  Typical value = 20. Default: nullptr */
+		/** \brief Maximum field voltage output (<i>Emax</i>) (&gt; ExcSK.emin).  Typical value = 20. Default: 0.0 */
 		CIMPP::PU emax;
 
-		/** \brief Minimum field voltage output (&lt;i&gt;Emin&lt;/i&gt;) (&amp;lt; ExcSK.emax).  Typical value = -20. Default: nullptr */
+		/** \brief Minimum field voltage output (<i>Emin</i>) (&lt; ExcSK.emax).  Typical value = -20. Default: 0.0 */
 		CIMPP::PU emin;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Gain (<i>K</i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief Parameter of underexcitation limit (&lt;i&gt;K1&lt;/i&gt;).  Typical value = 0,1364. Default: nullptr */
+		/** \brief Parameter of underexcitation limit (<i>K1</i>).  Typical value = 0,1364. Default: 0.0 */
 		CIMPP::PU k1;
 
-		/** \brief Parameter of underexcitation limit (&lt;i&gt;K2&lt;/i&gt;).  Typical value = -0,3861. Default: nullptr */
+		/** \brief Parameter of underexcitation limit (<i>K2</i>).  Typical value = -0,3861. Default: 0.0 */
 		CIMPP::PU k2;
 
-		/** \brief PI controller gain (&lt;i&gt;Kc&lt;/i&gt;).  Typical value = 70. Default: nullptr */
+		/** \brief PI controller gain (<i>Kc</i>).  Typical value = 70. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Rectifier regulation factor (&lt;i&gt;Kce&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Rectifier regulation factor (<i>Kce</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU kce;
 
-		/** \brief Exciter internal reactance (&lt;i&gt;Kd&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Exciter internal reactance (<i>Kd</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU kd;
 
-		/** \brief P controller gain (&lt;i&gt;Kgob&lt;/i&gt;).  Typical value = 10. Default: nullptr */
+		/** \brief P controller gain (<i>Kgob</i>).  Typical value = 10. Default: 0.0 */
 		CIMPP::PU kgob;
 
-		/** \brief PI controller gain (&lt;i&gt;Kp&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief PI controller gain (<i>Kp</i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief PI controller gain of integral component (&lt;i&gt;Kqi&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief PI controller gain of integral component (<i>Kqi</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU kqi;
 
-		/** \brief Rate of rise of the reactive power (&lt;i&gt;Kqob&lt;/i&gt;). Default: nullptr */
+		/** \brief Rate of rise of the reactive power (<i>Kqob</i>). Default: 0.0 */
 		CIMPP::PU kqob;
 
-		/** \brief PI controller gain (&lt;i&gt;Kqp&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief PI controller gain (<i>Kqp</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU kqp;
 
-		/** \brief Deadband of reactive power (&lt;i&gt;nq&lt;/i&gt;).  Determines the range of sensitivity.  Typical value = 0,001. Default: nullptr */
+		/** \brief Deadband of reactive power (<i>nq</i>).  Determines the range of sensitivity.  Typical value = 0,001. Default: 0.0 */
 		CIMPP::PU nq;
 
-		/** \brief Secondary voltage control state (&lt;i&gt;Qc_on_off&lt;/i&gt;). true = secondary voltage control is on false = secondary voltage control is off. Typical value = false. Default: false */
+		/** \brief Secondary voltage control state (<i>Qc_on_off</i>). true = secondary voltage control is on false = secondary voltage control is off. Typical value = false. Default: false */
 		CIMPP::Boolean qconoff;
 
-		/** \brief Desired value (setpoint) of reactive power, manual setting (&lt;i&gt;Qz&lt;/i&gt;). Default: nullptr */
+		/** \brief Desired value (setpoint) of reactive power, manual setting (<i>Qz</i>). Default: 0.0 */
 		CIMPP::PU qz;
 
-		/** \brief Selector to apply automatic calculation in secondary controller model (&lt;i&gt;remote&lt;/i&gt;). true = automatic calculation is activated false = manual set is active; the use of desired value of reactive power (&lt;i&gt;Qz&lt;/i&gt;) is required. Typical value = true. Default: false */
+		/** \brief Selector to apply automatic calculation in secondary controller model (<i>remote</i>). true = automatic calculation is activated false = manual set is active; the use of desired value of reactive power (<i>Qz</i>) is required. Typical value = true. Default: false */
 		CIMPP::Boolean remote;
 
-		/** \brief Apparent power of the unit (&lt;i&gt;Sbase&lt;/i&gt;) (&amp;gt; 0).  Unit = MVA.  Typical value = 259. Default: nullptr */
+		/** \brief Apparent power of the unit (<i>Sbase</i>) (&gt; 0).  Unit = MVA.  Typical value = 259. Default: 0.0 */
 		CIMPP::ApparentPower sbase;
 
-		/** \brief PI controller phase lead time constant (&lt;i&gt;Tc&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 8. Default: nullptr */
+		/** \brief PI controller phase lead time constant (<i>Tc</i>) (&gt;= 0).  Typical value = 8. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Time constant of gain block (&lt;i&gt;Te&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Time constant of gain block (<i>Te</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief PI controller phase lead time constant (&lt;i&gt;Ti&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 2. Default: nullptr */
+		/** \brief PI controller phase lead time constant (<i>Ti</i>) (&gt;= 0).  Typical value = 2. Default: 0.0 */
 		CIMPP::Seconds ti;
 
-		/** \brief Time constant (&lt;i&gt;Tp&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Time constant (<i>Tp</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds tp;
 
-		/** \brief Voltage transducer time constant (&lt;i&gt;Tr&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,01. Default: nullptr */
+		/** \brief Voltage transducer time constant (<i>Tr</i>) (&gt;= 0).  Typical value = 0,01. Default: 0.0 */
 		CIMPP::Seconds tr;
 
-		/** \brief Maximum error (&lt;i&gt;UImax&lt;/i&gt;) (&amp;gt; ExcSK.uimin).  Typical value = 10. Default: nullptr */
+		/** \brief Maximum error (<i>UImax</i>) (&gt; ExcSK.uimin).  Typical value = 10. Default: 0.0 */
 		CIMPP::PU uimax;
 
-		/** \brief Minimum error (&lt;i&gt;UImin&lt;/i&gt;) (&amp;lt; ExcSK.uimax).  Typical value = -10. Default: nullptr */
+		/** \brief Minimum error (<i>UImin</i>) (&lt; ExcSK.uimax).  Typical value = -10. Default: 0.0 */
 		CIMPP::PU uimin;
 
-		/** \brief Maximum controller output (&lt;i&gt;URmax&lt;/i&gt;) (&amp;gt; ExcSK.urmin).  Typical value = 10. Default: nullptr */
+		/** \brief Maximum controller output (<i>URmax</i>) (&gt; ExcSK.urmin).  Typical value = 10. Default: 0.0 */
 		CIMPP::PU urmax;
 
-		/** \brief Minimum controller output (&lt;i&gt;URmin&lt;/i&gt;) (&amp;lt; ExcSK.urmax).  Typical value = -10. Default: nullptr */
+		/** \brief Minimum controller output (<i>URmin</i>) (&lt; ExcSK.urmax).  Typical value = -10. Default: 0.0 */
 		CIMPP::PU urmin;
 
-		/** \brief Maximum terminal voltage input (&lt;i&gt;Vtmax&lt;/i&gt;) (&amp;gt; ExcSK.vtmin).  Determines the range of voltage deadband.  Typical value = 1,05. Default: nullptr */
+		/** \brief Maximum terminal voltage input (<i>Vtmax</i>) (&gt; ExcSK.vtmin).  Determines the range of voltage deadband.  Typical value = 1,05. Default: 0.0 */
 		CIMPP::PU vtmax;
 
-		/** \brief Minimum terminal voltage input (&lt;i&gt;Vtmin&lt;/i&gt;) (&amp;lt; ExcSK.vtmax).  Determines the range of voltage deadband.  Typical value = 0,95. Default: nullptr */
+		/** \brief Minimum terminal voltage input (<i>Vtmin</i>) (&lt; ExcSK.vtmax).  Determines the range of voltage deadband.  Typical value = 0,95. Default: 0.0 */
 		CIMPP::PU vtmin;
 
-		/** \brief Maximum output (&lt;i&gt;Yp&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Maximum output (<i>Yp</i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU yp;
 
 		static const char debugName[];

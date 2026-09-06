@@ -39,7 +39,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ExcSEXS.tc", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "ExcSEXS.te", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ExcSEXS::ExcSEXS() {}

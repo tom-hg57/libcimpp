@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "ApparentPower.hpp"
 #include "ReactivePower.hpp"
@@ -31,28 +32,28 @@ namespace CIMPP
 		PowerElectronicsConnection();
 		~PowerElectronicsConnection() override;
 
-		/** \brief An AC network connection may have several power electronics units connecting through it. Default: 0 */
+		/** \brief An AC network connection may have several power electronics units connecting through it. Default: nullptr */
 		CIMPP::PowerElectronicsUnit* PowerElectronicsUnit;
 
-		/** \brief The wind turbine type 3 or type 4 dynamics model associated with this power electronics connection. Default: 0 */
+		/** \brief The wind turbine type 3 or type 4 dynamics model associated with this power electronics connection. Default: nullptr */
 		CIMPP::WindTurbineType3or4Dynamics* WindTurbineType3or4Dynamics;
 
-		/** \brief Maximum reactive power limit. This is the maximum (nameplate) limit for the unit. Default: nullptr */
+		/** \brief Maximum reactive power limit. This is the maximum (nameplate) limit for the unit. Default: 0.0 */
 		CIMPP::ReactivePower maxQ;
 
-		/** \brief Minimum reactive power limit for the unit. This is the minimum (nameplate) limit for the unit. Default: nullptr */
+		/** \brief Minimum reactive power limit for the unit. This is the minimum (nameplate) limit for the unit. Default: 0.0 */
 		CIMPP::ReactivePower minQ;
 
-		/** \brief Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: nullptr */
+		/** \brief Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: 0.0 */
 		CIMPP::ActivePower p;
 
-		/** \brief Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: nullptr */
+		/** \brief Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: 0.0 */
 		CIMPP::ReactivePower q;
 
-		/** \brief Nameplate apparent power rating for the unit. The attribute shall have a positive value. Default: nullptr */
+		/** \brief Nameplate apparent power rating for the unit. The attribute shall have a positive value. Default: 0.0 */
 		CIMPP::ApparentPower ratedS;
 
-		/** \brief Rated voltage (nameplate data, Ur in IEC 60909-0). It is primarily used for short circuit data exchange according to IEC 60909. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Rated voltage (nameplate data, Ur in IEC 60909-0). It is primarily used for short circuit data exchange according to IEC 60909. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Voltage ratedU;
 
 		static const char debugName[];

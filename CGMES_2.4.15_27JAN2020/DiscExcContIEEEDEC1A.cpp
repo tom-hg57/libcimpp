@@ -47,7 +47,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "DiscExcContIEEEDEC1A.vtm", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "DiscExcContIEEEDEC1A.vtn", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 DiscExcContIEEEDEC1A::DiscExcContIEEEDEC1A() {}

@@ -40,7 +40,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "BoundaryPoint.toEndName", { "http://iec.ch/TC57/CIM100-European#", { CGMESProfile::EQ, CGMESProfile::EQBD, } } },
 		{ "BoundaryPoint.toEndNameTso", { "http://iec.ch/TC57/CIM100-European#", { CGMESProfile::EQ, CGMESProfile::EQBD, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 BoundaryPoint::BoundaryPoint() : ConnectivityNode(nullptr) {}

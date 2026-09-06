@@ -19,8 +19,8 @@ static const CimClassDetails& getCimClassDetails()
 		EnergyConsumer(),
 		"http://iec.ch/TC57/CIM100#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::SSH,
 		},
 		CGMESProfile::EQ
@@ -41,7 +41,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "EnergyConsumer.qfixed", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "EnergyConsumer.qfixedPct", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 EnergyConsumer::EnergyConsumer() : LoadDynamics(nullptr), LoadResponse(nullptr) {}

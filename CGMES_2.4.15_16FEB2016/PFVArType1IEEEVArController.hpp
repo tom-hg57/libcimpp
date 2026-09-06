@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 #include "Simple_Float.hpp"
@@ -28,22 +29,22 @@ namespace CIMPP
 		PFVArType1IEEEVArController();
 		~PFVArType1IEEEVArController() override;
 
-		/** \brief Var controller time delay ().  Typical Value = 5. Default: nullptr */
+		/** \brief Var controller time delay ().  Typical Value = 5. Default: 0.0 */
 		CIMPP::Seconds tvarc;
 
-		/** \brief Synchronous machine power factor (). Default: nullptr */
+		/** \brief Synchronous machine power factor (). Default: 0.0 */
 		CIMPP::PU vvar;
 
-		/** \brief Var controller dead band ().  Typical Value = 0.02. Default: nullptr */
+		/** \brief Var controller dead band ().  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Simple_Float vvarcbw;
 
-		/** \brief Var controller reference (). Default: nullptr */
+		/** \brief Var controller reference (). Default: 0.0 */
 		CIMPP::PU vvarref;
 
-		/** \brief Maximum machine terminal voltage needed for pf/var controller to be enabled (). Default: nullptr */
+		/** \brief Maximum machine terminal voltage needed for pf/var controller to be enabled (). Default: 0.0 */
 		CIMPP::PU vvtmax;
 
-		/** \brief Minimum machine terminal voltage needed to enable pf/var controller (). Default: nullptr */
+		/** \brief Minimum machine terminal voltage needed to enable pf/var controller (). Default: 0.0 */
 		CIMPP::PU vvtmin;
 
 		static const char debugName[];

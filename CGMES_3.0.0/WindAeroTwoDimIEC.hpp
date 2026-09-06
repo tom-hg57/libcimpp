@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "PU.hpp"
 
@@ -28,28 +29,28 @@ namespace CIMPP
 		WindAeroTwoDimIEC();
 		~WindAeroTwoDimIEC() override;
 
-		/** \brief Wind turbine type 3 model with which this wind aerodynamic model is associated. Default: 0 */
+		/** \brief Wind turbine type 3 model with which this wind aerodynamic model is associated. Default: nullptr */
 		CIMPP::WindTurbineType3IEC* WindTurbineType3IEC;
 
-		/** \brief Partial derivative of aerodynamic power with respect to changes in WTR speed (&lt;i&gt;dp&lt;/i&gt;&lt;i&gt;&lt;sub&gt;omega&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Partial derivative of aerodynamic power with respect to changes in WTR speed (<i>dp</i><i><sub>omega</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU dpomega;
 
-		/** \brief Partial derivative of aerodynamic power with respect to changes in pitch angle (&lt;i&gt;dp&lt;/i&gt;&lt;i&gt;&lt;sub&gt;theta&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Partial derivative of aerodynamic power with respect to changes in pitch angle (<i>dp</i><i><sub>theta</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU dptheta;
 
-		/** \brief Partial derivative (&lt;i&gt;dp&lt;/i&gt;&lt;i&gt;&lt;sub&gt;v1&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Partial derivative (<i>dp</i><i><sub>v1</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU dpv1;
 
-		/** \brief Rotor speed if the wind turbine is not derated (&lt;i&gt;omega&lt;/i&gt;&lt;i&gt;&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Rotor speed if the wind turbine is not derated (<i>omega</i><i><sub>0</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU omegazero;
 
-		/** \brief Available aerodynamic power (&lt;i&gt;p&lt;/i&gt;&lt;i&gt;&lt;sub&gt;avail&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;)&lt;/i&gt;. It is a case-dependent parameter. Default: nullptr */
+		/** \brief Available aerodynamic power (<i>p</i><i><sub>avail</sub></i><i>)</i>. It is a case-dependent parameter. Default: 0.0 */
 		CIMPP::PU pavail;
 
-		/** \brief Blade angle at twice rated wind speed (&lt;i&gt;theta&lt;/i&gt;&lt;i&gt;&lt;sub&gt;v2&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Blade angle at twice rated wind speed (<i>theta</i><i><sub>v2</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::AngleDegrees thetav2;
 
-		/** \brief Pitch angle if the wind turbine is not derated (&lt;i&gt;theta&lt;/i&gt;&lt;i&gt;&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;). It is a case-dependent parameter. Default: nullptr */
+		/** \brief Pitch angle if the wind turbine is not derated (<i>theta</i><i><sub>0</sub></i>). It is a case-dependent parameter. Default: 0.0 */
 		CIMPP::AngleDegrees thetazero;
 
 		static const char debugName[];

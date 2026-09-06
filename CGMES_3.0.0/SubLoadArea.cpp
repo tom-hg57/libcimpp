@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "SubLoadArea.LoadArea", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "SubLoadArea.LoadGroups", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 SubLoadArea::SubLoadArea() : LoadArea(nullptr) {}

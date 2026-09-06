@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class EnergySource;
@@ -28,13 +29,13 @@ namespace CIMPP
 		WindTurbineType3or4Dynamics();
 		~WindTurbineType3or4Dynamics() override;
 
-		/** \brief Energy Source (current source) with which this wind Type 3 or 4 dynamics model is asoociated. Default: 0 */
+		/** \brief Energy Source (current source) with which this wind Type 3 or 4 dynamics model is asoociated. Default: nullptr */
 		CIMPP::EnergySource* EnergySource;
 
-		/** \brief Wind turbine Type 3 or 4 models using this remote input signal. Default: 0 */
+		/** \brief Wind turbine Type 3 or 4 models using this remote input signal. Default: nullptr */
 		CIMPP::RemoteInputSignal* RemoteInputSignal;
 
-		/** \brief The wind plant with which the wind turbines type 3 or 4 are associated. Default: 0 */
+		/** \brief The wind plant with which the wind turbines type 3 or 4 are associated. Default: nullptr */
 		CIMPP::WindPlantDynamics* WindPlantDynamics;
 
 		static const char debugName[];

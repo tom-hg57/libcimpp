@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PerCent.hpp"
 #include "TransformerControlMode.hpp"
 
@@ -29,13 +30,13 @@ namespace CIMPP
 		RatioTapChanger();
 		~RatioTapChanger() override;
 
-		/** \brief The ratio tap changer of this tap ratio table. Default: 0 */
+		/** \brief The ratio tap changer of this tap ratio table. Default: nullptr */
 		CIMPP::RatioTapChangerTable* RatioTapChangerTable;
 
-		/** \brief Ratio tap changer associated with this transformer end. Default: 0 */
+		/** \brief Ratio tap changer associated with this transformer end. Default: nullptr */
 		CIMPP::TransformerEnd* TransformerEnd;
 
-		/** \brief Tap step increment, in per cent of nominal voltage, per step position. Default: nullptr */
+		/** \brief Tap step increment, in per cent of nominal voltage, per step position. Default: 0.0 */
 		CIMPP::PerCent stepVoltageIncrement;
 
 		/** \brief Specifies the regulation control mode (voltage or reactive) of the RatioTapChanger. Default: 0 */

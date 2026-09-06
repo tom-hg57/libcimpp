@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Integer.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		ValueToAlias();
 		~ValueToAlias() override;
 
-		/** \brief The ValueToAlias mappings included in the set. Default: 0 */
+		/** \brief The ValueToAlias mappings included in the set. Default: nullptr */
 		CIMPP::ValueAliasSet* ValueAliasSet;
 
 		/** \brief The value that is mapped. Default: 0 */

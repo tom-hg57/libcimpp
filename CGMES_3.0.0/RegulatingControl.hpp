@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Float.hpp"
 #include "RegulatingControlModeKind.hpp"
@@ -32,13 +33,13 @@ namespace CIMPP
 		RegulatingControl();
 		~RegulatingControl() override;
 
-		/** \brief The equipment that participates in this regulating control scheme. Default: 0 */
+		/** \brief The equipment that participates in this regulating control scheme. Default: {} */
 		std::list<CIMPP::RegulatingCondEq*> RegulatingCondEq;
 
-		/** \brief Schedule for this regulating control. Default: 0 */
+		/** \brief Schedule for this regulating control. Default: {} */
 		std::list<CIMPP::RegulationSchedule*> RegulationSchedule;
 
-		/** \brief The terminal associated with this regulating control.  The terminal is associated instead of a node, since the terminal could connect into either a topological node or a connectivity node.  Sometimes it is useful to model regulation at a terminal of a bus bar object. Default: 0 */
+		/** \brief The terminal associated with this regulating control.  The terminal is associated instead of a node, since the terminal could connect into either a topological node or a connectivity node.  Sometimes it is useful to model regulation at a terminal of a bus bar object. Default: nullptr */
 		CIMPP::Terminal* Terminal;
 
 		/** \brief The regulation is performed in a discrete mode. This applies to equipment with discrete controls, e.g. tap changers and shunt compensators. Default: false */

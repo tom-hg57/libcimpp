@@ -19,9 +19,9 @@ static const CimClassDetails& getCimClassDetails()
 		EnergySource(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
+			CGMESProfile::EQ,
 			CGMESProfile::DY,
 			CGMESProfile::EQ_BD,
-			CGMESProfile::EQ,
 			CGMESProfile::SSH,
 		},
 		CGMESProfile::EQ
@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 {
 	static const std::map<std::string, AttrDetails> ClassAttrDetailsMap =
 	{
-		{ "EnergySource.EnergySchedulingType", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::EQ_BD, CGMESProfile::EQ, } } },
+		{ "EnergySource.EnergySchedulingType", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::EQ, CGMESProfile::EQ_BD, } } },
 		{ "EnergySource.WindTurbineType3or4Dynamics", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "EnergySource.activePower", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::SSH, } } },
 		{ "EnergySource.nominalVoltage", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
@@ -47,7 +47,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "EnergySource.x0", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "EnergySource.xn", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 EnergySource::EnergySource() : EnergySchedulingType(nullptr), WindTurbineType3or4Dynamics(nullptr) {}

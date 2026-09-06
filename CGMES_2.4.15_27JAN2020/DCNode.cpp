@@ -36,7 +36,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "DCNode.DCTerminals", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "DCNode.DCTopologicalNode", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::TP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 DCNode::DCNode() : DCEquipmentContainer(nullptr), DCTopologicalNode(nullptr) {}

@@ -38,7 +38,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindAeroTwoDimIEC.thetav2", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "WindAeroTwoDimIEC.thetazero", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindAeroTwoDimIEC::WindAeroTwoDimIEC() : WindTurbineType3IEC(nullptr) {}

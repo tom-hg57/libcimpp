@@ -39,7 +39,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "StateVariablesVersion.namespaceUML", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::SV, } } },
 		{ "StateVariablesVersion.shortName", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::SV, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 StateVariablesVersion::StateVariablesVersion() {}

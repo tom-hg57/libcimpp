@@ -60,7 +60,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "GovSteamFV3.uc", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "GovSteamFV3.uo", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 GovSteamFV3::GovSteamFV3() {}

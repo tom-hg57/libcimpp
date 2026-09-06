@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Inductance.hpp"
 #include "Resistance.hpp"
 #include "Voltage.hpp"
@@ -28,13 +29,13 @@ namespace CIMPP
 		DCSeriesDevice();
 		~DCSeriesDevice() override;
 
-		/** \brief Inductance of the device. Default: nullptr */
+		/** \brief Inductance of the device. Default: 0.0 */
 		CIMPP::Inductance inductance;
 
-		/** \brief Rated DC device voltage. Converter configuration data used in power flow. Default: nullptr */
+		/** \brief Rated DC device voltage. Converter configuration data used in power flow. Default: 0.0 */
 		CIMPP::Voltage ratedUdc;
 
-		/** \brief Resistance of the DC device. Default: nullptr */
+		/** \brief Resistance of the DC device. Default: 0.0 */
 		CIMPP::Resistance resistance;
 
 		static const char debugName[];

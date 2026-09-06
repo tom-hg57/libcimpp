@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class Switch;
@@ -26,7 +27,7 @@ namespace CIMPP
 		SwitchSchedule();
 		~SwitchSchedule() override;
 
-		/** \brief A SwitchSchedule is associated with a Switch. Default: 0 */
+		/** \brief A SwitchSchedule is associated with a Switch. Default: nullptr */
 		CIMPP::Switch* Switch;
 
 		static const char debugName[];

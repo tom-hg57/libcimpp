@@ -41,7 +41,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ExcAVR3.vrmn", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "ExcAVR3.vrmx", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ExcAVR3::ExcAVR3() {}

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Conductance.hpp"
 #include "Susceptance.hpp"
 
@@ -27,16 +28,16 @@ namespace CIMPP
 		LinearShuntCompensator();
 		~LinearShuntCompensator() override;
 
-		/** \brief Zero sequence shunt (charging) susceptance per section Default: nullptr */
+		/** \brief Zero sequence shunt (charging) susceptance per section Default: 0.0 */
 		CIMPP::Susceptance b0PerSection;
 
-		/** \brief Positive sequence shunt (charging) susceptance per section Default: nullptr */
+		/** \brief Positive sequence shunt (charging) susceptance per section Default: 0.0 */
 		CIMPP::Susceptance bPerSection;
 
-		/** \brief Zero sequence shunt (charging) conductance per section Default: nullptr */
+		/** \brief Zero sequence shunt (charging) conductance per section Default: 0.0 */
 		CIMPP::Conductance g0PerSection;
 
-		/** \brief Positive sequence shunt (charging) conductance per section Default: nullptr */
+		/** \brief Positive sequence shunt (charging) conductance per section Default: 0.0 */
 		CIMPP::Conductance gPerSection;
 
 		static const char debugName[];

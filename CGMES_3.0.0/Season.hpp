@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "MonthDay.hpp"
 
 namespace CIMPP
@@ -27,13 +28,13 @@ namespace CIMPP
 		Season();
 		~Season() override;
 
-		/** \brief Schedules that use this Season. Default: 0 */
+		/** \brief Schedules that use this Season. Default: {} */
 		std::list<CIMPP::SeasonDayTypeSchedule*> SeasonDayTypeSchedules;
 
-		/** \brief Date season ends. Default: nullptr */
+		/** \brief Date season ends. Default: "" */
 		CIMPP::MonthDay endDate;
 
-		/** \brief Date season starts. Default: nullptr */
+		/** \brief Date season starts. Default: "" */
 		CIMPP::MonthDay startDate;
 
 		static const char debugName[];

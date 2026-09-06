@@ -60,7 +60,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Pss2B.vstmax", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "Pss2B.vstmin", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Pss2B::Pss2B() {}

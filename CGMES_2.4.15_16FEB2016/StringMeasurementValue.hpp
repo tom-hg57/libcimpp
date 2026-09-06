@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "String.hpp"
 
 namespace CIMPP
@@ -27,10 +28,10 @@ namespace CIMPP
 		StringMeasurementValue();
 		~StringMeasurementValue() override;
 
-		/** \brief Measurement to which this value is connected. Default: 0 */
+		/** \brief Measurement to which this value is connected. Default: nullptr */
 		CIMPP::StringMeasurement* StringMeasurement;
 
-		/** \brief The value to supervise. Default: '' */
+		/** \brief The value to supervise. Default: "" */
 		CIMPP::String value;
 
 		static const char debugName[];

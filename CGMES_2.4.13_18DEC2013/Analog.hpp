@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 
 namespace CIMPP
@@ -28,10 +29,10 @@ namespace CIMPP
 		Analog();
 		~Analog() override;
 
-		/** \brief Measurement to which this value is connected. Default: 0 */
+		/** \brief Measurement to which this value is connected. Default: {} */
 		std::list<CIMPP::AnalogValue*> AnalogValues;
 
-		/** \brief The Measurements using the LimitSet. Default: 0 */
+		/** \brief The Measurements using the LimitSet. Default: {} */
 		std::list<CIMPP::AnalogLimitSet*> LimitSets;
 
 		/** \brief If true then this measurement is an active power, reactive power or current with the convention that a positive value measured at the Terminal means power is flowing into the related PowerSystemResource. Default: false */

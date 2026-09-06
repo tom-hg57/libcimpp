@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class Diagram;
@@ -26,7 +27,7 @@ namespace CIMPP
 		DiagramStyle();
 		~DiagramStyle() override;
 
-		/** \brief A DiagramStyle can be used by many Diagrams. Default: 0 */
+		/** \brief A DiagramStyle can be used by many Diagrams. Default: {} */
 		std::list<CIMPP::Diagram*> Diagram;
 
 		static const char debugName[];

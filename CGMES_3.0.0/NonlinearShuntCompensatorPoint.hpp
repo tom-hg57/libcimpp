@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Conductance.hpp"
 #include "Integer.hpp"
 #include "Susceptance.hpp"
@@ -29,19 +30,19 @@ namespace CIMPP
 		NonlinearShuntCompensatorPoint();
 		~NonlinearShuntCompensatorPoint() override;
 
-		/** \brief Non-linear shunt compensator owning this point. Default: 0 */
+		/** \brief Non-linear shunt compensator owning this point. Default: nullptr */
 		CIMPP::NonlinearShuntCompensator* NonlinearShuntCompensator;
 
-		/** \brief Positive sequence shunt (charging) susceptance per section. Default: nullptr */
+		/** \brief Positive sequence shunt (charging) susceptance per section. Default: 0.0 */
 		CIMPP::Susceptance b;
 
-		/** \brief Zero sequence shunt (charging) susceptance per section. Default: nullptr */
+		/** \brief Zero sequence shunt (charging) susceptance per section. Default: 0.0 */
 		CIMPP::Susceptance b0;
 
-		/** \brief Positive sequence shunt (charging) conductance per section. Default: nullptr */
+		/** \brief Positive sequence shunt (charging) conductance per section. Default: 0.0 */
 		CIMPP::Conductance g;
 
-		/** \brief Zero sequence shunt (charging) conductance per section. Default: nullptr */
+		/** \brief Zero sequence shunt (charging) conductance per section. Default: 0.0 */
 		CIMPP::Conductance g0;
 
 		/** \brief The number of the section. Default: 0 */

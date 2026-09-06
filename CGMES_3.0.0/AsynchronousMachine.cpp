@@ -18,8 +18,8 @@ static const CimClassDetails& getCimClassDetails()
 		AsynchronousMachine(),
 		"http://iec.ch/TC57/CIM100#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::SC,
 			CGMESProfile::SSH,
 		},
@@ -44,7 +44,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "AsynchronousMachine.reversible", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 		{ "AsynchronousMachine.rxLockedRotorRatio", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 AsynchronousMachine::AsynchronousMachine() : AsynchronousMachineDynamics(nullptr) {}

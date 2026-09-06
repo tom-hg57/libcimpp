@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "GenericNonLinearLoadModelKind.hpp"
 #include "Seconds.hpp"
@@ -28,25 +29,25 @@ namespace CIMPP
 		LoadGenericNonLinear();
 		~LoadGenericNonLinear() override;
 
-		/** \brief Steady state voltage index for reactive power (&lt;i&gt;BS&lt;/i&gt;). Default: 0.0 */
+		/** \brief Steady state voltage index for reactive power (<i>BS</i>). Default: 0.0 */
 		CIMPP::Float bs;
 
-		/** \brief Transient voltage index for reactive power (&lt;i&gt;BT&lt;/i&gt;). Default: 0.0 */
+		/** \brief Transient voltage index for reactive power (<i>BT</i>). Default: 0.0 */
 		CIMPP::Float bt;
 
 		/** \brief Type of generic non-linear load model. Default: 0 */
 		CIMPP::GenericNonLinearLoadModelKind genericNonLinearLoadModelType;
 
-		/** \brief Steady state voltage index for active power (&lt;i&gt;LS&lt;/i&gt;). Default: 0.0 */
+		/** \brief Steady state voltage index for active power (<i>LS</i>). Default: 0.0 */
 		CIMPP::Float ls;
 
-		/** \brief Transient voltage index for active power (&lt;i&gt;LT&lt;/i&gt;). Default: 0.0 */
+		/** \brief Transient voltage index for active power (<i>LT</i>). Default: 0.0 */
 		CIMPP::Float lt;
 
-		/** \brief Time constant of lag function of active power (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;P&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0). Default: nullptr */
+		/** \brief Time constant of lag function of active power (<i>T</i><i><sub>P</sub></i>) (&gt; 0). Default: 0.0 */
 		CIMPP::Seconds tp;
 
-		/** \brief Time constant of lag function of reactive power (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;Q&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0). Default: nullptr */
+		/** \brief Time constant of lag function of reactive power (<i>T</i><i><sub>Q</sub></i>) (&gt; 0). Default: 0.0 */
 		CIMPP::Seconds tq;
 
 		static const char debugName[];

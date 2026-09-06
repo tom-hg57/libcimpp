@@ -34,7 +34,7 @@ BOOST_AUTO_TEST_CASE(CIMModel_test006)
     BOOST_REQUIRE(func(operationalLimitType, stream));
     BOOST_REQUIRE_EQUAL("LimitTypeKind.highVoltage", stream.str());
   }
-  else if (CimVersion == "cgmes_v3_0_0")
+  else // cgmes_v3_0_0, ...
   {
     CIMModel model;
     model.setDependencyCheckOff();

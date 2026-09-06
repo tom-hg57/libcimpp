@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class WindGeneratingUnit;
@@ -26,7 +27,7 @@ namespace CIMPP
 		WindPowerPlant();
 		~WindPowerPlant() override;
 
-		/** \brief A wind generating unit or units may be a member of a wind power plant. Default: 0 */
+		/** \brief A wind generating unit or units may be a member of a wind power plant. Default: {} */
 		std::list<CIMPP::WindGeneratingUnit*> WindGeneratingUnits;
 
 		static const char debugName[];

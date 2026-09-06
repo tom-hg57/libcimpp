@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -29,34 +30,34 @@ namespace CIMPP
 		WindProtectionIEC();
 		~WindProtectionIEC() override;
 
-		/** \brief Wind generator type 1 or 2 model with which this wind turbine protection model is associated. Default: 0 */
+		/** \brief Wind generator type 1 or 2 model with which this wind turbine protection model is associated. Default: nullptr */
 		CIMPP::WindTurbineType1or2IEC* WindTurbineType1or2IEC;
 
-		/** \brief Wind generator type 3 or 4 model with which this wind turbine protection model is associated. Default: 0 */
+		/** \brief Wind generator type 3 or 4 model with which this wind turbine protection model is associated. Default: nullptr */
 		CIMPP::WindTurbineType3or4IEC* WindTurbineType3or4IEC;
 
-		/** \brief Set of wind turbine over frequency protection levels (). It is project dependent parameter. Default: nullptr */
+		/** \brief Set of wind turbine over frequency protection levels (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU fover;
 
-		/** \brief Set of wind turbine under frequency protection levels (). It is project dependent parameter. Default: nullptr */
+		/** \brief Set of wind turbine under frequency protection levels (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU funder;
 
-		/** \brief Set of corresponding wind turbine over frequency protection disconnection times (). It is project dependent parameter. Default: nullptr */
+		/** \brief Set of corresponding wind turbine over frequency protection disconnection times (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tfover;
 
-		/** \brief Set of corresponding wind turbine under frequency protection disconnection times (). It is project dependent parameter. Default: nullptr */
+		/** \brief Set of corresponding wind turbine under frequency protection disconnection times (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tfunder;
 
-		/** \brief Set of corresponding wind turbine over voltage protection disconnection times (). It is project dependent parameter. Default: nullptr */
+		/** \brief Set of corresponding wind turbine over voltage protection disconnection times (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tuover;
 
-		/** \brief Set of corresponding wind turbine under voltage protection disconnection times (). It is project dependent parameter. Default: nullptr */
+		/** \brief Set of corresponding wind turbine under voltage protection disconnection times (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tuunder;
 
-		/** \brief Set of wind turbine over voltage protection levels (). It is project dependent parameter. Default: nullptr */
+		/** \brief Set of wind turbine over voltage protection levels (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU uover;
 
-		/** \brief Set of wind turbine under voltage protection levels (). It is project dependent parameter. Default: nullptr */
+		/** \brief Set of wind turbine under voltage protection levels (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU uunder;
 
 		static const char debugName[];

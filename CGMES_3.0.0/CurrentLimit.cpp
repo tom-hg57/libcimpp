@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "CurrentLimit.normalValue", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "CurrentLimit.value", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SSH, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 CurrentLimit::CurrentLimit() {}

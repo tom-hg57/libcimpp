@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Integer.hpp"
 #include "Simple_Float.hpp"
@@ -32,13 +33,13 @@ namespace CIMPP
 		TapChanger();
 		~TapChanger() override;
 
-		/** \brief The tap step state associated with the tap changer. Default: 0 */
+		/** \brief The tap step state associated with the tap changer. Default: nullptr */
 		CIMPP::SvTapStep* SvTapStep;
 
-		/** \brief The tap changers that participates in this regulating tap control scheme. Default: 0 */
+		/** \brief The tap changers that participates in this regulating tap control scheme. Default: nullptr */
 		CIMPP::TapChangerControl* TapChangerControl;
 
-		/** \brief A TapSchedule is associated with a TapChanger. Default: 0 */
+		/** \brief A TapSchedule is associated with a TapChanger. Default: {} */
 		std::list<CIMPP::TapSchedule*> TapSchedules;
 
 		/** \brief Specifies the regulation status of the equipment.  True is regulating, false is not regulating. Default: false */
@@ -56,13 +57,13 @@ namespace CIMPP
 		/** \brief The neutral tap step position for this winding. The attribute shall be equal or greater than lowStep and equal or less than highStep. Default: 0 */
 		CIMPP::Integer neutralStep;
 
-		/** \brief Voltage at which the winding operates at the neutral tap setting. Default: nullptr */
+		/** \brief Voltage at which the winding operates at the neutral tap setting. Default: 0.0 */
 		CIMPP::Voltage neutralU;
 
 		/** \brief The tap step position used in `normal` network operation for this winding. For a `Fixed` tap changer indicates the current physical tap setting. The attribute shall be equal or greater than lowStep and equal or less than highStep. Default: 0 */
 		CIMPP::Integer normalStep;
 
-		/** \brief Tap changer position. Starting step for a steady state solution. Non integer values are allowed to support continuous tap variables. The reasons for continuous value are to support study cases where no discrete tap changers has yet been designed, a solutions where a narrow voltage band force the tap step to oscillate or accommodate for a continuous solution as input. The attribute shall be equal or greater than lowStep and equal or less than highStep. Default: nullptr */
+		/** \brief Tap changer position. Starting step for a steady state solution. Non integer values are allowed to support continuous tap variables. The reasons for continuous value are to support study cases where no discrete tap changers has yet been designed, a solutions where a narrow voltage band force the tap step to oscillate or accommodate for a continuous solution as input. The attribute shall be equal or greater than lowStep and equal or less than highStep. Default: 0.0 */
 		CIMPP::Simple_Float step;
 
 		static const char debugName[];

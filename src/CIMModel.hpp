@@ -5,7 +5,7 @@
 #include <list>
 #include <unordered_map>
 #include "CIMFile.hpp"
-#include "BaseClass.h"
+#include "BaseClass.hpp"
 
 /** \brief CIM model handler
  *

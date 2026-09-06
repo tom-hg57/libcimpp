@@ -41,7 +41,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindContPitchAngleIEC.thetamin", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "WindContPitchAngleIEC.ttheta", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindContPitchAngleIEC::WindContPitchAngleIEC() : WindTurbineType3IEC(nullptr) {}

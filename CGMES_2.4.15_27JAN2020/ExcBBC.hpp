@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,37 +29,37 @@ namespace CIMPP
 		ExcBBC();
 		~ExcBBC() override;
 
-		/** \brief Maximum open circuit exciter voltage (Efdmax).  Typical Value = 5. Default: nullptr */
+		/** \brief Maximum open circuit exciter voltage (Efdmax).  Typical Value = 5. Default: 0.0 */
 		CIMPP::PU efdmax;
 
-		/** \brief Minimum open circuit exciter voltage (Efdmin).  Typical Value = -5. Default: nullptr */
+		/** \brief Minimum open circuit exciter voltage (Efdmin).  Typical Value = -5. Default: 0.0 */
 		CIMPP::PU efdmin;
 
-		/** \brief Steady state gain (K).  Typical Value = 300. Default: nullptr */
+		/** \brief Steady state gain (K).  Typical Value = 300. Default: 0.0 */
 		CIMPP::PU k;
 
 		/** \brief Supplementary signal routing selector (switch). true = Vs connected to 3rd summing point false =  Vs connected to 1st summing point (see diagram). Typical Value = true. Default: false */
-		CIMPP::Boolean _switch;
+		CIMPP::Boolean switch_;
 
-		/** \brief Controller time constant (T1).  Typical Value = 6. Default: nullptr */
+		/** \brief Controller time constant (T1).  Typical Value = 6. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Controller time constant (T2).  Typical Value = 1. Default: nullptr */
+		/** \brief Controller time constant (T2).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Lead/lag time constant (T3).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Lead/lag time constant (T3).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Lead/lag time constant (T4).  Typical Value = 0.01. Default: nullptr */
+		/** \brief Lead/lag time constant (T4).  Typical Value = 0.01. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Maximum control element output (Vrmax).  Typical Value = 5. Default: nullptr */
+		/** \brief Maximum control element output (Vrmax).  Typical Value = 5. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum control element output (Vrmin).  Typical Value = -5. Default: nullptr */
+		/** \brief Minimum control element output (Vrmin).  Typical Value = -5. Default: 0.0 */
 		CIMPP::PU vrmin;
 
-		/** \brief Effective excitation transformer reactance (Xe).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Effective excitation transformer reactance (Xe).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::PU xe;
 
 		static const char debugName[];

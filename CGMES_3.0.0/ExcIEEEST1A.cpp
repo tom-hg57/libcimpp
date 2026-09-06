@@ -48,7 +48,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ExcIEEEST1A.vrmax", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "ExcIEEEST1A.vrmin", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ExcIEEEST1A::ExcIEEEST1A() {}

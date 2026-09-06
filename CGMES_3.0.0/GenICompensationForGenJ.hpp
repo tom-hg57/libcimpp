@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 
 namespace CIMPP
@@ -28,16 +29,16 @@ namespace CIMPP
 		GenICompensationForGenJ();
 		~GenICompensationForGenJ() override;
 
-		/** \brief Standard synchronous machine out of which current flow is being compensated for. Default: 0 */
+		/** \brief Standard synchronous machine out of which current flow is being compensated for. Default: nullptr */
 		CIMPP::SynchronousMachineDynamics* SynchronousMachineDynamics;
 
-		/** \brief The standard IEEE type 2 voltage compensator of this compensation. Default: 0 */
+		/** \brief The standard IEEE type 2 voltage compensator of this compensation. Default: nullptr */
 		CIMPP::VCompIEEEType2* VcompIEEEType2;
 
-		/** \brief &lt;font color=`#0f0f0f`&gt;Resistive component of compensation of generator associated with this IEEE type 2 voltage compensator for current flow out of another generator (&lt;i&gt;Rcij&lt;/i&gt;).&lt;/font&gt; Default: nullptr */
+		/** \brief <font color=`#0f0f0f`>Resistive component of compensation of generator associated with this IEEE type 2 voltage compensator for current flow out of another generator (<i>Rcij</i>).</font> Default: 0.0 */
 		CIMPP::PU rcij;
 
-		/** \brief &lt;font color=`#0f0f0f`&gt;Reactive component of compensation of generator associated with this IEEE type 2 voltage compensator for current flow out of another generator (&lt;i&gt;Xcij&lt;/i&gt;).&lt;/font&gt; Default: nullptr */
+		/** \brief <font color=`#0f0f0f`>Reactive component of compensation of generator associated with this IEEE type 2 voltage compensator for current flow out of another generator (<i>Xcij</i>).</font> Default: 0.0 */
 		CIMPP::PU xcij;
 
 		static const char debugName[];

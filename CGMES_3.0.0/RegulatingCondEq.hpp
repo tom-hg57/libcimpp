@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		RegulatingCondEq();
 		~RegulatingCondEq() override;
 
-		/** \brief The regulating control scheme in which this equipment participates. Default: 0 */
+		/** \brief The regulating control scheme in which this equipment participates. Default: nullptr */
 		CIMPP::RegulatingControl* RegulatingControl;
 
 		/** \brief Specifies the regulation status of the equipment.  True is regulating, false is not regulating. Default: false */

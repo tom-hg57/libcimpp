@@ -35,7 +35,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "RatioTapChanger.TransformerEnd", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "RatioTapChanger.stepVoltageIncrement", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 RatioTapChanger::RatioTapChanger() : RatioTapChangerTable(nullptr), TransformerEnd(nullptr) {}

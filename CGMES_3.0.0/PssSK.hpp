@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,37 +28,37 @@ namespace CIMPP
 		PssSK();
 		~PssSK() override;
 
-		/** \brief Gain &lt;i&gt;P&lt;/i&gt; (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;).  Typical value = -0,3. Default: nullptr */
+		/** \brief Gain <i>P</i> (<i>K</i><i><sub>1</sub></i>).  Typical value = -0,3. Default: 0.0 */
 		CIMPP::PU k1;
 
-		/** \brief Gain &lt;i&gt;f&lt;/i&gt;&lt;i&gt;&lt;sub&gt;E&lt;/sub&gt;&lt;/i&gt;&lt;i&gt; &lt;/i&gt;(&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;).  Typical value = -0,15. Default: nullptr */
+		/** \brief Gain <i>f</i><i><sub>E</sub></i><i> </i>(<i>K</i><i><sub>2</sub></i>).  Typical value = -0,15. Default: 0.0 */
 		CIMPP::PU k2;
 
-		/** \brief Gain &lt;i&gt;I&lt;/i&gt;&lt;i&gt;&lt;sub&gt;f&lt;/sub&gt;&lt;/i&gt;&lt;i&gt; &lt;/i&gt;(&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;).  Typical value = 10. Default: nullptr */
+		/** \brief Gain <i>I</i><i><sub>f</sub></i><i> </i>(<i>K</i><i><sub>3</sub></i>).  Typical value = 10. Default: 0.0 */
 		CIMPP::PU k3;
 
-		/** \brief Denominator time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0,005).  Typical value = 0,3. Default: nullptr */
+		/** \brief Denominator time constant (<i>T</i><i><sub>1</sub></i>) (&gt; 0,005).  Typical value = 0,3. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Filter time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0,005).  Typical value = 0,35. Default: nullptr */
+		/** \brief Filter time constant (<i>T</i><i><sub>2</sub></i>) (&gt; 0,005).  Typical value = 0,35. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Denominator time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0,005).  Typical value = 0,22. Default: nullptr */
+		/** \brief Denominator time constant (<i>T</i><i><sub>3</sub></i>) (&gt; 0,005).  Typical value = 0,22. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Filter time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;4&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0,005).  Typical value = 0,02. Default: nullptr */
+		/** \brief Filter time constant (<i>T</i><i><sub>4</sub></i>) (&gt; 0,005).  Typical value = 0,02. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Denominator time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;5&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0,005).  Typical value = 0,02. Default: nullptr */
+		/** \brief Denominator time constant (<i>T</i><i><sub>5</sub></i>) (&gt; 0,005).  Typical value = 0,02. Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Filter time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;6&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0,005).  Typical value = 0,02. Default: nullptr */
+		/** \brief Filter time constant (<i>T</i><i><sub>6</sub></i>) (&gt; 0,005).  Typical value = 0,02. Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Stabilizer output maximum limit (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;SMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; PssSK.vsmin).  Typical value = 0,4. Default: nullptr */
+		/** \brief Stabilizer output maximum limit (<i>V</i><i><sub>SMAX</sub></i>) (&gt; PssSK.vsmin).  Typical value = 0,4. Default: 0.0 */
 		CIMPP::PU vsmax;
 
-		/** \brief Stabilizer output minimum limit (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;SMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; PssSK.vsmax).  Typical value = -0.4. Default: nullptr */
+		/** \brief Stabilizer output minimum limit (<i>V</i><i><sub>SMIN</sub></i>) (&lt; PssSK.vsmax).  Typical value = -0.4. Default: 0.0 */
 		CIMPP::PU vsmin;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "CurveStyle.hpp"
 #include "UnitSymbol.hpp"
 
@@ -28,7 +29,7 @@ namespace CIMPP
 		Curve();
 		~Curve() override;
 
-		/** \brief The curve of  this curve data point. Default: 0 */
+		/** \brief The curve of  this curve data point. Default: {} */
 		std::list<CIMPP::CurveData*> CurveDatas;
 
 		/** \brief The style or shape of the curve. Default: 0 */

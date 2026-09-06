@@ -47,7 +47,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Pss2ST.vcl", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "Pss2ST.vcu", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Pss2ST::Pss2ST() {}

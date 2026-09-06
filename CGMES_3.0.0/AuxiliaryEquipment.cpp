@@ -31,7 +31,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	{
 		{ "AuxiliaryEquipment.Terminal", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 AuxiliaryEquipment::AuxiliaryEquipment() : Terminal(nullptr) {}

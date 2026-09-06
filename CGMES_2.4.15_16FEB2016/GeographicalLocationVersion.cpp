@@ -39,7 +39,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "GeographicalLocationVersion.namespaceUML", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::GL, } } },
 		{ "GeographicalLocationVersion.shortName", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::GL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 GeographicalLocationVersion::GeographicalLocationVersion() {}

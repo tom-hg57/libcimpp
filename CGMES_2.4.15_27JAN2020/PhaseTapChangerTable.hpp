@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class PhaseTapChangerTablePoint;
@@ -27,10 +28,10 @@ namespace CIMPP
 		PhaseTapChangerTable();
 		~PhaseTapChangerTable() override;
 
-		/** \brief The points of this table. Default: 0 */
+		/** \brief The points of this table. Default: {} */
 		std::list<CIMPP::PhaseTapChangerTablePoint*> PhaseTapChangerTablePoint;
 
-		/** \brief The phase tap changers to which this phase tap table applies. Default: 0 */
+		/** \brief The phase tap changers to which this phase tap table applies. Default: {} */
 		std::list<CIMPP::PhaseTapChangerTabular*> PhaseTapChangerTabular;
 
 		static const char debugName[];

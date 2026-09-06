@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Capacitance.hpp"
 #include "Inductance.hpp"
 #include "Length.hpp"
@@ -30,19 +31,19 @@ namespace CIMPP
 		DCLineSegment();
 		~DCLineSegment() override;
 
-		/** \brief Set of per-length parameters for this line segment. Default: 0 */
+		/** \brief Set of per-length parameters for this line segment. Default: nullptr */
 		CIMPP::PerLengthDCLineParameter* PerLengthParameter;
 
-		/** \brief Capacitance of the DC line segment. Significant for cables only. Default: nullptr */
+		/** \brief Capacitance of the DC line segment. Significant for cables only. Default: 0.0 */
 		CIMPP::Capacitance capacitance;
 
-		/** \brief Inductance of the DC line segment. Neglectable compared with DCSeriesDevice used for smoothing. Default: nullptr */
+		/** \brief Inductance of the DC line segment. Neglectable compared with DCSeriesDevice used for smoothing. Default: 0.0 */
 		CIMPP::Inductance inductance;
 
-		/** \brief Segment length for calculating line section capabilities. Default: nullptr */
+		/** \brief Segment length for calculating line section capabilities. Default: 0.0 */
 		CIMPP::Length length;
 
-		/** \brief Resistance of the DC line segment. Default: nullptr */
+		/** \brief Resistance of the DC line segment. Default: 0.0 */
 		CIMPP::Resistance resistance;
 
 		static const char debugName[];

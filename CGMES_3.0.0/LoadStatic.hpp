@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "StaticLoadModelKind.hpp"
 
@@ -28,55 +29,55 @@ namespace CIMPP
 		LoadStatic();
 		~LoadStatic() override;
 
-		/** \brief Aggregate load to which this aggregate static load belongs. Default: 0 */
+		/** \brief Aggregate load to which this aggregate static load belongs. Default: nullptr */
 		CIMPP::LoadAggregate* LoadAggregate;
 
-		/** \brief First term voltage exponent for active power (&lt;i&gt;Ep1&lt;/i&gt;).  Used only when .staticLoadModelType = exponential. Default: 0.0 */
+		/** \brief First term voltage exponent for active power (<i>Ep1</i>).  Used only when .staticLoadModelType = exponential. Default: 0.0 */
 		CIMPP::Float ep1;
 
-		/** \brief Second term voltage exponent for active power (&lt;i&gt;Ep2&lt;/i&gt;).  Used only when .staticLoadModelType = exponential. Default: 0.0 */
+		/** \brief Second term voltage exponent for active power (<i>Ep2</i>).  Used only when .staticLoadModelType = exponential. Default: 0.0 */
 		CIMPP::Float ep2;
 
-		/** \brief Third term voltage exponent for active power (&lt;i&gt;Ep3&lt;/i&gt;).  Used only when .staticLoadModelType = exponential. Default: 0.0 */
+		/** \brief Third term voltage exponent for active power (<i>Ep3</i>).  Used only when .staticLoadModelType = exponential. Default: 0.0 */
 		CIMPP::Float ep3;
 
-		/** \brief First term voltage exponent for reactive power (&lt;i&gt;Eq1&lt;/i&gt;).  Used only when .staticLoadModelType = exponential. Default: 0.0 */
+		/** \brief First term voltage exponent for reactive power (<i>Eq1</i>).  Used only when .staticLoadModelType = exponential. Default: 0.0 */
 		CIMPP::Float eq1;
 
-		/** \brief Second term voltage exponent for reactive power (&lt;i&gt;Eq2&lt;/i&gt;).  Used only when .staticLoadModelType = exponential. Default: 0.0 */
+		/** \brief Second term voltage exponent for reactive power (<i>Eq2</i>).  Used only when .staticLoadModelType = exponential. Default: 0.0 */
 		CIMPP::Float eq2;
 
-		/** \brief Third term voltage exponent for reactive power (&lt;i&gt;Eq3&lt;/i&gt;).  Used only when .staticLoadModelType = exponential. Default: 0.0 */
+		/** \brief Third term voltage exponent for reactive power (<i>Eq3</i>).  Used only when .staticLoadModelType = exponential. Default: 0.0 */
 		CIMPP::Float eq3;
 
-		/** \brief First term voltage coefficient for active power (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;p1&lt;/sub&gt;&lt;/i&gt;).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
+		/** \brief First term voltage coefficient for active power (<i>K</i><i><sub>p1</sub></i>).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
 		CIMPP::Float kp1;
 
-		/** \brief Second term voltage coefficient for active power (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;p2&lt;/sub&gt;&lt;/i&gt;).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
+		/** \brief Second term voltage coefficient for active power (<i>K</i><i><sub>p2</sub></i>).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
 		CIMPP::Float kp2;
 
-		/** \brief Third term voltage coefficient for active power (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;p3&lt;/sub&gt;&lt;/i&gt;).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
+		/** \brief Third term voltage coefficient for active power (<i>K</i><i><sub>p3</sub></i>).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
 		CIMPP::Float kp3;
 
-		/** \brief Frequency coefficient for active power (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;p4&lt;/sub&gt;&lt;/i&gt;)  (not = 0 if .staticLoadModelType = zIP2).  Used only when .staticLoadModelType = zIP2. Default: 0.0 */
+		/** \brief Frequency coefficient for active power (<i>K</i><i><sub>p4</sub></i>)  (not = 0 if .staticLoadModelType = zIP2).  Used only when .staticLoadModelType = zIP2. Default: 0.0 */
 		CIMPP::Float kp4;
 
-		/** \brief Frequency deviation coefficient for active power (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;pf&lt;/sub&gt;&lt;/i&gt;).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
+		/** \brief Frequency deviation coefficient for active power (<i>K</i><i><sub>pf</sub></i>).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
 		CIMPP::Float kpf;
 
-		/** \brief First term voltage coefficient for reactive power (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;q1&lt;/sub&gt;&lt;/i&gt;).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
+		/** \brief First term voltage coefficient for reactive power (<i>K</i><i><sub>q1</sub></i>).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
 		CIMPP::Float kq1;
 
-		/** \brief Second term voltage coefficient for reactive power (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;q2&lt;/sub&gt;&lt;/i&gt;).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
+		/** \brief Second term voltage coefficient for reactive power (<i>K</i><i><sub>q2</sub></i>).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
 		CIMPP::Float kq2;
 
-		/** \brief Third term voltage coefficient for reactive power (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;q3&lt;/sub&gt;&lt;/i&gt;).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
+		/** \brief Third term voltage coefficient for reactive power (<i>K</i><i><sub>q3</sub></i>).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
 		CIMPP::Float kq3;
 
-		/** \brief Frequency coefficient for reactive power (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;q4&lt;/sub&gt;&lt;/i&gt;)  (not = 0 when .staticLoadModelType = zIP2).  Used only when .staticLoadModelType - zIP2. Default: 0.0 */
+		/** \brief Frequency coefficient for reactive power (<i>K</i><i><sub>q4</sub></i>)  (not = 0 when .staticLoadModelType = zIP2).  Used only when .staticLoadModelType - zIP2. Default: 0.0 */
 		CIMPP::Float kq4;
 
-		/** \brief Frequency deviation coefficient for reactive power (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qf&lt;/sub&gt;&lt;/i&gt;).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
+		/** \brief Frequency deviation coefficient for reactive power (<i>K</i><i><sub>qf</sub></i>).  Not used when .staticLoadModelType = constantZ. Default: 0.0 */
 		CIMPP::Float kqf;
 
 		/** \brief Type of static load model.  Typical value = constantZ. Default: 0 */

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,40 +29,40 @@ namespace CIMPP
 		GovSteamFV2();
 		~GovSteamFV2() override;
 
-		/** \brief (&lt;i&gt;Dt&lt;/i&gt;). Default: nullptr */
+		/** \brief (<i>Dt</i>). Default: 0.0 */
 		CIMPP::PU dt;
 
-		/** \brief Fraction of the turbine power developed by turbine sections not involved in fast valving (&lt;i&gt;K&lt;/i&gt;). Default: nullptr */
+		/** \brief Fraction of the turbine power developed by turbine sections not involved in fast valving (<i>K</i>). Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief Alternate base used instead of machine base in equipment model if necessary (&lt;i&gt;MWbase&lt;/i&gt;) (&amp;gt; 0).  Unit = MW. Default: nullptr */
+		/** \brief Alternate base used instead of machine base in equipment model if necessary (<i>MWbase</i>) (&gt; 0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief (&lt;i&gt;R&lt;/i&gt;). Default: nullptr */
+		/** \brief (<i>R</i>). Default: 0.0 */
 		CIMPP::PU r;
 
-		/** \brief Governor time constant (&lt;i&gt;T1&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Governor time constant (<i>T1</i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Reheater time constant (&lt;i&gt;T3&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Reheater time constant (<i>T3</i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Time after initial time for valve to close (&lt;i&gt;Ta&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time after initial time for valve to close (<i>Ta</i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Time after initial time for valve to begin opening (&lt;i&gt;Tb&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time after initial time for valve to begin opening (<i>Tb</i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Time after initial time for valve to become fully open (&lt;i&gt;Tc&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time after initial time for valve to become fully open (<i>Tc</i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Time constant with which power falls off after intercept valve closure (&lt;i&gt;Tt&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant with which power falls off after intercept valve closure (<i>Tt</i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds tt;
 
-		/** \brief (&lt;i&gt;Vmax&lt;/i&gt;) (&amp;gt; GovSteamFV2.vmin). Default: nullptr */
+		/** \brief (<i>Vmax</i>) (&gt; GovSteamFV2.vmin). Default: 0.0 */
 		CIMPP::PU vmax;
 
-		/** \brief (&lt;i&gt;Vmin&lt;/i&gt;) (&amp;lt; GovSteamFV2.vmax). Default: nullptr */
+		/** \brief (<i>Vmin</i>) (&lt; GovSteamFV2.vmax). Default: 0.0 */
 		CIMPP::PU vmin;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		CurveData();
 		~CurveData() override;
 
-		/** \brief The curve of  this curve data point. Default: 0 */
+		/** \brief The curve of  this curve data point. Default: nullptr */
 		CIMPP::Curve* Curve;
 
 		/** \brief The data value of the X-axis variable,  depending on the X-axis units. Default: 0.0 */

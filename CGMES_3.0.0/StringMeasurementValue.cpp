@@ -31,7 +31,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	{
 		{ "StringMeasurementValue.StringMeasurement", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 StringMeasurementValue::StringMeasurementValue() : StringMeasurement(nullptr) {}

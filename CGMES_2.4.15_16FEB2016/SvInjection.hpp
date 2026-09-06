@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "ReactivePower.hpp"
 
@@ -28,13 +29,13 @@ namespace CIMPP
 		SvInjection();
 		~SvInjection() override;
 
-		/** \brief The injection flows state variables associated with the topological node. Default: 0 */
+		/** \brief The injection flows state variables associated with the topological node. Default: nullptr */
 		CIMPP::TopologicalNode* TopologicalNode;
 
-		/** \brief The active power injected into the bus in addition to injections from equipment terminals.  Positive sign means injection into the TopologicalNode (bus). Default: nullptr */
+		/** \brief The active power injected into the bus in addition to injections from equipment terminals.  Positive sign means injection into the TopologicalNode (bus). Default: 0.0 */
 		CIMPP::ActivePower pInjection;
 
-		/** \brief The reactive power injected into the bus in addition to injections from equipment terminals. Positive sign means injection into the TopologicalNode (bus). Default: nullptr */
+		/** \brief The reactive power injected into the bus in addition to injections from equipment terminals. Positive sign means injection into the TopologicalNode (bus). Default: 0.0 */
 		CIMPP::ReactivePower qInjection;
 
 		static const char debugName[];

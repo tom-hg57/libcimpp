@@ -39,7 +39,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "DiagramLayoutVersion.namespaceUML", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::DL, } } },
 		{ "DiagramLayoutVersion.shortName", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::DL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 DiagramLayoutVersion::DiagramLayoutVersion() {}

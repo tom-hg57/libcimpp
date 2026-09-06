@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,22 +28,22 @@ namespace CIMPP
 		UnderexcLimX1();
 		~UnderexcLimX1() override;
 
-		/** \brief Minimum excitation limit slope (&lt;i&gt;K&lt;/i&gt;) (&amp;gt; 0). Default: nullptr */
+		/** \brief Minimum excitation limit slope (<i>K</i>) (&gt; 0). Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief Differential gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;F2&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Differential gain (<i>K</i><i><sub>F2</sub></i>). Default: 0.0 */
 		CIMPP::PU kf2;
 
-		/** \brief Minimum excitation limit gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;M&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Minimum excitation limit gain (<i>K</i><i><sub>M</sub></i>). Default: 0.0 */
 		CIMPP::PU km;
 
-		/** \brief Minimum excitation limit value (&lt;i&gt;MELMAX&lt;/i&gt;). Default: nullptr */
+		/** \brief Minimum excitation limit value (<i>MELMAX</i>). Default: 0.0 */
 		CIMPP::PU melmax;
 
-		/** \brief Differential time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;F2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Differential time constant (<i>T</i><i><sub>F2</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds tf2;
 
-		/** \brief Minimum excitation limit time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;M&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Minimum excitation limit time constant (<i>T</i><i><sub>M</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds tm;
 
 		static const char debugName[];

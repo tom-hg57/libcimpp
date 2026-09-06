@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,10 +28,10 @@ namespace CIMPP
 		DiscExcContIEEEDEC3A();
 		~DiscExcContIEEEDEC3A() override;
 
-		/** \brief Reset time delay (). Default: nullptr */
+		/** \brief Reset time delay (). Default: 0.0 */
 		CIMPP::Seconds tdr;
 
-		/** \brief Terminal undervoltage comparison level (). Default: nullptr */
+		/** \brief Terminal undervoltage comparison level (). Default: 0.0 */
 		CIMPP::PU vtmin;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Float.hpp"
 #include "PU.hpp"
@@ -29,55 +30,55 @@ namespace CIMPP
 		Pss5();
 		~Pss5() override;
 
-		/** \brief Selector for second washout enabling (&lt;i&gt;C&lt;/i&gt;&lt;i&gt;&lt;sub&gt;TW2&lt;/sub&gt;&lt;/i&gt;). true = second washout filter is bypassed false = second washout filter in use. Typical value = true. Default: false */
+		/** \brief Selector for second washout enabling (<i>C</i><i><sub>TW2</sub></i>). true = second washout filter is bypassed false = second washout filter in use. Typical value = true. Default: false */
 		CIMPP::Boolean ctw2;
 
-		/** \brief Stabilizer output deadband (&lt;i&gt;DEADBAND&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Stabilizer output deadband (<i>DEADBAND</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU deadband;
 
-		/** \brief Selector for frequency/shaft speed input (&lt;i&gt;isFreq&lt;/i&gt;). true = speed (same meaning as InputSignaKind.rotorSpeed) false = frequency (same meaning as InputSignalKind.busFrequency). Typical value = true (same meaning as InputSignalKind.rotorSpeed). Default: false */
+		/** \brief Selector for frequency/shaft speed input (<i>isFreq</i>). true = speed (same meaning as InputSignaKind.rotorSpeed) false = frequency (same meaning as InputSignalKind.busFrequency). Typical value = true (same meaning as InputSignalKind.rotorSpeed). Default: false */
 		CIMPP::Boolean isfreq;
 
-		/** \brief Frequency/shaft speed input gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;F&lt;/sub&gt;&lt;/i&gt;).  Typical value = 5. Default: 0.0 */
+		/** \brief Frequency/shaft speed input gain (<i>K</i><i><sub>F</sub></i>).  Typical value = 5. Default: 0.0 */
 		CIMPP::Float kf;
 
-		/** \brief Electric power input gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PE&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,3. Default: 0.0 */
+		/** \brief Electric power input gain (<i>K</i><i><sub>PE</sub></i>).  Typical value = 0,3. Default: 0.0 */
 		CIMPP::Float kpe;
 
-		/** \brief PSS gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PSS&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1. Default: 0.0 */
+		/** \brief PSS gain (<i>K</i><i><sub>PSS</sub></i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::Float kpss;
 
-		/** \brief Minimum power PSS enabling (&lt;i&gt;Pmin&lt;/i&gt;).  Typical value = 0,25. Default: nullptr */
+		/** \brief Minimum power PSS enabling (<i>Pmin</i>).  Typical value = 0,25. Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;L1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T</i><i><sub>L1</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tl1;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;L2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  If = 0, both blocks are bypassed.  Typical value = 0. Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T</i><i><sub>L2</sub></i>) (&gt;= 0).  If = 0, both blocks are bypassed.  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tl2;
 
-		/** \brief Lead/lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;L3&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Lead/lag time constant (<i>T</i><i><sub>L3</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tl3;
 
-		/** \brief Lead/lag time constant (T&lt;sub&gt;L4&lt;/sub&gt;) (&amp;gt;= 0).  If = 0, both blocks are bypassed.  Typical value = 0. Default: nullptr */
+		/** \brief Lead/lag time constant (T<sub>L4</sub>) (&gt;= 0).  If = 0, both blocks are bypassed.  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tl4;
 
-		/** \brief Electric power filter time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PE&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief Electric power filter time constant (<i>T</i><i><sub>PE</sub></i>) (&gt;= 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::Seconds tpe;
 
-		/** \brief First washout (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;W1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 3,5. Default: nullptr */
+		/** \brief First washout (<i>T</i><i><sub>W1</sub></i>) (&gt;= 0).  Typical value = 3,5. Default: 0.0 */
 		CIMPP::Seconds tw1;
 
-		/** \brief Second washout (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;W2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Second washout (<i>T</i><i><sub>W2</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tw2;
 
-		/** \brief &lt;font color=`#0f0f0f`&gt;Signal selector (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;adAtt&lt;/sub&gt;&lt;/i&gt;).&lt;/font&gt; &lt;font color=`#0f0f0f`&gt;true = closed (generator power is greater than &lt;i&gt;Pmin&lt;/i&gt;)&lt;/font&gt; &lt;font color=`#0f0f0f`&gt;false = open (&lt;i&gt;Pe&lt;/i&gt; is smaller than &lt;i&gt;Pmin&lt;/i&gt;).&lt;/font&gt; &lt;font color=`#0f0f0f`&gt;Typical value = true.&lt;/font&gt; Default: false */
+		/** \brief <font color=`#0f0f0f`>Signal selector (<i>V</i><i><sub>adAtt</sub></i>).</font> <font color=`#0f0f0f`>true = closed (generator power is greater than <i>Pmin</i>)</font> <font color=`#0f0f0f`>false = open (<i>Pe</i> is smaller than <i>Pmin</i>).</font> <font color=`#0f0f0f`>Typical value = true.</font> Default: false */
 		CIMPP::Boolean vadat;
 
-		/** \brief Stabilizer output maximum limit (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;SMN&lt;/sub&gt;&lt;/i&gt;).  Typical value = -0,1. Default: nullptr */
+		/** \brief Stabilizer output maximum limit (<i>V</i><i><sub>SMN</sub></i>).  Typical value = -0,1. Default: 0.0 */
 		CIMPP::PU vsmn;
 
-		/** \brief Stabilizer output minimum limit (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;SMX&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,1. Default: nullptr */
+		/** \brief Stabilizer output minimum limit (<i>V</i><i><sub>SMX</sub></i>).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::PU vsmx;
 
 		static const char debugName[];

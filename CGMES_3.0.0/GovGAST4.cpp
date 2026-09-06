@@ -40,7 +40,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "GovGAST4.tm", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "GovGAST4.ty", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 GovGAST4::GovGAST4() {}

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -30,16 +31,16 @@ namespace CIMPP
 		WindContCurrLimIEC();
 		~WindContCurrLimIEC() override;
 
-		/** \brief The current control limitation model with which this wind dynamics lookup table is associated. Default: 0 */
+		/** \brief The current control limitation model with which this wind dynamics lookup table is associated. Default: {} */
 		std::list<CIMPP::WindDynamicsLookupTable*> WindDynamicsLookupTable;
 
-		/** \brief Wind turbine type 3 or 4 model with which this wind control current limitation model is associated. Default: 0 */
+		/** \brief Wind turbine type 3 or 4 model with which this wind control current limitation model is associated. Default: nullptr */
 		CIMPP::WindTurbineType3or4IEC* WindTurbineType3or4IEC;
 
-		/** \brief Maximum continuous current at the wind turbine terminals (). It is type dependent parameter. Default: nullptr */
+		/** \brief Maximum continuous current at the wind turbine terminals (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::PU imax;
 
-		/** \brief Maximum current during voltage dip at the wind turbine terminals (). It is project dependent parameter. Default: nullptr */
+		/** \brief Maximum current during voltage dip at the wind turbine terminals (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU imaxdip;
 
 		/** \brief Limitation of type 3 stator current  ():  - false=0: total current limitation,  - true=1: stator current limitation).  It is type dependent parameter. Default: false */
@@ -48,7 +49,7 @@ namespace CIMPP
 		/** \brief Prioritisation of q control during LVRT (): - true = 1: reactive power priority, - false = 0: active power priority.  It is project dependent parameter. Default: false */
 		CIMPP::Boolean mqpri;
 
-		/** \brief Voltage measurement filter time constant (). It is type dependent parameter. Default: nullptr */
+		/** \brief Voltage measurement filter time constant (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tufilt;
 
 		static const char debugName[];

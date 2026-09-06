@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindPlantIEC.WindPlantFreqPcontrolIEC", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "WindPlantIEC.WindPlantReactiveControlIEC", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindPlantIEC::WindPlantIEC() : WindPlantFreqPcontrolIEC(nullptr), WindPlantReactiveControlIEC(nullptr) {}

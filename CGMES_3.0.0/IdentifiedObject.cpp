@@ -18,9 +18,9 @@ static const CimClassDetails& getCimClassDetails()
 		IdentifiedObject(),
 		"http://iec.ch/TC57/CIM100#",
 		{
+			CGMESProfile::EQ,
 			CGMESProfile::DL,
 			CGMESProfile::DY,
-			CGMESProfile::EQ,
 			CGMESProfile::EQBD,
 			CGMESProfile::GL,
 			CGMESProfile::OP,
@@ -39,13 +39,13 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	static const std::map<std::string, AttrDetails> ClassAttrDetailsMap =
 	{
 		{ "IdentifiedObject.DiagramObjects", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DL, } } },
-		{ "IdentifiedObject.description", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DL, CGMESProfile::DY, CGMESProfile::EQ, CGMESProfile::EQBD, CGMESProfile::OP, CGMESProfile::TP, } } },
+		{ "IdentifiedObject.description", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, CGMESProfile::DL, CGMESProfile::DY, CGMESProfile::EQBD, CGMESProfile::OP, CGMESProfile::TP, } } },
 		{ "IdentifiedObject.energyIdentCodeEic", { "http://iec.ch/TC57/CIM100-European#", { CGMESProfile::EQ, CGMESProfile::EQBD, CGMESProfile::TP, } } },
-		{ "IdentifiedObject.mRID", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DL, CGMESProfile::DY, CGMESProfile::EQ, CGMESProfile::EQBD, CGMESProfile::GL, CGMESProfile::OP, CGMESProfile::SC, CGMESProfile::SSH, CGMESProfile::SV, CGMESProfile::TP, } } },
-		{ "IdentifiedObject.name", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DL, CGMESProfile::DY, CGMESProfile::EQ, CGMESProfile::EQBD, CGMESProfile::GL, CGMESProfile::OP, CGMESProfile::SV, CGMESProfile::TP, } } },
+		{ "IdentifiedObject.mRID", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, CGMESProfile::DL, CGMESProfile::DY, CGMESProfile::EQBD, CGMESProfile::GL, CGMESProfile::OP, CGMESProfile::SC, CGMESProfile::SSH, CGMESProfile::SV, CGMESProfile::TP, } } },
+		{ "IdentifiedObject.name", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, CGMESProfile::DL, CGMESProfile::DY, CGMESProfile::EQBD, CGMESProfile::GL, CGMESProfile::OP, CGMESProfile::SV, CGMESProfile::TP, } } },
 		{ "IdentifiedObject.shortName", { "http://iec.ch/TC57/CIM100-European#", { CGMESProfile::EQ, CGMESProfile::EQBD, CGMESProfile::TP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 IdentifiedObject::IdentifiedObject() {}

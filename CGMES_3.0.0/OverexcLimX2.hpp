@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,37 +29,37 @@ namespace CIMPP
 		OverexcLimX2();
 		~OverexcLimX2() override;
 
-		/** \brief Low voltage or current point on the inverse time characteristic (&lt;i&gt;EFD&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,1. Default: nullptr */
+		/** \brief Low voltage or current point on the inverse time characteristic (<i>EFD</i><i><sub>1</sub></i>).  Typical value = 1,1. Default: 0.0 */
 		CIMPP::PU efd1;
 
-		/** \brief Mid voltage or current point on the inverse time characteristic (&lt;i&gt;EFD&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,2. Default: nullptr */
+		/** \brief Mid voltage or current point on the inverse time characteristic (<i>EFD</i><i><sub>2</sub></i>).  Typical value = 1,2. Default: 0.0 */
 		CIMPP::PU efd2;
 
-		/** \brief High voltage or current point on the inverse time characteristic (&lt;i&gt;EFD&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,5. Default: nullptr */
+		/** \brief High voltage or current point on the inverse time characteristic (<i>EFD</i><i><sub>3</sub></i>).  Typical value = 1,5. Default: 0.0 */
 		CIMPP::PU efd3;
 
-		/** \brief Desired field voltage if &lt;i&gt;m&lt;/i&gt; = false or desired field current if &lt;i&gt;m &lt;/i&gt;= true (&lt;i&gt;EFD&lt;/i&gt;&lt;i&gt;&lt;sub&gt;DES&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Desired field voltage if <i>m</i> = false or desired field current if <i>m </i>= true (<i>EFD</i><i><sub>DES</sub></i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU efddes;
 
-		/** \brief Rated field voltage if m = false or rated field current if m = true (&lt;i&gt;EFD&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RATED&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,05. Default: nullptr */
+		/** \brief Rated field voltage if m = false or rated field current if m = true (<i>EFD</i><i><sub>RATED</sub></i>).  Typical value = 1,05. Default: 0.0 */
 		CIMPP::PU efdrated;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;MX&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,002. Default: nullptr */
+		/** \brief Gain (<i>K</i><i><sub>MX</sub></i>).  Typical value = 0,002. Default: 0.0 */
 		CIMPP::PU kmx;
 
-		/** \brief (&lt;i&gt;m&lt;/i&gt;). true = IFD limiting false = EFD limiting. Default: false */
+		/** \brief (<i>m</i>). true = IFD limiting false = EFD limiting. Default: false */
 		CIMPP::Boolean m;
 
-		/** \brief Time to trip the exciter at the low voltage or current point on the inverse time characteristic (&lt;i&gt;TIME&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 120. Default: nullptr */
+		/** \brief Time to trip the exciter at the low voltage or current point on the inverse time characteristic (<i>TIME</i><i><sub>1</sub></i>) (&gt;= 0).  Typical value = 120. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Time to trip the exciter at the mid voltage or current point on the inverse time characteristic (&lt;i&gt;TIME&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 40. Default: nullptr */
+		/** \brief Time to trip the exciter at the mid voltage or current point on the inverse time characteristic (<i>TIME</i><i><sub>2</sub></i>) (&gt;= 0).  Typical value = 40. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Time to trip the exciter at the high voltage or current point on the inverse time characteristic (&lt;i&gt;TIME&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 15. Default: nullptr */
+		/** \brief Time to trip the exciter at the high voltage or current point on the inverse time characteristic (<i>TIME</i><i><sub>3</sub></i>) (&gt;= 0).  Typical value = 15. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Low voltage limit (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;LOW&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0). Default: nullptr */
+		/** \brief Low voltage limit (<i>V</i><i><sub>LOW</sub></i>) (&gt; 0). Default: 0.0 */
 		CIMPP::PU vlow;
 
 		static const char debugName[];

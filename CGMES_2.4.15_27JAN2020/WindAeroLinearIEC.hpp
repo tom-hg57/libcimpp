@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "PU.hpp"
 
@@ -28,22 +29,22 @@ namespace CIMPP
 		WindAeroLinearIEC();
 		~WindAeroLinearIEC() override;
 
-		/** \brief Wind generator type 3 model with which this wind aerodynamic model is associated. Default: 0 */
+		/** \brief Wind generator type 3 model with which this wind aerodynamic model is associated. Default: nullptr */
 		CIMPP::WindGenTurbineType3IEC* WindGenTurbineType3IEC;
 
-		/** \brief Partial derivative of aerodynamic power with respect to changes in WTR speed (). It is case dependent parameter. Default: nullptr */
+		/** \brief Partial derivative of aerodynamic power with respect to changes in WTR speed (). It is case dependent parameter. Default: 0.0 */
 		CIMPP::PU dpomega;
 
-		/** \brief Partial derivative of aerodynamic power with respect to changes in pitch angle (). It is case dependent parameter. Default: nullptr */
+		/** \brief Partial derivative of aerodynamic power with respect to changes in pitch angle (). It is case dependent parameter. Default: 0.0 */
 		CIMPP::PU dptheta;
 
-		/** \brief Rotor speed if the wind turbine is not derated (). It is case dependent parameter. Default: nullptr */
+		/** \brief Rotor speed if the wind turbine is not derated (). It is case dependent parameter. Default: 0.0 */
 		CIMPP::PU omegazero;
 
-		/** \brief Available aerodynamic power (). It is case dependent parameter. Default: nullptr */
+		/** \brief Available aerodynamic power (). It is case dependent parameter. Default: 0.0 */
 		CIMPP::PU pavail;
 
-		/** \brief Pitch angle if the wind turbine is not derated (). It is case dependent parameter. Default: nullptr */
+		/** \brief Pitch angle if the wind turbine is not derated (). It is case dependent parameter. Default: 0.0 */
 		CIMPP::AngleDegrees thetazero;
 
 		static const char debugName[];

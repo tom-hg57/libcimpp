@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Simple_Float.hpp"
 
 namespace CIMPP
@@ -27,16 +28,16 @@ namespace CIMPP
 		CurveData();
 		~CurveData() override;
 
-		/** \brief The point data values that define this curve. Default: 0 */
+		/** \brief The point data values that define this curve. Default: nullptr */
 		CIMPP::Curve* Curve;
 
-		/** \brief The data value of the X-axis variable,  depending on the X-axis units. Default: nullptr */
+		/** \brief The data value of the X-axis variable,  depending on the X-axis units. Default: 0.0 */
 		CIMPP::Simple_Float xvalue;
 
-		/** \brief The data value of the  first Y-axis variable, depending on the Y-axis units. Default: nullptr */
+		/** \brief The data value of the  first Y-axis variable, depending on the Y-axis units. Default: 0.0 */
 		CIMPP::Simple_Float y1value;
 
-		/** \brief The data value of the second Y-axis variable (if present), depending on the Y-axis units. Default: nullptr */
+		/** \brief The data value of the second Y-axis variable (if present), depending on the Y-axis units. Default: 0.0 */
 		CIMPP::Simple_Float y2value;
 
 		static const char debugName[];

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class ExcitationSystemDynamics;
@@ -26,7 +27,7 @@ namespace CIMPP
 		OverexcitationLimiterDynamics();
 		~OverexcitationLimiterDynamics() override;
 
-		/** \brief Excitation system model with which this overexcitation limiter model is associated. Default: 0 */
+		/** \brief Excitation system model with which this overexcitation limiter model is associated. Default: nullptr */
 		CIMPP::ExcitationSystemDynamics* ExcitationSystemDynamics;
 
 		static const char debugName[];

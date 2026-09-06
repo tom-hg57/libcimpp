@@ -48,7 +48,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindPlantFreqPcontrolIEC.twpffiltp", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "WindPlantFreqPcontrolIEC.twppfiltp", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindPlantFreqPcontrolIEC::WindPlantFreqPcontrolIEC() : WindPlantIEC(nullptr) {}

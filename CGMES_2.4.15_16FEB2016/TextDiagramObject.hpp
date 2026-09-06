@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "String.hpp"
 
 namespace CIMPP
@@ -26,7 +27,7 @@ namespace CIMPP
 		TextDiagramObject();
 		~TextDiagramObject() override;
 
-		/** \brief The text that is displayed by this text diagram object. Default: '' */
+		/** \brief The text that is displayed by this text diagram object. Default: "" */
 		CIMPP::String text;
 
 		static const char debugName[];

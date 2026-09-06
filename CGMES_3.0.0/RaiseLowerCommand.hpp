@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class ValueAliasSet;
@@ -26,7 +27,7 @@ namespace CIMPP
 		RaiseLowerCommand();
 		~RaiseLowerCommand() override;
 
-		/** \brief The ValueAliasSet used for translation of a Control value to a name. Default: 0 */
+		/** \brief The ValueAliasSet used for translation of a Control value to a name. Default: nullptr */
 		CIMPP::ValueAliasSet* ValueAliasSet;
 
 		static const char debugName[];

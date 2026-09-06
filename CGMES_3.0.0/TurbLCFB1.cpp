@@ -41,7 +41,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "TurbLCFB1.speedReferenceGovernor", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "TurbLCFB1.tpelec", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 TurbLCFB1::TurbLCFB1() {}

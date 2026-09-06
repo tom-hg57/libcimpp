@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,55 +28,55 @@ namespace CIMPP
 		PssIEEE3B();
 		~PssIEEE3B() override;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A1&lt;/i&gt;).  Typical value = 0,359. Default: nullptr */
+		/** \brief Notch filter parameter (<i>A1</i>).  Typical value = 0,359. Default: 0.0 */
 		CIMPP::PU a1;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A2&lt;/i&gt;).  Typical value = 0,586. Default: nullptr */
+		/** \brief Notch filter parameter (<i>A2</i>).  Typical value = 0,586. Default: 0.0 */
 		CIMPP::PU a2;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A3&lt;/i&gt;).  Typical value = 0,429. Default: nullptr */
+		/** \brief Notch filter parameter (<i>A3</i>).  Typical value = 0,429. Default: 0.0 */
 		CIMPP::PU a3;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A4&lt;/i&gt;).  Typical value = 0,564. Default: nullptr */
+		/** \brief Notch filter parameter (<i>A4</i>).  Typical value = 0,564. Default: 0.0 */
 		CIMPP::PU a4;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A5&lt;/i&gt;).  Typical value = 0,001. Default: nullptr */
+		/** \brief Notch filter parameter (<i>A5</i>).  Typical value = 0,001. Default: 0.0 */
 		CIMPP::PU a5;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A6&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Notch filter parameter (<i>A6</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU a6;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A7&lt;/i&gt;).  Typical value = 0,031. Default: nullptr */
+		/** \brief Notch filter parameter (<i>A7</i>).  Typical value = 0,031. Default: 0.0 */
 		CIMPP::PU a7;
 
-		/** \brief Notch filter parameter (&lt;i&gt;A8&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Notch filter parameter (<i>A8</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU a8;
 
-		/** \brief Gain on signal # 1 (&lt;i&gt;Ks1&lt;/i&gt;).  Typical value = -0,602. Default: nullptr */
+		/** \brief Gain on signal # 1 (<i>Ks1</i>).  Typical value = -0,602. Default: 0.0 */
 		CIMPP::PU ks1;
 
-		/** \brief Gain on signal # 2 (&lt;i&gt;Ks2&lt;/i&gt;).  Typical value = 30,12. Default: nullptr */
+		/** \brief Gain on signal # 2 (<i>Ks2</i>).  Typical value = 30,12. Default: 0.0 */
 		CIMPP::PU ks2;
 
-		/** \brief Transducer time constant (&lt;i&gt;T1&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,012. Default: nullptr */
+		/** \brief Transducer time constant (<i>T1</i>) (&gt;= 0).  Typical value = 0,012. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Transducer time constant (&lt;i&gt;T2&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,012. Default: nullptr */
+		/** \brief Transducer time constant (<i>T2</i>) (&gt;= 0).  Typical value = 0,012. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Washout time constant (&lt;i&gt;Tw1&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,3. Default: nullptr */
+		/** \brief Washout time constant (<i>Tw1</i>) (&gt;= 0).  Typical value = 0,3. Default: 0.0 */
 		CIMPP::Seconds tw1;
 
-		/** \brief Washout time constant (&lt;i&gt;Tw2&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,3. Default: nullptr */
+		/** \brief Washout time constant (<i>Tw2</i>) (&gt;= 0).  Typical value = 0,3. Default: 0.0 */
 		CIMPP::Seconds tw2;
 
-		/** \brief Washout time constant (&lt;i&gt;Tw3&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,6. Default: nullptr */
+		/** \brief Washout time constant (<i>Tw3</i>) (&gt;= 0).  Typical value = 0,6. Default: 0.0 */
 		CIMPP::Seconds tw3;
 
-		/** \brief Stabilizer output maximum limit (&lt;i&gt;Vstmax&lt;/i&gt;) (&amp;gt; PssIEEE3B.vstmin).  Typical value = 0,1. Default: nullptr */
+		/** \brief Stabilizer output maximum limit (<i>Vstmax</i>) (&gt; PssIEEE3B.vstmin).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::PU vstmax;
 
-		/** \brief Stabilizer output minimum limit (&lt;i&gt;Vstmin&lt;/i&gt;) (&amp;lt; PssIEEE3B.vstmax).  Typical value = -0,1. Default: nullptr */
+		/** \brief Stabilizer output minimum limit (<i>Vstmin</i>) (&lt; PssIEEE3B.vstmax).  Typical value = -0,1. Default: 0.0 */
 		CIMPP::PU vstmin;
 
 		static const char debugName[];

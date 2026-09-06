@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class ConnectivityNode;
@@ -27,10 +28,10 @@ namespace CIMPP
 		ConnectivityNodeContainer();
 		~ConnectivityNodeContainer() override;
 
-		/** \brief Connectivity nodes which belong to this connectivity node container. Default: 0 */
+		/** \brief Connectivity nodes which belong to this connectivity node container. Default: {} */
 		std::list<CIMPP::ConnectivityNode*> ConnectivityNodes;
 
-		/** \brief The topological nodes which belong to this connectivity node container. Default: 0 */
+		/** \brief The topological nodes which belong to this connectivity node container. Default: {} */
 		std::list<CIMPP::TopologicalNode*> TopologicalNode;
 
 		static const char debugName[];

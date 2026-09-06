@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "Boolean.hpp"
 #include "Float.hpp"
@@ -31,130 +32,130 @@ namespace CIMPP
 		GovHydroR();
 		~GovHydroR() override;
 
-		/** \brief Turbine gain (&lt;i&gt;At&lt;/i&gt;).  Typical value = 1,2. Default: nullptr */
+		/** \brief Turbine gain (<i>At</i>).  Typical value = 1,2. Default: 0.0 */
 		CIMPP::PU at;
 
-		/** \brief Intentional dead-band width (&lt;i&gt;db1&lt;/i&gt;).  Unit = Hz.  Typical value = 0. Default: nullptr */
+		/** \brief Intentional dead-band width (<i>db1</i>).  Unit = Hz.  Typical value = 0. Default: 0.0 */
 		CIMPP::Frequency db1;
 
-		/** \brief Unintentional dead-band (&lt;i&gt;db2&lt;/i&gt;).  Unit = MW.  Typical value = 0. Default: nullptr */
+		/** \brief Unintentional dead-band (<i>db2</i>).  Unit = MW.  Typical value = 0. Default: 0.0 */
 		CIMPP::ActivePower db2;
 
-		/** \brief Turbine damping factor (&lt;i&gt;Dturb&lt;/i&gt;).  Typical value = 0,2. Default: nullptr */
+		/** \brief Turbine damping factor (<i>Dturb</i>).  Typical value = 0,2. Default: 0.0 */
 		CIMPP::PU dturb;
 
-		/** \brief Intentional db hysteresis (&lt;i&gt;eps&lt;/i&gt;).  Unit = Hz.  Typical value = 0. Default: nullptr */
+		/** \brief Intentional db hysteresis (<i>eps</i>).  Unit = Hz.  Typical value = 0. Default: 0.0 */
 		CIMPP::Frequency eps;
 
-		/** \brief Maximum governor output (&lt;i&gt;Gmax&lt;/i&gt;) (&amp;gt; GovHydroR.gmin).  Typical value = 1,05. Default: nullptr */
+		/** \brief Maximum governor output (<i>Gmax</i>) (&gt; GovHydroR.gmin).  Typical value = 1,05. Default: 0.0 */
 		CIMPP::PU gmax;
 
-		/** \brief Minimum governor output (&lt;i&gt;Gmin&lt;/i&gt;) (&amp;lt; GovHydroR.gmax).  Typical value = -0,05. Default: nullptr */
+		/** \brief Minimum governor output (<i>Gmin</i>) (&lt; GovHydroR.gmax).  Typical value = -0,05. Default: 0.0 */
 		CIMPP::PU gmin;
 
-		/** \brief Nonlinear gain point 1, PU gv (&lt;i&gt;Gv1&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 1, PU gv (<i>Gv1</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU gv1;
 
-		/** \brief Nonlinear gain point 2, PU gv (&lt;i&gt;Gv2&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 2, PU gv (<i>Gv2</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU gv2;
 
-		/** \brief Nonlinear gain point 3, PU gv (&lt;i&gt;Gv3&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 3, PU gv (<i>Gv3</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU gv3;
 
-		/** \brief Nonlinear gain point 4, PU gv (&lt;i&gt;Gv4&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 4, PU gv (<i>Gv4</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU gv4;
 
-		/** \brief Nonlinear gain point 5, PU gv (&lt;i&gt;Gv5&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 5, PU gv (<i>Gv5</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU gv5;
 
-		/** \brief Nonlinear gain point 6, PU gv (&lt;i&gt;Gv6&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 6, PU gv (<i>Gv6</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU gv6;
 
-		/** \brief Turbine nominal head (&lt;i&gt;H0&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Turbine nominal head (<i>H0</i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU h0;
 
-		/** \brief Input signal switch (&lt;i&gt;Flag&lt;/i&gt;). true = &lt;i&gt;Pe&lt;/i&gt; input is used false = feedback is received from &lt;i&gt;CV&lt;/i&gt;. &lt;i&gt;Flag&lt;/i&gt; is normally dependent on &lt;i&gt;Tt&lt;/i&gt;.  If &lt;i&gt;Tt &lt;/i&gt;is zero, &lt;i&gt;Flag&lt;/i&gt; is set to false. If &lt;i&gt;Tt&lt;/i&gt; is not zero, &lt;i&gt;Flag&lt;/i&gt; is set to true.   Typical value = true. Default: false */
+		/** \brief Input signal switch (<i>Flag</i>). true = <i>Pe</i> input is used false = feedback is received from <i>CV</i>. <i>Flag</i> is normally dependent on <i>Tt</i>.  If <i>Tt </i>is zero, <i>Flag</i> is set to false. If <i>Tt</i> is not zero, <i>Flag</i> is set to true.   Typical value = true. Default: false */
 		CIMPP::Boolean inputSignal;
 
-		/** \brief Gate servo gain (&lt;i&gt;Kg&lt;/i&gt;).  Typical value = 2. Default: nullptr */
+		/** \brief Gate servo gain (<i>Kg</i>).  Typical value = 2. Default: 0.0 */
 		CIMPP::PU kg;
 
-		/** \brief Integral gain (&lt;i&gt;Ki&lt;/i&gt;).  Typical value = 0,5. Default: nullptr */
+		/** \brief Integral gain (<i>Ki</i>).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::PU ki;
 
-		/** \brief Base for power values (&lt;i&gt;MWbase&lt;/i&gt;) (&amp;gt; 0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (<i>MWbase</i>) (&gt; 0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Nonlinear gain point 1, PU power (&lt;i&gt;Pgv1&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 1, PU power (<i>Pgv1</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU pgv1;
 
-		/** \brief Nonlinear gain point 2, PU power (&lt;i&gt;Pgv2&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 2, PU power (<i>Pgv2</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU pgv2;
 
-		/** \brief Nonlinear gain point 3, PU power (&lt;i&gt;Pgv3&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 3, PU power (<i>Pgv3</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU pgv3;
 
-		/** \brief Nonlinear gain point 4, PU power (&lt;i&gt;Pgv4&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 4, PU power (<i>Pgv4</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU pgv4;
 
-		/** \brief Nonlinear gain point 5, PU power (&lt;i&gt;Pgv5&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 5, PU power (<i>Pgv5</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU pgv5;
 
-		/** \brief Nonlinear gain point 6, PU power (&lt;i&gt;Pgv6&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 6, PU power (<i>Pgv6</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU pgv6;
 
-		/** \brief Maximum gate opening, PU of &lt;i&gt;MWbase&lt;/i&gt; (&lt;i&gt;Pmax&lt;/i&gt;) (&amp;gt; GovHydroR.pmin).  Typical value = 1. Default: nullptr */
+		/** \brief Maximum gate opening, PU of <i>MWbase</i> (<i>Pmax</i>) (&gt; GovHydroR.pmin).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU pmax;
 
-		/** \brief Minimum gate opening, PU of &lt;i&gt;MWbase&lt;/i&gt; (&lt;i&gt;Pmin&lt;/i&gt;) (&amp;lt; GovHydroR.pmax).  Typical value = 0. Default: nullptr */
+		/** \brief Minimum gate opening, PU of <i>MWbase</i> (<i>Pmin</i>) (&lt; GovHydroR.pmax).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief No-load turbine flow at nominal head (&lt;i&gt;Qnl&lt;/i&gt;).  Typical value = 0,08. Default: nullptr */
+		/** \brief No-load turbine flow at nominal head (<i>Qnl</i>).  Typical value = 0,08. Default: 0.0 */
 		CIMPP::PU qnl;
 
-		/** \brief Steady-state droop (&lt;i&gt;R&lt;/i&gt;).  Typical value = 0,05. Default: nullptr */
+		/** \brief Steady-state droop (<i>R</i>).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::PU r;
 
-		/** \brief Lead time constant 1 (&lt;i&gt;T1&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1,5. Default: nullptr */
+		/** \brief Lead time constant 1 (<i>T1</i>) (&gt;= 0).  Typical value = 1,5. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Lag time constant 1 (&lt;i&gt;T2&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Lag time constant 1 (<i>T2</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Lead time constant 2 (&lt;i&gt;T3&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1,5. Default: nullptr */
+		/** \brief Lead time constant 2 (<i>T3</i>) (&gt;= 0).  Typical value = 1,5. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Lag time constant 2 (&lt;i&gt;T4&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Lag time constant 2 (<i>T4</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Lead time constant 3 (&lt;i&gt;T5&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Lead time constant 3 (<i>T5</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Lag time constant 3 (&lt;i&gt;T6&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief Lag time constant 3 (<i>T6</i>) (&gt;= 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Lead time constant 4 (&lt;i&gt;T7&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Lead time constant 4 (<i>T7</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds t7;
 
-		/** \brief Lag time constant 4 (&lt;i&gt;T8&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief Lag time constant 4 (<i>T8</i>) (&gt;= 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::Seconds t8;
 
-		/** \brief Input filter time constant (&lt;i&gt;Td&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief Input filter time constant (<i>Td</i>) (&gt;= 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::Seconds td;
 
-		/** \brief Gate servo time constant (&lt;i&gt;Tp&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief Gate servo time constant (<i>Tp</i>) (&gt;= 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::Seconds tp;
 
-		/** \brief Power feedback time constant (&lt;i&gt;Tt&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Power feedback time constant (<i>Tt</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tt;
 
-		/** \brief Water inertia time constant (&lt;i&gt;Tw&lt;/i&gt;) (&amp;gt; 0).  Typical value = 1. Default: nullptr */
+		/** \brief Water inertia time constant (<i>Tw</i>) (&gt; 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::Seconds tw;
 
-		/** \brief Maximum gate closing velocity (&lt;i&gt;Velcl&lt;/i&gt;).  Unit = PU / s.  Typical value = -0,2. Default: 0.0 */
+		/** \brief Maximum gate closing velocity (<i>Velcl</i>).  Unit = PU / s.  Typical value = -0,2. Default: 0.0 */
 		CIMPP::Float velcl;
 
-		/** \brief Maximum gate opening velocity (&lt;i&gt;Velop&lt;/i&gt;).  Unit = PU / s.  Typical value = 0,2. Default: 0.0 */
+		/** \brief Maximum gate opening velocity (<i>Velop</i>).  Unit = PU / s.  Typical value = 0,2. Default: 0.0 */
 		CIMPP::Float velop;
 
 		static const char debugName[];

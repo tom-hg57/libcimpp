@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class Analog;
@@ -27,10 +28,10 @@ namespace CIMPP
 		AnalogLimitSet();
 		~AnalogLimitSet() override;
 
-		/** \brief The limit values used for supervision of Measurements. Default: 0 */
+		/** \brief The limit values used for supervision of Measurements. Default: {} */
 		std::list<CIMPP::AnalogLimit*> Limits;
 
-		/** \brief The Measurements using the LimitSet. Default: 0 */
+		/** \brief The Measurements using the LimitSet. Default: {} */
 		std::list<CIMPP::Analog*> Measurements;
 
 		static const char debugName[];

@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ControlAreaGeneratingUnit.ControlArea", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "ControlAreaGeneratingUnit.GeneratingUnit", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ControlAreaGeneratingUnit::ControlAreaGeneratingUnit() : ControlArea(nullptr), GeneratingUnit(nullptr) {}

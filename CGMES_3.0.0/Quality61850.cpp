@@ -41,7 +41,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Quality61850.test", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 		{ "Quality61850.validity", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Quality61850::Quality61850() {}

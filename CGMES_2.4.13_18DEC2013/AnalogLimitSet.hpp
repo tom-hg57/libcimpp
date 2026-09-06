@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 
 namespace CIMPP
@@ -28,10 +29,10 @@ namespace CIMPP
 		AnalogLimitSet();
 		~AnalogLimitSet() override;
 
-		/** \brief The set of limits. Default: 0 */
+		/** \brief The set of limits. Default: {} */
 		std::list<CIMPP::AnalogLimit*> Limits;
 
-		/** \brief A measurement may have zero or more limit ranges defined for it. Default: 0 */
+		/** \brief A measurement may have zero or more limit ranges defined for it. Default: {} */
 		std::list<CIMPP::Analog*> Measurements;
 
 		/** \brief Tells if the limit values are in percentage of normalValue or the specified Unit for Measurements and Controls. Default: false */

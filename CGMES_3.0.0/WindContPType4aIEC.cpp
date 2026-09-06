@@ -34,7 +34,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindContPType4aIEC.tpordp4a", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "WindContPType4aIEC.tufiltp4a", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindContPType4aIEC::WindContPType4aIEC() : WindTurbineType4aIEC(nullptr) {}

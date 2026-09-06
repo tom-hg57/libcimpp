@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Simple_Float.hpp"
 
 namespace CIMPP
@@ -26,16 +27,16 @@ namespace CIMPP
 		MechLoad1();
 		~MechLoad1() override;
 
-		/** \brief Speed squared coefficient (a). Default: nullptr */
+		/** \brief Speed squared coefficient (a). Default: 0.0 */
 		CIMPP::Simple_Float a;
 
-		/** \brief Speed coefficient (b). Default: nullptr */
+		/** \brief Speed coefficient (b). Default: 0.0 */
 		CIMPP::Simple_Float b;
 
-		/** \brief Speed to the exponent coefficient (d). Default: nullptr */
+		/** \brief Speed to the exponent coefficient (d). Default: 0.0 */
 		CIMPP::Simple_Float d;
 
-		/** \brief Exponent (e). Default: nullptr */
+		/** \brief Exponent (e). Default: 0.0 */
 		CIMPP::Simple_Float e;
 
 		static const char debugName[];

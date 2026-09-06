@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 #include "WindQcontrolModeKind.hpp"
@@ -30,76 +31,76 @@ namespace CIMPP
 		WindContQIEC();
 		~WindContQIEC() override;
 
-		/** \brief Wind turbine type 3 or type 4 model with which this reactive control model is associated. Default: 0 */
+		/** \brief Wind turbine type 3 or type 4 model with which this reactive control model is associated. Default: nullptr */
 		CIMPP::WindTurbineType3or4IEC* WindTurbineType3or4IEC;
 
-		/** \brief Maximum reactive current injection during dip (&lt;i&gt;i&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qh1&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Maximum reactive current injection during dip (<i>i</i><i><sub>qh1</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU iqh1;
 
-		/** \brief Maximum reactive current injection (&lt;i&gt;i&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qmax&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; WindContQIEC.iqmin). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Maximum reactive current injection (<i>i</i><i><sub>qmax</sub></i>) (&gt; WindContQIEC.iqmin). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU iqmax;
 
-		/** \brief Minimum reactive current injection (&lt;i&gt;i&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qmin&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; WindContQIEC.iqmax). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Minimum reactive current injection (<i>i</i><i><sub>qmin</sub></i>) (&lt; WindContQIEC.iqmax). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU iqmin;
 
-		/** \brief Post fault reactive current injection (&lt;i&gt;i&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qpost&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Post fault reactive current injection (<i>i</i><i><sub>qpost</sub></i>). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU iqpost;
 
-		/** \brief Reactive power PI controller integration gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;I,q&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Reactive power PI controller integration gain (<i>K</i><i><sub>I,q</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU kiq;
 
-		/** \brief Voltage PI controller integration gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;I,u&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Voltage PI controller integration gain (<i>K</i><i><sub>I,u</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU kiu;
 
-		/** \brief Reactive power PI controller proportional gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;P,q&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Reactive power PI controller proportional gain (<i>K</i><i><sub>P,q</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU kpq;
 
-		/** \brief Voltage PI controller proportional gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;P,u&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Voltage PI controller proportional gain (<i>K</i><i><sub>P,u</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU kpu;
 
-		/** \brief Voltage scaling factor for UVRT current (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qv&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Voltage scaling factor for UVRT current (<i>K</i><i><sub>qv</sub></i>). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU kqv;
 
-		/** \brief Resistive component of voltage drop impedance (&lt;i&gt;r&lt;/i&gt;&lt;i&gt;&lt;sub&gt;droop&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Resistive component of voltage drop impedance (<i>r</i><i><sub>droop</sub></i>) (&gt;= 0). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU rdroop;
 
-		/** \brief Power measurement filter time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;pfiltq&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Power measurement filter time constant (<i>T</i><i><sub>pfiltq</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tpfiltq;
 
-		/** \brief Length of time period where post fault reactive power is injected (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;post&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Length of time period where post fault reactive power is injected (<i>T</i><i><sub>post</sub></i>) (&gt;= 0). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tpost;
 
-		/** \brief Time constant in reactive power order lag (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qord&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Time constant in reactive power order lag (<i>T</i><i><sub>qord</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tqord;
 
-		/** \brief Voltage measurement filter time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;ufiltq&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Voltage measurement filter time constant (<i>T</i><i><sub>ufiltq</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tufiltq;
 
-		/** \brief Voltage deadband lower limit (&lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;db1&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Voltage deadband lower limit (<i>u</i><i><sub>db1</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU udb1;
 
-		/** \brief Voltage deadband upper limit (&lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;db2&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Voltage deadband upper limit (<i>u</i><i><sub>db2</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU udb2;
 
-		/** \brief Maximum voltage in voltage PI controller integral term (&lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;max&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; WindContQIEC.umin). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Maximum voltage in voltage PI controller integral term (<i>u</i><i><sub>max</sub></i>) (&gt; WindContQIEC.umin). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU umax;
 
-		/** \brief Minimum voltage in voltage PI controller integral term (&lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;min&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; WindContQIEC.umax). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Minimum voltage in voltage PI controller integral term (<i>u</i><i><sub>min</sub></i>) (&lt; WindContQIEC.umax). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU umin;
 
-		/** \brief Voltage threshold for UVRT detection in Q control (&lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qdip&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Voltage threshold for UVRT detection in Q control (<i>u</i><i><sub>qdip</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU uqdip;
 
-		/** \brief User-defined bias in voltage reference (&lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;ref0&lt;/sub&gt;&lt;/i&gt;). It is a case-dependent parameter. Default: nullptr */
+		/** \brief User-defined bias in voltage reference (<i>u</i><i><sub>ref0</sub></i>). It is a case-dependent parameter. Default: 0.0 */
 		CIMPP::PU uref0;
 
-		/** \brief Types of general wind turbine Q control modes (&lt;i&gt;M&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qG&lt;/sub&gt;&lt;/i&gt;).  It is a project-dependent parameter. Default: 0 */
+		/** \brief Types of general wind turbine Q control modes (<i>M</i><i><sub>qG</sub></i>).  It is a project-dependent parameter. Default: 0 */
 		CIMPP::WindQcontrolModeKind windQcontrolModesType;
 
-		/** \brief Types of UVRT Q control modes (&lt;i&gt;M&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qUVRT&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: 0 */
+		/** \brief Types of UVRT Q control modes (<i>M</i><i><sub>qUVRT</sub></i>). It is a project-dependent parameter. Default: 0 */
 		CIMPP::WindUVRTQcontrolModeKind windUVRTQcontrolModesType;
 
-		/** \brief Inductive component of voltage drop impedance (&lt;i&gt;x&lt;/i&gt;&lt;i&gt;&lt;sub&gt;droop&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Inductive component of voltage drop impedance (<i>x</i><i><sub>droop</sub></i>) (&gt;= 0). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU xdroop;
 
 		static const char debugName[];

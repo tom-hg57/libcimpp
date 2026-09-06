@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "DateTime.hpp"
 #include "String.hpp"
@@ -31,16 +32,16 @@ namespace CIMPP
 		Control();
 		~Control() override;
 
-		/** \brief The controller outputs used to actually govern a regulating device, e.g. the magnetization of a synchronous machine or capacitor bank breaker actuator. Default: 0 */
+		/** \brief The controller outputs used to actually govern a regulating device, e.g. the magnetization of a synchronous machine or capacitor bank breaker actuator. Default: nullptr */
 		CIMPP::PowerSystemResource* PowerSystemResource;
 
-		/** \brief Specifies the type of Control, e.g. BreakerOn/Off, GeneratorVoltageSetPoint, TieLineFlow etc. The ControlType.name shall be unique among all specified types and describe the type. Default: '' */
+		/** \brief Specifies the type of Control, e.g. BreakerOn/Off, GeneratorVoltageSetPoint, TieLineFlow etc. The ControlType.name shall be unique among all specified types and describe the type. Default: "" */
 		CIMPP::String controlType;
 
 		/** \brief Indicates that a client is currently sending control commands that has not completed. Default: false */
 		CIMPP::Boolean operationInProgress;
 
-		/** \brief The last time a control output was sent. Default: '' */
+		/** \brief The last time a control output was sent. Default: "" */
 		CIMPP::DateTime timeStamp;
 
 		/** \brief The unit multiplier of the controlled quantity. Default: 0 */

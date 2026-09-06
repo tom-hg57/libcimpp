@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class RemoteInputSignal;
@@ -27,10 +28,10 @@ namespace CIMPP
 		WindPlantDynamics();
 		~WindPlantDynamics() override;
 
-		/** \brief The wind plant using the remote signal. Default: 0 */
+		/** \brief The wind plant using the remote signal. Default: nullptr */
 		CIMPP::RemoteInputSignal* RemoteInputSignal;
 
-		/** \brief The wind turbine type 3 or 4 associated with this wind plant. Default: 0 */
+		/** \brief The wind turbine type 3 or 4 associated with this wind plant. Default: {} */
 		std::list<CIMPP::WindTurbineType3or4Dynamics*> WindTurbineType3or4Dynamics;
 
 		static const char debugName[];

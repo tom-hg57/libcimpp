@@ -19,8 +19,8 @@ static const CimClassDetails& getCimClassDetails()
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
 			CGMESProfile::EQ,
-			CGMESProfile::SV,
 			CGMESProfile::SSH,
+			CGMESProfile::SV,
 		},
 		CGMESProfile::EQ
 	);
@@ -44,7 +44,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "VsConverter.targetUpcc", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::SSH, } } },
 		{ "VsConverter.uf", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::SV, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 VsConverter::VsConverter() : CapabilityCurve(nullptr) {}

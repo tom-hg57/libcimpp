@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "FossilFuel.ThermalGeneratingUnit", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "FossilFuel.fossilFuelType", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 FossilFuel::FossilFuel() : ThermalGeneratingUnit(nullptr) {}

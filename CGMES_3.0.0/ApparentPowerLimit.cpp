@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ApparentPowerLimit.normalValue", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "ApparentPowerLimit.value", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SSH, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ApparentPowerLimit::ApparentPowerLimit() {}

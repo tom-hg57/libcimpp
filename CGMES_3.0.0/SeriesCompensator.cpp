@@ -37,7 +37,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "SeriesCompensator.x", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "SeriesCompensator.x0", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 SeriesCompensator::SeriesCompensator() {}

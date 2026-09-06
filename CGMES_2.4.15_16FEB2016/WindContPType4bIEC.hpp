@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -28,19 +29,19 @@ namespace CIMPP
 		WindContPType4bIEC();
 		~WindContPType4bIEC() override;
 
-		/** \brief Wind turbine type 4B model with which this wind control P type 4B model is associated. Default: 0 */
+		/** \brief Wind turbine type 4B model with which this wind control P type 4B model is associated. Default: nullptr */
 		CIMPP::WindTurbineType4bIEC* WindTurbineType4bIEC;
 
-		/** \brief Maximum wind turbine power ramp rate (). It is project dependent parameter. Default: nullptr */
+		/** \brief Maximum wind turbine power ramp rate (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU dpmax;
 
-		/** \brief Time constant in aerodynamic power response (). It is type dependent parameter. Default: nullptr */
+		/** \brief Time constant in aerodynamic power response (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tpaero;
 
-		/** \brief Time constant in power order lag (). It is type dependent parameter. Default: nullptr */
+		/** \brief Time constant in power order lag (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tpord;
 
-		/** \brief Voltage measurement filter time constant (). It is type dependent parameter. Default: nullptr */
+		/** \brief Voltage measurement filter time constant (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tufilt;
 
 		static const char debugName[];

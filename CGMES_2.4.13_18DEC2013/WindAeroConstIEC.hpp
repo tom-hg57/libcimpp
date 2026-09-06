@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class WindGenTurbineType1IEC;
@@ -26,7 +27,7 @@ namespace CIMPP
 		WindAeroConstIEC();
 		~WindAeroConstIEC() override;
 
-		/** \brief Wind turbine type 1 model with which this wind aerodynamic model is associated. Default: 0 */
+		/** \brief Wind turbine type 1 model with which this wind aerodynamic model is associated. Default: nullptr */
 		CIMPP::WindGenTurbineType1IEC* WindGenTurbineType1IEC;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 
 namespace CIMPP
@@ -28,10 +29,10 @@ namespace CIMPP
 		TieFlow();
 		~TieFlow() override;
 
-		/** \brief The control area of the tie flows. Default: 0 */
+		/** \brief The control area of the tie flows. Default: nullptr */
 		CIMPP::ControlArea* ControlArea;
 
-		/** \brief The terminal to which this tie flow belongs. Default: 0 */
+		/** \brief The terminal to which this tie flow belongs. Default: nullptr */
 		CIMPP::Terminal* Terminal;
 
 		/** \brief Specifies the sign of the tie flow associated with a control area. True if positive flow into the terminal (load convention) is also positive flow into the control area.  See the description of ControlArea for further explanation of how TieFlow.positiveFlowIn is used. Default: false */

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class SubGeographicalRegion;
@@ -26,7 +27,7 @@ namespace CIMPP
 		Line();
 		~Line() override;
 
-		/** \brief The lines within the sub-geographical region. Default: 0 */
+		/** \brief The lines within the sub-geographical region. Default: nullptr */
 		CIMPP::SubGeographicalRegion* Region;
 
 		static const char debugName[];

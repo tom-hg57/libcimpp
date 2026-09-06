@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class TopologicalNode;
@@ -26,10 +27,10 @@ namespace CIMPP
 		TopologicalIsland();
 		~TopologicalIsland() override;
 
-		/** \brief The angle reference for the island.   Normally there is one TopologicalNode that is selected as the angle reference for each island.   Other reference schemes exist, so the association is typically optional. Default: 0 */
+		/** \brief The angle reference for the island.   Normally there is one TopologicalNode that is selected as the angle reference for each island.   Other reference schemes exist, so the association is typically optional. Default: nullptr */
 		CIMPP::TopologicalNode* AngleRefTopologicalNode;
 
-		/** \brief A topological node belongs to a topological island. Default: 0 */
+		/** \brief A topological node belongs to a topological island. Default: {} */
 		std::list<CIMPP::TopologicalNode*> TopologicalNodes;
 
 		static const char debugName[];

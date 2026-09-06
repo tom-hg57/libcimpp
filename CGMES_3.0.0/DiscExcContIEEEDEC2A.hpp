@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,19 +28,19 @@ namespace CIMPP
 		DiscExcContIEEEDEC2A();
 		~DiscExcContIEEEDEC2A() override;
 
-		/** \brief Discontinuous controller time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;D1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Discontinuous controller time constant (<i>T</i><i><sub>D1</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds td1;
 
-		/** \brief Discontinuous controller washout time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;D2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Discontinuous controller washout time constant (<i>T</i><i><sub>D2</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds td2;
 
-		/** \brief Limiter (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;DMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; DiscExcContIEEEDEC2A.vdmin). Default: nullptr */
+		/** \brief Limiter (<i>V</i><i><sub>DMAX</sub></i>) (&gt; DiscExcContIEEEDEC2A.vdmin). Default: 0.0 */
 		CIMPP::PU vdmax;
 
-		/** \brief Limiter (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;DMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; DiscExcContIEEEDEC2A.vdmax). Default: nullptr */
+		/** \brief Limiter (<i>V</i><i><sub>DMIN</sub></i>) (&lt; DiscExcContIEEEDEC2A.vdmax). Default: 0.0 */
 		CIMPP::PU vdmin;
 
-		/** \brief Discontinuous controller input reference (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;K&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Discontinuous controller input reference (<i>V</i><i><sub>K</sub></i>). Default: 0.0 */
 		CIMPP::PU vk;
 
 		static const char debugName[];

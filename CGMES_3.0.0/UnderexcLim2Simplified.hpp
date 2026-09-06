@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 
 namespace CIMPP
@@ -26,25 +27,25 @@ namespace CIMPP
 		UnderexcLim2Simplified();
 		~UnderexcLim2Simplified() override;
 
-		/** \brief Gain Under excitation limiter (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;UI&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,1. Default: nullptr */
+		/** \brief Gain Under excitation limiter (<i>K</i><i><sub>UI</sub></i>).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::PU kui;
 
-		/** \brief Segment P initial point (&lt;i&gt;P&lt;/i&gt;&lt;i&gt;&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Segment P initial point (<i>P</i><i><sub>0</sub></i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU p0;
 
-		/** \brief Segment P end point (&lt;i&gt;P&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Segment P end point (<i>P</i><i><sub>1</sub></i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU p1;
 
-		/** \brief Segment Q initial point (&lt;i&gt;Q&lt;/i&gt;&lt;i&gt;&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;).  Typical value = -0,31. Default: nullptr */
+		/** \brief Segment Q initial point (<i>Q</i><i><sub>0</sub></i>).  Typical value = -0,31. Default: 0.0 */
 		CIMPP::PU q0;
 
-		/** \brief Segment Q end point (&lt;i&gt;Q&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;).  Typical value = -0,1. Default: nullptr */
+		/** \brief Segment Q end point (<i>Q</i><i><sub>1</sub></i>).  Typical value = -0,1. Default: 0.0 */
 		CIMPP::PU q1;
 
-		/** \brief Maximum error signal (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;UIMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; UnderexcLim2Simplified.vuimin).  Typical value = 1. Default: nullptr */
+		/** \brief Maximum error signal (<i>V</i><i><sub>UIMAX</sub></i>) (&gt; UnderexcLim2Simplified.vuimin).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU vuimax;
 
-		/** \brief Minimum error signal (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;UIMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; UnderexcLim2Simplified.vuimax).  Typical value = 0. Default: nullptr */
+		/** \brief Minimum error signal (<i>V</i><i><sub>UIMIN</sub></i>) (&lt; UnderexcLim2Simplified.vuimax).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU vuimin;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "CurrentFlow.hpp"
 
@@ -29,13 +30,13 @@ namespace CIMPP
 		Switch();
 		~Switch() override;
 
-		/** \brief The switch state associated with the switch. Default: 0 */
+		/** \brief The switch state associated with the switch. Default: {} */
 		std::list<CIMPP::SvSwitch*> SvSwitch;
 
-		/** \brief A Switch can be associated with SwitchSchedules. Default: 0 */
+		/** \brief A Switch can be associated with SwitchSchedules. Default: {} */
 		std::list<CIMPP::SwitchSchedule*> SwitchSchedules;
 
-		/** \brief If true, the switch is locked. The resulting switch state is a combination of locked and Switch.open attributes as follows: &lt;ul&gt; 	&lt;li&gt;locked=true and Switch.open=true. The resulting state is open and locked;&lt;/li&gt; 	&lt;li&gt;locked=false and Switch.open=true. The resulting state is open;&lt;/li&gt; 	&lt;li&gt;locked=false and Switch.open=false. The resulting state is closed.&lt;/li&gt; &lt;/ul&gt; Default: false */
+		/** \brief If true, the switch is locked. The resulting switch state is a combination of locked and Switch.open attributes as follows: <ul> 	<li>locked=true and Switch.open=true. The resulting state is open and locked;</li> 	<li>locked=false and Switch.open=true. The resulting state is open;</li> 	<li>locked=false and Switch.open=false. The resulting state is closed.</li> </ul> Default: false */
 		CIMPP::Boolean locked;
 
 		/** \brief The attribute is used in cases when no Measurement for the status value is present. If the Switch has a status measurement the Discrete.normalValue is expected to match with the Switch.normalOpen. Default: false */
@@ -44,7 +45,7 @@ namespace CIMPP
 		/** \brief The attribute tells if the switch is considered open when used as input to topology processing. Default: false */
 		CIMPP::Boolean open;
 
-		/** \brief The maximum continuous current carrying capacity in amps governed by the device material and construction. The attribute shall be a positive value. Default: nullptr */
+		/** \brief The maximum continuous current carrying capacity in amps governed by the device material and construction. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::CurrentFlow ratedCurrent;
 
 		/** \brief Branch is retained in the topological solution.  The flow through retained switches will normally be calculated in power flow. Default: false */

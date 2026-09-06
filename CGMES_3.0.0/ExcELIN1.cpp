@@ -44,7 +44,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ExcELIN1.vpu", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "ExcELIN1.xe", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ExcELIN1::ExcELIN1() {}

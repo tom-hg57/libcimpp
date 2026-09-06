@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,37 +28,37 @@ namespace CIMPP
 		PssPTIST1();
 		~PssPTIST1() override;
 
-		/** \brief Time step related to activation of controls (&lt;i&gt;deltatc&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,025. Default: nullptr */
+		/** \brief Time step related to activation of controls (<i>deltatc</i>) (&gt;= 0).  Typical value = 0,025. Default: 0.0 */
 		CIMPP::Seconds dtc;
 
-		/** \brief Time step frequency calculation (&lt;i&gt;deltatf&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,025. Default: nullptr */
+		/** \brief Time step frequency calculation (<i>deltatf</i>) (&gt;= 0).  Typical value = 0,025. Default: 0.0 */
 		CIMPP::Seconds dtf;
 
-		/** \brief Time step active power calculation (&lt;i&gt;deltatp&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,0125. Default: nullptr */
+		/** \brief Time step active power calculation (<i>deltatp</i>) (&gt;= 0).  Typical value = 0,0125. Default: 0.0 */
 		CIMPP::Seconds dtp;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;).  Typical value = 9. Default: nullptr */
+		/** \brief Gain (<i>K</i>).  Typical value = 9. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief (&lt;i&gt;M&lt;/i&gt;).  &lt;i&gt;M &lt;/i&gt;= 2 x &lt;i&gt;H&lt;/i&gt;.  Typical value = 5. Default: nullptr */
+		/** \brief (<i>M</i>).  <i>M </i>= 2 x <i>H</i>.  Typical value = 5. Default: 0.0 */
 		CIMPP::PU m;
 
-		/** \brief Time constant (&lt;i&gt;T1&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,3. Default: nullptr */
+		/** \brief Time constant (<i>T1</i>) (&gt;= 0).  Typical value = 0,3. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Time constant (&lt;i&gt;T2&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1. Default: nullptr */
+		/** \brief Time constant (<i>T2</i>) (&gt;= 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Time constant (&lt;i&gt;T3&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,2. Default: nullptr */
+		/** \brief Time constant (<i>T3</i>) (&gt;= 0).  Typical value = 0,2. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Time constant (&lt;i&gt;T4&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief Time constant (<i>T4</i>) (&gt;= 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Time constant (&lt;i&gt;Tf&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,2. Default: nullptr */
+		/** \brief Time constant (<i>Tf</i>) (&gt;= 0).  Typical value = 0,2. Default: 0.0 */
 		CIMPP::Seconds tf;
 
-		/** \brief Time constant (&lt;i&gt;Tp&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,2. Default: nullptr */
+		/** \brief Time constant (<i>Tp</i>) (&gt;= 0).  Typical value = 0,2. Default: 0.0 */
 		CIMPP::Seconds tp;
 
 		static const char debugName[];

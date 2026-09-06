@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 
 namespace CIMPP
@@ -28,16 +29,16 @@ namespace CIMPP
 		GenICompensationForGenJ();
 		~GenICompensationForGenJ() override;
 
-		/** \brief Standard synchronous machine out of which current flow is being compensated for. Default: 0 */
+		/** \brief Standard synchronous machine out of which current flow is being compensated for. Default: nullptr */
 		CIMPP::SynchronousMachineDynamics* SynchronousMachineDynamics;
 
-		/** \brief The standard IEEE Type 2 voltage compensator of this compensation. Default: 0 */
+		/** \brief The standard IEEE Type 2 voltage compensator of this compensation. Default: nullptr */
 		CIMPP::VCompIEEEType2* VcompIEEEType2;
 
-		/** \brief  Default: nullptr */
+		/** \brief  Default: 0.0 */
 		CIMPP::PU rcij;
 
-		/** \brief  Default: nullptr */
+		/** \brief  Default: 0.0 */
 		CIMPP::PU xcij;
 
 		static const char debugName[];

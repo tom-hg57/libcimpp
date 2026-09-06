@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,13 +28,13 @@ namespace CIMPP
 		VCompIEEEType1();
 		~VCompIEEEType1() override;
 
-		/** \brief  Default: nullptr */
+		/** \brief  Default: 0.0 */
 		CIMPP::PU rc;
 
-		/** \brief  Default: nullptr */
+		/** \brief  Default: 0.0 */
 		CIMPP::Seconds tr;
 
-		/** \brief  Default: nullptr */
+		/** \brief  Default: 0.0 */
 		CIMPP::PU xc;
 
 		static const char debugName[];

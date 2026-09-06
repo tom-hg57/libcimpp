@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,67 +28,67 @@ namespace CIMPP
 		ExcAVR7();
 		~ExcAVR7() override;
 
-		/** \brief Lead coefficient (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,5. Default: nullptr */
+		/** \brief Lead coefficient (<i>A</i><i><sub>1</sub></i>).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::PU a1;
 
-		/** \brief Lag coefficient (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,5. Default: nullptr */
+		/** \brief Lag coefficient (<i>A</i><i><sub>2</sub></i>).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::PU a2;
 
-		/** \brief Lead coefficient (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,5. Default: nullptr */
+		/** \brief Lead coefficient (<i>A</i><i><sub>3</sub></i>).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::PU a3;
 
-		/** \brief Lag coefficient (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;4&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,5. Default: nullptr */
+		/** \brief Lag coefficient (<i>A</i><i><sub>4</sub></i>).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::PU a4;
 
-		/** \brief Lead coefficient (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;5&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,5. Default: nullptr */
+		/** \brief Lead coefficient (<i>A</i><i><sub>5</sub></i>).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::PU a5;
 
-		/** \brief Lag coefficient (&lt;i&gt;A&lt;/i&gt;&lt;i&gt;&lt;sub&gt;6&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,5. Default: nullptr */
+		/** \brief Lag coefficient (<i>A</i><i><sub>6</sub></i>).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::PU a6;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Gain (<i>K</i><i><sub>1</sub></i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU k1;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;).  Typical value = 3. Default: nullptr */
+		/** \brief Gain (<i>K</i><i><sub>3</sub></i>).  Typical value = 3. Default: 0.0 */
 		CIMPP::PU k3;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;5&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Gain (<i>K</i><i><sub>5</sub></i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU k5;
 
-		/** \brief Lead time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief Lead time constant (<i>T</i><i><sub>1</sub></i>) (&gt;= 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Lag time constant (<i>T</i><i><sub>2</sub></i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Lead time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Lead time constant (<i>T</i><i><sub>3</sub></i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;4&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Lag time constant (<i>T</i><i><sub>4</sub></i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Lead time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;5&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Lead time constant (<i>T</i><i><sub>5</sub></i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;6&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Lag time constant (<i>T</i><i><sub>6</sub></i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Lead-lag maximum limit (&lt;i&gt;Vmax1&lt;/i&gt;) (&amp;gt; ExcAVR7.vmin1).  Typical value = 5. Default: nullptr */
+		/** \brief Lead-lag maximum limit (<i>Vmax1</i>) (&gt; ExcAVR7.vmin1).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU vmax1;
 
-		/** \brief Lead-lag maximum limit (&lt;i&gt;Vmax3&lt;/i&gt;) (&amp;gt; ExcAVR7.vmin3).  Typical value = 5. Default: nullptr */
+		/** \brief Lead-lag maximum limit (<i>Vmax3</i>) (&gt; ExcAVR7.vmin3).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU vmax3;
 
-		/** \brief Lead-lag maximum limit (&lt;i&gt;Vmax5&lt;/i&gt;) (&amp;gt; ExcAVR7.vmin5).  Typical value = 5. Default: nullptr */
+		/** \brief Lead-lag maximum limit (<i>Vmax5</i>) (&gt; ExcAVR7.vmin5).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU vmax5;
 
-		/** \brief Lead-lag minimum limit (&lt;i&gt;Vmin1&lt;/i&gt;) (&amp;lt; ExcAVR7.vmax1).  Typical value = -5. Default: nullptr */
+		/** \brief Lead-lag minimum limit (<i>Vmin1</i>) (&lt; ExcAVR7.vmax1).  Typical value = -5. Default: 0.0 */
 		CIMPP::PU vmin1;
 
-		/** \brief Lead-lag minimum limit (&lt;i&gt;Vmin3&lt;/i&gt;) (&amp;lt; ExcAVR7.vmax3).  Typical value = -5. Default: nullptr */
+		/** \brief Lead-lag minimum limit (<i>Vmin3</i>) (&lt; ExcAVR7.vmax3).  Typical value = -5. Default: 0.0 */
 		CIMPP::PU vmin3;
 
-		/** \brief Lead-lag minimum limit (&lt;i&gt;Vmin5&lt;/i&gt;) (&amp;lt; ExcAVR7.vmax5).  Typical value = -2. Default: nullptr */
+		/** \brief Lead-lag minimum limit (<i>Vmin5</i>) (&lt; ExcAVR7.vmax5).  Typical value = -2. Default: 0.0 */
 		CIMPP::PU vmin5;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -32,25 +33,25 @@ namespace CIMPP
 		/** \brief Overexcitation Flag () true = overexcited false = underexcited. Default: false */
 		CIMPP::Boolean ovex;
 
-		/** \brief PF controller time delay ().  Typical Value = 5. Default: nullptr */
+		/** \brief PF controller time delay ().  Typical Value = 5. Default: 0.0 */
 		CIMPP::Seconds tpfc;
 
-		/** \brief Minimum machine terminal current needed to enable pf/var controller (). Default: nullptr */
+		/** \brief Minimum machine terminal current needed to enable pf/var controller (). Default: 0.0 */
 		CIMPP::PU vitmin;
 
-		/** \brief Synchronous machine power factor (). Default: nullptr */
+		/** \brief Synchronous machine power factor (). Default: 0.0 */
 		CIMPP::PU vpf;
 
-		/** \brief PF controller dead band ().  Typical Value = 0.05. Default: nullptr */
+		/** \brief PF controller dead band ().  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::Simple_Float vpfcbw;
 
-		/** \brief PF controller reference (). Default: nullptr */
+		/** \brief PF controller reference (). Default: 0.0 */
 		CIMPP::PU vpfref;
 
-		/** \brief Maximum machine terminal voltage needed for pf/var controller to be enabled (). Default: nullptr */
+		/** \brief Maximum machine terminal voltage needed for pf/var controller to be enabled (). Default: 0.0 */
 		CIMPP::PU vvtmax;
 
-		/** \brief Minimum machine terminal voltage needed to enable pf/var controller (). Default: nullptr */
+		/** \brief Minimum machine terminal voltage needed to enable pf/var controller (). Default: 0.0 */
 		CIMPP::PU vvtmin;
 
 		static const char debugName[];

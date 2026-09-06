@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		SvSwitch();
 		~SvSwitch() override;
 
-		/** \brief The switch associated with the switch state. Default: 0 */
+		/** \brief The switch associated with the switch state. Default: nullptr */
 		CIMPP::Switch* Switch;
 
 		/** \brief The attribute tells if the computed state of the switch is considered open. Default: false */

@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Clamp.ACLineSegment", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "Clamp.lengthFromTerminal1", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Clamp::Clamp() : ACLineSegment(nullptr) {}

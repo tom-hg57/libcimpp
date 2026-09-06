@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class HydroPowerPlant;
@@ -27,10 +28,10 @@ namespace CIMPP
 		HydroPump();
 		~HydroPump() override;
 
-		/** \brief The hydro pump may be a member of a pumped storage plant or a pump for distributing water. Default: 0 */
+		/** \brief The hydro pump may be a member of a pumped storage plant or a pump for distributing water. Default: nullptr */
 		CIMPP::HydroPowerPlant* HydroPowerPlant;
 
-		/** \brief The synchronous machine drives the turbine which moves the water from a low elevation to a higher elevation. The direction of machine rotation for pumping may or may not be the same as for generating. Default: 0 */
+		/** \brief The synchronous machine drives the turbine which moves the water from a low elevation to a higher elevation. The direction of machine rotation for pumping may or may not be the same as for generating. Default: nullptr */
 		CIMPP::RotatingMachine* RotatingMachine;
 
 		static const char debugName[];

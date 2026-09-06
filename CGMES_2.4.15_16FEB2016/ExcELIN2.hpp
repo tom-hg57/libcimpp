@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,85 +28,85 @@ namespace CIMPP
 		ExcELIN2();
 		~ExcELIN2() override;
 
-		/** \brief Gain (Efdbas).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Gain (Efdbas).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU efdbas;
 
-		/** \brief Limiter (Iefmax).  Typical Value = 1. Default: nullptr */
+		/** \brief Limiter (Iefmax).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU iefmax;
 
-		/** \brief Minimum open circuit excitation voltage (Iefmax2).  Typical Value = -5. Default: nullptr */
+		/** \brief Minimum open circuit excitation voltage (Iefmax2).  Typical Value = -5. Default: 0.0 */
 		CIMPP::PU iefmax2;
 
-		/** \brief Limiter (Iefmin).  Typical Value = 1. Default: nullptr */
+		/** \brief Limiter (Iefmin).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU iefmin;
 
-		/** \brief Voltage regulator input gain (K1).  Typical Value = 0. Default: nullptr */
+		/** \brief Voltage regulator input gain (K1).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU k1;
 
-		/** \brief Voltage regulator input limit (K1ec).  Typical Value = 2. Default: nullptr */
+		/** \brief Voltage regulator input limit (K1ec).  Typical Value = 2. Default: 0.0 */
 		CIMPP::PU k1ec;
 
-		/** \brief Gain (K2).  Typical Value = 5. Default: nullptr */
+		/** \brief Gain (K2).  Typical Value = 5. Default: 0.0 */
 		CIMPP::PU k2;
 
-		/** \brief Gain (K3).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Gain (K3).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU k3;
 
-		/** \brief Gain (K4).  Typical Value = 0. Default: nullptr */
+		/** \brief Gain (K4).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU k4;
 
-		/** \brief Voltage controller derivative gain (Kd1).  Typical Value = 34.5. Default: nullptr */
+		/** \brief Voltage controller derivative gain (Kd1).  Typical Value = 34.5. Default: 0.0 */
 		CIMPP::PU kd1;
 
-		/** \brief Gain (Ke2).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Gain (Ke2).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU ke2;
 
-		/** \brief Gain (Ketb).  Typical Value = 0.06. Default: nullptr */
+		/** \brief Gain (Ketb).  Typical Value = 0.06. Default: 0.0 */
 		CIMPP::PU ketb;
 
-		/** \brief Controller follow up gain (PID1max).  Typical Value = 2. Default: nullptr */
+		/** \brief Controller follow up gain (PID1max).  Typical Value = 2. Default: 0.0 */
 		CIMPP::PU pid1max;
 
-		/** \brief Exciter saturation function value at the corresponding exciter voltage, Ve1, back of commutating reactance (Se[Ve1]).  Typical Value = 0. Default: nullptr */
+		/** \brief Exciter saturation function value at the corresponding exciter voltage, Ve1, back of commutating reactance (Se[Ve1]).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU seve1;
 
-		/** \brief Exciter saturation function value at the corresponding exciter voltage, Ve2, back of commutating reactance (Se[Ve2]).  Typical Value = 1. Default: nullptr */
+		/** \brief Exciter saturation function value at the corresponding exciter voltage, Ve2, back of commutating reactance (Se[Ve2]).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU seve2;
 
-		/** \brief Voltage controller derivative washout time constant (Tb1).  Typical Value = 12.45. Default: nullptr */
+		/** \brief Voltage controller derivative washout time constant (Tb1).  Typical Value = 12.45. Default: 0.0 */
 		CIMPP::Seconds tb1;
 
-		/** \brief Time constant (Te).  Typical Value = 0. Default: nullptr */
+		/** \brief Time constant (Te).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Time Constant (Te2).  Typical Value = 1. Default: nullptr */
+		/** \brief Time Constant (Te2).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds te2;
 
-		/** \brief Controller follow up dead band (Ti1).  Typical Value = 0. Default: nullptr */
+		/** \brief Controller follow up dead band (Ti1).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU ti1;
 
-		/** \brief Time constant (Ti3).  Typical Value = 3. Default: nullptr */
+		/** \brief Time constant (Ti3).  Typical Value = 3. Default: 0.0 */
 		CIMPP::Seconds ti3;
 
-		/** \brief Time constant (Ti4).  Typical Value = 0. Default: nullptr */
+		/** \brief Time constant (Ti4).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ti4;
 
-		/** \brief Time constant (Tr4).  Typical Value = 1. Default: nullptr */
+		/** \brief Time constant (Tr4).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds tr4;
 
-		/** \brief Limiter (Upmax).  Typical Value = 3. Default: nullptr */
+		/** \brief Limiter (Upmax).  Typical Value = 3. Default: 0.0 */
 		CIMPP::PU upmax;
 
-		/** \brief Limiter (Upmin).  Typical Value = 0. Default: nullptr */
+		/** \brief Limiter (Upmin).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU upmin;
 
-		/** \brief Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve1).  Typical Value = 3. Default: nullptr */
+		/** \brief Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve1).  Typical Value = 3. Default: 0.0 */
 		CIMPP::PU ve1;
 
-		/** \brief Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve2).  Typical Value = 0. Default: nullptr */
+		/** \brief Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve2).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU ve2;
 
-		/** \brief Excitation transformer effective reactance (Xp).  Typical Value = 1. Default: nullptr */
+		/** \brief Excitation transformer effective reactance (Xp).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU xp;
 
 		static const char debugName[];

@@ -36,7 +36,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "UnderexcLimX2.tf2", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "UnderexcLimX2.tm", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 UnderexcLimX2::UnderexcLimX2() {}

@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Season.endDate", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "Season.startDate", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Season::Season() {}

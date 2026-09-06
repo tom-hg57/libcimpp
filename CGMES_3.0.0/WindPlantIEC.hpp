@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class WindPlantFreqPcontrolIEC;
@@ -27,10 +28,10 @@ namespace CIMPP
 		WindPlantIEC();
 		~WindPlantIEC() override;
 
-		/** \brief Wind plant frequency and active power control model associated with this wind plant. Default: 0 */
+		/** \brief Wind plant frequency and active power control model associated with this wind plant. Default: nullptr */
 		CIMPP::WindPlantFreqPcontrolIEC* WindPlantFreqPcontrolIEC;
 
-		/** \brief Wind plant model with which this wind reactive control is associated. Default: 0 */
+		/** \brief Wind plant model with which this wind reactive control is associated. Default: nullptr */
 		CIMPP::WindPlantReactiveControlIEC* WindPlantReactiveControlIEC;
 
 		static const char debugName[];

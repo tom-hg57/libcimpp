@@ -18,8 +18,8 @@ static const CimClassDetails& getCimClassDetails()
 		StaticVarCompensator(),
 		"http://iec.ch/TC57/CIM100#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::SSH,
 		},
 		CGMESProfile::EQ
@@ -39,7 +39,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "StaticVarCompensator.slope", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "StaticVarCompensator.voltageSetPoint", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 StaticVarCompensator::StaticVarCompensator() : StaticVarCompensatorDynamics(nullptr) {}

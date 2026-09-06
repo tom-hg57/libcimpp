@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PerCent.hpp"
 #include "Reactance.hpp"
 
@@ -27,13 +28,13 @@ namespace CIMPP
 		PhaseTapChangerNonLinear();
 		~PhaseTapChangerNonLinear() override;
 
-		/** \brief The voltage step increment on the out of phase winding specified in percent of nominal voltage of the transformer end. Default: nullptr */
+		/** \brief The voltage step increment on the out of phase winding specified in percent of nominal voltage of the transformer end. Default: 0.0 */
 		CIMPP::PerCent voltageStepIncrement;
 
-		/** \brief The reactance depend on the tap position according to a `u` shaped curve. The maximum reactance (xMax) appear at the low and high tap positions. Default: nullptr */
+		/** \brief The reactance depend on the tap position according to a `u` shaped curve. The maximum reactance (xMax) appear at the low and high tap positions. Default: 0.0 */
 		CIMPP::Reactance xMax;
 
-		/** \brief The reactance depend on the tap position according to a `u` shaped curve. The minimum reactance (xMin) appear at the mid tap position. Default: nullptr */
+		/** \brief The reactance depend on the tap position according to a `u` shaped curve. The minimum reactance (xMin) appear at the mid tap position. Default: 0.0 */
 		CIMPP::Reactance xMin;
 
 		static const char debugName[];

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class DiagramObjectPoint;
@@ -26,7 +27,7 @@ namespace CIMPP
 		DiagramObjectGluePoint();
 		~DiagramObjectGluePoint() override;
 
-		/** \brief The `glue` point to which this point is associated. Default: 0 */
+		/** \brief The `glue` point to which this point is associated. Default: {} */
 		std::list<CIMPP::DiagramObjectPoint*> DiagramObjectPoints;
 
 		static const char debugName[];

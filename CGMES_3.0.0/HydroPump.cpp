@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "HydroPump.HydroPowerPlant", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "HydroPump.RotatingMachine", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 HydroPump::HydroPump() : HydroPowerPlant(nullptr), RotatingMachine(nullptr) {}

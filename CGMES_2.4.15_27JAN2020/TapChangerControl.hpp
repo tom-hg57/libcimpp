@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class TapChanger;
@@ -26,7 +27,7 @@ namespace CIMPP
 		TapChangerControl();
 		~TapChangerControl() override;
 
-		/** \brief The regulating control scheme in which this tap changer participates. Default: 0 */
+		/** \brief The regulating control scheme in which this tap changer participates. Default: {} */
 		std::list<CIMPP::TapChanger*> TapChanger;
 
 		static const char debugName[];

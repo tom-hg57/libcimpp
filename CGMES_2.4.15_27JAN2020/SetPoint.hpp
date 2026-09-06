@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Simple_Float.hpp"
 
 namespace CIMPP
@@ -26,10 +27,10 @@ namespace CIMPP
 		SetPoint();
 		~SetPoint() override;
 
-		/** \brief Normal value for Control.value e.g. used for percentage scaling. Default: nullptr */
+		/** \brief Normal value for Control.value e.g. used for percentage scaling. Default: 0.0 */
 		CIMPP::Simple_Float normalValue;
 
-		/** \brief The value representing the actuator output. Default: nullptr */
+		/** \brief The value representing the actuator output. Default: 0.0 */
 		CIMPP::Simple_Float value;
 
 		static const char debugName[];

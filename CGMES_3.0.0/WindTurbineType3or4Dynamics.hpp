@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class PowerElectronicsConnection;
@@ -28,13 +29,13 @@ namespace CIMPP
 		WindTurbineType3or4Dynamics();
 		~WindTurbineType3or4Dynamics() override;
 
-		/** \brief The power electronics connection associated with this wind turbine type 3 or type 4 dynamics model. Default: 0 */
+		/** \brief The power electronics connection associated with this wind turbine type 3 or type 4 dynamics model. Default: nullptr */
 		CIMPP::PowerElectronicsConnection* PowerElectronicsConnection;
 
-		/** \brief Remote input signal used by these wind turbine type 3 or type 4 models. Default: 0 */
+		/** \brief Remote input signal used by these wind turbine type 3 or type 4 models. Default: nullptr */
 		CIMPP::RemoteInputSignal* RemoteInputSignal;
 
-		/** \brief The wind plant with which the wind turbines type 3 or type 4 are associated. Default: 0 */
+		/** \brief The wind plant with which the wind turbines type 3 or type 4 are associated. Default: nullptr */
 		CIMPP::WindPlantDynamics* WindPlantDynamics;
 
 		static const char debugName[];

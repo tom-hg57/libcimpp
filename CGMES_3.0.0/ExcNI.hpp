@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,34 +29,34 @@ namespace CIMPP
 		ExcNI();
 		~ExcNI() override;
 
-		/** \brief Fed by selector (&lt;i&gt;BusFedSelector&lt;/i&gt;).  true = bus fed (switch is closed) false = solid fed (switch is open). Typical value = true. Default: false */
+		/** \brief Fed by selector (<i>BusFedSelector</i>).  true = bus fed (switch is closed) false = solid fed (switch is open). Typical value = true. Default: false */
 		CIMPP::Boolean busFedSelector;
 
-		/** \brief Voltage regulator gain (&lt;i&gt;Ka&lt;/i&gt;) (&amp;gt; 0).  Typical value = 210. Default: nullptr */
+		/** \brief Voltage regulator gain (<i>Ka</i>) (&gt; 0).  Typical value = 210. Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Excitation control system stabilizer gain (&lt;i&gt;Kf&lt;/i&gt;) (&amp;gt; 0).  Typical value 0,01. Default: nullptr */
+		/** \brief Excitation control system stabilizer gain (<i>Kf</i>) (&gt; 0).  Typical value 0,01. Default: 0.0 */
 		CIMPP::PU kf;
 
-		/** \brief &lt;i&gt;rc&lt;/i&gt; / &lt;i&gt;rfd&lt;/i&gt; (&lt;i&gt;R&lt;/i&gt;) (&amp;gt;= 0).  0 means exciter has negative current capability &amp;gt; 0 means exciter does not have negative current capability.   Typical value = 5. Default: nullptr */
+		/** \brief <i>rc</i> / <i>rfd</i> (<i>R</i>) (&gt;= 0).  0 means exciter has negative current capability &gt; 0 means exciter does not have negative current capability.   Typical value = 5. Default: 0.0 */
 		CIMPP::PU r;
 
-		/** \brief Voltage regulator time constant (&lt;i&gt;Ta&lt;/i&gt;) (&amp;gt; 0).  Typical value = 0,02. Default: nullptr */
+		/** \brief Voltage regulator time constant (<i>Ta</i>) (&gt; 0).  Typical value = 0,02. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Excitation control system stabilizer time constant (&lt;i&gt;Tf1&lt;/i&gt;) (&amp;gt; 0). Typical value = 1,0. Default: nullptr */
+		/** \brief Excitation control system stabilizer time constant (<i>Tf1</i>) (&gt; 0). Typical value = 1,0. Default: 0.0 */
 		CIMPP::Seconds tf1;
 
-		/** \brief Excitation control system stabilizer time constant (&lt;i&gt;Tf2&lt;/i&gt;) (&amp;gt; 0). Typical value = 0,1. Default: nullptr */
+		/** \brief Excitation control system stabilizer time constant (<i>Tf2</i>) (&gt; 0). Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds tf2;
 
-		/** \brief Time constant (&lt;i&gt;Tr&lt;/i&gt;) (&amp;gt;= 0). Typical value = 0,02. Default: nullptr */
+		/** \brief Time constant (<i>Tr</i>) (&gt;= 0). Typical value = 0,02. Default: 0.0 */
 		CIMPP::Seconds tr;
 
-		/** \brief Maximum voltage regulator ouput (&lt;i&gt;Vrmax&lt;/i&gt;) (&amp;gt; ExcNI.vrmin). Typical value = 5,0. Default: nullptr */
+		/** \brief Maximum voltage regulator ouput (<i>Vrmax</i>) (&gt; ExcNI.vrmin). Typical value = 5,0. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator ouput (&lt;i&gt;Vrmin&lt;/i&gt;) (&amp;lt; ExcNI.vrmax). Typical value = -2,0. Default: nullptr */
+		/** \brief Minimum voltage regulator ouput (<i>Vrmin</i>) (&lt; ExcNI.vrmax). Typical value = -2,0. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

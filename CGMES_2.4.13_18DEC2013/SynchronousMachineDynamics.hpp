@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class ExcitationSystemDynamics;
@@ -30,19 +31,19 @@ namespace CIMPP
 		SynchronousMachineDynamics();
 		~SynchronousMachineDynamics() override;
 
-		/** \brief Excitation system model associated with this synchronous machine model. Default: 0 */
+		/** \brief Excitation system model associated with this synchronous machine model. Default: nullptr */
 		CIMPP::ExcitationSystemDynamics* ExcitationSystemDynamics;
 
-		/** \brief Compensation of voltage compensator`s generator for current flow out of this  generator. Default: 0 */
+		/** \brief Compensation of voltage compensator`s generator for current flow out of this  generator. Default: {} */
 		std::list<CIMPP::GenICompensationForGenJ*> GenICompensationForGenJ;
 
-		/** \brief Mechanical load model associated with this synchronous machine model. Default: 0 */
+		/** \brief Mechanical load model associated with this synchronous machine model. Default: nullptr */
 		CIMPP::MechanicalLoadDynamics* MechanicalLoadDynamics;
 
-		/** \brief Synchronous machine to which synchronous machine dynamics model applies. Default: 0 */
+		/** \brief Synchronous machine to which synchronous machine dynamics model applies. Default: nullptr */
 		CIMPP::SynchronousMachine* SynchronousMachine;
 
-		/** \brief Synchronous machine model with which this turbine-governor model is associated. Default: 0 */
+		/** \brief Synchronous machine model with which this turbine-governor model is associated. Default: {} */
 		std::list<CIMPP::TurbineGovernorDynamics*> TurbineGovernorDynamics;
 
 		static const char debugName[];

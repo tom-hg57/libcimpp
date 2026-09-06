@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class SolarPowerPlant;
@@ -26,7 +27,7 @@ namespace CIMPP
 		SolarGeneratingUnit();
 		~SolarGeneratingUnit() override;
 
-		/** \brief A solar power plant may have solar generating units. Default: 0 */
+		/** \brief A solar power plant may have solar generating units. Default: nullptr */
 		CIMPP::SolarPowerPlant* SolarPowerPlant;
 
 		static const char debugName[];

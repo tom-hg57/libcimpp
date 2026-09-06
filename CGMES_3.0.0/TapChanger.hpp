@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Float.hpp"
 #include "Integer.hpp"
@@ -32,13 +33,13 @@ namespace CIMPP
 		TapChanger();
 		~TapChanger() override;
 
-		/** \brief The tap step state associated with the tap changer. Default: 0 */
+		/** \brief The tap step state associated with the tap changer. Default: nullptr */
 		CIMPP::SvTapStep* SvTapStep;
 
-		/** \brief The regulating control scheme in which this tap changer participates. Default: 0 */
+		/** \brief The regulating control scheme in which this tap changer participates. Default: nullptr */
 		CIMPP::TapChangerControl* TapChangerControl;
 
-		/** \brief A TapChanger can have TapSchedules. Default: 0 */
+		/** \brief A TapChanger can have TapSchedules. Default: {} */
 		std::list<CIMPP::TapSchedule*> TapSchedules;
 
 		/** \brief Specifies the regulation status of the equipment.  True is regulating, false is not regulating. Default: false */
@@ -56,7 +57,7 @@ namespace CIMPP
 		/** \brief The neutral tap step position for this winding. The attribute shall be equal to or greater than lowStep and equal or less than highStep. It is the step position where the voltage is neutralU when the other terminals of the transformer are at the ratedU.  If there are other tap changers on the transformer those taps are kept constant at their neutralStep. Default: 0 */
 		CIMPP::Integer neutralStep;
 
-		/** \brief Voltage at which the winding operates at the neutral tap setting. It is the voltage at the terminal of the PowerTransformerEnd associated with the tap changer when all tap changers on the transformer are at their neutralStep position.  Normally neutralU of the tap changer is the same as ratedU of the PowerTransformerEnd, but it can differ in special cases such as when the tapping mechanism is separate from the winding more common on lower voltage transformers. This attribute is not relevant for PhaseTapChangerAsymmetrical, PhaseTapChangerSymmetrical and PhaseTapChangerLinear. Default: nullptr */
+		/** \brief Voltage at which the winding operates at the neutral tap setting. It is the voltage at the terminal of the PowerTransformerEnd associated with the tap changer when all tap changers on the transformer are at their neutralStep position.  Normally neutralU of the tap changer is the same as ratedU of the PowerTransformerEnd, but it can differ in special cases such as when the tapping mechanism is separate from the winding more common on lower voltage transformers. This attribute is not relevant for PhaseTapChangerAsymmetrical, PhaseTapChangerSymmetrical and PhaseTapChangerLinear. Default: 0.0 */
 		CIMPP::Voltage neutralU;
 
 		/** \brief The tap step position used in `normal` network operation for this winding. For a `Fixed` tap changer indicates the current physical tap setting. The attribute shall be equal to or greater than lowStep and equal to or less than highStep. Default: 0 */

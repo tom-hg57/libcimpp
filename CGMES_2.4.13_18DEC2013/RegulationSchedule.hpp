@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class RegulatingControl;
@@ -26,7 +27,7 @@ namespace CIMPP
 		RegulationSchedule();
 		~RegulationSchedule() override;
 
-		/** \brief Regulating controls that have this Schedule. Default: 0 */
+		/** \brief Regulating controls that have this Schedule. Default: nullptr */
 		CIMPP::RegulatingControl* RegulatingControl;
 
 		static const char debugName[];

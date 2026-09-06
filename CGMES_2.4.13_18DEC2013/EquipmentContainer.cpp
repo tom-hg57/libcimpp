@@ -18,8 +18,8 @@ static const CimClassDetails& getCimClassDetails()
 		EquipmentContainer(),
 		"http://iec.ch/TC57/2013/CIM-schema-cim16#",
 		{
-			CGMESProfile::EQ_BD,
 			CGMESProfile::EQ,
+			CGMESProfile::EQ_BD,
 		},
 		CGMESProfile::EQ
 	);
@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	{
 		{ "EquipmentContainer.Equipments", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 EquipmentContainer::EquipmentContainer() {}

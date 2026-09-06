@@ -20,8 +20,8 @@ static const CimClassDetails& getCimClassDetails()
 		ACDCTerminal(),
 		"http://iec.ch/TC57/CIM100#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::EQBD,
 			CGMESProfile::OP,
 			CGMESProfile::SC,
@@ -44,7 +44,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ACDCTerminal.connected", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SSH, } } },
 		{ "ACDCTerminal.sequenceNumber", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ACDCTerminal::ACDCTerminal() : BusNameMarker(nullptr) {}

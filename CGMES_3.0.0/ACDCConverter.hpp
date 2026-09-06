@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "ActivePowerPerCurrentFlow.hpp"
 #include "ApparentPower.hpp"
@@ -35,67 +36,67 @@ namespace CIMPP
 		ACDCConverter();
 		~ACDCConverter() override;
 
-		/** \brief A DC converter have DC converter terminals. A converter has two DC converter terminals. Default: 0 */
+		/** \brief A DC converter have DC converter terminals. A converter has two DC converter terminals. Default: {} */
 		std::list<CIMPP::ACDCConverterDCTerminal*> DCTerminals;
 
-		/** \brief Point of common coupling terminal for this converter DC side. It is typically the terminal on the power transformer (or switch) closest to the AC network. Default: 0 */
+		/** \brief Point of common coupling terminal for this converter DC side. It is typically the terminal on the power transformer (or switch) closest to the AC network. Default: nullptr */
 		CIMPP::Terminal* PccTerminal;
 
-		/** \brief Base apparent power of the converter pole. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Base apparent power of the converter pole. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::ApparentPower baseS;
 
-		/** \brief Converter DC current, also called Id. It is converter`s state variable, result from power flow. Default: nullptr */
+		/** \brief Converter DC current, also called Id. It is converter`s state variable, result from power flow. Default: 0.0 */
 		CIMPP::CurrentFlow idc;
 
-		/** \brief Active power loss in pole at no power transfer. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Active power loss in pole at no power transfer. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::ActivePower idleLoss;
 
-		/** \brief Maximum active power limit. The value is overwritten by values of VsCapabilityCurve, if present. Default: nullptr */
+		/** \brief Maximum active power limit. The value is overwritten by values of VsCapabilityCurve, if present. Default: 0.0 */
 		CIMPP::ActivePower maxP;
 
-		/** \brief The maximum voltage on the DC side at which the converter should operate. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief The maximum voltage on the DC side at which the converter should operate. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Voltage maxUdc;
 
-		/** \brief Minimum active power limit. The value is overwritten by values of VsCapabilityCurve, if present. Default: nullptr */
+		/** \brief Minimum active power limit. The value is overwritten by values of VsCapabilityCurve, if present. Default: 0.0 */
 		CIMPP::ActivePower minP;
 
-		/** \brief The minimum voltage on the DC side at which the converter should operate. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief The minimum voltage on the DC side at which the converter should operate. It is converter`s configuration data used in power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Voltage minUdc;
 
 		/** \brief Number of valves in the converter. Used in loss calculations. Default: 0 */
 		CIMPP::Integer numberOfValves;
 
-		/** \brief Active power at the point of common coupling. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution in the case a simplified power flow model is used. Default: nullptr */
+		/** \brief Active power at the point of common coupling. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution in the case a simplified power flow model is used. Default: 0.0 */
 		CIMPP::ActivePower p;
 
-		/** \brief The active power loss at a DC Pole  = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2. For lossless operation Pdc=Pac. For rectifier operation with losses Pdc=Pac-lossP. For inverter operation with losses Pdc=Pac+lossP. It is converter`s state variable used in power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief The active power loss at a DC Pole  = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2. For lossless operation Pdc=Pac. For rectifier operation with losses Pdc=Pac-lossP. For inverter operation with losses Pdc=Pac+lossP. It is converter`s state variable used in power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::ActivePower poleLossP;
 
-		/** \brief Reactive power at the point of common coupling. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution in the case a simplified power flow model is used. Default: nullptr */
+		/** \brief Reactive power at the point of common coupling. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution in the case a simplified power flow model is used. Default: 0.0 */
 		CIMPP::ReactivePower q;
 
-		/** \brief Rated converter DC voltage, also called UdN. The attribute shall be a positive value. It is converter`s configuration data used in power flow. For instance a bipolar HVDC link with value  200 kV has a 400kV difference between the dc lines. Default: nullptr */
+		/** \brief Rated converter DC voltage, also called UdN. The attribute shall be a positive value. It is converter`s configuration data used in power flow. For instance a bipolar HVDC link with value  200 kV has a 400kV difference between the dc lines. Default: 0.0 */
 		CIMPP::Voltage ratedUdc;
 
-		/** \brief It is converter`s configuration data used in power flow. Refer to poleLossP. The attribute shall be a positive value. Default: nullptr */
+		/** \brief It is converter`s configuration data used in power flow. Refer to poleLossP. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Resistance resistiveLoss;
 
-		/** \brief Switching losses, relative to the base apparent power `baseS`. Refer to poleLossP. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Switching losses, relative to the base apparent power `baseS`. Refer to poleLossP. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::ActivePowerPerCurrentFlow switchingLoss;
 
-		/** \brief Real power injection target in AC grid, at point of common coupling.  Load sign convention is used, i.e. positive sign means flow out from a node. Default: nullptr */
+		/** \brief Real power injection target in AC grid, at point of common coupling.  Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0 */
 		CIMPP::ActivePower targetPpcc;
 
-		/** \brief Target value for DC voltage magnitude. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Target value for DC voltage magnitude. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Voltage targetUdc;
 
-		/** \brief Line-to-line converter voltage, the voltage at the AC side of the valve. It is converter`s state variable, result from power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Line-to-line converter voltage, the voltage at the AC side of the valve. It is converter`s state variable, result from power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Voltage uc;
 
-		/** \brief Converter voltage at the DC side, also called Ud. It is converter`s state variable, result from power flow. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Converter voltage at the DC side, also called Ud. It is converter`s state variable, result from power flow. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Voltage udc;
 
-		/** \brief Valve threshold voltage, also called Uvalve. Forward voltage drop when the valve is conducting. Used in loss calculations, i.e. the switchLoss depend on numberOfValves * valveU0. Default: nullptr */
+		/** \brief Valve threshold voltage, also called Uvalve. Forward voltage drop when the valve is conducting. Used in loss calculations, i.e. the switchLoss depend on numberOfValves * valveU0. Default: 0.0 */
 		CIMPP::Voltage valveU0;
 
 		static const char debugName[];

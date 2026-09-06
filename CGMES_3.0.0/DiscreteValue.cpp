@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "DiscreteValue.Command", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 		{ "DiscreteValue.Discrete", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 DiscreteValue::DiscreteValue() : Command(nullptr), Discrete(nullptr) {}

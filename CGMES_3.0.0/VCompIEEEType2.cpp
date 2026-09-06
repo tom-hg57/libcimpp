@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "VCompIEEEType2.GenICompensationForGenJ", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "VCompIEEEType2.tr", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 VCompIEEEType2::VCompIEEEType2() {}

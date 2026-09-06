@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "DateTime.hpp"
 #include "PerCent.hpp"
 
@@ -29,16 +30,16 @@ namespace CIMPP
 		MeasurementValue();
 		~MeasurementValue() override;
 
-		/** \brief A MeasurementValue has a MeasurementValueQuality associated with it. Default: 0 */
+		/** \brief A MeasurementValue has a MeasurementValueQuality associated with it. Default: nullptr */
 		CIMPP::MeasurementValueQuality* MeasurementValueQuality;
 
-		/** \brief The MeasurementValues updated by the source. Default: 0 */
+		/** \brief The MeasurementValues updated by the source. Default: nullptr */
 		CIMPP::MeasurementValueSource* MeasurementValueSource;
 
-		/** \brief The limit, expressed as a percentage of the sensor maximum, that errors will not exceed when the sensor is used under  reference conditions. Default: nullptr */
+		/** \brief The limit, expressed as a percentage of the sensor maximum, that errors will not exceed when the sensor is used under  reference conditions. Default: 0.0 */
 		CIMPP::PerCent sensorAccuracy;
 
-		/** \brief The time when the value was last updated Default: '' */
+		/** \brief The time when the value was last updated Default: "" */
 		CIMPP::DateTime timeStamp;
 
 		static const char debugName[];

@@ -38,7 +38,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ThermalGeneratingUnit.CombinedCyclePlant", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "ThermalGeneratingUnit.FossilFuels", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ThermalGeneratingUnit::ThermalGeneratingUnit() : CAESPlant(nullptr), CogenerationPlant(nullptr), CombinedCyclePlant(nullptr) {}

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class LoadArea;
@@ -27,10 +28,10 @@ namespace CIMPP
 		SubLoadArea();
 		~SubLoadArea() override;
 
-		/** \brief The LoadArea where the SubLoadArea belongs. Default: 0 */
+		/** \brief The LoadArea where the SubLoadArea belongs. Default: nullptr */
 		CIMPP::LoadArea* LoadArea;
 
-		/** \brief The Loadgroups in the SubLoadArea. Default: 0 */
+		/** \brief The Loadgroups in the SubLoadArea. Default: {} */
 		std::list<CIMPP::LoadGroup*> LoadGroups;
 
 		static const char debugName[];

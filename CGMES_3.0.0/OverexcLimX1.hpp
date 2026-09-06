@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,34 +28,34 @@ namespace CIMPP
 		OverexcLimX1();
 		~OverexcLimX1() override;
 
-		/** \brief Low voltage point on the inverse time characteristic (&lt;i&gt;EFD&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,1. Default: nullptr */
+		/** \brief Low voltage point on the inverse time characteristic (<i>EFD</i><i><sub>1</sub></i>).  Typical value = 1,1. Default: 0.0 */
 		CIMPP::PU efd1;
 
-		/** \brief Mid voltage point on the inverse time characteristic (&lt;i&gt;EFD&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,2. Default: nullptr */
+		/** \brief Mid voltage point on the inverse time characteristic (<i>EFD</i><i><sub>2</sub></i>).  Typical value = 1,2. Default: 0.0 */
 		CIMPP::PU efd2;
 
-		/** \brief High voltage point on the inverse time characteristic (&lt;i&gt;EFD&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,5. Default: nullptr */
+		/** \brief High voltage point on the inverse time characteristic (<i>EFD</i><i><sub>3</sub></i>).  Typical value = 1,5. Default: 0.0 */
 		CIMPP::PU efd3;
 
-		/** \brief Desired field voltage (&lt;i&gt;EFD&lt;/i&gt;&lt;i&gt;&lt;sub&gt;DES&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,9. Default: nullptr */
+		/** \brief Desired field voltage (<i>EFD</i><i><sub>DES</sub></i>).  Typical value = 0,9. Default: 0.0 */
 		CIMPP::PU efddes;
 
-		/** \brief Rated field voltage (&lt;i&gt;EFD&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RATED&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,05. Default: nullptr */
+		/** \brief Rated field voltage (<i>EFD</i><i><sub>RATED</sub></i>).  Typical value = 1,05. Default: 0.0 */
 		CIMPP::PU efdrated;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;MX&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,01. Default: nullptr */
+		/** \brief Gain (<i>K</i><i><sub>MX</sub></i>).  Typical value = 0,01. Default: 0.0 */
 		CIMPP::PU kmx;
 
-		/** \brief Time to trip the exciter at the low voltage point on the inverse time characteristic (&lt;i&gt;TIME&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 120. Default: nullptr */
+		/** \brief Time to trip the exciter at the low voltage point on the inverse time characteristic (<i>TIME</i><i><sub>1</sub></i>) (&gt;= 0).  Typical value = 120. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Time to trip the exciter at the mid voltage point on the inverse time characteristic (&lt;i&gt;TIME&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 40. Default: nullptr */
+		/** \brief Time to trip the exciter at the mid voltage point on the inverse time characteristic (<i>TIME</i><i><sub>2</sub></i>) (&gt;= 0).  Typical value = 40. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Time to trip the exciter at the high voltage point on the inverse time characteristic (&lt;i&gt;TIME&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 15. Default: nullptr */
+		/** \brief Time to trip the exciter at the high voltage point on the inverse time characteristic (<i>TIME</i><i><sub>3</sub></i>) (&gt;= 0).  Typical value = 15. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Low voltage limit (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;LOW&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0). Default: nullptr */
+		/** \brief Low voltage limit (<i>V</i><i><sub>LOW</sub></i>) (&gt; 0). Default: 0.0 */
 		CIMPP::PU vlow;
 
 		static const char debugName[];

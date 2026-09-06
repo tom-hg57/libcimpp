@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Integer.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		AccumulatorLimit();
 		~AccumulatorLimit() override;
 
-		/** \brief The set of limits. Default: 0 */
+		/** \brief The set of limits. Default: nullptr */
 		CIMPP::AccumulatorLimitSet* LimitSet;
 
 		/** \brief The value to supervise against. The value is positive. Default: 0 */

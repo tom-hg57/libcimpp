@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class OperationalLimitSet;
@@ -27,10 +28,10 @@ namespace CIMPP
 		OperationalLimit();
 		~OperationalLimit() override;
 
-		/** \brief The limit set to which the limit values belong. Default: 0 */
+		/** \brief The limit set to which the limit values belong. Default: nullptr */
 		CIMPP::OperationalLimitSet* OperationalLimitSet;
 
-		/** \brief The limit type associated with this limit. Default: 0 */
+		/** \brief The limit type associated with this limit. Default: nullptr */
 		CIMPP::OperationalLimitType* OperationalLimitType;
 
 		static const char debugName[];

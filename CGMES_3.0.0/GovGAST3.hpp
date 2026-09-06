@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -29,67 +30,67 @@ namespace CIMPP
 		GovGAST3();
 		~GovGAST3() override;
 
-		/** \brief Acceleration limit set-point (&lt;i&gt;Bca&lt;/i&gt;).  Unit = 1/s.  Typical value = 0,01. Default: 0.0 */
+		/** \brief Acceleration limit set-point (<i>Bca</i>).  Unit = 1/s.  Typical value = 0,01. Default: 0.0 */
 		CIMPP::Float bca;
 
-		/** \brief Droop (&lt;i&gt;bp&lt;/i&gt;).  Typical value = 0,05. Default: nullptr */
+		/** \brief Droop (<i>bp</i>).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::PU bp;
 
-		/** \brief Exhaust temperature variation due to fuel flow increasing from 0 to 1 PU (&lt;i&gt;deltaTc&lt;/i&gt;).  Typical value = 390. Default: nullptr */
+		/** \brief Exhaust temperature variation due to fuel flow increasing from 0 to 1 PU (<i>deltaTc</i>).  Typical value = 390. Default: 0.0 */
 		CIMPP::Temperature dtc;
 
-		/** \brief Minimum fuel flow (&lt;i&gt;Ka&lt;/i&gt;).  Typical value = 0,23. Default: nullptr */
+		/** \brief Minimum fuel flow (<i>Ka</i>).  Typical value = 0,23. Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Fuel system feedback (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;AC&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0. Default: 0.0 */
+		/** \brief Fuel system feedback (<i>K</i><i><sub>AC</sub></i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::Float kac;
 
-		/** \brief Acceleration control integral gain (&lt;i&gt;Kca&lt;/i&gt;). Unit = 1/s.  Typical value = 100. Default: 0.0 */
+		/** \brief Acceleration control integral gain (<i>Kca</i>). Unit = 1/s.  Typical value = 100. Default: 0.0 */
 		CIMPP::Float kca;
 
-		/** \brief Gain of radiation shield (&lt;i&gt;Ksi&lt;/i&gt;).  Typical value = 0,8. Default: 0.0 */
+		/** \brief Gain of radiation shield (<i>Ksi</i>).  Typical value = 0,8. Default: 0.0 */
 		CIMPP::Float ksi;
 
-		/** \brief Coefficient of transfer function of fuel valve positioner (&lt;i&gt;Ky&lt;/i&gt;).  Typical value = 1. Default: 0.0 */
+		/** \brief Coefficient of transfer function of fuel valve positioner (<i>Ky</i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::Float ky;
 
-		/** \brief Fuel flow maximum negative error value (&lt;i&gt;MNef&lt;/i&gt;).  Typical value = -0,05. Default: nullptr */
+		/** \brief Fuel flow maximum negative error value (<i>MNef</i>).  Typical value = -0,05. Default: 0.0 */
 		CIMPP::PU mnef;
 
-		/** \brief Fuel flow maximum positive error value (&lt;i&gt;MXef&lt;/i&gt;).  Typical value = 0,05. Default: nullptr */
+		/** \brief Fuel flow maximum positive error value (<i>MXef</i>).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::PU mxef;
 
-		/** \brief Minimum fuel flow (&lt;i&gt;RCMN&lt;/i&gt;).  Typical value = -0,1. Default: nullptr */
+		/** \brief Minimum fuel flow (<i>RCMN</i>).  Typical value = -0,1. Default: 0.0 */
 		CIMPP::PU rcmn;
 
-		/** \brief Maximum fuel flow (&lt;i&gt;RCMX&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Maximum fuel flow (<i>RCMX</i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU rcmx;
 
-		/** \brief Fuel control time constant (&lt;i&gt;Tac&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,1. Default: nullptr */
+		/** \brief Fuel control time constant (<i>Tac</i>) (&gt;= 0).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Seconds tac;
 
-		/** \brief Compressor discharge volume time constant (&lt;i&gt;Tc&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,2. Default: nullptr */
+		/** \brief Compressor discharge volume time constant (<i>Tc</i>) (&gt;= 0).  Typical value = 0,2. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Temperature controller derivative gain (&lt;i&gt;Td&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 3,3. Default: nullptr */
+		/** \brief Temperature controller derivative gain (<i>Td</i>) (&gt;= 0).  Typical value = 3,3. Default: 0.0 */
 		CIMPP::Seconds td;
 
-		/** \brief Turbine rated exhaust temperature correspondent to Pm=1 PU (&lt;i&gt;Tfen&lt;/i&gt;).  Typical value = 540. Default: nullptr */
+		/** \brief Turbine rated exhaust temperature correspondent to Pm=1 PU (<i>Tfen</i>).  Typical value = 540. Default: 0.0 */
 		CIMPP::Temperature tfen;
 
-		/** \brief Time constant of speed governor (&lt;i&gt;Tg&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief Time constant of speed governor (<i>Tg</i>) (&gt;= 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::Seconds tg;
 
-		/** \brief Time constant of radiation shield (&lt;i&gt;Tsi&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 15. Default: nullptr */
+		/** \brief Time constant of radiation shield (<i>Tsi</i>) (&gt;= 0).  Typical value = 15. Default: 0.0 */
 		CIMPP::Seconds tsi;
 
-		/** \brief Temperature controller integration rate (&lt;i&gt;Tt&lt;/i&gt;).  Typical value = 250. Default: nullptr */
+		/** \brief Temperature controller integration rate (<i>Tt</i>).  Typical value = 250. Default: 0.0 */
 		CIMPP::Temperature tt;
 
-		/** \brief Time constant of thermocouple (&lt;i&gt;Ttc&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 2,5. Default: nullptr */
+		/** \brief Time constant of thermocouple (<i>Ttc</i>) (&gt;= 0).  Typical value = 2,5. Default: 0.0 */
 		CIMPP::Seconds ttc;
 
-		/** \brief Time constant of fuel valve positioner (&lt;i&gt;Ty&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,2. Default: nullptr */
+		/** \brief Time constant of fuel valve positioner (<i>Ty</i>) (&gt;= 0).  Typical value = 0,2. Default: 0.0 */
 		CIMPP::Seconds ty;
 
 		static const char debugName[];

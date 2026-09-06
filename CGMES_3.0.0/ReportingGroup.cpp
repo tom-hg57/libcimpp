@@ -34,7 +34,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ReportingGroup.BusNameMarker", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "ReportingGroup.TopologicalNode", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::TP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ReportingGroup::ReportingGroup() {}

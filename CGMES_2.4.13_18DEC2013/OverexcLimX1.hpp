@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,34 +28,34 @@ namespace CIMPP
 		OverexcLimX1();
 		~OverexcLimX1() override;
 
-		/** \brief Low voltage point on the inverse time characteristic (EFD).  Typical Value = 1.1. Default: nullptr */
+		/** \brief Low voltage point on the inverse time characteristic (EFD).  Typical Value = 1.1. Default: 0.0 */
 		CIMPP::PU efd1;
 
-		/** \brief Mid voltage point on the inverse time characteristic (EFD).  Typical Value = 1.2. Default: nullptr */
+		/** \brief Mid voltage point on the inverse time characteristic (EFD).  Typical Value = 1.2. Default: 0.0 */
 		CIMPP::PU efd2;
 
-		/** \brief High voltage point on the inverse time characteristic (EFD).  Typical Value = 1.5. Default: nullptr */
+		/** \brief High voltage point on the inverse time characteristic (EFD).  Typical Value = 1.5. Default: 0.0 */
 		CIMPP::PU efd3;
 
-		/** \brief Desired field voltage (EFD).  Typical Value = 0.9. Default: nullptr */
+		/** \brief Desired field voltage (EFD).  Typical Value = 0.9. Default: 0.0 */
 		CIMPP::PU efddes;
 
-		/** \brief Rated field voltage (EFD).  Typical Value = 1.05. Default: nullptr */
+		/** \brief Rated field voltage (EFD).  Typical Value = 1.05. Default: 0.0 */
 		CIMPP::PU efdrated;
 
-		/** \brief Gain (K).  Typical Value = 0.01. Default: nullptr */
+		/** \brief Gain (K).  Typical Value = 0.01. Default: 0.0 */
 		CIMPP::PU kmx;
 
-		/** \brief Time to trip the exciter at the low voltage point on the inverse time characteristic (TIME).  Typical Value = 120. Default: nullptr */
+		/** \brief Time to trip the exciter at the low voltage point on the inverse time characteristic (TIME).  Typical Value = 120. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Time to trip the exciter at the mid voltage point on the inverse time characteristic (TIME).  Typical Value = 40. Default: nullptr */
+		/** \brief Time to trip the exciter at the mid voltage point on the inverse time characteristic (TIME).  Typical Value = 40. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Time to trip the exciter at the high voltage point on the inverse time characteristic (TIME).  Typical Value = 15. Default: nullptr */
+		/** \brief Time to trip the exciter at the high voltage point on the inverse time characteristic (TIME).  Typical Value = 15. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Low voltage limit (V) (&gt;0). Default: nullptr */
+		/** \brief Low voltage limit (V) (>0). Default: 0.0 */
 		CIMPP::PU vlow;
 
 		static const char debugName[];

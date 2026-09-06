@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,16 +28,16 @@ namespace CIMPP
 		WindGenType4IEC();
 		~WindGenType4IEC() override;
 
-		/** \brief Maximum active current ramp rate (di). It is project dependent parameter. Default: nullptr */
+		/** \brief Maximum active current ramp rate (di). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU dipmax;
 
-		/** \brief Maximum reactive current ramp rate (di). It is project dependent parameter. Default: nullptr */
+		/** \brief Maximum reactive current ramp rate (di). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU diqmax;
 
-		/** \brief Minimum reactive current ramp rate (d). It is case dependent parameter. Default: nullptr */
+		/** \brief Minimum reactive current ramp rate (d). It is case dependent parameter. Default: 0.0 */
 		CIMPP::PU diqmin;
 
-		/** \brief Time constant (T). It is type dependent parameter. Default: nullptr */
+		/** \brief Time constant (T). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tg;
 
 		static const char debugName[];

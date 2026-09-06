@@ -37,7 +37,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "VoltageLevel.highVoltageLimit", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 		{ "VoltageLevel.lowVoltageLimit", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 VoltageLevel::VoltageLevel() : BaseVoltage(nullptr), Substation(nullptr) {}

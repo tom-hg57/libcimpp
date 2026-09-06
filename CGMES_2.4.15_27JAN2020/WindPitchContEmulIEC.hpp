@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 #include "Simple_Float.hpp"
@@ -29,37 +30,37 @@ namespace CIMPP
 		WindPitchContEmulIEC();
 		~WindPitchContEmulIEC() override;
 
-		/** \brief Wind turbine type 2 model with which this Pitch control emulator model is associated. Default: 0 */
+		/** \brief Wind turbine type 2 model with which this Pitch control emulator model is associated. Default: nullptr */
 		CIMPP::WindGenTurbineType2IEC* WindGenTurbineType2IEC;
 
-		/** \brief Power error gain (). It is case dependent parameter. Default: nullptr */
+		/** \brief Power error gain (). It is case dependent parameter. Default: 0.0 */
 		CIMPP::Simple_Float kdroop;
 
-		/** \brief Pitch control emulator integral constant (). It is type dependent parameter. Default: nullptr */
+		/** \brief Pitch control emulator integral constant (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Simple_Float kipce;
 
-		/** \brief Aerodynamic power change vs. omegachange (). It is case dependent parameter. Default: nullptr */
+		/** \brief Aerodynamic power change vs. omegachange (). It is case dependent parameter. Default: 0.0 */
 		CIMPP::PU komegaaero;
 
-		/** \brief Pitch control emulator proportional constant (). It is type dependent parameter. Default: nullptr */
+		/** \brief Pitch control emulator proportional constant (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Simple_Float kppce;
 
-		/** \brief Rotor speed in initial steady state (omega). It is case dependent parameter. Default: nullptr */
+		/** \brief Rotor speed in initial steady state (omega). It is case dependent parameter. Default: 0.0 */
 		CIMPP::PU omegaref;
 
-		/** \brief Maximum steady state power (). It is case dependent parameter. Default: nullptr */
+		/** \brief Maximum steady state power (). It is case dependent parameter. Default: 0.0 */
 		CIMPP::PU pimax;
 
-		/** \brief Minimum steady state power (). It is case dependent parameter. Default: nullptr */
+		/** \brief Minimum steady state power (). It is case dependent parameter. Default: 0.0 */
 		CIMPP::PU pimin;
 
-		/** \brief First time constant in pitch control lag (). It is type dependent parameter. Default: nullptr */
+		/** \brief First time constant in pitch control lag (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Second time constant in pitch control lag (). It is type dependent parameter. Default: nullptr */
+		/** \brief Second time constant in pitch control lag (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Time constant in generator air gap power lag (). It is type dependent parameter. Default: nullptr */
+		/** \brief Time constant in generator air gap power lag (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tpe;
 
 		static const char debugName[];

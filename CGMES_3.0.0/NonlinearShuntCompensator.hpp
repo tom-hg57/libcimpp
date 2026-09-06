@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class NonlinearShuntCompensatorPoint;
@@ -26,7 +27,7 @@ namespace CIMPP
 		NonlinearShuntCompensator();
 		~NonlinearShuntCompensator() override;
 
-		/** \brief All points of the non-linear shunt compensator. Default: 0 */
+		/** \brief All points of the non-linear shunt compensator. Default: {} */
 		std::list<CIMPP::NonlinearShuntCompensatorPoint*> NonlinearShuntCompensatorPoints;
 
 		static const char debugName[];

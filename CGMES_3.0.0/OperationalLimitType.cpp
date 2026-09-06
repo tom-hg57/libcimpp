@@ -35,7 +35,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "OperationalLimitType.isInfiniteDuration", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "OperationalLimitType.kind", { "http://iec.ch/TC57/CIM100-European#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 OperationalLimitType::OperationalLimitType() {}

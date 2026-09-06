@@ -45,7 +45,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ExcitationSystemDynamics.UnderexcitationLimiterDynamics", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "ExcitationSystemDynamics.VoltageCompensatorDynamics", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ExcitationSystemDynamics::ExcitationSystemDynamics() : DiscontinuousExcitationControlDynamics(nullptr), OverexcitationLimiterDynamics(nullptr), PFVArControllerType1Dynamics(nullptr), PFVArControllerType2Dynamics(nullptr), PowerSystemStabilizerDynamics(nullptr), SynchronousMachineDynamics(nullptr), UnderexcitationLimiterDynamics(nullptr), VoltageCompensatorDynamics(nullptr) {}

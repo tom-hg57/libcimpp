@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -29,61 +30,61 @@ namespace CIMPP
 		GovSteamFV3();
 		~GovSteamFV3() override;
 
-		/** \brief Governor gain, (reciprocal of droop) (K).  Typical Value = 20. Default: nullptr */
+		/** \brief Governor gain, (reciprocal of droop) (K).  Typical Value = 20. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief Fraction of turbine power developed after first boiler pass (K1).  Typical Value = 0.2. Default: nullptr */
+		/** \brief Fraction of turbine power developed after first boiler pass (K1).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::PU k1;
 
-		/** \brief Fraction of turbine power developed after second boiler pass (K2).  Typical Value = 0.2. Default: nullptr */
+		/** \brief Fraction of turbine power developed after second boiler pass (K2).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::PU k2;
 
-		/** \brief Fraction of hp turbine power developed after crossover or third boiler pass (K3). Typical Value = 0.6. Default: nullptr */
+		/** \brief Fraction of hp turbine power developed after crossover or third boiler pass (K3). Typical Value = 0.6. Default: 0.0 */
 		CIMPP::PU k3;
 
-		/** \brief Base for power values (MWbase) (&gt;0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Maximum valve opening, PU of MWbase (Pmax).  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum valve opening, PU of MWbase (Pmax).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU pmax;
 
-		/** \brief Minimum valve opening, PU of MWbase (Pmin).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum valve opening, PU of MWbase (Pmin).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief Max. pressure in reheater (Prmax).  Typical Value = 1. Default: nullptr */
+		/** \brief Max. pressure in reheater (Prmax).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU prmax;
 
-		/** \brief Governor lead time constant (T1).  Typical Value = 0. Default: nullptr */
+		/** \brief Governor lead time constant (T1).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Governor lag time constant (T2).  Typical Value = 0. Default: nullptr */
+		/** \brief Governor lag time constant (T2).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Valve positioner time constant (T3).  Typical Value = 0. Default: nullptr */
+		/** \brief Valve positioner time constant (T3).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Inlet piping/steam bowl time constant (T4).  Typical Value = 0.2. Default: nullptr */
+		/** \brief Inlet piping/steam bowl time constant (T4).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Time constant of second boiler pass (i.e. reheater) (T5).  Typical Value = 0.5. Default: nullptr */
+		/** \brief Time constant of second boiler pass (i.e. reheater) (T5).  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Time constant of crossover or third boiler pass (T6).  Typical Value = 10. Default: nullptr */
+		/** \brief Time constant of crossover or third boiler pass (T6).  Typical Value = 10. Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Time to close intercept valve (IV) (Ta).  Typical Value = 0.97. Default: nullptr */
+		/** \brief Time to close intercept valve (IV) (Ta).  Typical Value = 0.97. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Time until IV starts to reopen (Tb).  Typical Value = 0.98. Default: nullptr */
+		/** \brief Time until IV starts to reopen (Tb).  Typical Value = 0.98. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Time until IV is fully open (Tc).  Typical Value = 0.99. Default: nullptr */
+		/** \brief Time until IV is fully open (Tc).  Typical Value = 0.99. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Maximum valve closing velocity (Uc).  Unit = PU/sec.  Typical Value = -1. Default: nullptr */
+		/** \brief Maximum valve closing velocity (Uc).  Unit = PU/sec.  Typical Value = -1. Default: 0.0 */
 		CIMPP::Simple_Float uc;
 
-		/** \brief Maximum valve opening velocity (Uo).  Unit = PU/sec.  Typical Value = 0.1. Default: nullptr */
+		/** \brief Maximum valve opening velocity (Uo).  Unit = PU/sec.  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Simple_Float uo;
 
 		static const char debugName[];

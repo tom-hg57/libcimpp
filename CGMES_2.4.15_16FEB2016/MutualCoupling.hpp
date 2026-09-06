@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Conductance.hpp"
 #include "Length.hpp"
 #include "Reactance.hpp"
@@ -31,34 +32,34 @@ namespace CIMPP
 		MutualCoupling();
 		~MutualCoupling() override;
 
-		/** \brief The starting terminal for the calculation of distances along the first branch of the mutual coupling.  Normally MutualCoupling would only be used for terminals of AC line segments.  The first and second terminals of a mutual coupling should point to different AC line segments. Default: 0 */
+		/** \brief The starting terminal for the calculation of distances along the first branch of the mutual coupling.  Normally MutualCoupling would only be used for terminals of AC line segments.  The first and second terminals of a mutual coupling should point to different AC line segments. Default: nullptr */
 		CIMPP::Terminal* First_Terminal;
 
-		/** \brief The starting terminal for the calculation of distances along the second branch of the mutual coupling. Default: 0 */
+		/** \brief The starting terminal for the calculation of distances along the second branch of the mutual coupling. Default: nullptr */
 		CIMPP::Terminal* Second_Terminal;
 
-		/** \brief Zero sequence mutual coupling shunt (charging) susceptance, uniformly distributed, of the entire line section. Default: nullptr */
+		/** \brief Zero sequence mutual coupling shunt (charging) susceptance, uniformly distributed, of the entire line section. Default: 0.0 */
 		CIMPP::Susceptance b0ch;
 
-		/** \brief Distance to the start of the coupled region from the first line`s terminal having sequence number equal to 1. Default: nullptr */
+		/** \brief Distance to the start of the coupled region from the first line`s terminal having sequence number equal to 1. Default: 0.0 */
 		CIMPP::Length distance11;
 
-		/** \brief Distance to the end of the coupled region from the first line`s terminal with sequence number equal to 1. Default: nullptr */
+		/** \brief Distance to the end of the coupled region from the first line`s terminal with sequence number equal to 1. Default: 0.0 */
 		CIMPP::Length distance12;
 
-		/** \brief Distance to the start of coupled region from the second line`s terminal with sequence number equal to 1. Default: nullptr */
+		/** \brief Distance to the start of coupled region from the second line`s terminal with sequence number equal to 1. Default: 0.0 */
 		CIMPP::Length distance21;
 
-		/** \brief Distance to the end of coupled region from the second line`s terminal with sequence number equal to 1. Default: nullptr */
+		/** \brief Distance to the end of coupled region from the second line`s terminal with sequence number equal to 1. Default: 0.0 */
 		CIMPP::Length distance22;
 
-		/** \brief Zero sequence mutual coupling shunt (charging) conductance, uniformly distributed, of the entire line section. Default: nullptr */
+		/** \brief Zero sequence mutual coupling shunt (charging) conductance, uniformly distributed, of the entire line section. Default: 0.0 */
 		CIMPP::Conductance g0ch;
 
-		/** \brief Zero sequence branch-to-branch mutual impedance coupling, resistance. Default: nullptr */
+		/** \brief Zero sequence branch-to-branch mutual impedance coupling, resistance. Default: 0.0 */
 		CIMPP::Resistance r0;
 
-		/** \brief Zero sequence branch-to-branch mutual impedance coupling, reactance. Default: nullptr */
+		/** \brief Zero sequence branch-to-branch mutual impedance coupling, reactance. Default: 0.0 */
 		CIMPP::Reactance x0;
 
 		static const char debugName[];

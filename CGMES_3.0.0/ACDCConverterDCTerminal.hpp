@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "DCPolarityKind.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		ACDCConverterDCTerminal();
 		~ACDCConverterDCTerminal() override;
 
-		/** \brief A DC converter terminal belong to an DC converter. Default: 0 */
+		/** \brief A DC converter terminal belong to an DC converter. Default: nullptr */
 		CIMPP::ACDCConverter* DCConductingEquipment;
 
 		/** \brief Represents the normal network polarity condition. Depending on the converter configuration the value shall be set as follows: - For a monopole with two converter terminals use DCPolarityKind `positive` and `negative`. - For a bi-pole or symmetric monopole with three converter terminals use DCPolarityKind `positive`, `middle` and `negative`. Default: 0 */

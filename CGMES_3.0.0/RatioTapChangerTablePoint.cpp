@@ -31,7 +31,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	{
 		{ "RatioTapChangerTablePoint.RatioTapChangerTable", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 RatioTapChangerTablePoint::RatioTapChangerTablePoint() : RatioTapChangerTable(nullptr) {}

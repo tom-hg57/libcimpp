@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "PU.hpp"
 #include "RotorKind.hpp"
@@ -30,7 +31,7 @@ namespace CIMPP
 		SynchronousMachineTimeConstantReactance();
 		~SynchronousMachineTimeConstantReactance() override;
 
-		/** \brief Saturation loading correction factor (&lt;i&gt;Ks&lt;/i&gt;) (&amp;gt;= 0).  Used only by type J model.  Typical value = 0. Default: 0.0 */
+		/** \brief Saturation loading correction factor (<i>Ks</i>) (&gt;= 0).  Used only by type J model.  Typical value = 0. Default: 0.0 */
 		CIMPP::Float ks;
 
 		/** \brief Type of synchronous machine model used in dynamic simulation applications. Default: 0 */
@@ -39,37 +40,37 @@ namespace CIMPP
 		/** \brief Type of rotor on physical machine. Default: 0 */
 		CIMPP::RotorKind rotorType;
 
-		/** \brief Damping time constant for `Canay` reactance (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Damping time constant for `Canay` reactance (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Direct-axis transient rotor time constant (&lt;i&gt;T`do&lt;/i&gt;) (&amp;gt; SynchronousMachineTimeConstantReactance.tppdo).  Typical value = 5. Default: nullptr */
+		/** \brief Direct-axis transient rotor time constant (<i>T`do</i>) (&gt; SynchronousMachineTimeConstantReactance.tppdo).  Typical value = 5. Default: 0.0 */
 		CIMPP::Seconds tpdo;
 
-		/** \brief Direct-axis subtransient rotor time constant (&lt;i&gt;T``do&lt;/i&gt;) (&amp;gt; 0).  Typical value = 0,03. Default: nullptr */
+		/** \brief Direct-axis subtransient rotor time constant (<i>T``do</i>) (&gt; 0).  Typical value = 0,03. Default: 0.0 */
 		CIMPP::Seconds tppdo;
 
-		/** \brief Quadrature-axis subtransient rotor time constant (&lt;i&gt;T``qo&lt;/i&gt;) (&amp;gt; 0). Typical value = 0,03. Default: nullptr */
+		/** \brief Quadrature-axis subtransient rotor time constant (<i>T``qo</i>) (&gt; 0). Typical value = 0,03. Default: 0.0 */
 		CIMPP::Seconds tppqo;
 
-		/** \brief Quadrature-axis transient rotor time constant (&lt;i&gt;T`qo&lt;/i&gt;) (&amp;gt; SynchronousMachineTimeConstantReactance.tppqo). Typical value = 0,5. Default: nullptr */
+		/** \brief Quadrature-axis transient rotor time constant (<i>T`qo</i>) (&gt; SynchronousMachineTimeConstantReactance.tppqo). Typical value = 0,5. Default: 0.0 */
 		CIMPP::Seconds tpqo;
 
-		/** \brief Direct-axis subtransient reactance (unsaturated) (&lt;i&gt;X``d&lt;/i&gt;) (&amp;gt; RotatingMachineDynamics.statorLeakageReactance).  Typical value = 0,2. Default: nullptr */
+		/** \brief Direct-axis subtransient reactance (unsaturated) (<i>X``d</i>) (&gt; RotatingMachineDynamics.statorLeakageReactance).  Typical value = 0,2. Default: 0.0 */
 		CIMPP::PU xDirectSubtrans;
 
-		/** \brief Direct-axis synchronous reactance (&lt;i&gt;Xd&lt;/i&gt;) (&amp;gt;= SynchronousMachineTimeConstantReactance.xDirectTrans). The quotient of a sustained value of that AC component of armature voltage that is produced by the total direct-axis flux due to direct-axis armature current and the value of the AC component of this current, the machine running at rated speed.  Typical value = 1,8. Default: nullptr */
+		/** \brief Direct-axis synchronous reactance (<i>Xd</i>) (&gt;= SynchronousMachineTimeConstantReactance.xDirectTrans). The quotient of a sustained value of that AC component of armature voltage that is produced by the total direct-axis flux due to direct-axis armature current and the value of the AC component of this current, the machine running at rated speed.  Typical value = 1,8. Default: 0.0 */
 		CIMPP::PU xDirectSync;
 
-		/** \brief Direct-axis transient reactance (unsaturated) (&lt;i&gt;X`d&lt;/i&gt;) (&amp;gt;= SynchronousMachineTimeConstantReactance.xDirectSubtrans).  Typical value = 0,5. Default: nullptr */
+		/** \brief Direct-axis transient reactance (unsaturated) (<i>X`d</i>) (&gt;= SynchronousMachineTimeConstantReactance.xDirectSubtrans).  Typical value = 0,5. Default: 0.0 */
 		CIMPP::PU xDirectTrans;
 
-		/** \brief Quadrature-axis subtransient reactance (&lt;i&gt;X``q&lt;/i&gt;) (&amp;gt; RotatingMachineDynamics.statorLeakageReactance).  Typical value = 0,2. Default: nullptr */
+		/** \brief Quadrature-axis subtransient reactance (<i>X``q</i>) (&gt; RotatingMachineDynamics.statorLeakageReactance).  Typical value = 0,2. Default: 0.0 */
 		CIMPP::PU xQuadSubtrans;
 
-		/** \brief Quadrature-axis synchronous reactance (&lt;i&gt;Xq&lt;/i&gt;) (&amp;gt;= SynchronousMachineTimeConstantReactance.xQuadTrans). The ratio of the component of reactive armature voltage, due to the quadrature-axis component of armature current, to this component of current, under steady state conditions and at rated frequency.  Typical value = 1,6. Default: nullptr */
+		/** \brief Quadrature-axis synchronous reactance (<i>Xq</i>) (&gt;= SynchronousMachineTimeConstantReactance.xQuadTrans). The ratio of the component of reactive armature voltage, due to the quadrature-axis component of armature current, to this component of current, under steady state conditions and at rated frequency.  Typical value = 1,6. Default: 0.0 */
 		CIMPP::PU xQuadSync;
 
-		/** \brief Quadrature-axis transient reactance (&lt;i&gt;X`q&lt;/i&gt;) (&amp;gt;= SynchronousMachineTimeConstantReactance.xQuadSubtrans).  Typical value = 0,3. Default: nullptr */
+		/** \brief Quadrature-axis transient reactance (<i>X`q</i>) (&gt;= SynchronousMachineTimeConstantReactance.xQuadSubtrans).  Typical value = 0,3. Default: 0.0 */
 		CIMPP::PU xQuadTrans;
 
 		static const char debugName[];

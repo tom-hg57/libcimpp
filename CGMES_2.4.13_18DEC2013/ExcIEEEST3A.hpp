@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,64 +29,64 @@ namespace CIMPP
 		ExcIEEEST3A();
 		~ExcIEEEST3A() override;
 
-		/** \brief Voltage regulator gain (K). This is parameter K in the IEEE Std. Typical Value = 200. Default: nullptr */
+		/** \brief Voltage regulator gain (K). This is parameter K in the IEEE Std. Typical Value = 200. Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.2. Default: nullptr */
+		/** \brief Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.2. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Feedback gain constant of the inner loop field regulator (K).  Typical Value = 1. Default: nullptr */
+		/** \brief Feedback gain constant of the inner loop field regulator (K).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU kg;
 
-		/** \brief Potential circuit gain coefficient (K).  Typical Value = 0. Default: nullptr */
+		/** \brief Potential circuit gain coefficient (K).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU ki;
 
-		/** \brief Forward gain constant of the inner loop field regulator (K).  Typical Value = 7.93. Default: nullptr */
+		/** \brief Forward gain constant of the inner loop field regulator (K).  Typical Value = 7.93. Default: 0.0 */
 		CIMPP::PU km;
 
-		/** \brief Potential circuit gain coefficient (K).  Typical Value = 6.15. Default: nullptr */
+		/** \brief Potential circuit gain coefficient (K).  Typical Value = 6.15. Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief Voltage regulator time constant (T).  Typical Value = 0. Default: nullptr */
+		/** \brief Voltage regulator time constant (T).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Voltage regulator time constant (T).  Typical Value = 10. Default: nullptr */
+		/** \brief Voltage regulator time constant (T).  Typical Value = 10. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Voltage regulator time constant (T).  Typical Value = 1. Default: nullptr */
+		/** \brief Voltage regulator time constant (T).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Potential circuit phase angle (thetap).  Typical Value = 0. Default: nullptr */
+		/** \brief Potential circuit phase angle (thetap).  Typical Value = 0. Default: 0.0 */
 		CIMPP::AngleDegrees thetap;
 
-		/** \brief Forward time constant of inner loop field regulator (T).  Typical Value = 0.4. Default: nullptr */
+		/** \brief Forward time constant of inner loop field regulator (T).  Typical Value = 0.4. Default: 0.0 */
 		CIMPP::Seconds tm;
 
-		/** \brief Maximum excitation voltage (V).  Typical Value = 6.9. Default: nullptr */
+		/** \brief Maximum excitation voltage (V).  Typical Value = 6.9. Default: 0.0 */
 		CIMPP::PU vbmax;
 
-		/** \brief Maximum inner loop feedback voltage (V).  Typical Value = 5.8. Default: nullptr */
+		/** \brief Maximum inner loop feedback voltage (V).  Typical Value = 5.8. Default: 0.0 */
 		CIMPP::PU vgmax;
 
-		/** \brief Maximum voltage regulator input limit (V).  Typical Value = 0.2. Default: nullptr */
+		/** \brief Maximum voltage regulator input limit (V).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::PU vimax;
 
-		/** \brief Minimum voltage regulator input limit (V).  Typical Value = -0.2. Default: nullptr */
+		/** \brief Minimum voltage regulator input limit (V).  Typical Value = -0.2. Default: 0.0 */
 		CIMPP::PU vimin;
 
-		/** \brief Maximum inner loop output (V).  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum inner loop output (V).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU vmmax;
 
-		/** \brief Minimum inner loop output (V).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum inner loop output (V).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU vmmin;
 
-		/** \brief Maximum voltage regulator output (V).  Typical Value = 10. Default: nullptr */
+		/** \brief Maximum voltage regulator output (V).  Typical Value = 10. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator output (V).  Typical Value = -10. Default: nullptr */
+		/** \brief Minimum voltage regulator output (V).  Typical Value = -10. Default: 0.0 */
 		CIMPP::PU vrmin;
 
-		/** \brief Reactance associated with potential source (X).  Typical Value = 0.081. Default: nullptr */
+		/** \brief Reactance associated with potential source (X).  Typical Value = 0.081. Default: 0.0 */
 		CIMPP::PU xl;
 
 		static const char debugName[];

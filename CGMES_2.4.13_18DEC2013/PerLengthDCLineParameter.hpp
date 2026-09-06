@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "CapacitancePerLength.hpp"
 #include "InductancePerLength.hpp"
 #include "ResistancePerLength.hpp"
@@ -28,16 +29,16 @@ namespace CIMPP
 		PerLengthDCLineParameter();
 		~PerLengthDCLineParameter() override;
 
-		/** \brief All line segments described by this set of per-length parameters. Default: 0 */
+		/** \brief All line segments described by this set of per-length parameters. Default: {} */
 		std::list<CIMPP::DCLineSegment*> DCLineSegments;
 
-		/** \brief Capacitance per unit of length of the DC line segment; significant for cables only. Default: nullptr */
+		/** \brief Capacitance per unit of length of the DC line segment; significant for cables only. Default: 0.0 */
 		CIMPP::CapacitancePerLength capacitance;
 
-		/** \brief Inductance per unit of length of the DC line segment. Default: nullptr */
+		/** \brief Inductance per unit of length of the DC line segment. Default: 0.0 */
 		CIMPP::InductancePerLength inductance;
 
-		/** \brief Resistance per length of the DC line segment. Default: nullptr */
+		/** \brief Resistance per length of the DC line segment. Default: 0.0 */
 		CIMPP::ResistancePerLength resistance;
 
 		static const char debugName[];

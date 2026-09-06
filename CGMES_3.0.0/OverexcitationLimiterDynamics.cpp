@@ -31,7 +31,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 	{
 		{ "OverexcitationLimiterDynamics.ExcitationSystemDynamics", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 OverexcitationLimiterDynamics::OverexcitationLimiterDynamics() : ExcitationSystemDynamics(nullptr) {}

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Integer.hpp"
 
@@ -30,13 +31,13 @@ namespace CIMPP
 		ACDCTerminal();
 		~ACDCTerminal() override;
 
-		/** \brief The bus name marker used to name the bus (topological node). Default: 0 */
+		/** \brief The bus name marker used to name the bus (topological node). Default: nullptr */
 		CIMPP::BusNameMarker* BusNameMarker;
 
-		/** \brief Measurements associated with this terminal defining  where the measurement is placed in the network topology.  It may be used, for instance, to capture the sensor position, such as a voltage transformer (PT) at a busbar or a current transformer (CT) at the bar between a breaker and an isolator. Default: 0 */
+		/** \brief Measurements associated with this terminal defining  where the measurement is placed in the network topology.  It may be used, for instance, to capture the sensor position, such as a voltage transformer (PT) at a busbar or a current transformer (CT) at the bar between a breaker and an isolator. Default: {} */
 		std::list<CIMPP::Measurement*> Measurements;
 
-		/** \brief The operational limit sets at the terminal. Default: 0 */
+		/** \brief The operational limit sets at the terminal. Default: {} */
 		std::list<CIMPP::OperationalLimitSet*> OperationalLimitSet;
 
 		/** \brief The connected status is related to a bus-branch model and the topological node to terminal relation.  True implies the terminal is connected to the related topological node and false implies it is not.  In a bus-branch model, the connected status is used to tell if equipment is disconnected without having to change the connectivity described by the topological node to terminal relation. A valid case is that conducting equipment can be connected in one end and open in the other. In particular for an AC line segment, where the reactive line charging can be significant, this is a relevant case. Default: false */

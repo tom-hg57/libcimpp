@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class WindContCurrLimIEC;
@@ -31,22 +32,22 @@ namespace CIMPP
 		WindTurbineType3or4IEC();
 		~WindTurbineType3or4IEC() override;
 
-		/** \brief Wind control Q model associated with this wind turbine type 3 or type 4 model. Default: 0 */
+		/** \brief Wind control Q model associated with this wind turbine type 3 or type 4 model. Default: nullptr */
 		CIMPP::WindContQIEC* WIndContQIEC;
 
-		/** \brief Wind control current limitation model associated with this wind turbine type 3 or type 4 model. Default: 0 */
+		/** \brief Wind control current limitation model associated with this wind turbine type 3 or type 4 model. Default: nullptr */
 		CIMPP::WindContCurrLimIEC* WindContCurrLimIEC;
 
-		/** \brief Constant Q limitation model associated with this wind generator type 3 or type 4 model. Default: 0 */
+		/** \brief Constant Q limitation model associated with this wind generator type 3 or type 4 model. Default: nullptr */
 		CIMPP::WindContQLimIEC* WindContQLimIEC;
 
-		/** \brief QP and QU limitation model associated with this wind generator type 3 or type 4 model. Default: 0 */
+		/** \brief QP and QU limitation model associated with this wind generator type 3 or type 4 model. Default: nullptr */
 		CIMPP::WindContQPQULimIEC* WindContQPQULimIEC;
 
-		/** \brief Wind turbune protection model associated with this wind generator type 3 or type 4 model. Default: 0 */
+		/** \brief Wind turbune protection model associated with this wind generator type 3 or type 4 model. Default: nullptr */
 		CIMPP::WindProtectionIEC* WindProtectionIEC;
 
-		/** \brief Reference frame rotation model associated with this wind turbine type 3 or type 4 model. Default: 0 */
+		/** \brief Reference frame rotation model associated with this wind turbine type 3 or type 4 model. Default: nullptr */
 		CIMPP::WindRefFrameRotIEC* WindRefFrameRotIEC;
 
 		static const char debugName[];

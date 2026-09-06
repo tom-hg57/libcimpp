@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "CurrentFlow.hpp"
 #include "PetersenCoilModeKind.hpp"
 #include "Reactance.hpp"
@@ -32,22 +33,22 @@ namespace CIMPP
 		/** \brief The mode of operation of the Petersen coil. Default: 0 */
 		CIMPP::PetersenCoilModeKind mode;
 
-		/** \brief The nominal voltage for which the coil is designed. Default: nullptr */
+		/** \brief The nominal voltage for which the coil is designed. Default: 0.0 */
 		CIMPP::Voltage nominalU;
 
-		/** \brief The offset current that the Petersen coil controller is operating from the resonant point.  This is normally a fixed amount for which the controller is configured and could be positive or negative.  Typically 0 to 60 A depending on voltage and resonance conditions. Default: nullptr */
+		/** \brief The offset current that the Petersen coil controller is operating from the resonant point.  This is normally a fixed amount for which the controller is configured and could be positive or negative.  Typically 0 to 60 A depending on voltage and resonance conditions. Default: 0.0 */
 		CIMPP::CurrentFlow offsetCurrent;
 
-		/** \brief The control current used to control the Petersen coil also known as the position current.  Typically in the range of 20 mA to 200 mA. Default: nullptr */
+		/** \brief The control current used to control the Petersen coil also known as the position current.  Typically in the range of 20 mA to 200 mA. Default: 0.0 */
 		CIMPP::CurrentFlow positionCurrent;
 
-		/** \brief The maximum reactance. Default: nullptr */
+		/** \brief The maximum reactance. Default: 0.0 */
 		CIMPP::Reactance xGroundMax;
 
-		/** \brief The minimum reactance. Default: nullptr */
+		/** \brief The minimum reactance. Default: 0.0 */
 		CIMPP::Reactance xGroundMin;
 
-		/** \brief The nominal reactance.  This is the operating point (normally over compensation) that is defined based on the resonance point in the healthy network condition.  The impedance is calculated based on nominal voltage divided by position current. Default: nullptr */
+		/** \brief The nominal reactance.  This is the operating point (normally over compensation) that is defined based on the resonance point in the healthy network condition.  The impedance is calculated based on nominal voltage divided by position current. Default: 0.0 */
 		CIMPP::Reactance xGroundNominal;
 
 		static const char debugName[];

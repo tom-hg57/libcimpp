@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,49 +29,49 @@ namespace CIMPP
 		ExcST2A();
 		~ExcST2A() override;
 
-		/** \brief Maximum field voltage (Efdmax).  Typical Value = 99. Default: nullptr */
+		/** \brief Maximum field voltage (Efdmax).  Typical Value = 99. Default: 0.0 */
 		CIMPP::PU efdmax;
 
-		/** \brief Voltage regulator gain (Ka).  Typical Value = 120. Default: nullptr */
+		/** \brief Voltage regulator gain (Ka).  Typical Value = 120. Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Rectifier loading factor proportional to commutating reactance (Kc).  Typical Value = 1.82. Default: nullptr */
+		/** \brief Rectifier loading factor proportional to commutating reactance (Kc).  Typical Value = 1.82. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: nullptr */
+		/** \brief Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU ke;
 
-		/** \brief Excitation control system stabilizer gains (Kf).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Excitation control system stabilizer gains (Kf).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::PU kf;
 
-		/** \brief Potential circuit gain coefficient (Ki).  Typical Value = 8. Default: nullptr */
+		/** \brief Potential circuit gain coefficient (Ki).  Typical Value = 8. Default: 0.0 */
 		CIMPP::PU ki;
 
-		/** \brief Potential circuit gain coefficient (Kp).  Typical Value = 4.88. Default: nullptr */
+		/** \brief Potential circuit gain coefficient (Kp).  Typical Value = 4.88. Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief Voltage regulator time constant (Ta).  Typical Value = 0.15. Default: nullptr */
+		/** \brief Voltage regulator time constant (Ta).  Typical Value = 0.15. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Voltage regulator time constant (Tb).  Typical Value = 0. Default: nullptr */
+		/** \brief Voltage regulator time constant (Tb).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Voltage regulator time constant (Tc).  Typical Value = 0. Default: nullptr */
+		/** \brief Voltage regulator time constant (Tc).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 0.5. Default: nullptr */
+		/** \brief Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Excitation control system stabilizer time constant (Tf).  Typical Value = 0.7. Default: nullptr */
+		/** \brief Excitation control system stabilizer time constant (Tf).  Typical Value = 0.7. Default: 0.0 */
 		CIMPP::Seconds tf;
 
 		/** \brief UEL input (UELin). true = HV gate false = add to error signal. Typical Value = false. Default: false */
 		CIMPP::Boolean uelin;
 
-		/** \brief Maximum voltage regulator outputs (Vrmax).  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum voltage regulator outputs (Vrmax).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator outputs (Vrmin).  Typical Value = -1. Default: nullptr */
+		/** \brief Minimum voltage regulator outputs (Vrmin).  Typical Value = -1. Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

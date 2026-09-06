@@ -40,7 +40,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "Switch.ratedCurrent", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "Switch.retained", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 Switch::Switch() {}

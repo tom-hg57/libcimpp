@@ -220,6 +220,7 @@ xmlSAXHandler* lwit_SaxHandler()
 
 void lwit_setFeature(xmlParserCtxtPtr context, const char* name, bool value)
 {
+#if LIBXML_VERSION < 21200
   int v = value;
   if(xmlSetFeature(context, name, reinterpret_cast<void*>(&v)) == -1)
   {
@@ -227,10 +228,12 @@ void lwit_setFeature(xmlParserCtxtPtr context, const char* name, bool value)
     os << "Feature not recognized " << name;
     throw SAX::SAXNotRecognizedException(os.str());
   } // if ...
+#endif
 } // lwitSetFeature
 
 bool lwit_getFeature(xmlParserCtxtPtr context, const char* name)
 {
+#if LIBXML_VERSION < 21200
   int v;
   if(xmlGetFeature(context, name, reinterpret_cast<void*>(&v)) == -1)
   {
@@ -239,6 +242,8 @@ bool lwit_getFeature(xmlParserCtxtPtr context, const char* name)
     throw SAX::SAXNotRecognizedException(os.str());
   } // if ...
   return static_cast<bool>(v);
+#endif
+  return false;
 } // lwit_getFeature
 
 } // namespace libxml2_wrapper_impl_tiddle

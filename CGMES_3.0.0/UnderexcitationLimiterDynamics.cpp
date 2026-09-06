@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "UnderexcitationLimiterDynamics.ExcitationSystemDynamics", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "UnderexcitationLimiterDynamics.RemoteInputSignal", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 UnderexcitationLimiterDynamics::UnderexcitationLimiterDynamics() : ExcitationSystemDynamics(nullptr), RemoteInputSignal(nullptr) {}

@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "SvVoltage.angle", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SV, } } },
 		{ "SvVoltage.v", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SV, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 SvVoltage::SvVoltage() : TopologicalNode(nullptr) {}

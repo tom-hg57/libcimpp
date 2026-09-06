@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class ACDCTerminal;
@@ -28,13 +29,13 @@ namespace CIMPP
 		OperationalLimitSet();
 		~OperationalLimitSet() override;
 
-		/** \brief The equipment to which the limit set applies. Default: 0 */
+		/** \brief The equipment to which the limit set applies. Default: nullptr */
 		CIMPP::Equipment* Equipment;
 
-		/** \brief The limit set to which the limit values belong. Default: 0 */
+		/** \brief The limit set to which the limit values belong. Default: {} */
 		std::list<CIMPP::OperationalLimit*> OperationalLimitValue;
 
-		/** \brief  Default: 0 */
+		/** \brief  Default: nullptr */
 		CIMPP::ACDCTerminal* Terminal;
 
 		static const char debugName[];

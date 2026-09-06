@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -29,22 +30,22 @@ namespace CIMPP
 		WindGenType4IEC();
 		~WindGenType4IEC() override;
 
-		/** \brief Wind turbine type 4A model with which this wind generator type 4 model is associated. Default: 0 */
+		/** \brief Wind turbine type 4A model with which this wind generator type 4 model is associated. Default: nullptr */
 		CIMPP::WindTurbineType4aIEC* WindTurbineType4aIEC;
 
-		/** \brief Wind turbine type 4B model with which this wind generator type 4 model is associated. Default: 0 */
+		/** \brief Wind turbine type 4B model with which this wind generator type 4 model is associated. Default: nullptr */
 		CIMPP::WindTurbineType4bIEC* WindTurbineType4bIEC;
 
-		/** \brief Maximum active current ramp rate (&lt;i&gt;di&lt;/i&gt;&lt;i&gt;&lt;sub&gt;pmax&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Maximum active current ramp rate (<i>di</i><i><sub>pmax</sub></i>). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU dipmax;
 
-		/** \brief Maximum reactive current ramp rate (&lt;i&gt;di&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qmax&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Maximum reactive current ramp rate (<i>di</i><i><sub>qmax</sub></i>). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU diqmax;
 
-		/** \brief Minimum reactive current ramp rate (&lt;i&gt;di&lt;/i&gt;&lt;i&gt;&lt;sub&gt;qmin&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Minimum reactive current ramp rate (<i>di</i><i><sub>qmin</sub></i>). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU diqmin;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;g&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>g</sub></i>) (&gt;= 0). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tg;
 
 		static const char debugName[];

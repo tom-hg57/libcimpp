@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Integer.hpp"
 #include "Simple_Float.hpp"
 #include "WindLookupTableFunctionKind.hpp"
@@ -32,25 +33,25 @@ namespace CIMPP
 		WindDynamicsLookupTable();
 		~WindDynamicsLookupTable() override;
 
-		/** \brief The wind dynamics lookup table associated with this current control limitation model. Default: 0 */
+		/** \brief The wind dynamics lookup table associated with this current control limitation model. Default: nullptr */
 		CIMPP::WindContCurrLimIEC* WindContCurrLimIEC;
 
-		/** \brief The wind dynamics lookup table associated with this P control type 3 model. Default: 0 */
+		/** \brief The wind dynamics lookup table associated with this P control type 3 model. Default: nullptr */
 		CIMPP::WindContPType3IEC* WindContPType3IEC;
 
-		/** \brief The rotor resistance control model with which this wind dynamics lookup table is associated. Default: 0 */
+		/** \brief The rotor resistance control model with which this wind dynamics lookup table is associated. Default: nullptr */
 		CIMPP::WindContRotorRIEC* WindContRotorRIEC;
 
-		/** \brief The wind dynamics lookup table associated with this frequency and active power wind plant model. Default: 0 */
+		/** \brief The wind dynamics lookup table associated with this frequency and active power wind plant model. Default: nullptr */
 		CIMPP::WindPlantFreqPcontrolIEC* WindPlantFreqPcontrolIEC;
 
-		/** \brief Input value (x) for the lookup table function. Default: nullptr */
+		/** \brief Input value (x) for the lookup table function. Default: 0.0 */
 		CIMPP::Simple_Float input;
 
 		/** \brief Type of the lookup table function. Default: 0 */
 		CIMPP::WindLookupTableFunctionKind lookupTableFunctionType;
 
-		/** \brief Output value (y) for the lookup table function. Default: nullptr */
+		/** \brief Output value (y) for the lookup table function. Default: 0.0 */
 		CIMPP::Simple_Float output;
 
 		/** \brief Sequence numbers of the pairs of the input (x) and the output (y) of the lookup table function. Default: 0 */

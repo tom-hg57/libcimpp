@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -30,16 +31,16 @@ namespace CIMPP
 		WindPlantReactiveControlIEC();
 		~WindPlantReactiveControlIEC() override;
 
-		/** \brief Wind plant model with which this wind reactive control is associated. Default: 0 */
+		/** \brief Wind plant model with which this wind reactive control is associated. Default: nullptr */
 		CIMPP::WindPlantIEC* WindPlantIEC;
 
-		/** \brief Plant Q controller integral gain (). It is type dependent parameter. Default: nullptr */
+		/** \brief Plant Q controller integral gain (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Simple_Float kiwpx;
 
-		/** \brief Plant Q controller proportional gain (). It is type dependent parameter. Default: nullptr */
+		/** \brief Plant Q controller proportional gain (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Simple_Float kpwpx;
 
-		/** \brief Plant voltage control droop (). It is project dependent parameter. Default: nullptr */
+		/** \brief Plant voltage control droop (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU kwpqu;
 
 		/** \brief Power factor control modes selector (). Used only if mwpu is set to false. true = 1: power factor control false = 0: reactive power control. It is project dependent parameter. Default: false */
@@ -48,28 +49,28 @@ namespace CIMPP
 		/** \brief Reactive power control modes selector (). true = 1: voltage control false = 0: reactive power control. It is project dependent parameter. Default: false */
 		CIMPP::Boolean mwpu;
 
-		/** \brief Filter time constant for active power measurement (). It is type dependent parameter. Default: nullptr */
+		/** \brief Filter time constant for active power measurement (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds twppfilt;
 
-		/** \brief Filter time constant for reactive power measurement (). It is type dependent parameter. Default: nullptr */
+		/** \brief Filter time constant for reactive power measurement (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds twpqfilt;
 
-		/** \brief Filter time constant for voltage measurement (). It is type dependent parameter. Default: nullptr */
+		/** \brief Filter time constant for voltage measurement (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds twpufilt;
 
-		/** \brief Lead time constant in reference value transfer function (). It is type dependent parameter. Default: nullptr */
+		/** \brief Lead time constant in reference value transfer function (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds txft;
 
-		/** \brief Lag time constant in reference value transfer function (). It is type dependent parameter. Default: nullptr */
+		/** \brief Lag time constant in reference value transfer function (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds txfv;
 
-		/** \brief Voltage threshold for LVRT detection in q control (). It is type dependent parameter. Default: nullptr */
+		/** \brief Voltage threshold for LVRT detection in q control (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::PU uwpqdip;
 
-		/** \brief Maximum  ( or delta ) request from the plant controller (). It is project dependent parameter. Default: nullptr */
+		/** \brief Maximum  ( or delta ) request from the plant controller (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU xrefmax;
 
-		/** \brief Minimum  ( or delta) request from the plant controller (). It is project dependent parameter. Default: nullptr */
+		/** \brief Minimum  ( or delta) request from the plant controller (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU xrefmin;
 
 		static const char debugName[];

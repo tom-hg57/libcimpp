@@ -48,7 +48,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "LoadStatic.kqf", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "LoadStatic.staticLoadModelType", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 LoadStatic::LoadStatic() : LoadAggregate(nullptr) {}

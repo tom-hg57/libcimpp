@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "Boolean.hpp"
 #include "PU.hpp"
@@ -29,40 +30,40 @@ namespace CIMPP
 		TurbLCFB1();
 		~TurbLCFB1() override;
 
-		/** \brief Controller dead band (db).  Typical Value = 0. Default: nullptr */
+		/** \brief Controller dead band (db).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU db;
 
-		/** \brief Maximum control error (Emax) (note 4).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Maximum control error (Emax) (note 4).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::PU emax;
 
-		/** \brief Frequency bias gain (Fb).  Typical Value = 0. Default: nullptr */
+		/** \brief Frequency bias gain (Fb).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU fb;
 
 		/** \brief Frequency bias flag (Fbf). true = enable frequency bias false = disable frequency bias. Typical Value = false. Default: false */
 		CIMPP::Boolean fbf;
 
-		/** \brief Maximum turbine speed/load reference bias (Irmax) (note 3).  Typical Value = 0. Default: nullptr */
+		/** \brief Maximum turbine speed/load reference bias (Irmax) (note 3).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU irmax;
 
-		/** \brief Integral gain (Ki).  Typical Value = 0. Default: nullptr */
+		/** \brief Integral gain (Ki).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU ki;
 
-		/** \brief Proportional gain (Kp).  Typical Value = 0. Default: nullptr */
+		/** \brief Proportional gain (Kp).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief Base for power values (MWbase) (&gt;0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
 		/** \brief Power controller flag (Pbf). true = enable load controller false = disable load controller. Typical Value = false. Default: false */
 		CIMPP::Boolean pbf;
 
-		/** \brief Power controller setpoint (Pmwset) (note 1).  Unit = MW. Typical Value = 0. Default: nullptr */
+		/** \brief Power controller setpoint (Pmwset) (note 1).  Unit = MW. Typical Value = 0. Default: 0.0 */
 		CIMPP::ActivePower pmwset;
 
 		/** \brief Type of turbine governor reference (Type). true = speed reference governor false = load reference governor. Typical Value = true. Default: false */
 		CIMPP::Boolean speedReferenceGovernor;
 
-		/** \brief Power transducer time constant (Tpelec).  Typical Value = 0. Default: nullptr */
+		/** \brief Power transducer time constant (Tpelec).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tpelec;
 
 		static const char debugName[];

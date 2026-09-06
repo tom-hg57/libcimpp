@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "Boolean.hpp"
 #include "Frequency.hpp"
@@ -31,85 +32,85 @@ namespace CIMPP
 		GovSteam1();
 		~GovSteam1() override;
 
-		/** \brief Intentional deadband width (db1).  Unit = Hz.  Typical Value = 0. Default: nullptr */
+		/** \brief Intentional deadband width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0 */
 		CIMPP::Frequency db1;
 
-		/** \brief Unintentional deadband (db2).  Unit = MW.  Typical Value = 0. Default: nullptr */
+		/** \brief Unintentional deadband (db2).  Unit = MW.  Typical Value = 0. Default: 0.0 */
 		CIMPP::ActivePower db2;
 
-		/** \brief Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: nullptr */
+		/** \brief Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0 */
 		CIMPP::Frequency eps;
 
-		/** \brief Nonlinear gain valve position point 1 (GV1).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain valve position point 1 (GV1).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU gv1;
 
-		/** \brief Nonlinear gain valve position point 2 (GV2).  Typical Value = 0.4. Default: nullptr */
+		/** \brief Nonlinear gain valve position point 2 (GV2).  Typical Value = 0.4. Default: 0.0 */
 		CIMPP::PU gv2;
 
-		/** \brief Nonlinear gain valve position point 3 (GV3).  Typical Value = 0.5. Default: nullptr */
+		/** \brief Nonlinear gain valve position point 3 (GV3).  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::PU gv3;
 
-		/** \brief Nonlinear gain valve position point 4 (GV4).  Typical Value = 0.6. Default: nullptr */
+		/** \brief Nonlinear gain valve position point 4 (GV4).  Typical Value = 0.6. Default: 0.0 */
 		CIMPP::PU gv4;
 
-		/** \brief Nonlinear gain valve position point 5 (GV5).  Typical Value = 1. Default: nullptr */
+		/** \brief Nonlinear gain valve position point 5 (GV5).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU gv5;
 
-		/** \brief Nonlinear gain valve position point 6 (GV6).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain valve position point 6 (GV6).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU gv6;
 
-		/** \brief Governor gain (reciprocal of droop) (K) (&gt;0).  Typical Value = 25. Default: nullptr */
+		/** \brief Governor gain (reciprocal of droop) (K) (>0).  Typical Value = 25. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief Fraction of HP shaft power after first boiler pass (K1).  Typical Value = 0.2. Default: nullptr */
+		/** \brief Fraction of HP shaft power after first boiler pass (K1).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::Simple_Float k1;
 
-		/** \brief Fraction of LP shaft power after first boiler pass (K2).  Typical Value = 0. Default: nullptr */
+		/** \brief Fraction of LP shaft power after first boiler pass (K2).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Simple_Float k2;
 
-		/** \brief Fraction of HP shaft power after second boiler pass (K3).  Typical Value = 0.3. Default: nullptr */
+		/** \brief Fraction of HP shaft power after second boiler pass (K3).  Typical Value = 0.3. Default: 0.0 */
 		CIMPP::Simple_Float k3;
 
-		/** \brief Fraction of LP shaft power after second boiler pass (K4).  Typical Value = 0. Default: nullptr */
+		/** \brief Fraction of LP shaft power after second boiler pass (K4).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Simple_Float k4;
 
-		/** \brief Fraction of HP shaft power after third boiler pass (K5).  Typical Value = 0.5. Default: nullptr */
+		/** \brief Fraction of HP shaft power after third boiler pass (K5).  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Simple_Float k5;
 
-		/** \brief Fraction of LP shaft power after third boiler pass (K6).  Typical Value = 0. Default: nullptr */
+		/** \brief Fraction of LP shaft power after third boiler pass (K6).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Simple_Float k6;
 
-		/** \brief Fraction of HP shaft power after fourth boiler pass (K7).  Typical Value = 0. Default: nullptr */
+		/** \brief Fraction of HP shaft power after fourth boiler pass (K7).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Simple_Float k7;
 
-		/** \brief Fraction of LP shaft power after fourth boiler pass (K8).  Typical Value = 0. Default: nullptr */
+		/** \brief Fraction of LP shaft power after fourth boiler pass (K8).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Simple_Float k8;
 
-		/** \brief Base for power values (MWbase) (&gt;0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Nonlinear gain power value point 1 (Pgv1).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain power value point 1 (Pgv1).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU pgv1;
 
-		/** \brief Nonlinear gain power value point 2 (Pgv2).  Typical Value = 0.75. Default: nullptr */
+		/** \brief Nonlinear gain power value point 2 (Pgv2).  Typical Value = 0.75. Default: 0.0 */
 		CIMPP::PU pgv2;
 
-		/** \brief Nonlinear gain power value point 3 (Pgv3).  Typical Value = 0.91. Default: nullptr */
+		/** \brief Nonlinear gain power value point 3 (Pgv3).  Typical Value = 0.91. Default: 0.0 */
 		CIMPP::PU pgv3;
 
-		/** \brief Nonlinear gain power value point 4 (Pgv4).  Typical Value = 0.98. Default: nullptr */
+		/** \brief Nonlinear gain power value point 4 (Pgv4).  Typical Value = 0.98. Default: 0.0 */
 		CIMPP::PU pgv4;
 
-		/** \brief Nonlinear gain power value point 5 (Pgv5).  Typical Value = 1. Default: nullptr */
+		/** \brief Nonlinear gain power value point 5 (Pgv5).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU pgv5;
 
-		/** \brief Nonlinear gain power value point 6 (Pgv6).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain power value point 6 (Pgv6).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU pgv6;
 
-		/** \brief Maximum valve opening (Pmax) (&gt; Pmin).  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum valve opening (Pmax) (> Pmin).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU pmax;
 
-		/** \brief Minimum valve opening (Pmin) (&gt;=0).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum valve opening (Pmin) (>=0).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU pmin;
 
 		/** \brief Intentional deadband indicator. true = intentional deadband is applied false = intentional deadband is not applied. Typical Value = true. Default: false */
@@ -118,31 +119,31 @@ namespace CIMPP
 		/** \brief Unintentional deadband location. true = intentional deadband is applied before point `A` false = intentional deadband is applied after point `A`. Typical Value = true. Default: false */
 		CIMPP::Boolean sdb2;
 
-		/** \brief Governor lag time constant (T1).  Typical Value = 0. Default: nullptr */
+		/** \brief Governor lag time constant (T1).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Governor lead time constant (T2).  Typical Value = 0. Default: nullptr */
+		/** \brief Governor lead time constant (T2).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Valve positioner time constant (T3(&gt;0).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Valve positioner time constant (T3(>0).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Inlet piping/steam bowl time constant (T4).  Typical Value = 0.3. Default: nullptr */
+		/** \brief Inlet piping/steam bowl time constant (T4).  Typical Value = 0.3. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Time constant of second boiler pass (T5).  Typical Value = 5. Default: nullptr */
+		/** \brief Time constant of second boiler pass (T5).  Typical Value = 5. Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Time constant of third boiler pass (T6).  Typical Value = 0.5. Default: nullptr */
+		/** \brief Time constant of third boiler pass (T6).  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Time constant of fourth boiler pass (T7).  Typical Value = 0. Default: nullptr */
+		/** \brief Time constant of fourth boiler pass (T7).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t7;
 
-		/** \brief Maximum valve closing velocity (Uc) (&lt;0).  Unit = PU/sec.  Typical Value = -10. Default: nullptr */
+		/** \brief Maximum valve closing velocity (Uc) (<0).  Unit = PU/sec.  Typical Value = -10. Default: 0.0 */
 		CIMPP::Simple_Float uc;
 
-		/** \brief Maximum valve opening velocity (Uo) (&gt;0).  Unit = PU/sec.  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum valve opening velocity (Uo) (>0).  Unit = PU/sec.  Typical Value = 1. Default: 0.0 */
 		CIMPP::Simple_Float uo;
 
 		/** \brief Nonlinear valve characteristic. true = nonlinear valve characteristic is used false = nonlinear valve characteristic is not used. Typical Value = true. Default: false */

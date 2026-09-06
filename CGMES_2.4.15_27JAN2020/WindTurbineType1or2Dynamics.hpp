@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class AsynchronousMachineDynamics;
@@ -27,10 +28,10 @@ namespace CIMPP
 		WindTurbineType1or2Dynamics();
 		~WindTurbineType1or2Dynamics() override;
 
-		/** \brief Asynchronous machine model with which this wind generator type 1 or 2 model is associated. Default: 0 */
+		/** \brief Asynchronous machine model with which this wind generator type 1 or 2 model is associated. Default: nullptr */
 		CIMPP::AsynchronousMachineDynamics* AsynchronousMachineDynamics;
 
-		/** \brief Remote input signal used by this wind generator Type 1 or Type 2 model. Default: 0 */
+		/** \brief Remote input signal used by this wind generator Type 1 or Type 2 model. Default: nullptr */
 		CIMPP::RemoteInputSignal* RemoteInputSignal;
 
 		static const char debugName[];

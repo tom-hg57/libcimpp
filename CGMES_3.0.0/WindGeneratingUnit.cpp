@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "WindGeneratingUnit.WindPowerPlant", { "http://iec.ch/TC57/CIM100-European#", { CGMESProfile::EQ, } } },
 		{ "WindGeneratingUnit.windGenUnitType", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 WindGeneratingUnit::WindGeneratingUnit() : WindPowerPlant(nullptr) {}

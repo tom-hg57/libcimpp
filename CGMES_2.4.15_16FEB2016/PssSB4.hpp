@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,37 +28,37 @@ namespace CIMPP
 		PssSB4();
 		~PssSB4() override;
 
-		/** \brief Gain (Kx). Default: nullptr */
+		/** \brief Gain (Kx). Default: 0.0 */
 		CIMPP::PU kx;
 
-		/** \brief Time constant (Ta). Default: nullptr */
+		/** \brief Time constant (Ta). Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Time constant (Tb). Default: nullptr */
+		/** \brief Time constant (Tb). Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Time constant (Tc). Default: nullptr */
+		/** \brief Time constant (Tc). Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Time constant (Td). Default: nullptr */
+		/** \brief Time constant (Td). Default: 0.0 */
 		CIMPP::Seconds td;
 
-		/** \brief Time constant (Te). Default: nullptr */
+		/** \brief Time constant (Te). Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Time constant (Tt). Default: nullptr */
+		/** \brief Time constant (Tt). Default: 0.0 */
 		CIMPP::Seconds tt;
 
-		/** \brief Reset time constant (Tx1). Default: nullptr */
+		/** \brief Reset time constant (Tx1). Default: 0.0 */
 		CIMPP::Seconds tx1;
 
-		/** \brief Time constant (Tx2). Default: nullptr */
+		/** \brief Time constant (Tx2). Default: 0.0 */
 		CIMPP::Seconds tx2;
 
-		/** \brief Limiter (Vsmax). Default: nullptr */
+		/** \brief Limiter (Vsmax). Default: 0.0 */
 		CIMPP::PU vsmax;
 
-		/** \brief Limiter (Vsmin). Default: nullptr */
+		/** \brief Limiter (Vsmin). Default: 0.0 */
 		CIMPP::PU vsmin;
 
 		static const char debugName[];

@@ -35,7 +35,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PFVArControllerType1Dynamics.RemoteInputSignal", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "PFVArControllerType1Dynamics.VoltageAdjusterDynamics", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PFVArControllerType1Dynamics::PFVArControllerType1Dynamics() : ExcitationSystemDynamics(nullptr), RemoteInputSignal(nullptr), VoltageAdjusterDynamics(nullptr) {}

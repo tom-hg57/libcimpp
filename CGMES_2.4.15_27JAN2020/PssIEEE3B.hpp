@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "InputSignalKind.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,28 +29,28 @@ namespace CIMPP
 		PssIEEE3B();
 		~PssIEEE3B() override;
 
-		/** \brief Notch filter parameter (A1).  Typical Value = 0.359. Default: nullptr */
+		/** \brief Notch filter parameter (A1).  Typical Value = 0.359. Default: 0.0 */
 		CIMPP::PU a1;
 
-		/** \brief Notch filter parameter (A2).  Typical Value = 0.586. Default: nullptr */
+		/** \brief Notch filter parameter (A2).  Typical Value = 0.586. Default: 0.0 */
 		CIMPP::PU a2;
 
-		/** \brief Notch filter parameter (A3).  Typical Value = 0.429. Default: nullptr */
+		/** \brief Notch filter parameter (A3).  Typical Value = 0.429. Default: 0.0 */
 		CIMPP::PU a3;
 
-		/** \brief Notch filter parameter (A4).  Typical Value = 0.564. Default: nullptr */
+		/** \brief Notch filter parameter (A4).  Typical Value = 0.564. Default: 0.0 */
 		CIMPP::PU a4;
 
-		/** \brief Notch filter parameter (A5).  Typical Value = 0.001. Default: nullptr */
+		/** \brief Notch filter parameter (A5).  Typical Value = 0.001. Default: 0.0 */
 		CIMPP::PU a5;
 
-		/** \brief Notch filter parameter (A6).  Typical Value = 0. Default: nullptr */
+		/** \brief Notch filter parameter (A6).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU a6;
 
-		/** \brief Notch filter parameter (A7).  Typical Value = 0.031. Default: nullptr */
+		/** \brief Notch filter parameter (A7).  Typical Value = 0.031. Default: 0.0 */
 		CIMPP::PU a7;
 
-		/** \brief Notch filter parameter (A8).  Typical Value = 0. Default: nullptr */
+		/** \brief Notch filter parameter (A8).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU a8;
 
 		/** \brief Type of input signal #1.  Typical Value = generatorElectricalPower. Default: 0 */
@@ -58,31 +59,31 @@ namespace CIMPP
 		/** \brief Type of input signal #2.  Typical Value = rotorSpeed. Default: 0 */
 		CIMPP::InputSignalKind inputSignal2Type;
 
-		/** \brief Gain on signal # 1 (Ks1).  Typical Value = -0.602. Default: nullptr */
+		/** \brief Gain on signal # 1 (Ks1).  Typical Value = -0.602. Default: 0.0 */
 		CIMPP::PU ks1;
 
-		/** \brief Gain on signal # 2 (Ks2).  Typical Value = 30.12. Default: nullptr */
+		/** \brief Gain on signal # 2 (Ks2).  Typical Value = 30.12. Default: 0.0 */
 		CIMPP::PU ks2;
 
-		/** \brief Transducer time constant (T1).  Typical Value = 0.012. Default: nullptr */
+		/** \brief Transducer time constant (T1).  Typical Value = 0.012. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Transducer time constant (T2).  Typical Value = 0.012. Default: nullptr */
+		/** \brief Transducer time constant (T2).  Typical Value = 0.012. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Washout time constant (Tw1).  Typical Value = 0.3. Default: nullptr */
+		/** \brief Washout time constant (Tw1).  Typical Value = 0.3. Default: 0.0 */
 		CIMPP::Seconds tw1;
 
-		/** \brief Washout time constant (Tw2).  Typical Value = 0.3. Default: nullptr */
+		/** \brief Washout time constant (Tw2).  Typical Value = 0.3. Default: 0.0 */
 		CIMPP::Seconds tw2;
 
-		/** \brief Washout time constant (Tw3).  Typical Value = 0.6. Default: nullptr */
+		/** \brief Washout time constant (Tw3).  Typical Value = 0.6. Default: 0.0 */
 		CIMPP::Seconds tw3;
 
-		/** \brief Stabilizer output max limit (Vstmax).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Stabilizer output max limit (Vstmax).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU vstmax;
 
-		/** \brief Stabilizer output min limit (Vstmin).  Typical Value = -0.1. Default: nullptr */
+		/** \brief Stabilizer output min limit (Vstmin).  Typical Value = -0.1. Default: 0.0 */
 		CIMPP::PU vstmin;
 
 		static const char debugName[];

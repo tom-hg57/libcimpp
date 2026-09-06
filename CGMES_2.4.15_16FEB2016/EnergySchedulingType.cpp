@@ -18,8 +18,8 @@ static const CimClassDetails& getCimClassDetails()
 		EnergySchedulingType(),
 		"http://entsoe.eu/CIM/SchemaExtension/3/1#",
 		{
-			CGMESProfile::EQ_BD,
 			CGMESProfile::EQ,
+			CGMESProfile::EQ_BD,
 		},
 		CGMESProfile::EQ
 	);
@@ -30,9 +30,9 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 {
 	static const std::map<std::string, AttrDetails> ClassAttrDetailsMap =
 	{
-		{ "EnergySchedulingType.EnergySource", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::EQ_BD, CGMESProfile::EQ, } } },
+		{ "EnergySchedulingType.EnergySource", { "http://entsoe.eu/CIM/SchemaExtension/3/1#", { CGMESProfile::EQ, CGMESProfile::EQ_BD, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 EnergySchedulingType::EnergySchedulingType() {}

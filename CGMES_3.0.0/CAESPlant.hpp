@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class ThermalGeneratingUnit;
@@ -26,7 +27,7 @@ namespace CIMPP
 		CAESPlant();
 		~CAESPlant() override;
 
-		/** \brief A thermal generating unit may be a member of a compressed air energy storage plant. Default: 0 */
+		/** \brief A thermal generating unit may be a member of a compressed air energy storage plant. Default: nullptr */
 		CIMPP::ThermalGeneratingUnit* ThermalGeneratingUnit;
 
 		static const char debugName[];

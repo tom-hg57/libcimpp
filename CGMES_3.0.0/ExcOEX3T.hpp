@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,61 +28,61 @@ namespace CIMPP
 		ExcOEX3T();
 		~ExcOEX3T() override;
 
-		/** \brief Saturation parameter (&lt;i&gt;E&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Saturation parameter (<i>E</i><i><sub>1</sub></i>). Default: 0.0 */
 		CIMPP::PU e1;
 
-		/** \brief Saturation parameter (&lt;i&gt;E&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Saturation parameter (<i>E</i><i><sub>2</sub></i>). Default: 0.0 */
 		CIMPP::PU e2;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;A&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Gain (<i>K</i><i><sub>A</sub></i>). Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;C&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Gain (<i>K</i><i><sub>C</sub></i>). Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;D&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Gain (<i>K</i><i><sub>D</sub></i>). Default: 0.0 */
 		CIMPP::PU kd;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;E&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Gain (<i>K</i><i><sub>E</sub></i>). Default: 0.0 */
 		CIMPP::PU ke;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;F&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Gain (<i>K</i><i><sub>F</sub></i>). Default: 0.0 */
 		CIMPP::PU kf;
 
-		/** \brief Saturation parameter (&lt;i&gt;S&lt;/i&gt;&lt;i&gt;&lt;sub&gt;E&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;[E&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;]&lt;/i&gt;). Default: nullptr */
+		/** \brief Saturation parameter (<i>S</i><i><sub>E</sub></i><i>[E</i><i><sub>1</sub></i><i>]</i>). Default: 0.0 */
 		CIMPP::PU see1;
 
-		/** \brief Saturation parameter (&lt;i&gt;S&lt;/i&gt;&lt;i&gt;&lt;sub&gt;E&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;[E&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;&lt;i&gt;]&lt;/i&gt;). Default: nullptr */
+		/** \brief Saturation parameter (<i>S</i><i><sub>E</sub></i><i>[E</i><i><sub>2</sub></i><i>]</i>). Default: 0.0 */
 		CIMPP::PU see2;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>1</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>2</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>3</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;4&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>4</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;5&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>5</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;6&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>6</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;E&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>E</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;F&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>F</sub></i>) (&gt;= 0). Default: 0.0 */
 		CIMPP::Seconds tf;
 
-		/** \brief Limiter (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; ExcOEX3T.vrmin). Default: nullptr */
+		/** \brief Limiter (<i>V</i><i><sub>RMAX</sub></i>) (&gt; ExcOEX3T.vrmin). Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Limiter (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; ExcOEX3T.vrmax). Default: nullptr */
+		/** \brief Limiter (<i>V</i><i><sub>RMIN</sub></i>) (&lt; ExcOEX3T.vrmax). Default: 0.0 */
 		CIMPP::PU vrmin;
 
 		static const char debugName[];

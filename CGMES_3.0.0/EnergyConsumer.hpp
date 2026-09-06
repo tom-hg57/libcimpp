@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "PerCent.hpp"
 #include "ReactivePower.hpp"
@@ -30,28 +31,28 @@ namespace CIMPP
 		EnergyConsumer();
 		~EnergyConsumer() override;
 
-		/** \brief Load dynamics model used to describe dynamic behaviour of this energy consumer. Default: 0 */
+		/** \brief Load dynamics model used to describe dynamic behaviour of this energy consumer. Default: nullptr */
 		CIMPP::LoadDynamics* LoadDynamics;
 
-		/** \brief The load response characteristic of this load.  If missing, this load is assumed to be constant power. Default: 0 */
+		/** \brief The load response characteristic of this load.  If missing, this load is assumed to be constant power. Default: nullptr */
 		CIMPP::LoadResponseCharacteristic* LoadResponse;
 
-		/** \brief Active power of the load. Load sign convention is used, i.e. positive sign means flow out from a node. For voltage dependent loads the value is at rated voltage. Starting value for a steady state solution. Default: nullptr */
+		/** \brief Active power of the load. Load sign convention is used, i.e. positive sign means flow out from a node. For voltage dependent loads the value is at rated voltage. Starting value for a steady state solution. Default: 0.0 */
 		CIMPP::ActivePower p;
 
-		/** \brief Active power of the load that is a fixed quantity and does not vary as load group value varies. Load sign convention is used, i.e. positive sign means flow out from a node. Default: nullptr */
+		/** \brief Active power of the load that is a fixed quantity and does not vary as load group value varies. Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0 */
 		CIMPP::ActivePower pfixed;
 
-		/** \brief Fixed active power as a percentage of load group fixed active power. Used to represent the time-varying components.  Load sign convention is used, i.e. positive sign means flow out from a node. Default: nullptr */
+		/** \brief Fixed active power as a percentage of load group fixed active power. Used to represent the time-varying components.  Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0 */
 		CIMPP::PerCent pfixedPct;
 
-		/** \brief Reactive power of the load. Load sign convention is used, i.e. positive sign means flow out from a node. For voltage dependent loads the value is at rated voltage. Starting value for a steady state solution. Default: nullptr */
+		/** \brief Reactive power of the load. Load sign convention is used, i.e. positive sign means flow out from a node. For voltage dependent loads the value is at rated voltage. Starting value for a steady state solution. Default: 0.0 */
 		CIMPP::ReactivePower q;
 
-		/** \brief Reactive power of the load that is a fixed quantity and does not vary as load group value varies. Load sign convention is used, i.e. positive sign means flow out from a node. Default: nullptr */
+		/** \brief Reactive power of the load that is a fixed quantity and does not vary as load group value varies. Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0 */
 		CIMPP::ReactivePower qfixed;
 
-		/** \brief Fixed reactive power as a percentage of load group fixed reactive power. Used to represent the time-varying components.  Load sign convention is used, i.e. positive sign means flow out from a node. Default: nullptr */
+		/** \brief Fixed reactive power as a percentage of load group fixed reactive power. Used to represent the time-varying components.  Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0 */
 		CIMPP::PerCent qfixedPct;
 
 		static const char debugName[];

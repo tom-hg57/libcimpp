@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -31,34 +32,34 @@ namespace CIMPP
 		WindProtectionIEC();
 		~WindProtectionIEC() override;
 
-		/** \brief The wind dynamics lookup table associated with this grid protection model. Default: 0 */
+		/** \brief The wind dynamics lookup table associated with this grid protection model. Default: {} */
 		std::list<CIMPP::WindDynamicsLookupTable*> WindDynamicsLookupTable;
 
-		/** \brief Wind generator type 1 or type 2 model with which this wind turbine protection model is associated. Default: 0 */
+		/** \brief Wind generator type 1 or type 2 model with which this wind turbine protection model is associated. Default: nullptr */
 		CIMPP::WindTurbineType1or2IEC* WindTurbineType1or2IEC;
 
-		/** \brief Wind generator type 3 or type 4 model with which this wind turbine protection model is associated. Default: 0 */
+		/** \brief Wind generator type 3 or type 4 model with which this wind turbine protection model is associated. Default: nullptr */
 		CIMPP::WindTurbineType3or4IEC* WindTurbineType3or4IEC;
 
-		/** \brief Maximum rate of change of frequency (&lt;i&gt;dF&lt;/i&gt;&lt;i&gt;&lt;sub&gt;max&lt;/sub&gt;&lt;/i&gt;). It is a type-dependent parameter. Default: nullptr */
+		/** \brief Maximum rate of change of frequency (<i>dF</i><i><sub>max</sub></i>). It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::PU dfimax;
 
-		/** \brief Wind turbine over frequency protection activation threshold (&lt;i&gt;f&lt;/i&gt;&lt;i&gt;&lt;sub&gt;over&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Wind turbine over frequency protection activation threshold (<i>f</i><i><sub>over</sub></i>). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU fover;
 
-		/** \brief Wind turbine under frequency protection activation threshold (&lt;i&gt;f&lt;/i&gt;&lt;i&gt;&lt;sub&gt;under&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Wind turbine under frequency protection activation threshold (<i>f</i><i><sub>under</sub></i>). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU funder;
 
-		/** \brief Zero crossing measurement mode (&lt;i&gt;Mzc&lt;/i&gt;).  It is a type-dependent parameter.  true = WT protection system uses zero crossings to detect frequency (1 in the IEC model) false = WT protection system does not use zero crossings to detect frequency (0 in the IEC model). Default: false */
+		/** \brief Zero crossing measurement mode (<i>Mzc</i>).  It is a type-dependent parameter.  true = WT protection system uses zero crossings to detect frequency (1 in the IEC model) false = WT protection system does not use zero crossings to detect frequency (0 in the IEC model). Default: false */
 		CIMPP::Boolean mzc;
 
-		/** \brief Time interval of moving average window (&lt;i&gt;TfMA&lt;/i&gt;) (&amp;gt;= 0).  It is a type-dependent parameter. Default: nullptr */
+		/** \brief Time interval of moving average window (<i>TfMA</i>) (&gt;= 0).  It is a type-dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tfma;
 
-		/** \brief Wind turbine over voltage protection activation threshold (&lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;over&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Wind turbine over voltage protection activation threshold (<i>u</i><i><sub>over</sub></i>). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU uover;
 
-		/** \brief Wind turbine under voltage protection activation threshold (&lt;i&gt;u&lt;/i&gt;&lt;i&gt;&lt;sub&gt;under&lt;/sub&gt;&lt;/i&gt;). It is a project-dependent parameter. Default: nullptr */
+		/** \brief Wind turbine under voltage protection activation threshold (<i>u</i><i><sub>under</sub></i>). It is a project-dependent parameter. Default: 0.0 */
 		CIMPP::PU uunder;
 
 		static const char debugName[];

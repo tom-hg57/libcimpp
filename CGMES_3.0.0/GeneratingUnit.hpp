@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "Float.hpp"
 #include "GeneratorControlSource.hpp"
@@ -34,61 +35,61 @@ namespace CIMPP
 		GeneratingUnit();
 		~GeneratingUnit() override;
 
-		/** \brief ControlArea specifications for this generating unit. Default: 0 */
+		/** \brief ControlArea specifications for this generating unit. Default: {} */
 		std::list<CIMPP::ControlAreaGeneratingUnit*> ControlAreaGeneratingUnit;
 
-		/** \brief A generating unit may have a gross active power to net active power curve, describing the losses and auxiliary power requirements of the unit. Default: 0 */
+		/** \brief A generating unit may have a gross active power to net active power curve, describing the losses and auxiliary power requirements of the unit. Default: {} */
 		std::list<CIMPP::GrossToNetActivePowerCurve*> GrossToNetActivePowerCurves;
 
-		/** \brief A synchronous machine may operate as a generator and as such becomes a member of a generating unit. Default: 0 */
+		/** \brief A synchronous machine may operate as a generator and as such becomes a member of a generating unit. Default: {} */
 		std::list<CIMPP::RotatingMachine*> RotatingMachine;
 
 		/** \brief The source of controls for a generating unit.  Defines the control status of the generating unit. Default: 0 */
 		CIMPP::GeneratorControlSource genControlSource;
 
-		/** \brief Governor Speed Changer Droop.   This is the change in generator power output divided by the change in frequency normalized by the nominal power of the generator and the nominal frequency and expressed in percent and negated. A positive value of speed change droop provides additional generator output upon a drop in frequency. Default: nullptr */
+		/** \brief Governor Speed Changer Droop.   This is the change in generator power output divided by the change in frequency normalized by the nominal power of the generator and the nominal frequency and expressed in percent and negated. A positive value of speed change droop provides additional generator output upon a drop in frequency. Default: 0.0 */
 		CIMPP::PerCent governorSCD;
 
 		/** \brief Generating unit long term economic participation factor. Default: 0.0 */
 		CIMPP::Float longPF;
 
-		/** \brief This is the maximum operating active power limit the dispatcher can enter for this unit. Default: nullptr */
+		/** \brief This is the maximum operating active power limit the dispatcher can enter for this unit. Default: 0.0 */
 		CIMPP::ActivePower maxOperatingP;
 
-		/** \brief Maximum allowable spinning reserve. Spinning reserve will never be considered greater than this value regardless of the current operating point. Default: nullptr */
+		/** \brief Maximum allowable spinning reserve. Spinning reserve will never be considered greater than this value regardless of the current operating point. Default: 0.0 */
 		CIMPP::ActivePower maximumAllowableSpinningReserve;
 
-		/** \brief This is the minimum operating active power limit the dispatcher can enter for this unit. Default: nullptr */
+		/** \brief This is the minimum operating active power limit the dispatcher can enter for this unit. Default: 0.0 */
 		CIMPP::ActivePower minOperatingP;
 
-		/** \brief The nominal power of the generating unit.  Used to give precise meaning to percentage based attributes such as the governor speed change droop (governorSCD attribute). The attribute shall be a positive value equal to or less than RotatingMachine.ratedS. Default: nullptr */
+		/** \brief The nominal power of the generating unit.  Used to give precise meaning to percentage based attributes such as the governor speed change droop (governorSCD attribute). The attribute shall be a positive value equal to or less than RotatingMachine.ratedS. Default: 0.0 */
 		CIMPP::ActivePower nominalP;
 
 		/** \brief Generating unit economic participation factor.  The sum of the participation factors across generating units does not have to sum to one.  It is used for representing distributed slack participation factor. The attribute shall be a positive value or zero. Default: 0.0 */
 		CIMPP::Float normalPF;
 
-		/** \brief The unit`s gross rated maximum capacity (book value). The attribute shall be a positive value. Default: nullptr */
+		/** \brief The unit`s gross rated maximum capacity (book value). The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::ActivePower ratedGrossMaxP;
 
-		/** \brief The gross rated minimum generation level which the unit can safely operate at while delivering power to the transmission grid. The attribute shall be a positive value. Default: nullptr */
+		/** \brief The gross rated minimum generation level which the unit can safely operate at while delivering power to the transmission grid. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::ActivePower ratedGrossMinP;
 
-		/** \brief The net rated maximum capacity determined by subtracting the auxiliary power used to operate the internal plant machinery from the rated gross maximum capacity. The attribute shall be a positive value. Default: nullptr */
+		/** \brief The net rated maximum capacity determined by subtracting the auxiliary power used to operate the internal plant machinery from the rated gross maximum capacity. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::ActivePower ratedNetMaxP;
 
 		/** \brief Generating unit short term economic participation factor. Default: 0.0 */
 		CIMPP::Float shortPF;
 
-		/** \brief The initial startup cost incurred for each start of the GeneratingUnit. Default: nullptr */
+		/** \brief The initial startup cost incurred for each start of the GeneratingUnit. Default: 0.0 */
 		CIMPP::Money startupCost;
 
-		/** \brief Time it takes to get the unit on-line, from the time that the prime mover mechanical power is applied. Default: nullptr */
+		/** \brief Time it takes to get the unit on-line, from the time that the prime mover mechanical power is applied. Default: 0.0 */
 		CIMPP::Seconds startupTime;
 
-		/** \brief The efficiency of the unit in converting the fuel into electrical energy. Default: nullptr */
+		/** \brief The efficiency of the unit in converting the fuel into electrical energy. Default: 0.0 */
 		CIMPP::PerCent totalEfficiency;
 
-		/** \brief The variable cost component of production per unit of ActivePower. Default: nullptr */
+		/** \brief The variable cost component of production per unit of ActivePower. Default: 0.0 */
 		CIMPP::Money variableCost;
 
 		static const char debugName[];

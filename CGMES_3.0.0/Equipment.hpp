@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 
 namespace CIMPP
@@ -28,10 +29,10 @@ namespace CIMPP
 		Equipment();
 		~Equipment() override;
 
-		/** \brief Container of this equipment. Default: 0 */
+		/** \brief Container of this equipment. Default: nullptr */
 		CIMPP::EquipmentContainer* EquipmentContainer;
 
-		/** \brief The operational limit sets associated with this equipment. Default: 0 */
+		/** \brief The operational limit sets associated with this equipment. Default: {} */
 		std::list<CIMPP::OperationalLimitSet*> OperationalLimitSet;
 
 		/** \brief The aggregate flag provides an alternative way of representing an aggregated (equivalent) element. It is applicable in cases when the dedicated classes for equivalent equipment do not have all of the attributes necessary to represent the required level of detail.  In case the flag is set to `true` the single instance of equipment represents multiple pieces of equipment that have been modelled together as an aggregate equivalent obtained by a network reduction procedure. Examples would be power transformers or synchronous machines operating in parallel modelled as a single aggregate power transformer or aggregate synchronous machine.   The attribute is not used for EquivalentBranch, EquivalentShunt and EquivalentInjection. Default: false */

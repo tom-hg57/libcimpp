@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "CurrentFlow.hpp"
 
 namespace CIMPP
@@ -26,7 +27,7 @@ namespace CIMPP
 		BusbarSection();
 		~BusbarSection() override;
 
-		/** \brief Maximum allowable peak short-circuit current of busbar (Ipmax in the IEC 60909-0).  Mechanical limit of the busbar in the substation itself. Used for short circuit data exchange according to IEC 60909 Default: nullptr */
+		/** \brief Maximum allowable peak short-circuit current of busbar (Ipmax in the IEC 60909-0).  Mechanical limit of the busbar in the substation itself. Used for short circuit data exchange according to IEC 60909 Default: 0.0 */
 		CIMPP::CurrentFlow ipMax;
 
 		static const char debugName[];

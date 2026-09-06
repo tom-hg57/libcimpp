@@ -40,7 +40,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PssELIN2.ts5", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "PssELIN2.ts6", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PssELIN2::PssELIN2() {}

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class Accumulator;
@@ -27,10 +28,10 @@ namespace CIMPP
 		AccumulatorLimitSet();
 		~AccumulatorLimitSet() override;
 
-		/** \brief The set of limits. Default: 0 */
+		/** \brief The set of limits. Default: {} */
 		std::list<CIMPP::AccumulatorLimit*> Limits;
 
-		/** \brief A measurement may have zero or more limit ranges defined for it. Default: 0 */
+		/** \brief A measurement may have zero or more limit ranges defined for it. Default: {} */
 		std::list<CIMPP::Accumulator*> Measurements;
 
 		static const char debugName[];

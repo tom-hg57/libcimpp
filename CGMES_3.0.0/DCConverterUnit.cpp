@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "DCConverterUnit.Substation", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "DCConverterUnit.operationMode", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 DCConverterUnit::DCConverterUnit() : Substation(nullptr) {}

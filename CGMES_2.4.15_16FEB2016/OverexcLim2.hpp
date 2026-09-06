@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 
 namespace CIMPP
@@ -26,16 +27,16 @@ namespace CIMPP
 		OverexcLim2();
 		~OverexcLim2() override;
 
-		/** \brief Limit value of rated field current (I).  Typical Value = 1.05. Default: nullptr */
+		/** \brief Limit value of rated field current (I).  Typical Value = 1.05. Default: 0.0 */
 		CIMPP::PU ifdlim;
 
-		/** \brief Gain Over excitation limiter (K).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Gain Over excitation limiter (K).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU koi;
 
-		/** \brief Maximum error signal (V).  Typical Value = 0. Default: nullptr */
+		/** \brief Maximum error signal (V).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU voimax;
 
-		/** \brief Minimum error signal (V).  Typical Value = -9999. Default: nullptr */
+		/** \brief Minimum error signal (V).  Typical Value = -9999. Default: 0.0 */
 		CIMPP::PU voimin;
 
 		static const char debugName[];

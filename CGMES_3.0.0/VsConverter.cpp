@@ -19,8 +19,8 @@ static const CimClassDetails& getCimClassDetails()
 		VsConverter(),
 		"http://iec.ch/TC57/CIM100#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::SSH,
 			CGMESProfile::SV,
 		},
@@ -49,7 +49,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "VsConverter.targetUpcc", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SSH, } } },
 		{ "VsConverter.uv", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SV, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 VsConverter::VsConverter() : CapabilityCurve(nullptr), VSCDynamics(nullptr) {}

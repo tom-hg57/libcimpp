@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "InputSignalKind.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -34,52 +35,52 @@ namespace CIMPP
 		/** \brief Type of input signal #2.  Typical Value = generatorElectricalPower. Default: 0 */
 		CIMPP::InputSignalKind inputSignal2Type;
 
-		/** \brief Gain (K1). Default: nullptr */
+		/** \brief Gain (K1). Default: 0.0 */
 		CIMPP::PU k1;
 
-		/** \brief Gain (K2). Default: nullptr */
+		/** \brief Gain (K2). Default: 0.0 */
 		CIMPP::PU k2;
 
-		/** \brief Limiter (Lsmax). Default: nullptr */
+		/** \brief Limiter (Lsmax). Default: 0.0 */
 		CIMPP::PU lsmax;
 
-		/** \brief Limiter (Lsmin). Default: nullptr */
+		/** \brief Limiter (Lsmin). Default: 0.0 */
 		CIMPP::PU lsmin;
 
-		/** \brief Time constant (T1). Default: nullptr */
+		/** \brief Time constant (T1). Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Time constant (T10). Default: nullptr */
+		/** \brief Time constant (T10). Default: 0.0 */
 		CIMPP::Seconds t10;
 
-		/** \brief Time constant (T2). Default: nullptr */
+		/** \brief Time constant (T2). Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Time constant (T3). Default: nullptr */
+		/** \brief Time constant (T3). Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Time constant (T4). Default: nullptr */
+		/** \brief Time constant (T4). Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Time constant (T5). Default: nullptr */
+		/** \brief Time constant (T5). Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Time constant (T6). Default: nullptr */
+		/** \brief Time constant (T6). Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Time constant (T7). Default: nullptr */
+		/** \brief Time constant (T7). Default: 0.0 */
 		CIMPP::Seconds t7;
 
-		/** \brief Time constant (T8). Default: nullptr */
+		/** \brief Time constant (T8). Default: 0.0 */
 		CIMPP::Seconds t8;
 
-		/** \brief Time constant (T9). Default: nullptr */
+		/** \brief Time constant (T9). Default: 0.0 */
 		CIMPP::Seconds t9;
 
-		/** \brief Cutoff limiter (Vcl). Default: nullptr */
+		/** \brief Cutoff limiter (Vcl). Default: 0.0 */
 		CIMPP::PU vcl;
 
-		/** \brief Cutoff limiter (Vcu). Default: nullptr */
+		/** \brief Cutoff limiter (Vcu). Default: 0.0 */
 		CIMPP::PU vcu;
 
 		static const char debugName[];

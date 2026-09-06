@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Simple_Float.hpp"
 
 namespace CIMPP
@@ -27,13 +28,13 @@ namespace CIMPP
 		AnalogControl();
 		~AnalogControl() override;
 
-		/** \brief The Control variable associated with the MeasurementValue. Default: 0 */
+		/** \brief The Control variable associated with the MeasurementValue. Default: nullptr */
 		CIMPP::AnalogValue* AnalogValue;
 
-		/** \brief Normal value range maximum for any of the Control.value. Used for scaling, e.g. in bar graphs. Default: nullptr */
+		/** \brief Normal value range maximum for any of the Control.value. Used for scaling, e.g. in bar graphs. Default: 0.0 */
 		CIMPP::Simple_Float maxValue;
 
-		/** \brief Normal value range minimum for any of the Control.value. Used for scaling, e.g. in bar graphs. Default: nullptr */
+		/** \brief Normal value range minimum for any of the Control.value. Used for scaling, e.g. in bar graphs. Default: 0.0 */
 		CIMPP::Simple_Float minValue;
 
 		static const char debugName[];

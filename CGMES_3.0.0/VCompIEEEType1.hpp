@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,13 +28,13 @@ namespace CIMPP
 		VCompIEEEType1();
 		~VCompIEEEType1() override;
 
-		/** \brief &lt;font color=`#0f0f0f`&gt;Resistive component of compensation of a generator (&lt;i&gt;Rc&lt;/i&gt;) (&amp;gt;= 0).&lt;/font&gt; Default: nullptr */
+		/** \brief <font color=`#0f0f0f`>Resistive component of compensation of a generator (<i>Rc</i>) (&gt;= 0).</font> Default: 0.0 */
 		CIMPP::PU rc;
 
-		/** \brief &lt;font color=`#0f0f0f`&gt;Time constant which is used for the combined voltage sensing and compensation signal (&lt;i&gt;Tr&lt;/i&gt;) (&amp;gt;= 0).&lt;/font&gt; Default: nullptr */
+		/** \brief <font color=`#0f0f0f`>Time constant which is used for the combined voltage sensing and compensation signal (<i>Tr</i>) (&gt;= 0).</font> Default: 0.0 */
 		CIMPP::Seconds tr;
 
-		/** \brief &lt;font color=`#0f0f0f`&gt;Reactive component of compensation of a generator (&lt;i&gt;Xc&lt;/i&gt;) (&amp;gt;= 0).&lt;/font&gt; Default: nullptr */
+		/** \brief <font color=`#0f0f0f`>Reactive component of compensation of a generator (<i>Xc</i>) (&gt;= 0).</font> Default: 0.0 */
 		CIMPP::PU xc;
 
 		static const char debugName[];

@@ -19,7 +19,7 @@ namespace CIMPP
 			none,
 			/** Length in metres. */
 			m,
-			/** Mass in kilograms.  Note: multiplier &quot;k&quot; is included in this unit symbol for compatibility with IEC 61850-7-3. */
+			/** Mass in kilograms.  Note: multiplier "k" is included in this unit symbol for compatibility with IEC 61850-7-3. */
 			kg,
 			/** Time in seconds. */
 			s,
@@ -71,7 +71,7 @@ namespace CIMPP
 			Wb,
 			/** Magnetic flux density in teslas (Wb/m2). */
 			T,
-			/** Real power in watts (J/s). Electrical power may have real and reactive components. The real portion of electrical power (I&amp;#178;R or VIcos(phi)), is expressed in Watts. See also apparent power and reactive power. */
+			/** Real power in watts (J/s). Electrical power may have real and reactive components. The real portion of electrical power (I&#178;R or VIcos(phi)), is expressed in Watts. See also apparent power and reactive power. */
 			W,
 			/** Pressure in pascals (N/m²). Note: the absolute or relative measurement of pressure is implied with this entry. See below for more explicit forms. */
 			Pa,
@@ -87,9 +87,9 @@ namespace CIMPP
 			m3Pers,
 			/** Fuel efficiency in metres per cubic metres (m/m³). */
 			mPerm3,
-			/** Moment of mass in kilogram metres (kg·m) (first moment of mass). Note: multiplier &quot;k&quot; is included in this unit symbol for compatibility with IEC 61850-7-3. */
+			/** Moment of mass in kilogram metres (kg·m) (first moment of mass). Note: multiplier "k" is included in this unit symbol for compatibility with IEC 61850-7-3. */
 			kgm,
-			/** Density in kilogram/cubic metres (kg/m³). Note: multiplier &quot;k&quot; is included in this unit symbol for compatibility with IEC 61850-7-3. */
+			/** Density in kilogram/cubic metres (kg/m³). Note: multiplier "k" is included in this unit symbol for compatibility with IEC 61850-7-3. */
 			kgPerm3,
 			/** Viscosity in square metres / second (m²/s). */
 			m2Pers,
@@ -117,7 +117,7 @@ namespace CIMPP
 			JPerkgK,
 			/** Apparent power in volt amperes. See also real power and reactive power. */
 			VA,
-			/** Reactive power in volt amperes reactive. The &quot;reactive&quot; or &quot;imaginary&quot; component of electrical power (VIsin(phi)). (See also real power and apparent power). Note: Different meter designs use different methods to arrive at their results. Some meters may compute reactive power as an arithmetic value, while others compute the value vectorially. The data consumer should determine the method in use and the suitability of the measurement for the intended purpose. */
+			/** Reactive power in volt amperes reactive. The "reactive" or "imaginary" component of electrical power (VIsin(phi)). (See also real power and apparent power). Note: Different meter designs use different methods to arrive at their results. Some meters may compute reactive power as an arithmetic value, while others compute the value vectorially. The data consumer should determine the method in use and the suitability of the measurement for the intended purpose. */
 			VAr,
 			/** Power factor, dimensionless. Note 1: This definition of power factor only holds for balanced systems. See the alternative definition under code 153. Note 2 : Beware of differing sign conventions in use between the IEC and EEI. It is assumed that the data consumer understands the type of meter in use and the sign convention in use by the utility. */
 			cosPhi,
@@ -145,15 +145,15 @@ namespace CIMPP
 			character,
 			/** Data rate (baud) in characters per second. */
 			charPers,
-			/** Moment of mass in kilogram square metres (kg·m²) (Second moment of mass, commonly called the moment of inertia). Note: multiplier &quot;k&quot; is included in this unit symbol for compatibility with IEC 61850-7-3. */
+			/** Moment of mass in kilogram square metres (kg·m²) (Second moment of mass, commonly called the moment of inertia). Note: multiplier "k" is included in this unit symbol for compatibility with IEC 61850-7-3. */
 			kgm2,
-			/** Sound pressure level in decibels. Note:  multiplier &quot;d&quot; is included in this unit symbol for compatibility with IEC 61850-7-3. */
+			/** Sound pressure level in decibels. Note:  multiplier "d" is included in this unit symbol for compatibility with IEC 61850-7-3. */
 			dB,
 			/** Ramp rate in watts per second. */
 			WPers,
 			/** Volumetric flow rate in litres per second. */
 			lPers,
-			/** Power level (logarithmic ratio of signal strength , Bel-mW), normalized to 1mW. Note:  multiplier &quot;d&quot; is included in this unit symbol for compatibility with IEC 61850-7-3. */
+			/** Power level (logarithmic ratio of signal strength , Bel-mW), normalized to 1mW. Note:  multiplier "d" is included in this unit symbol for compatibility with IEC 61850-7-3. */
 			dBm,
 			/** Time in hours, hour = 60 min = 3600 s. */
 			h,
@@ -197,7 +197,7 @@ namespace CIMPP
 			molPermol,
 			/** Concentration, Molality, the amount of solute in moles and the amount of solvent in kilograms. */
 			molPerkg,
-			/** Time, Ratio of time.  Note: Users may need to supply a prefix such as ‘&amp;#181;' to show rates such as ‘&amp;#181;s/s'. */
+			/** Time, Ratio of time.  Note: Users may need to supply a prefix such as ‘&#181;' to show rates such as ‘&#181;s/s'. */
 			sPers,
 			/** Frequency, rate of frequency change.   Note: Users may need to supply a prefix such as ‘m' to show rates such as ‘mHz/Hz'. */
 			HzPerHz,
@@ -267,7 +267,7 @@ namespace CIMPP
 			anglesec,
 			/** Area, hectares. */
 			ha,
-			/** Mass in tons, &quot;tonne&quot; or &quot;metric  ton&quot; (1000 kg = 1 Mg). */
+			/** Mass in tons, "tonne" or "metric  ton" (1000 kg = 1 Mg). */
 			tonne,
 			/** Pressure in bars, (1 bar = 100 kPa). */
 			bar,
@@ -293,7 +293,7 @@ namespace CIMPP
 			VPerVAr,
 			/** Electric resistance per length in ohms per metre ((V/A)/m). */
 			ohmPerm,
-			/** Weight per energy in kilograms per joule (kg/J). Note: multiplier &quot;k&quot; is included in this unit symbol for compatibility with IEC 61850-7-3. */
+			/** Weight per energy in kilograms per joule (kg/J). Note: multiplier "k" is included in this unit symbol for compatibility with IEC 61850-7-3. */
 			kgPerJ,
 			/** Energy rate in joules per second (J/s). */
 			JPers,

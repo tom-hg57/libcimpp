@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class LoadMotor;
@@ -27,10 +28,10 @@ namespace CIMPP
 		LoadAggregate();
 		~LoadAggregate() override;
 
-		/** \brief Aggregate motor (dynamic) load associated with this aggregate load. Default: 0 */
+		/** \brief Aggregate motor (dynamic) load associated with this aggregate load. Default: nullptr */
 		CIMPP::LoadMotor* LoadMotor;
 
-		/** \brief Aggregate static load associated with this aggregate load. Default: 0 */
+		/** \brief Aggregate static load associated with this aggregate load. Default: nullptr */
 		CIMPP::LoadStatic* LoadStatic;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,40 +29,40 @@ namespace CIMPP
 		ExcHU();
 		~ExcHU() override;
 
-		/** \brief Major loop PI tag gain factor (&lt;i&gt;Ae&lt;/i&gt;).  Typical value = 3. Default: nullptr */
+		/** \brief Major loop PI tag gain factor (<i>Ae</i>).  Typical value = 3. Default: 0.0 */
 		CIMPP::PU ae;
 
-		/** \brief Minor loop PI tag gain factor (&lt;i&gt;Ai&lt;/i&gt;).  Typical value = 22. Default: nullptr */
+		/** \brief Minor loop PI tag gain factor (<i>Ai</i>).  Typical value = 22. Default: 0.0 */
 		CIMPP::PU ai;
 
-		/** \brief AVR constant (&lt;i&gt;Atr&lt;/i&gt;).  Typical value = 2,19. Default: nullptr */
+		/** \brief AVR constant (<i>Atr</i>).  Typical value = 2,19. Default: 0.0 */
 		CIMPP::PU atr;
 
-		/** \brief Field voltage control signal upper limit on AVR base (&lt;i&gt;Emax&lt;/i&gt;) (&amp;gt; ExcHU.emin).  Typical value = 0,996. Default: nullptr */
+		/** \brief Field voltage control signal upper limit on AVR base (<i>Emax</i>) (&gt; ExcHU.emin).  Typical value = 0,996. Default: 0.0 */
 		CIMPP::PU emax;
 
-		/** \brief Field voltage control signal lower limit on AVR base (&lt;i&gt;Emin&lt;/i&gt;) (&amp;lt; ExcHU.emax).  Typical value = -0,866. Default: nullptr */
+		/** \brief Field voltage control signal lower limit on AVR base (<i>Emin</i>) (&lt; ExcHU.emax).  Typical value = -0,866. Default: 0.0 */
 		CIMPP::PU emin;
 
-		/** \brief Major loop PI tag output signal upper limit (&lt;i&gt;Imax&lt;/i&gt;) (&amp;gt; ExcHU.imin).  Typical value = 2,19. Default: nullptr */
+		/** \brief Major loop PI tag output signal upper limit (<i>Imax</i>) (&gt; ExcHU.imin).  Typical value = 2,19. Default: 0.0 */
 		CIMPP::PU imax;
 
-		/** \brief Major loop PI tag output signal lower limit (&lt;i&gt;Imin&lt;/i&gt;) (&amp;lt; ExcHU.imax).  Typical value = 0,1. Default: nullptr */
+		/** \brief Major loop PI tag output signal lower limit (<i>Imin</i>) (&lt; ExcHU.imax).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::PU imin;
 
-		/** \brief Voltage base conversion constant (&lt;i&gt;Ke&lt;/i&gt;).  Typical value = 4,666. Default: 0.0 */
+		/** \brief Voltage base conversion constant (<i>Ke</i>).  Typical value = 4,666. Default: 0.0 */
 		CIMPP::Float ke;
 
-		/** \brief Current base conversion constant (&lt;i&gt;Ki&lt;/i&gt;).  Typical value = 0,21428. Default: 0.0 */
+		/** \brief Current base conversion constant (<i>Ki</i>).  Typical value = 0,21428. Default: 0.0 */
 		CIMPP::Float ki;
 
-		/** \brief Major loop PI tag integration time constant (&lt;i&gt;Te&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,154. Default: nullptr */
+		/** \brief Major loop PI tag integration time constant (<i>Te</i>) (&gt;= 0).  Typical value = 0,154. Default: 0.0 */
 		CIMPP::Seconds te;
 
-		/** \brief Minor loop PI control tag integration time constant (&lt;i&gt;Ti&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,01333. Default: nullptr */
+		/** \brief Minor loop PI control tag integration time constant (<i>Ti</i>) (&gt;= 0).  Typical value = 0,01333. Default: 0.0 */
 		CIMPP::Seconds ti;
 
-		/** \brief Filter time constant (&lt;i&gt;Tr&lt;/i&gt;) (&amp;gt;= 0). If a voltage compensator is used in conjunction with this excitation system model, &lt;i&gt;Tr &lt;/i&gt;should be set to 0.  Typical value = 0,01. Default: nullptr */
+		/** \brief Filter time constant (<i>Tr</i>) (&gt;= 0). If a voltage compensator is used in conjunction with this excitation system model, <i>Tr </i>should be set to 0.  Typical value = 0,01. Default: 0.0 */
 		CIMPP::Seconds tr;
 
 		static const char debugName[];

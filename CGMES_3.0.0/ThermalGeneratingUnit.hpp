@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class CAESPlant;
@@ -29,16 +30,16 @@ namespace CIMPP
 		ThermalGeneratingUnit();
 		~ThermalGeneratingUnit() override;
 
-		/** \brief A thermal generating unit may be a member of a compressed air energy storage plant. Default: 0 */
+		/** \brief A thermal generating unit may be a member of a compressed air energy storage plant. Default: nullptr */
 		CIMPP::CAESPlant* CAESPlant;
 
-		/** \brief A thermal generating unit may be a member of a cogeneration plant. Default: 0 */
+		/** \brief A thermal generating unit may be a member of a cogeneration plant. Default: nullptr */
 		CIMPP::CogenerationPlant* CogenerationPlant;
 
-		/** \brief A thermal generating unit may be a member of a combined cycle plant. Default: 0 */
+		/** \brief A thermal generating unit may be a member of a combined cycle plant. Default: nullptr */
 		CIMPP::CombinedCyclePlant* CombinedCyclePlant;
 
-		/** \brief A thermal generating unit may have one or more fossil fuels. Default: 0 */
+		/** \brief A thermal generating unit may have one or more fossil fuels. Default: {} */
 		std::list<CIMPP::FossilFuel*> FossilFuels;
 
 		static const char debugName[];

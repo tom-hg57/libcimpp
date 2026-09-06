@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "Float.hpp"
 #include "PU.hpp"
@@ -29,28 +30,28 @@ namespace CIMPP
 		ExcSCRX();
 		~ExcSCRX() override;
 
-		/** \brief Power source switch (&lt;i&gt;Cswitch&lt;/i&gt;). true = fixed voltage of 1.0 PU false = generator terminal voltage. Default: false */
+		/** \brief Power source switch (<i>Cswitch</i>). true = fixed voltage of 1.0 PU false = generator terminal voltage. Default: false */
 		CIMPP::Boolean cswitch;
 
-		/** \brief Maximum field voltage output (&lt;i&gt;Emax&lt;/i&gt;) (&amp;gt; ExcSCRX.emin).  Typical value = 5. Default: nullptr */
+		/** \brief Maximum field voltage output (<i>Emax</i>) (&gt; ExcSCRX.emin).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU emax;
 
-		/** \brief Minimum field voltage output (&lt;i&gt;Emin&lt;/i&gt;) (&amp;lt; ExcSCRX.emax).  Typical value = 0. Default: nullptr */
+		/** \brief Minimum field voltage output (<i>Emin</i>) (&lt; ExcSCRX.emax).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU emin;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;) (&amp;gt; 0).  Typical value = 200. Default: nullptr */
+		/** \brief Gain (<i>K</i>) (&gt; 0).  Typical value = 200. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief Ratio of field discharge resistance to field winding resistance ([&lt;i&gt;rc / rfd]&lt;/i&gt;).  Typical value = 0. Default: 0.0 */
+		/** \brief Ratio of field discharge resistance to field winding resistance ([<i>rc / rfd]</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::Float rcrfd;
 
-		/** \brief Gain reduction ratio of lag-lead element ([&lt;i&gt;Ta&lt;/i&gt; / &lt;i&gt;Tb&lt;/i&gt;]). The parameter &lt;i&gt;Ta&lt;/i&gt; is not defined explicitly.  Typical value = 0.1. Default: 0.0 */
+		/** \brief Gain reduction ratio of lag-lead element ([<i>Ta</i> / <i>Tb</i>]). The parameter <i>Ta</i> is not defined explicitly.  Typical value = 0.1. Default: 0.0 */
 		CIMPP::Float tatb;
 
-		/** \brief Denominator time constant of lag-lead block (&lt;i&gt;Tb&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 10. Default: nullptr */
+		/** \brief Denominator time constant of lag-lead block (<i>Tb</i>) (&gt;= 0).  Typical value = 10. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief Time constant of gain block (&lt;i&gt;Te&lt;/i&gt;) (&amp;gt; 0).  Typical value = 0,02. Default: nullptr */
+		/** \brief Time constant of gain block (<i>Te</i>) (&gt; 0).  Typical value = 0,02. Default: 0.0 */
 		CIMPP::Seconds te;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "DCConverterOperatingModeKind.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		DCConverterUnit();
 		~DCConverterUnit() override;
 
-		/** \brief The containing substation of the DC converter unit. Default: 0 */
+		/** \brief The containing substation of the DC converter unit. Default: nullptr */
 		CIMPP::Substation* Substation;
 
 		/** \brief The operating mode of an HVDC bipole (bipolar, monopolar metallic return, etc). Default: 0 */

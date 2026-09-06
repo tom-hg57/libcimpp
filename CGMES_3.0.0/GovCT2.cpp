@@ -85,7 +85,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "GovCT2.wfnl", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "GovCT2.wfspd", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 GovCT2::GovCT2() {}

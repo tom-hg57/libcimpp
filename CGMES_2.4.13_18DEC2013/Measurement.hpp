@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PhaseCode.hpp"
 #include "String.hpp"
 #include "UnitMultiplier.hpp"
@@ -31,13 +32,13 @@ namespace CIMPP
 		Measurement();
 		~Measurement() override;
 
-		/** \brief The measurements associated with this power system resource. Default: 0 */
+		/** \brief The measurements associated with this power system resource. Default: nullptr */
 		CIMPP::PowerSystemResource* PowerSystemResource;
 
-		/** \brief One or more measurements may be associated with a terminal in the network. Default: 0 */
+		/** \brief One or more measurements may be associated with a terminal in the network. Default: nullptr */
 		CIMPP::ACDCTerminal* Terminal;
 
-		/** \brief Specifies the type of measurement.  For example, this specifies if the measurement represents an indoor temperature, outdoor temperature, bus voltage, line flow, etc. Default: '' */
+		/** \brief Specifies the type of measurement.  For example, this specifies if the measurement represents an indoor temperature, outdoor temperature, bus voltage, line flow, etc. Default: "" */
 		CIMPP::String measurementType;
 
 		/** \brief Indicates to which phases the measurement applies and avoids the need to use `measurementType` to also encode phase information (which would explode the types). The phase information in Measurement, along with `measurementType` and `phases` uniquely defines a Measurement for a device, based on normal network phase. Their meaning will not change when the computed energizing phasing is changed due to jumpers or other reasons. If the attribute is missing three phases (ABC) shall be assumed. Default: 0 */

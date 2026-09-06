@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		SvShuntCompensatorSections();
 		~SvShuntCompensatorSections() override;
 
-		/** \brief The shunt compensator for which the state applies. Default: 0 */
+		/** \brief The shunt compensator for which the state applies. Default: nullptr */
 		CIMPP::ShuntCompensator* ShuntCompensator;
 
 		/** \brief The number of sections in service as a continuous variable. The attribute shall be a positive value or zero. To get integer value scale with ShuntCompensator.bPerSection. Default: 0.0 */

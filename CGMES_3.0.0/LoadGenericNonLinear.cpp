@@ -36,7 +36,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "LoadGenericNonLinear.tp", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "LoadGenericNonLinear.tq", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 LoadGenericNonLinear::LoadGenericNonLinear() {}

@@ -19,8 +19,8 @@ static const CimClassDetails& getCimClassDetails()
 		PowerElectronicsConnection(),
 		"http://iec.ch/TC57/CIM100#",
 		{
-			CGMESProfile::DY,
 			CGMESProfile::EQ,
+			CGMESProfile::DY,
 			CGMESProfile::SSH,
 		},
 		CGMESProfile::EQ
@@ -41,7 +41,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PowerElectronicsConnection.ratedS", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 		{ "PowerElectronicsConnection.ratedU", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::EQ, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PowerElectronicsConnection::PowerElectronicsConnection() : PowerElectronicsUnit(nullptr), WindTurbineType3or4Dynamics(nullptr) {}

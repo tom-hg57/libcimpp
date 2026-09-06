@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "TopologicalIsland.AngleRefTopologicalNode", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SV, } } },
 		{ "TopologicalIsland.TopologicalNodes", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SV, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 TopologicalIsland::TopologicalIsland() : AngleRefTopologicalNode(nullptr) {}

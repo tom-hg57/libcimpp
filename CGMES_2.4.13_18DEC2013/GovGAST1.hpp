@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "Frequency.hpp"
 #include "PU.hpp"
@@ -30,106 +31,106 @@ namespace CIMPP
 		GovGAST1();
 		~GovGAST1() override;
 
-		/** \brief Turbine power time constant numerator scale factor (a).  Typical Value = 0.8. Default: nullptr */
+		/** \brief Turbine power time constant numerator scale factor (a).  Typical Value = 0.8. Default: 0.0 */
 		CIMPP::Simple_Float a;
 
-		/** \brief Turbine power time constant denominator scale factor (b).  Typical Value = 1. Default: nullptr */
+		/** \brief Turbine power time constant denominator scale factor (b).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Simple_Float b;
 
-		/** \brief Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0. Default: nullptr */
+		/** \brief Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0 */
 		CIMPP::Frequency db1;
 
-		/** \brief Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0. Default: nullptr */
+		/** \brief Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0. Default: 0.0 */
 		CIMPP::ActivePower db2;
 
-		/** \brief Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: nullptr */
+		/** \brief Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0 */
 		CIMPP::Frequency eps;
 
-		/** \brief Fuel flow at zero power output (Fidle).  Typical Value = 0.18. Default: nullptr */
+		/** \brief Fuel flow at zero power output (Fidle).  Typical Value = 0.18. Default: 0.0 */
 		CIMPP::PU fidle;
 
-		/** \brief Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU gv1;
 
-		/** \brief Nonlinear gain point 2,PU gv (Gv2).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 2,PU gv (Gv2).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU gv2;
 
-		/** \brief Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU gv3;
 
-		/** \brief Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU gv4;
 
-		/** \brief Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU gv5;
 
-		/** \brief Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU gv6;
 
-		/** \brief Governor gain (Ka).  Typical Value = 0. Default: nullptr */
+		/** \brief Governor gain (Ka).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU ka;
 
-		/** \brief Temperature limiter gain (Kt).  Typical Value = 3. Default: nullptr */
+		/** \brief Temperature limiter gain (Kt).  Typical Value = 3. Default: 0.0 */
 		CIMPP::PU kt;
 
-		/** \brief Ambient temperature load limit (Lmax).  Lmax is the turbine power output corresponding to the limiting exhaust gas temperature.  Typical Value = 1. Default: nullptr */
+		/** \brief Ambient temperature load limit (Lmax).  Lmax is the turbine power output corresponding to the limiting exhaust gas temperature.  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU lmax;
 
-		/** \brief Valve position change allowed at fast rate (Loadinc).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Valve position change allowed at fast rate (Loadinc).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::PU loadinc;
 
-		/** \brief Maximum long term fuel valve opening rate (Ltrate).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Maximum long term fuel valve opening rate (Ltrate).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Simple_Float ltrate;
 
-		/** \brief Base for power values (MWbase) (&gt; 0).  Unit = MW. Default: nullptr */
+		/** \brief Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0 */
 		CIMPP::ActivePower mwbase;
 
-		/** \brief Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU pgv1;
 
-		/** \brief Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU pgv2;
 
-		/** \brief Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU pgv3;
 
-		/** \brief Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU pgv4;
 
-		/** \brief Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU pgv5;
 
-		/** \brief Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: nullptr */
+		/** \brief Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU pgv6;
 
-		/** \brief Permanent droop (R).  Typical Value = 0.04. Default: nullptr */
+		/** \brief Permanent droop (R).  Typical Value = 0.04. Default: 0.0 */
 		CIMPP::PU r;
 
-		/** \brief Maximum fuel valve opening rate (Rmax).  Unit = PU/sec.  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum fuel valve opening rate (Rmax).  Unit = PU/sec.  Typical Value = 1. Default: 0.0 */
 		CIMPP::Simple_Float rmax;
 
-		/** \brief Governor mechanism time constant (T1).  T1 represents the natural valve positioning time constant of the governor for small disturbances, as seen when rate limiting is not in effect.  Typical Value = 0.5. Default: nullptr */
+		/** \brief Governor mechanism time constant (T1).  T1 represents the natural valve positioning time constant of the governor for small disturbances, as seen when rate limiting is not in effect.  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Turbine power time constant (T2).  T2 represents delay due to internal energy storage of the gas turbine engine. T2 can be used to give a rough approximation to the delay associated with acceleration of the compressor spool of a multi-shaft engine, or with the compressibility of gas in the plenum of the free power turbine of an aero-derivative unit, for example.  Typical Value = 0.5. Default: nullptr */
+		/** \brief Turbine power time constant (T2).  T2 represents delay due to internal energy storage of the gas turbine engine. T2 can be used to give a rough approximation to the delay associated with acceleration of the compressor spool of a multi-shaft engine, or with the compressibility of gas in the plenum of the free power turbine of an aero-derivative unit, for example.  Typical Value = 0.5. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Turbine exhaust temperature time constant (T3).  T3 represents delay in the exhaust temperature and load limiting system. Typical Value = 3. Default: nullptr */
+		/** \brief Turbine exhaust temperature time constant (T3).  T3 represents delay in the exhaust temperature and load limiting system. Typical Value = 3. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Governor lead time constant (T4).  Typical Value = 0. Default: nullptr */
+		/** \brief Governor lead time constant (T4).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Governor lag time constant (T5).  Typical Value = 0. Default: nullptr */
+		/** \brief Governor lag time constant (T5).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Valve position averaging time constant (Tltr).  Typical Value = 10. Default: nullptr */
+		/** \brief Valve position averaging time constant (Tltr).  Typical Value = 10. Default: 0.0 */
 		CIMPP::Seconds tltr;
 
-		/** \brief Maximum turbine power, PU of MWbase (Vmax).  Typical Value = 1. Default: nullptr */
+		/** \brief Maximum turbine power, PU of MWbase (Vmax).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU vmax;
 
-		/** \brief Minimum turbine power, PU of MWbase (Vmin).  Typical Value = 0. Default: nullptr */
+		/** \brief Minimum turbine power, PU of MWbase (Vmin).  Typical Value = 0. Default: 0.0 */
 		CIMPP::PU vmin;
 
 		static const char debugName[];

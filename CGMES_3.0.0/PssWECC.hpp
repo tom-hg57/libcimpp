@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "InputSignalKind.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -34,52 +35,52 @@ namespace CIMPP
 		/** \brief Type of input signal #2 (rotorAngularFrequencyDeviation, busFrequencyDeviation, generatorElectricalPower, generatorAcceleratingPower, busVoltage, busVoltageDerivative - shall be different than PssWECC.inputSignal1Type).  Typical value = busVoltageDerivative. Default: 0 */
 		CIMPP::InputSignalKind inputSignal2Type;
 
-		/** \brief Input signal 1 gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,13. Default: nullptr */
+		/** \brief Input signal 1 gain (<i>K</i><i><sub>1</sub></i>).  Typical value = 1,13. Default: 0.0 */
 		CIMPP::PU k1;
 
-		/** \brief Input signal 2 gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,0. Default: nullptr */
+		/** \brief Input signal 2 gain (<i>K</i><i><sub>2</sub></i>).  Typical value = 0,0. Default: 0.0 */
 		CIMPP::PU k2;
 
-		/** \brief Input signal 1 transducer time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,037. Default: nullptr */
+		/** \brief Input signal 1 transducer time constant (<i>T</i><i><sub>1</sub></i>) (&gt;= 0).  Typical value = 0,037. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;10&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Lag time constant (<i>T</i><i><sub>10</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds t10;
 
-		/** \brief Input signal 2 transducer time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,0. Default: nullptr */
+		/** \brief Input signal 2 transducer time constant (<i>T</i><i><sub>2</sub></i>) (&gt;= 0).  Typical value = 0,0. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Stabilizer washout time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 9,5. Default: nullptr */
+		/** \brief Stabilizer washout time constant (<i>T</i><i><sub>3</sub></i>) (&gt;= 0).  Typical value = 9,5. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Stabilizer washout time lag constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;4&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 9,5. Default: nullptr */
+		/** \brief Stabilizer washout time lag constant (<i>T</i><i><sub>4</sub></i>) (&gt;= 0).  Typical value = 9,5. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Lead time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;5&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1,7. Default: nullptr */
+		/** \brief Lead time constant (<i>T</i><i><sub>5</sub></i>) (&gt;= 0).  Typical value = 1,7. Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;6&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1,5. Default: nullptr */
+		/** \brief Lag time constant (<i>T</i><i><sub>6</sub></i>) (&gt;= 0).  Typical value = 1,5. Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Lead time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;7&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1,7. Default: nullptr */
+		/** \brief Lead time constant (<i>T</i><i><sub>7</sub></i>) (&gt;= 0).  Typical value = 1,7. Default: 0.0 */
 		CIMPP::Seconds t7;
 
-		/** \brief Lag time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;8&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 1,5. Default: nullptr */
+		/** \brief Lag time constant (<i>T</i><i><sub>8</sub></i>) (&gt;= 0).  Typical value = 1,5. Default: 0.0 */
 		CIMPP::Seconds t8;
 
-		/** \brief Lead time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;9&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Lead time constant (<i>T</i><i><sub>9</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds t9;
 
-		/** \brief Minimum value for voltage compensator output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;CL&lt;/sub&gt;&lt;/i&gt;). Typical value = 0. Default: nullptr */
+		/** \brief Minimum value for voltage compensator output (<i>V</i><i><sub>CL</sub></i>). Typical value = 0. Default: 0.0 */
 		CIMPP::PU vcl;
 
-		/** \brief Maximum value for voltage compensator output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;CU&lt;/sub&gt;&lt;/i&gt;). Typical value = 0. Default: nullptr */
+		/** \brief Maximum value for voltage compensator output (<i>V</i><i><sub>CU</sub></i>). Typical value = 0. Default: 0.0 */
 		CIMPP::PU vcu;
 
-		/** \brief Maximum output signal (&lt;i&gt;Vsmax&lt;/i&gt;) (&amp;gt; PssWECC.vsmin). Typical value = 0,05. Default: nullptr */
+		/** \brief Maximum output signal (<i>Vsmax</i>) (&gt; PssWECC.vsmin). Typical value = 0,05. Default: 0.0 */
 		CIMPP::PU vsmax;
 
-		/** \brief Minimum output signal (&lt;i&gt;Vsmin&lt;/i&gt;) (&amp;lt; PssWECC.vsmax).  Typical value = -0,05. Default: nullptr */
+		/** \brief Minimum output signal (<i>Vsmin</i>) (&lt; PssWECC.vsmax).  Typical value = -0,05. Default: 0.0 */
 		CIMPP::PU vsmin;
 
 		static const char debugName[];

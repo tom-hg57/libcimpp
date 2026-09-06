@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "AccumulatorLimit.LimitSet", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 		{ "AccumulatorLimit.value", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 AccumulatorLimit::AccumulatorLimit() : LimitSet(nullptr) {}

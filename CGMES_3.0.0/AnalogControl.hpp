@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		AnalogControl();
 		~AnalogControl() override;
 
-		/** \brief The MeasurementValue that is controlled. Default: 0 */
+		/** \brief The MeasurementValue that is controlled. Default: nullptr */
 		CIMPP::AnalogValue* AnalogValue;
 
 		/** \brief Normal value range maximum for any of the Control.value. Used for scaling, e.g. in bar graphs. Default: 0.0 */

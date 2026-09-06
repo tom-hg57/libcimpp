@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 
@@ -27,58 +28,58 @@ namespace CIMPP
 		DiscExcContIEEEDEC1A();
 		~DiscExcContIEEEDEC1A() override;
 
-		/** \brief Speed change reference (&lt;i&gt;E&lt;/i&gt;&lt;i&gt;&lt;sub&gt;SC&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,0015. Default: nullptr */
+		/** \brief Speed change reference (<i>E</i><i><sub>SC</sub></i>).  Typical value = 0,0015. Default: 0.0 */
 		CIMPP::PU esc;
 
-		/** \brief Discontinuous controller gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;AN&lt;/sub&gt;&lt;/i&gt;).  Typical value = 400. Default: nullptr */
+		/** \brief Discontinuous controller gain (<i>K</i><i><sub>AN</sub></i>).  Typical value = 400. Default: 0.0 */
 		CIMPP::PU kan;
 
-		/** \brief Terminal voltage limiter gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;ETL&lt;/sub&gt;&lt;/i&gt;).  Typical value = 47. Default: nullptr */
+		/** \brief Terminal voltage limiter gain (<i>K</i><i><sub>ETL</sub></i>).  Typical value = 47. Default: 0.0 */
 		CIMPP::PU ketl;
 
-		/** \brief Discontinuous controller time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;AN&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,08. Default: nullptr */
+		/** \brief Discontinuous controller time constant (<i>T</i><i><sub>AN</sub></i>) (&gt;= 0).  Typical value = 0,08. Default: 0.0 */
 		CIMPP::Seconds tan;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;D&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,03. Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>D</sub></i>) (&gt;= 0).  Typical value = 0,03. Default: 0.0 */
 		CIMPP::Seconds td;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;L&lt;/sub&gt;&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;) (&amp;gt;= 0).  Typical value = 0,025. Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>L</sub></i><sub>1</sub>) (&gt;= 0).  Typical value = 0,025. Default: 0.0 */
 		CIMPP::Seconds tl1;
 
-		/** \brief Time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;L&lt;/sub&gt;&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;) (&amp;gt;= 0).  Typical value = 1,25. Default: nullptr */
+		/** \brief Time constant (<i>T</i><i><sub>L</sub></i><sub>2</sub>) (&gt;= 0).  Typical value = 1,25. Default: 0.0 */
 		CIMPP::Seconds tl2;
 
-		/** \brief DEC washout time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;W&lt;/sub&gt;&lt;/i&gt;&lt;sub&gt;5&lt;/sub&gt;) (&amp;gt;= 0).  Typical value = 5. Default: nullptr */
+		/** \brief DEC washout time constant (<i>T</i><i><sub>W</sub></i><sub>5</sub>) (&gt;= 0).  Typical value = 5. Default: 0.0 */
 		CIMPP::Seconds tw5;
 
-		/** \brief Regulator voltage reference (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;AL&lt;/sub&gt;&lt;/i&gt;).  Typical value = 5,5. Default: nullptr */
+		/** \brief Regulator voltage reference (<i>V</i><i><sub>AL</sub></i>).  Typical value = 5,5. Default: 0.0 */
 		CIMPP::PU val;
 
-		/** \brief Limiter for Van (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;ANMAX&lt;/sub&gt;&lt;/i&gt;). Default: nullptr */
+		/** \brief Limiter for Van (<i>V</i><i><sub>ANMAX</sub></i>). Default: 0.0 */
 		CIMPP::PU vanmax;
 
-		/** \brief Limiter (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;OMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; DiscExcContIEEEDEC1A.vomin).  Typical value = 0,3. Default: nullptr */
+		/** \brief Limiter (<i>V</i><i><sub>OMAX</sub></i>) (&gt; DiscExcContIEEEDEC1A.vomin).  Typical value = 0,3. Default: 0.0 */
 		CIMPP::PU vomax;
 
-		/** \brief Limiter (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;OMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; DiscExcContIEEEDEC1A.vomax).  Typical value = 0,1. Default: nullptr */
+		/** \brief Limiter (<i>V</i><i><sub>OMIN</sub></i>) (&lt; DiscExcContIEEEDEC1A.vomax).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::PU vomin;
 
-		/** \brief Limiter (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;SMAX&lt;/sub&gt;&lt;/i&gt;)(&amp;gt; DiscExcContIEEEDEC1A.vsmin).  Typical value = 0,2. Default: nullptr */
+		/** \brief Limiter (<i>V</i><i><sub>SMAX</sub></i>)(&gt; DiscExcContIEEEDEC1A.vsmin).  Typical value = 0,2. Default: 0.0 */
 		CIMPP::PU vsmax;
 
-		/** \brief Limiter (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;SMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; DiscExcContIEEEDEC1A.vsmax).  Typical value = -0,066. Default: nullptr */
+		/** \brief Limiter (<i>V</i><i><sub>SMIN</sub></i>) (&lt; DiscExcContIEEEDEC1A.vsmax).  Typical value = -0,066. Default: 0.0 */
 		CIMPP::PU vsmin;
 
-		/** \brief Terminal voltage level reference (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;TC&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0,95. Default: nullptr */
+		/** \brief Terminal voltage level reference (<i>V</i><i><sub>TC</sub></i>).  Typical value = 0,95. Default: 0.0 */
 		CIMPP::PU vtc;
 
-		/** \brief Voltage reference (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;TLMT&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,1. Default: nullptr */
+		/** \brief Voltage reference (<i>V</i><i><sub>TLMT</sub></i>).  Typical value = 1,1. Default: 0.0 */
 		CIMPP::PU vtlmt;
 
-		/** \brief Voltage limits (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;TM&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,13. Default: nullptr */
+		/** \brief Voltage limits (<i>V</i><i><sub>TM</sub></i>).  Typical value = 1,13. Default: 0.0 */
 		CIMPP::PU vtm;
 
-		/** \brief Voltage limits (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;TN&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,12. Default: nullptr */
+		/** \brief Voltage limits (<i>V</i><i><sub>TN</sub></i>).  Typical value = 1,12. Default: 0.0 */
 		CIMPP::PU vtn;
 
 		static const char debugName[];

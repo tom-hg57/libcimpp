@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 
 namespace CIMPP
@@ -27,10 +28,10 @@ namespace CIMPP
 		PhaseTapChangerTablePoint();
 		~PhaseTapChangerTablePoint() override;
 
-		/** \brief The table of this point. Default: 0 */
+		/** \brief The table of this point. Default: nullptr */
 		CIMPP::PhaseTapChangerTable* PhaseTapChangerTable;
 
-		/** \brief The angle difference in degrees. A positive value indicates a positive angle variation from the Terminal at the  PowerTransformerEnd,  where the TapChanger is located, into the transformer. Default: nullptr */
+		/** \brief The angle difference in degrees. A positive value indicates a positive angle variation from the Terminal at the  PowerTransformerEnd,  where the TapChanger is located, into the transformer. Default: 0.0 */
 		CIMPP::AngleDegrees angle;
 
 		static const char debugName[];

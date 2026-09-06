@@ -35,7 +35,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "VAdjIEEE.vadjmax", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "VAdjIEEE.vadjmin", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 VAdjIEEE::VAdjIEEE() {}

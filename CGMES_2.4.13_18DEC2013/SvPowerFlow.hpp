@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "ReactivePower.hpp"
 
@@ -28,13 +29,13 @@ namespace CIMPP
 		SvPowerFlow();
 		~SvPowerFlow() override;
 
-		/** \brief The terminal associated with the power flow state variable. Default: 0 */
+		/** \brief The terminal associated with the power flow state variable. Default: nullptr */
 		CIMPP::Terminal* Terminal;
 
-		/** \brief The active power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment. Default: nullptr */
+		/** \brief The active power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment. Default: 0.0 */
 		CIMPP::ActivePower p;
 
-		/** \brief The reactive power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment. Default: nullptr */
+		/** \brief The reactive power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment. Default: 0.0 */
 		CIMPP::ReactivePower q;
 
 		static const char debugName[];

@@ -42,7 +42,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "StreetDetail.type", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::GL, } } },
 		{ "StreetDetail.withinTownLimits", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::GL, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 StreetDetail::StreetDetail() {}

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Length.hpp"
 
 namespace CIMPP
@@ -26,7 +27,7 @@ namespace CIMPP
 		Conductor();
 		~Conductor() override;
 
-		/** \brief Segment length for calculating line section capabilities. Default: nullptr */
+		/** \brief Segment length for calculating line section capabilities. Default: 0.0 */
 		CIMPP::Length length;
 
 		static const char debugName[];

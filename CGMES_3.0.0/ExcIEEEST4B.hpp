@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "AngleDegrees.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,52 +29,52 @@ namespace CIMPP
 		ExcIEEEST4B();
 		~ExcIEEEST4B() override;
 
-		/** \brief Rectifier loading factor proportional to commutating reactance (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;C&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0). Typical value = 0,113. Default: nullptr */
+		/** \brief Rectifier loading factor proportional to commutating reactance (<i>K</i><i><sub>C</sub></i>) (&gt;= 0). Typical value = 0,113. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Feedback gain constant of the inner loop field regulator (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;G&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Feedback gain constant of the inner loop field regulator (<i>K</i><i><sub>G</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU kg;
 
-		/** \brief Potential circuit gain coefficient (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;I&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief Potential circuit gain coefficient (<i>K</i><i><sub>I</sub></i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU ki;
 
-		/** \brief Voltage regulator integral gain output (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;IM&lt;/sub&gt;&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Voltage regulator integral gain output (<i>K</i><i><sub>IM</sub></i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::PU kim;
 
-		/** \brief Voltage regulator integral gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;IR&lt;/sub&gt;&lt;/i&gt;).  Typical value = 10,75. Default: nullptr */
+		/** \brief Voltage regulator integral gain (<i>K</i><i><sub>IR</sub></i>).  Typical value = 10,75. Default: 0.0 */
 		CIMPP::PU kir;
 
-		/** \brief Potential circuit gain coefficient (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;P&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 9,3. Default: nullptr */
+		/** \brief Potential circuit gain coefficient (<i>K</i><i><sub>P</sub></i>) (&gt; 0).  Typical value = 9,3. Default: 0.0 */
 		CIMPP::PU kp;
 
-		/** \brief Voltage regulator proportional gain output (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PM&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief Voltage regulator proportional gain output (<i>K</i><i><sub>PM</sub></i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU kpm;
 
-		/** \brief Voltage regulator proportional gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;PR&lt;/sub&gt;&lt;/i&gt;).  Typical value = 10,75. Default: nullptr */
+		/** \brief Voltage regulator proportional gain (<i>K</i><i><sub>PR</sub></i>).  Typical value = 10,75. Default: 0.0 */
 		CIMPP::PU kpr;
 
-		/** \brief Voltage regulator time constant (&lt;i&gt;T&lt;/i&gt;&lt;i&gt;&lt;sub&gt;A&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,02. Default: nullptr */
+		/** \brief Voltage regulator time constant (<i>T</i><i><sub>A</sub></i>) (&gt;= 0).  Typical value = 0,02. Default: 0.0 */
 		CIMPP::Seconds ta;
 
-		/** \brief Potential circuit phase angle (&lt;i&gt;thetap&lt;/i&gt;).  Typical value = 0. Default: nullptr */
+		/** \brief Potential circuit phase angle (<i>thetap</i>).  Typical value = 0. Default: 0.0 */
 		CIMPP::AngleDegrees thetap;
 
-		/** \brief Maximum excitation voltage (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;BMax&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 11,63. Default: nullptr */
+		/** \brief Maximum excitation voltage (<i>V</i><i><sub>BMax</sub></i>) (&gt; 0).  Typical value = 11,63. Default: 0.0 */
 		CIMPP::PU vbmax;
 
-		/** \brief Maximum inner loop output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;MMax&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; ExcIEEEST4B.vmmin).  Typical value = 99. Default: nullptr */
+		/** \brief Maximum inner loop output (<i>V</i><i><sub>MMax</sub></i>) (&gt; ExcIEEEST4B.vmmin).  Typical value = 99. Default: 0.0 */
 		CIMPP::PU vmmax;
 
-		/** \brief Minimum inner loop output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;MMin&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; ExcIEEEST4B.vmmax).  Typical value = -99. Default: nullptr */
+		/** \brief Minimum inner loop output (<i>V</i><i><sub>MMin</sub></i>) (&lt; ExcIEEEST4B.vmmax).  Typical value = -99. Default: 0.0 */
 		CIMPP::PU vmmin;
 
-		/** \brief Maximum voltage regulator output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RMAX&lt;/sub&gt;&lt;/i&gt;) (&amp;gt; 0).  Typical value = 1. Default: nullptr */
+		/** \brief Maximum voltage regulator output (<i>V</i><i><sub>RMAX</sub></i>) (&gt; 0).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU vrmax;
 
-		/** \brief Minimum voltage regulator output (&lt;i&gt;V&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RMIN&lt;/sub&gt;&lt;/i&gt;) (&amp;lt; 0).  Typical value = -0,87. Default: nullptr */
+		/** \brief Minimum voltage regulator output (<i>V</i><i><sub>RMIN</sub></i>) (&lt; 0).  Typical value = -0,87. Default: 0.0 */
 		CIMPP::PU vrmin;
 
-		/** \brief Reactance associated with potential source (&lt;i&gt;X&lt;/i&gt;&lt;i&gt;&lt;sub&gt;L&lt;/sub&gt;&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0,124. Default: nullptr */
+		/** \brief Reactance associated with potential source (<i>X</i><i><sub>L</sub></i>) (&gt;= 0).  Typical value = 0,124. Default: 0.0 */
 		CIMPP::PU xl;
 
 		static const char debugName[];

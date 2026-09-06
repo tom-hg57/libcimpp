@@ -49,7 +49,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ExternalNetworkInjection.referencePriority", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SSH, } } },
 		{ "ExternalNetworkInjection.voltageFactor", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ExternalNetworkInjection::ExternalNetworkInjection() {}

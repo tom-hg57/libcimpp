@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "InputSignalKind.hpp"
 #include "Integer.hpp"
 #include "PU.hpp"
@@ -35,13 +36,13 @@ namespace CIMPP
 		/** \brief Type of input signal #2.  Typical Value = generatorElectricalPower. Default: 0 */
 		CIMPP::InputSignalKind inputSignal2Type;
 
-		/** \brief Stabilizer gain (Ks1).  Typical Value = 12. Default: nullptr */
+		/** \brief Stabilizer gain (Ks1).  Typical Value = 12. Default: 0.0 */
 		CIMPP::PU ks1;
 
-		/** \brief Gain on signal #2 (Ks2).  Typical Value = 0.2. Default: nullptr */
+		/** \brief Gain on signal #2 (Ks2).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::PU ks2;
 
-		/** \brief Gain on signal #2 input before ramp-tracking filter (Ks3).  Typical Value = 1. Default: nullptr */
+		/** \brief Gain on signal #2 input before ramp-tracking filter (Ks3).  Typical Value = 1. Default: 0.0 */
 		CIMPP::PU ks3;
 
 		/** \brief Denominator order of ramp tracking filter (M).  Typical Value = 5. Default: 0 */
@@ -50,64 +51,64 @@ namespace CIMPP
 		/** \brief Order of ramp tracking filter (N).  Typical Value = 1. Default: 0 */
 		CIMPP::Integer n;
 
-		/** \brief Lead/lag time constant (T1).  Typical Value = 0.12. Default: nullptr */
+		/** \brief Lead/lag time constant (T1).  Typical Value = 0.12. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Lead/lag time constant (T10).  Typical Value = 0. Default: nullptr */
+		/** \brief Lead/lag time constant (T10).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t10;
 
-		/** \brief Lead/lag time constant (T11).  Typical Value = 0. Default: nullptr */
+		/** \brief Lead/lag time constant (T11).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t11;
 
-		/** \brief Lead/lag time constant (T2).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Lead/lag time constant (T2).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Lead/lag time constant (T3).  Typical Value = 0.3. Default: nullptr */
+		/** \brief Lead/lag time constant (T3).  Typical Value = 0.3. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Lead/lag time constant (T4).  Typical Value = 0.02. Default: nullptr */
+		/** \brief Lead/lag time constant (T4).  Typical Value = 0.02. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Time constant on signal #1 (T6).  Typical Value = 0. Default: nullptr */
+		/** \brief Time constant on signal #1 (T6).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Time constant on signal #2 (T7).  Typical Value = 2. Default: nullptr */
+		/** \brief Time constant on signal #2 (T7).  Typical Value = 2. Default: 0.0 */
 		CIMPP::Seconds t7;
 
-		/** \brief Lead of ramp tracking filter (T8).  Typical Value = 0.2. Default: nullptr */
+		/** \brief Lead of ramp tracking filter (T8).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::Seconds t8;
 
-		/** \brief Lag of ramp tracking filter (T9).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Lag of ramp tracking filter (T9).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::Seconds t9;
 
-		/** \brief First washout on signal #1 (Tw1).  Typical Value = 2. Default: nullptr */
+		/** \brief First washout on signal #1 (Tw1).  Typical Value = 2. Default: 0.0 */
 		CIMPP::Seconds tw1;
 
-		/** \brief Second washout on signal #1 (Tw2).  Typical Value = 2. Default: nullptr */
+		/** \brief Second washout on signal #1 (Tw2).  Typical Value = 2. Default: 0.0 */
 		CIMPP::Seconds tw2;
 
-		/** \brief First washout on signal #2 (Tw3).  Typical Value = 2. Default: nullptr */
+		/** \brief First washout on signal #2 (Tw3).  Typical Value = 2. Default: 0.0 */
 		CIMPP::Seconds tw3;
 
-		/** \brief Second washout on signal #2 (Tw4).  Typical Value = 0. Default: nullptr */
+		/** \brief Second washout on signal #2 (Tw4).  Typical Value = 0. Default: 0.0 */
 		CIMPP::Seconds tw4;
 
-		/** \brief Input signal #1 max limit (Vsi1max).  Typical Value = 2. Default: nullptr */
+		/** \brief Input signal #1 max limit (Vsi1max).  Typical Value = 2. Default: 0.0 */
 		CIMPP::PU vsi1max;
 
-		/** \brief Input signal #1 min limit (Vsi1min).  Typical Value = -2. Default: nullptr */
+		/** \brief Input signal #1 min limit (Vsi1min).  Typical Value = -2. Default: 0.0 */
 		CIMPP::PU vsi1min;
 
-		/** \brief Input signal #2 max limit (Vsi2max).  Typical Value = 2. Default: nullptr */
+		/** \brief Input signal #2 max limit (Vsi2max).  Typical Value = 2. Default: 0.0 */
 		CIMPP::PU vsi2max;
 
-		/** \brief Input signal #2 min limit (Vsi2min).  Typical Value = -2. Default: nullptr */
+		/** \brief Input signal #2 min limit (Vsi2min).  Typical Value = -2. Default: 0.0 */
 		CIMPP::PU vsi2min;
 
-		/** \brief Stabilizer output max limit (Vstmax).  Typical Value = 0.1. Default: nullptr */
+		/** \brief Stabilizer output max limit (Vstmax).  Typical Value = 0.1. Default: 0.0 */
 		CIMPP::PU vstmax;
 
-		/** \brief Stabilizer output min limit (Vstmin).  Typical Value = -0.1. Default: nullptr */
+		/** \brief Stabilizer output min limit (Vstmin).  Typical Value = -0.1. Default: 0.0 */
 		CIMPP::PU vstmin;
 
 		static const char debugName[];

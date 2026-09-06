@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "AnalogControl.maxValue", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 		{ "AnalogControl.minValue", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::OP, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 AnalogControl::AnalogControl() : AnalogValue(nullptr) {}

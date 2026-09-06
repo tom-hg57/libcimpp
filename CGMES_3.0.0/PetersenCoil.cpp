@@ -37,7 +37,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "PetersenCoil.xGroundMin", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 		{ "PetersenCoil.xGroundNominal", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SC, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 PetersenCoil::PetersenCoil() {}

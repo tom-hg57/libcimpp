@@ -32,7 +32,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "SvShuntCompensatorSections.ShuntCompensator", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::SV, } } },
 		{ "SvShuntCompensatorSections.sections", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::SV, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 SvShuntCompensatorSections::SvShuntCompensatorSections() : ShuntCompensator(nullptr) {}

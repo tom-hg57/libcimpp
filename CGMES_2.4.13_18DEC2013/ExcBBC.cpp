@@ -40,7 +40,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "ExcBBC.vrmin", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 		{ "ExcBBC.xe", { "http://iec.ch/TC57/2013/CIM-schema-cim16#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 ExcBBC::ExcBBC() {}
@@ -128,7 +128,7 @@ bool assign_ExcBBC_switch(std::stringstream& buffer, BaseClass* BaseClass_ptr1)
 	ExcBBC* element = dynamic_cast<ExcBBC*>(BaseClass_ptr1);
 	if (element != nullptr)
 	{
-		buffer >> element->_switch;
+		buffer >> element->switch_;
 		if (!buffer.fail())
 		{
 			return true;
@@ -285,7 +285,7 @@ bool get_ExcBBC_switch(const BaseClass* BaseClass_ptr1, std::stringstream& buffe
 	const ExcBBC* element = dynamic_cast<const ExcBBC*>(BaseClass_ptr1);
 	if (element != nullptr)
 	{
-		buffer << element->_switch;
+		buffer << element->switch_;
 		if (!buffer.str().empty())
 		{
 			return true;

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "PU.hpp"
 #include "Seconds.hpp"
 #include "Simple_Float.hpp"
@@ -30,40 +31,40 @@ namespace CIMPP
 		WindPlantFreqPcontrolIEC();
 		~WindPlantFreqPcontrolIEC() override;
 
-		/** \brief The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: 0 */
+		/** \brief The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: {} */
 		std::list<CIMPP::WindDynamicsLookupTable*> WindDynamicsLookupTable;
 
-		/** \brief Wind plant model with which this wind plant frequency and active power control is associated. Default: 0 */
+		/** \brief Wind plant model with which this wind plant frequency and active power control is associated. Default: nullptr */
 		CIMPP::WindPlantIEC* WindPlantIEC;
 
-		/** \brief Maximum ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: nullptr */
+		/** \brief Maximum ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU dprefmax;
 
-		/** \brief Minimum (negative) ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: nullptr */
+		/** \brief Minimum (negative) ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: 0.0 */
 		CIMPP::PU dprefmin;
 
-		/** \brief Plant P controller integral gain (). It is type dependent parameter. Default: nullptr */
+		/** \brief Plant P controller integral gain (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Simple_Float kiwpp;
 
-		/** \brief Plant P controller proportional gain (). It is type dependent parameter. Default: nullptr */
+		/** \brief Plant P controller proportional gain (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Simple_Float kpwpp;
 
-		/** \brief Maximum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: nullptr */
+		/** \brief Maximum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::PU prefmax;
 
-		/** \brief Minimum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: nullptr */
+		/** \brief Minimum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::PU prefmin;
 
-		/** \brief Lead time constant in reference value transfer function (). It is type dependent parameter. Default: nullptr */
+		/** \brief Lead time constant in reference value transfer function (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tpft;
 
-		/** \brief Lag time constant in reference value transfer function (). It is type dependent parameter. Default: nullptr */
+		/** \brief Lag time constant in reference value transfer function (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds tpfv;
 
-		/** \brief Filter time constant for frequency measurement (). It is type dependent parameter. Default: nullptr */
+		/** \brief Filter time constant for frequency measurement (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds twpffilt;
 
-		/** \brief Filter time constant for active power measurement (). It is type dependent parameter. Default: nullptr */
+		/** \brief Filter time constant for active power measurement (). It is type dependent parameter. Default: 0.0 */
 		CIMPP::Seconds twppfilt;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "DCConverterOperatingModeKind.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		DCConverterUnit();
 		~DCConverterUnit() override;
 
-		/** \brief  Default: 0 */
+		/** \brief  Default: nullptr */
 		CIMPP::Substation* Substation;
 
 		/** \brief  Default: 0 */

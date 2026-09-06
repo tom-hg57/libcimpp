@@ -33,7 +33,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "SvInjection.pInjection", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SV, } } },
 		{ "SvInjection.qInjection", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::SV, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 SvInjection::SvInjection() : TopologicalNode(nullptr) {}

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -28,34 +29,34 @@ namespace CIMPP
 		ExcSEXS();
 		~ExcSEXS() override;
 
-		/** \brief Field voltage clipping maximum limit (&lt;i&gt;Efdmax&lt;/i&gt;) (&amp;gt; ExcSEXS.efdmin).  Typical value = 5. Default: nullptr */
+		/** \brief Field voltage clipping maximum limit (<i>Efdmax</i>) (&gt; ExcSEXS.efdmin).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU efdmax;
 
-		/** \brief Field voltage clipping minimum limit (&lt;i&gt;Efdmin&lt;/i&gt;) (&amp;lt; ExcSEXS.efdmax).  Typical value = -5. Default: nullptr */
+		/** \brief Field voltage clipping minimum limit (<i>Efdmin</i>) (&lt; ExcSEXS.efdmax).  Typical value = -5. Default: 0.0 */
 		CIMPP::PU efdmin;
 
-		/** \brief Maximum field voltage output (&lt;i&gt;Emax&lt;/i&gt;) (&amp;gt; ExcSEXS.emin).  Typical value = 5. Default: nullptr */
+		/** \brief Maximum field voltage output (<i>Emax</i>) (&gt; ExcSEXS.emin).  Typical value = 5. Default: 0.0 */
 		CIMPP::PU emax;
 
-		/** \brief Minimum field voltage output (&lt;i&gt;Emin&lt;/i&gt;) (&amp;lt; ExcSEXS.emax).  Typical value = -5. Default: nullptr */
+		/** \brief Minimum field voltage output (<i>Emin</i>) (&lt; ExcSEXS.emax).  Typical value = -5. Default: 0.0 */
 		CIMPP::PU emin;
 
-		/** \brief Gain (&lt;i&gt;K&lt;/i&gt;) (&amp;gt; 0).  Typical value = 100. Default: nullptr */
+		/** \brief Gain (<i>K</i>) (&gt; 0).  Typical value = 100. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief PI controller gain (&lt;i&gt;Kc&lt;/i&gt;) (&amp;gt; 0 if ExcSEXS.tc &amp;gt; 0).  Typical value = 0,08. Default: nullptr */
+		/** \brief PI controller gain (<i>Kc</i>) (&gt; 0 if ExcSEXS.tc &gt; 0).  Typical value = 0,08. Default: 0.0 */
 		CIMPP::PU kc;
 
-		/** \brief Gain reduction ratio of lag-lead element (&lt;i&gt;[Ta / Tb]&lt;/i&gt;).  Typical value = 0,1. Default: 0.0 */
+		/** \brief Gain reduction ratio of lag-lead element (<i>[Ta / Tb]</i>).  Typical value = 0,1. Default: 0.0 */
 		CIMPP::Float tatb;
 
-		/** \brief Denominator time constant of lag-lead block (&lt;i&gt;Tb&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 10. Default: nullptr */
+		/** \brief Denominator time constant of lag-lead block (<i>Tb</i>) (&gt;= 0).  Typical value = 10. Default: 0.0 */
 		CIMPP::Seconds tb;
 
-		/** \brief PI controller phase lead time constant (&lt;i&gt;Tc&lt;/i&gt;) (&amp;gt;= 0).  Typical value = 0. Default: nullptr */
+		/** \brief PI controller phase lead time constant (<i>Tc</i>) (&gt;= 0).  Typical value = 0. Default: 0.0 */
 		CIMPP::Seconds tc;
 
-		/** \brief Time constant of gain block (&lt;i&gt;Te&lt;/i&gt;) (&amp;gt; 0).  Typical value = 0,05. Default: nullptr */
+		/** \brief Time constant of gain block (<i>Te</i>) (&gt; 0).  Typical value = 0,05. Default: 0.0 */
 		CIMPP::Seconds te;
 
 		static const char debugName[];

@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ApparentPower.hpp"
 #include "Conductance.hpp"
 #include "Integer.hpp"
@@ -34,43 +35,43 @@ namespace CIMPP
 		PowerTransformerEnd();
 		~PowerTransformerEnd() override;
 
-		/** \brief The power transformer of this power transformer end. Default: 0 */
+		/** \brief The power transformer of this power transformer end. Default: nullptr */
 		CIMPP::PowerTransformer* PowerTransformer;
 
-		/** \brief Magnetizing branch susceptance (B mag).  The value can be positive or negative. Default: nullptr */
+		/** \brief Magnetizing branch susceptance (B mag).  The value can be positive or negative. Default: 0.0 */
 		CIMPP::Susceptance b;
 
-		/** \brief Zero sequence magnetizing branch susceptance. Default: nullptr */
+		/** \brief Zero sequence magnetizing branch susceptance. Default: 0.0 */
 		CIMPP::Susceptance b0;
 
 		/** \brief Kind of connection. Default: 0 */
 		CIMPP::WindingConnection connectionKind;
 
-		/** \brief Magnetizing branch conductance. Default: nullptr */
+		/** \brief Magnetizing branch conductance. Default: 0.0 */
 		CIMPP::Conductance g;
 
-		/** \brief Zero sequence magnetizing branch conductance (star-model). Default: nullptr */
+		/** \brief Zero sequence magnetizing branch conductance (star-model). Default: 0.0 */
 		CIMPP::Conductance g0;
 
 		/** \brief Terminal voltage phase angle displacement where 360 degrees are represented with clock hours. The valid values are 0 to 11. For example, for the secondary side end of a transformer with vector group code of `Dyn11`, specify the connection kind as wye with neutral and specify the phase angle of the clock as 11.  The clock value of the transformer end number specified as 1, is assumed to be zero.  Note the transformer end number is not assumed to be the same as the terminal sequence number. Default: 0 */
 		CIMPP::Integer phaseAngleClock;
 
-		/** \brief Resistance (star-model) of the transformer end. The attribute shall be equal to or greater than zero for non-equivalent transformers. Default: nullptr */
+		/** \brief Resistance (star-model) of the transformer end. The attribute shall be equal to or greater than zero for non-equivalent transformers. Default: 0.0 */
 		CIMPP::Resistance r;
 
-		/** \brief Zero sequence series resistance (star-model) of the transformer end. Default: nullptr */
+		/** \brief Zero sequence series resistance (star-model) of the transformer end. Default: 0.0 */
 		CIMPP::Resistance r0;
 
-		/** \brief Normal apparent power rating. The attribute shall be a positive value. For a two-winding transformer the values for the high and low voltage sides shall be identical. Default: nullptr */
+		/** \brief Normal apparent power rating. The attribute shall be a positive value. For a two-winding transformer the values for the high and low voltage sides shall be identical. Default: 0.0 */
 		CIMPP::ApparentPower ratedS;
 
-		/** \brief Rated voltage: phase-phase for three-phase windings, and either phase-phase or phase-neutral for single-phase windings. A high voltage side, as given by TransformerEnd.endNumber, shall have a ratedU that is greater than or equal to ratedU for the lower voltage sides. The attribute shall be a positive value. Default: nullptr */
+		/** \brief Rated voltage: phase-phase for three-phase windings, and either phase-phase or phase-neutral for single-phase windings. A high voltage side, as given by TransformerEnd.endNumber, shall have a ratedU that is greater than or equal to ratedU for the lower voltage sides. The attribute shall be a positive value. Default: 0.0 */
 		CIMPP::Voltage ratedU;
 
-		/** \brief Positive sequence series reactance (star-model) of the transformer end. Default: nullptr */
+		/** \brief Positive sequence series reactance (star-model) of the transformer end. Default: 0.0 */
 		CIMPP::Reactance x;
 
-		/** \brief Zero sequence series reactance of the transformer end. Default: nullptr */
+		/** \brief Zero sequence series reactance of the transformer end. Default: 0.0 */
 		CIMPP::Reactance x0;
 
 		static const char debugName[];

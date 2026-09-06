@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class VsConverter;
@@ -26,7 +27,7 @@ namespace CIMPP
 		VsCapabilityCurve();
 		~VsCapabilityCurve() override;
 
-		/** \brief Capability curve of this converter. Default: 0 */
+		/** \brief Capability curve of this converter. Default: {} */
 		std::list<CIMPP::VsConverter*> VsConverterDCSides;
 
 		static const char debugName[];

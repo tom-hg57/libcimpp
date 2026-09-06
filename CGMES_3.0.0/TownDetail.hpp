@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "String.hpp"
 
 namespace CIMPP
@@ -26,19 +27,19 @@ namespace CIMPP
 		TownDetail();
 		~TownDetail() override;
 
-		/** \brief Town code. Default: '' */
+		/** \brief Town code. Default: "" */
 		CIMPP::String code;
 
-		/** \brief Name of the country. Default: '' */
+		/** \brief Name of the country. Default: "" */
 		CIMPP::String country;
 
-		/** \brief Town name. Default: '' */
+		/** \brief Town name. Default: "" */
 		CIMPP::String name;
 
-		/** \brief Town section. For example, it is common for there to be 36 sections per township. Default: '' */
+		/** \brief Town section. For example, it is common for there to be 36 sections per township. Default: "" */
 		CIMPP::String section;
 
-		/** \brief Name of the state or province. Default: '' */
+		/** \brief Name of the state or province. Default: "" */
 		CIMPP::String stateOrProvince;
 
 		static const char debugName[];

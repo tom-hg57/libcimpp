@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "PU.hpp"
 #include "Seconds.hpp"
@@ -29,106 +30,106 @@ namespace CIMPP
 		PssPTIST3();
 		~PssPTIST3() override;
 
-		/** \brief Filter coefficient (A0). Default: nullptr */
+		/** \brief Filter coefficient (A0). Default: 0.0 */
 		CIMPP::PU a0;
 
-		/** \brief Limiter (Al). Default: nullptr */
+		/** \brief Limiter (Al). Default: 0.0 */
 		CIMPP::PU a1;
 
-		/** \brief Filter coefficient (A2). Default: nullptr */
+		/** \brief Filter coefficient (A2). Default: 0.0 */
 		CIMPP::PU a2;
 
-		/** \brief Filter coefficient (A3). Default: nullptr */
+		/** \brief Filter coefficient (A3). Default: 0.0 */
 		CIMPP::PU a3;
 
-		/** \brief Filter coefficient (A4). Default: nullptr */
+		/** \brief Filter coefficient (A4). Default: 0.0 */
 		CIMPP::PU a4;
 
-		/** \brief Filter coefficient (A5). Default: nullptr */
+		/** \brief Filter coefficient (A5). Default: 0.0 */
 		CIMPP::PU a5;
 
-		/** \brief Limiter (Al). Default: nullptr */
+		/** \brief Limiter (Al). Default: 0.0 */
 		CIMPP::PU al;
 
-		/** \brief Threshold value above which output averaging will be bypassed (Athres).  Typical Value = 0.005. Default: nullptr */
+		/** \brief Threshold value above which output averaging will be bypassed (Athres).  Typical Value = 0.005. Default: 0.0 */
 		CIMPP::PU athres;
 
-		/** \brief Filter coefficient (B0). Default: nullptr */
+		/** \brief Filter coefficient (B0). Default: 0.0 */
 		CIMPP::PU b0;
 
-		/** \brief Filter coefficient (B1). Default: nullptr */
+		/** \brief Filter coefficient (B1). Default: 0.0 */
 		CIMPP::PU b1;
 
-		/** \brief Filter coefficient (B2). Default: nullptr */
+		/** \brief Filter coefficient (B2). Default: 0.0 */
 		CIMPP::PU b2;
 
-		/** \brief Filter coefficient (B3). Default: nullptr */
+		/** \brief Filter coefficient (B3). Default: 0.0 */
 		CIMPP::PU b3;
 
-		/** \brief Filter coefficient (B4). Default: nullptr */
+		/** \brief Filter coefficient (B4). Default: 0.0 */
 		CIMPP::PU b4;
 
-		/** \brief Filter coefficient (B5). Default: nullptr */
+		/** \brief Filter coefficient (B5). Default: 0.0 */
 		CIMPP::PU b5;
 
-		/** \brief Limiter (Dl). Default: nullptr */
+		/** \brief Limiter (Dl). Default: 0.0 */
 		CIMPP::PU dl;
 
-		/** \brief Time step related to activation of controls (0.03 for 50 Hz) (Dtc).  Typical Value = 0.025. Default: nullptr */
+		/** \brief Time step related to activation of controls (0.03 for 50 Hz) (Dtc).  Typical Value = 0.025. Default: 0.0 */
 		CIMPP::Seconds dtc;
 
-		/** \brief Time step frequency calculation (0.03 for 50 Hz) (Dtf).  Typical Value = 0.025. Default: nullptr */
+		/** \brief Time step frequency calculation (0.03 for 50 Hz) (Dtf).  Typical Value = 0.025. Default: 0.0 */
 		CIMPP::Seconds dtf;
 
-		/** \brief Time step active power calculation (0.015 for 50 Hz) (Dtp).  Typical Value = 0.0125. Default: nullptr */
+		/** \brief Time step active power calculation (0.015 for 50 Hz) (Dtp).  Typical Value = 0.0125. Default: 0.0 */
 		CIMPP::Seconds dtp;
 
 		/** \brief Digital/analog output switch (Isw). true = produce analog output false = convert to digital output, using tap selection table. Default: false */
 		CIMPP::Boolean isw;
 
-		/** \brief Gain (K).  Typical Value = 9. Default: nullptr */
+		/** \brief Gain (K).  Typical Value = 9. Default: 0.0 */
 		CIMPP::PU k;
 
-		/** \brief Threshold value (Lthres). Default: nullptr */
+		/** \brief Threshold value (Lthres). Default: 0.0 */
 		CIMPP::PU lthres;
 
-		/** \brief (M).  M=2*H.  Typical Value = 5. Default: nullptr */
+		/** \brief (M).  M=2*H.  Typical Value = 5. Default: 0.0 */
 		CIMPP::PU m;
 
-		/** \brief Number of control outputs to average (Nav) (1 &lt;= Nav &lt;= 16).  Typical Value = 4. Default: nullptr */
+		/** \brief Number of control outputs to average (Nav) (1 <= Nav <= 16).  Typical Value = 4. Default: 0.0 */
 		CIMPP::Simple_Float nav;
 
-		/** \brief Number of counts at limit to active limit function (Ncl) (&gt;0). Default: nullptr */
+		/** \brief Number of counts at limit to active limit function (Ncl) (>0). Default: 0.0 */
 		CIMPP::Simple_Float ncl;
 
-		/** \brief Number of counts until reset after limit function is triggered (Ncr). Default: nullptr */
+		/** \brief Number of counts until reset after limit function is triggered (Ncr). Default: 0.0 */
 		CIMPP::Simple_Float ncr;
 
-		/** \brief (Pmin). Default: nullptr */
+		/** \brief (Pmin). Default: 0.0 */
 		CIMPP::PU pmin;
 
-		/** \brief Time constant (T1).  Typical Value = 0.3. Default: nullptr */
+		/** \brief Time constant (T1).  Typical Value = 0.3. Default: 0.0 */
 		CIMPP::Seconds t1;
 
-		/** \brief Time constant (T2).  Typical Value = 1. Default: nullptr */
+		/** \brief Time constant (T2).  Typical Value = 1. Default: 0.0 */
 		CIMPP::Seconds t2;
 
-		/** \brief Time constant (T3).  Typical Value = 0.2. Default: nullptr */
+		/** \brief Time constant (T3).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::Seconds t3;
 
-		/** \brief Time constant (T4).  Typical Value = 0.05. Default: nullptr */
+		/** \brief Time constant (T4).  Typical Value = 0.05. Default: 0.0 */
 		CIMPP::Seconds t4;
 
-		/** \brief Time constant (T5). Default: nullptr */
+		/** \brief Time constant (T5). Default: 0.0 */
 		CIMPP::Seconds t5;
 
-		/** \brief Time constant (T6). Default: nullptr */
+		/** \brief Time constant (T6). Default: 0.0 */
 		CIMPP::Seconds t6;
 
-		/** \brief Time constant (Tf).  Typical Value = 0.2. Default: nullptr */
+		/** \brief Time constant (Tf).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::Seconds tf;
 
-		/** \brief Time constant (Tp).  Typical Value = 0.2. Default: nullptr */
+		/** \brief Time constant (Tp).  Typical Value = 0.2. Default: 0.0 */
 		CIMPP::Seconds tp;
 
 		static const char debugName[];

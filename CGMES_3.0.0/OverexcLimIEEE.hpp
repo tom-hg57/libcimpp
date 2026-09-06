@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Float.hpp"
 #include "PU.hpp"
 
@@ -27,22 +28,22 @@ namespace CIMPP
 		OverexcLimIEEE();
 		~OverexcLimIEEE() override;
 
-		/** \brief OEL pickup/drop-out hysteresis (&lt;i&gt;HYST&lt;/i&gt;).  Typical value = 0,03. Default: nullptr */
+		/** \brief OEL pickup/drop-out hysteresis (<i>HYST</i>).  Typical value = 0,03. Default: 0.0 */
 		CIMPP::PU hyst;
 
-		/** \brief OEL timed field current limit (&lt;i&gt;I&lt;/i&gt;&lt;i&gt;&lt;sub&gt;FDLIM&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,05. Default: nullptr */
+		/** \brief OEL timed field current limit (<i>I</i><i><sub>FDLIM</sub></i>).  Typical value = 1,05. Default: 0.0 */
 		CIMPP::PU ifdlim;
 
-		/** \brief OEL instantaneous field current limit (&lt;i&gt;I&lt;/i&gt;&lt;i&gt;&lt;sub&gt;FDMAX&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,5. Default: nullptr */
+		/** \brief OEL instantaneous field current limit (<i>I</i><i><sub>FDMAX</sub></i>).  Typical value = 1,5. Default: 0.0 */
 		CIMPP::PU ifdmax;
 
-		/** \brief OEL timed field current limiter pickup level (&lt;i&gt;I&lt;/i&gt;&lt;i&gt;&lt;sub&gt;TFPU&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1,05. Default: nullptr */
+		/** \brief OEL timed field current limiter pickup level (<i>I</i><i><sub>TFPU</sub></i>).  Typical value = 1,05. Default: 0.0 */
 		CIMPP::PU itfpu;
 
-		/** \brief OEL cooldown gain (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;CD&lt;/sub&gt;&lt;/i&gt;).  Typical value = 1. Default: nullptr */
+		/** \brief OEL cooldown gain (<i>K</i><i><sub>CD</sub></i>).  Typical value = 1. Default: 0.0 */
 		CIMPP::PU kcd;
 
-		/** \brief OEL ramped limit rate (&lt;i&gt;K&lt;/i&gt;&lt;i&gt;&lt;sub&gt;RAMP&lt;/sub&gt;&lt;/i&gt;).  Unit = PU / s.  Typical value = 10. Default: 0.0 */
+		/** \brief OEL ramped limit rate (<i>K</i><i><sub>RAMP</sub></i>).  Unit = PU / s.  Typical value = 10. Default: 0.0 */
 		CIMPP::Float kramp;
 
 		static const char debugName[];

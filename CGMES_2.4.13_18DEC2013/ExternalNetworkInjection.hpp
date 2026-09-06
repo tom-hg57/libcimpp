@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "ActivePower.hpp"
 #include "ActivePowerPerFrequency.hpp"
 #include "Boolean.hpp"
@@ -33,58 +34,58 @@ namespace CIMPP
 		ExternalNetworkInjection();
 		~ExternalNetworkInjection() override;
 
-		/** \brief Power Frequency Bias. This is the change in power injection divided by the change in frequency and negated.  A positive value of the power frequency bias provides additional power injection upon a drop in frequency. Default: nullptr */
+		/** \brief Power Frequency Bias. This is the change in power injection divided by the change in frequency and negated.  A positive value of the power frequency bias provides additional power injection upon a drop in frequency. Default: 0.0 */
 		CIMPP::ActivePowerPerFrequency governorSCD;
 
 		/** \brief Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik`). Default: false */
 		CIMPP::Boolean ikSecond;
 
-		/** \brief Maximum initial symmetrical short-circuit currents (Ik` max) in A (Ik` = Sk`/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909 Default: nullptr */
+		/** \brief Maximum initial symmetrical short-circuit currents (Ik` max) in A (Ik` = Sk`/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909 Default: 0.0 */
 		CIMPP::CurrentFlow maxInitialSymShCCurrent;
 
-		/** \brief Maximum active power of the injection. Default: nullptr */
+		/** \brief Maximum active power of the injection. Default: 0.0 */
 		CIMPP::ActivePower maxP;
 
-		/** \brief Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used Default: nullptr */
+		/** \brief Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used Default: 0.0 */
 		CIMPP::ReactivePower maxQ;
 
-		/** \brief Maximum ratio of zero sequence resistance of Network Feeder to its zero sequence reactance (R(0)/X(0) max). Used for short circuit data exchange according to IEC 60909 Default: nullptr */
+		/** \brief Maximum ratio of zero sequence resistance of Network Feeder to its zero sequence reactance (R(0)/X(0) max). Used for short circuit data exchange according to IEC 60909 Default: 0.0 */
 		CIMPP::Simple_Float maxR0ToX0Ratio;
 
-		/** \brief Maximum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) max). Used for short circuit data exchange according to IEC 60909 Default: nullptr */
+		/** \brief Maximum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) max). Used for short circuit data exchange according to IEC 60909 Default: 0.0 */
 		CIMPP::Simple_Float maxR1ToX1Ratio;
 
-		/** \brief Maximum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) max). Used for short circuit data exchange according to IEC 60909 Default: nullptr */
+		/** \brief Maximum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) max). Used for short circuit data exchange according to IEC 60909 Default: 0.0 */
 		CIMPP::Simple_Float maxZ0ToZ1Ratio;
 
-		/** \brief Minimum initial symmetrical short-circuit currents (Ik` min) in A (Ik` = Sk`/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909 Default: nullptr */
+		/** \brief Minimum initial symmetrical short-circuit currents (Ik` min) in A (Ik` = Sk`/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909 Default: 0.0 */
 		CIMPP::CurrentFlow minInitialSymShCCurrent;
 
-		/** \brief Minimum active power of the injection. Default: nullptr */
+		/** \brief Minimum active power of the injection. Default: 0.0 */
 		CIMPP::ActivePower minP;
 
-		/** \brief Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used Default: nullptr */
+		/** \brief Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used Default: 0.0 */
 		CIMPP::ReactivePower minQ;
 
-		/** \brief Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik`). Used for short circuit data exchange according to IEC 6090 Default: nullptr */
+		/** \brief Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik`). Used for short circuit data exchange according to IEC 6090 Default: 0.0 */
 		CIMPP::Simple_Float minR0ToX0Ratio;
 
-		/** \brief Minimum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) min). Used for short circuit data exchange according to IEC 60909 Default: nullptr */
+		/** \brief Minimum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) min). Used for short circuit data exchange according to IEC 60909 Default: 0.0 */
 		CIMPP::Simple_Float minR1ToX1Ratio;
 
-		/** \brief Minimum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) min). Used for short circuit data exchange according to IEC 60909 Default: nullptr */
+		/** \brief Minimum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) min). Used for short circuit data exchange according to IEC 60909 Default: 0.0 */
 		CIMPP::Simple_Float minZ0ToZ1Ratio;
 
-		/** \brief Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: nullptr */
+		/** \brief Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0 */
 		CIMPP::ActivePower p;
 
-		/** \brief Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: nullptr */
+		/** \brief Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0 */
 		CIMPP::ReactivePower q;
 
 		/** \brief Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don t care (default) 1 = highest priority. 2 is less than 1 and so on. Default: 0 */
 		CIMPP::Integer referencePriority;
 
-		/** \brief Voltage factor in pu, which was used to calculate short-circuit current Ik` and power Sk`. Default: nullptr */
+		/** \brief Voltage factor in pu, which was used to calculate short-circuit current Ik` and power Sk`. Default: 0.0 */
 		CIMPP::PU voltageFactor;
 
 		static const char debugName[];

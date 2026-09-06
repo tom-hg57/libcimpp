@@ -34,7 +34,7 @@ static const std::map<std::string, AttrDetails>& getClassAttrDetailsMap()
 		{ "AsynchronousMachineTimeConstantReactance.xpp", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 		{ "AsynchronousMachineTimeConstantReactance.xs", { "http://iec.ch/TC57/CIM100#", { CGMESProfile::DY, } } },
 	};
-    return ClassAttrDetailsMap;
+	return ClassAttrDetailsMap;
 }
 
 AsynchronousMachineTimeConstantReactance::AsynchronousMachineTimeConstantReactance() {}

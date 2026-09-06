@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class AsynchronousMachineDynamics;
@@ -28,13 +29,13 @@ namespace CIMPP
 		TurbineGovernorDynamics();
 		~TurbineGovernorDynamics() override;
 
-		/** \brief Asynchronous machine model with which this turbine-governor model is associated. Default: 0 */
+		/** \brief Asynchronous machine model with which this turbine-governor model is associated. Default: nullptr */
 		CIMPP::AsynchronousMachineDynamics* AsynchronousMachineDynamics;
 
-		/** \brief Turbine-governor model associated with this synchronous machine model. Default: 0 */
+		/** \brief Turbine-governor model associated with this synchronous machine model. Default: {} */
 		std::list<CIMPP::SynchronousMachineDynamics*> SynchronousMachineDynamics;
 
-		/** \brief Turbine load controller providing input to this turbine-governor. Default: 0 */
+		/** \brief Turbine load controller providing input to this turbine-governor. Default: nullptr */
 		CIMPP::TurbineLoadControllerDynamics* TurbineLoadControllerDynamics;
 
 		static const char debugName[];

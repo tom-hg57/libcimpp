@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "DCPolarityKind.hpp"
 
 namespace CIMPP
@@ -27,7 +28,7 @@ namespace CIMPP
 		ACDCConverterDCTerminal();
 		~ACDCConverterDCTerminal() override;
 
-		/** \brief  Default: 0 */
+		/** \brief  Default: nullptr */
 		CIMPP::ACDCConverter* DCConductingEquipment;
 
 		/** \brief Represents the normal network polarity condition. Default: 0 */

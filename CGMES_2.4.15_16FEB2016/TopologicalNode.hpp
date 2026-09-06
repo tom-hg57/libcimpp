@@ -13,6 +13,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "BaseClassDefiner.hpp"
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
+
 #include "Boolean.hpp"
 #include "String.hpp"
 
@@ -35,52 +36,52 @@ namespace CIMPP
 		TopologicalNode();
 		~TopologicalNode() override;
 
-		/** \brief The island for which the node is an angle reference.   Normally there is one angle reference node for each island. Default: 0 */
+		/** \brief The island for which the node is an angle reference.   Normally there is one angle reference node for each island. Default: nullptr */
 		CIMPP::TopologicalIsland* AngleRefTopologicalIsland;
 
-		/** \brief The base voltage of the topologocial node. Default: 0 */
+		/** \brief The base voltage of the topologocial node. Default: nullptr */
 		CIMPP::BaseVoltage* BaseVoltage;
 
-		/** \brief The connectivity node container to which the toplogical node belongs. Default: 0 */
+		/** \brief The connectivity node container to which the toplogical node belongs. Default: nullptr */
 		CIMPP::ConnectivityNodeContainer* ConnectivityNodeContainer;
 
-		/** \brief The connectivity nodes combine together to form this topological node.  May depend on the current state of switches in the network. Default: 0 */
+		/** \brief The connectivity nodes combine together to form this topological node.  May depend on the current state of switches in the network. Default: {} */
 		std::list<CIMPP::ConnectivityNode*> ConnectivityNodes;
 
-		/** \brief The topological nodes that belong to the reporting group. Default: 0 */
+		/** \brief The topological nodes that belong to the reporting group. Default: nullptr */
 		CIMPP::ReportingGroup* ReportingGroup;
 
-		/** \brief The topological node associated with the flow injection state variable. Default: 0 */
+		/** \brief The topological node associated with the flow injection state variable. Default: nullptr */
 		CIMPP::SvInjection* SvInjection;
 
-		/** \brief The topological node associated with the voltage state. Default: 0 */
+		/** \brief The topological node associated with the voltage state. Default: nullptr */
 		CIMPP::SvVoltage* SvVoltage;
 
-		/** \brief The topological node associated with the terminal.   This can be used as an alternative to the connectivity node path to topological node, thus making it unneccesary to model connectivity nodes in some cases.   Note that the if connectivity nodes are in the model, this association would probably not be used as an input specification. Default: 0 */
+		/** \brief The topological node associated with the terminal.   This can be used as an alternative to the connectivity node path to topological node, thus making it unneccesary to model connectivity nodes in some cases.   Note that the if connectivity nodes are in the model, this association would probably not be used as an input specification. Default: {} */
 		std::list<CIMPP::Terminal*> Terminal;
 
-		/** \brief A topological node belongs to a topological island. Default: 0 */
+		/** \brief A topological node belongs to a topological island. Default: nullptr */
 		CIMPP::TopologicalIsland* TopologicalIsland;
 
 		/** \brief Identifies if a node is a BoundaryPoint. If boundaryPoint=true the ConnectivityNode or the TopologicalNode represents a BoundaryPoint. Default: false */
 		CIMPP::Boolean boundaryPoint;
 
-		/** \brief The attribute is used for an exchange of the ISO code of the region to which the `From` side of the Boundary point belongs to or it is connected to. The ISO code is two characters country code as defined by ISO 3166 (). The length of the string is 2 characters maximum. The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: '' */
+		/** \brief The attribute is used for an exchange of the ISO code of the region to which the `From` side of the Boundary point belongs to or it is connected to. The ISO code is two characters country code as defined by ISO 3166 (). The length of the string is 2 characters maximum. The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: "" */
 		CIMPP::String fromEndIsoCode;
 
-		/** \brief The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: '' */
+		/** \brief The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: "" */
 		CIMPP::String fromEndName;
 
-		/** \brief The attribute is used for an exchange of the name of the TSO to which the `From` side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum. The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: '' */
+		/** \brief The attribute is used for an exchange of the name of the TSO to which the `From` side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum. The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: "" */
 		CIMPP::String fromEndNameTso;
 
-		/** \brief The attribute is used for an exchange of the ISO code of the region to which the `To` side of the Boundary point belongs to or it is connected to. The ISO code is two characters country code as defined by ISO 3166 (). The length of the string is 2 characters maximum. The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: '' */
+		/** \brief The attribute is used for an exchange of the ISO code of the region to which the `To` side of the Boundary point belongs to or it is connected to. The ISO code is two characters country code as defined by ISO 3166 (). The length of the string is 2 characters maximum. The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: "" */
 		CIMPP::String toEndIsoCode;
 
-		/** \brief The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: '' */
+		/** \brief The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: "" */
 		CIMPP::String toEndName;
 
-		/** \brief The attribute is used for an exchange of the name of the TSO to which the `To` side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum. The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: '' */
+		/** \brief The attribute is used for an exchange of the name of the TSO to which the `To` side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum. The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: "" */
 		CIMPP::String toEndNameTso;
 
 		static const char debugName[];

@@ -14,6 +14,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 #include "CGMESProfile.hpp"
 #include "CimClassDetails.hpp"
 
+
 namespace CIMPP
 {
 	class DCConverterUnit;
@@ -28,13 +29,13 @@ namespace CIMPP
 		Substation();
 		~Substation() override;
 
-		/** \brief The DC converter unit belonging of the substation. Default: 0 */
+		/** \brief The DC converter unit belonging of the substation. Default: {} */
 		std::list<CIMPP::DCConverterUnit*> DCConverterUnit;
 
-		/** \brief The SubGeographicalRegion containing the substation. Default: 0 */
+		/** \brief The SubGeographicalRegion containing the substation. Default: nullptr */
 		CIMPP::SubGeographicalRegion* Region;
 
-		/** \brief The voltage levels within this substation. Default: 0 */
+		/** \brief The voltage levels within this substation. Default: {} */
 		std::list<CIMPP::VoltageLevel*> VoltageLevels;
 
 		static const char debugName[];
