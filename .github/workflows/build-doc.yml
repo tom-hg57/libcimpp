@@ -17,7 +17,7 @@ jobs:
         - CGMES_3.0.0
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     - name: Install Boost
       shell: bash
       run: sudo apt-get install libboost-filesystem-dev libboost-system-dev libboost-test-dev
@@ -37,7 +37,7 @@ jobs:
           cmake .. -DUSE_CIM_VERSION=${{matrix.schema}}
           make -j4 doc
     - name: Upload Artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: doc_${{matrix.schema}}
         path: ${{runner.workspace}}/libcimpp/build_${{matrix.schema}}/doc/html
@@ -51,7 +51,7 @@ jobs:
       CIM: CGMES_3.0.0
     steps:
     - name: Download
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v8
     - name: Copy
       shell: bash
       run: |
@@ -59,7 +59,7 @@ jobs:
           cp -r ./doc_${{env.CIM}} ./copy_files/docs/${{env.CIM}}
           echo "<html><head><meta http-equiv='refresh' content='0; url=${{env.CIM}}/index.html' /></head></html>" >./copy_files/docs/index.html
     - name: Upload Artifact github-pages
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v5
       with:
         path: ./copy_files/docs
 
@@ -77,4 +77,4 @@ jobs:
     steps:
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v4
+      uses: actions/deploy-pages@v5
