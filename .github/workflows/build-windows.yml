@@ -22,7 +22,7 @@ jobs:
           ${{ env.VCPKG_INSTALLATION_ROOT }}/installed
           ${{ env.VCPKG_INSTALLATION_ROOT }}/downloads
           ${{ env.VCPKG_INSTALLATION_ROOT }}/packages
-        key: vcpkg-windows-${{ hashFiles('**/vcpkg.json') }}
+        key: vcpkg-windows-${{ hashFiles('.github/workflows/build-windows.yml') }}
         restore-keys: |
           vcpkg-windows-
 
