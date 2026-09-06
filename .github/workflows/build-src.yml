@@ -29,7 +29,7 @@ jobs:
       run: cmake -B ${{github.workspace}}/build_${{matrix.schema}} -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
 
     - name: Build
-      run: cmake --build ${{github.workspace}}/build_${{matrix.schema}} -j 4
+      run: cmake --build ${{github.workspace}}/build_${{matrix.schema}} --parallel 4
 
     - name: Test
       working-directory: ${{github.workspace}}/build_${{matrix.schema}}
