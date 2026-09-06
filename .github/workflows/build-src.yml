@@ -1,10 +1,15 @@
-name: build-src
+name: Build & Test on Linux
 
 on: push
 
+env:
+  BUILD_TYPE: Release
+
 jobs:
-  build-src:
+  build-and-test:
+    name: Build & Test
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         schema:
@@ -12,21 +17,23 @@ jobs:
         - CGMES_2.4.15_16FEB2016
         - CGMES_2.4.15_27JAN2020
         - CGMES_3.0.0
+
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v7
-    - name: Install Boost
-      shell: bash
-      run: sudo apt-get install libboost-filesystem-dev libboost-system-dev libboost-test-dev
-    - name: Create Build Environment
-      run: cmake -E make_directory ${{runner.workspace}}/libcimpp/build_${{matrix.schema}}
-    - name: Configure CMake and compile
-      shell: bash
-      working-directory: ${{runner.workspace}}/libcimpp/build_${{matrix.schema}}/
+
+    - name: Install Dependencies
       run: |
-          cmake .. -DUSE_CIM_VERSION=${{matrix.schema}}
-          make -j4
-    - name: Run unit tests
-      shell: bash
-      working-directory: ${{runner.workspace}}/libcimpp/build_${{matrix.schema}}/
+          sudo apt-get update
+          sudo apt-get install -y libboost-filesystem-dev libboost-system-dev libboost-test-dev
+
+    - name: Configure CMake
+      run: cmake -B ${{github.workspace}}/build_${{matrix.schema}}
+           -DUSE_CIM_VERSION=${{matrix.schema}} -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+
+    - name: Build
+      run: cmake --build ${{github.workspace}}/build_${{matrix.schema}} --parallel 4
+
+    - name: Test
+      working-directory: ${{github.workspace}}/build_${{matrix.schema}}
       run: ctest --output-on-failure
