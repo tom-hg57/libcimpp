@@ -26,6 +26,10 @@ jobs:
         restore-keys: |
           vcpkg-windows-
 
+    # Load the MSVC environment so that Ninja uses cl.exe (MSVC) instead of gcc (MinGW)
+    - name: Enable MSVC for Ninja
+      uses: ilammy/msvc-dev-cmd@v1
+
     - name: Install Dependencies
       run: |
         vcpkg install boost-test:x64-windows
