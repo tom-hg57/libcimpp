@@ -1,9 +1,15 @@
 name: Build & Test on Linux
 
-on: push
+on: [push, pull_request]
 
 env:
   BUILD_TYPE: Release
+
+permissions:
+  checks: write
+  contents: read
+  issues: read
+  pull-requests: write
 
 jobs:
   build-and-test:
@@ -37,4 +43,11 @@ jobs:
 
     - name: Test
       working-directory: ${{github.workspace}}/build_${{matrix.schema}}
-      run: ctest --output-on-failure
+      run: ctest --output-on-failure --output-junit test-results.xml
+
+    - name: Publish Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v2
+      if: ${{ !cancelled() }}
+      with:
+        files: "${{github.workspace}}/build_${{matrix.schema}}/test-results.xml"
+        check_name: "Test Results (${{matrix.schema}})"
