@@ -1,9 +1,15 @@
 name: Build & Test on Windows
 
-on: push
+on: [push, pull_request]
 
 env:
   BUILD_TYPE: Release
+
+permissions:
+  checks: write
+  contents: read
+  issues: read
+  pull-requests: write
 
 jobs:
   build-and-test:
@@ -48,4 +54,10 @@ jobs:
 
     - name: Test
       working-directory: ${{github.workspace}}/build
-      run: ctest --output-on-failure
+      run: ctest --output-on-failure --output-junit test-results.xml
+
+    - name: Publish Test Results
+      uses: EnricoMi/publish-unit-test-result-action/windows@v2
+      if: ${{ !cancelled() }}
+      with:
+        files: "${{github.workspace}}/build/test-results.xml"
