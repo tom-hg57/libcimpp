@@ -8,7 +8,7 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 
 const std::string& getCimVersion()
 {
-	const std::string CimVersion = "cgmes_v2_4_13";
+	static const std::string cimVersion = "cgmes_v2_4_13";
 	return cimVersion;
 }
 
