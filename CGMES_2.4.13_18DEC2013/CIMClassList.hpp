@@ -11,8 +11,10 @@ Generated from the CGMES files via cimgen: https://github.com/sogno-platform/cim
 
 using namespace CIMPP;
 
-static std::list<BaseClassDefiner> CIMClassList =
+inline const std::list<BaseClassDefiner>& getCIMClassList()
 {
+  static const std::list<BaseClassDefiner> classList =
+  {
 	ACDCConverter::declare(),
 	ACDCConverterDCTerminal::declare(),
 	ACDCTerminal::declare(),
@@ -410,5 +412,10 @@ static std::list<BaseClassDefiner> CIMClassList =
 	WindType1or2UserDefined::declare(),
 	WindType3or4UserDefined::declare(),
 	UnknownType::declare(),
-};
+  };
+  return classList;
+}
+
+#define CIMClassList (getCIMClassList())
+
 #endif

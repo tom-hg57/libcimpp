@@ -7,5 +7,14 @@
 
 using namespace CIMPP;
 
-const Date IEC61970CIMVersion::date = Date("2017-07-26");
-const String IEC61970CIMVersion::version = String("IEC61970CIM17v23");
+const Date& IEC61970CIMVersion::getDate()
+{
+	static const Date date("2017-07-26");
+	return date;
+}
+
+const String& IEC61970CIMVersion::getVersion()
+{
+	static const String version("IEC61970CIM17v23");
+	return version;
+}

@@ -28,7 +28,7 @@ void ModelDescriptionHandler::startPrefixMapping(const std::string &prefix, cons
 {
 	if(prefix == "cim")
 	{
-		std::string version = IEC61970CIMVersion::version;
+		std::string version = IEC61970CIMVersion::getVersion();
 		std::size_t pos = version.find("CIM");
 		std::string versionParser = version.substr(pos+3, 2);
 

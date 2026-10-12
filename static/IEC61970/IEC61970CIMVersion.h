@@ -16,12 +16,12 @@ namespace CIMPP {
 		/**
 		 * Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05.
 		 */
-		static const Date date;
+		static const Date& getDate();
 		/**
 		 * Form is IEC61970CIMXXvYY where XX is the major CIM package version and the YY
 		 * is the minor version. For example IEC61970CIM13v18.
 		 */
-		static const String version;
+		static const String& getVersion();
 	};
 }
 #endif // IEC61970CIMVERSION_H
