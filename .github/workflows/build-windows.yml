@@ -43,9 +43,11 @@ jobs:
         vcpkg install libxml2:x64-windows
 
     - name: Configure CMake
+      shell: pwsh
       run: >
+        $vcpkgRoot = if (Test-Path "C:\vcpkg") { "C:\vcpkg" } else { $env:VCPKG_ROOT };
         cmake -B ${{github.workspace}}/build -G Ninja -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
-        -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_INSTALLATION_ROOT/scripts/buildsystems/vcpkg.cmake"
+        -DCMAKE_TOOLCHAIN_FILE="$vcpkgRoot/scripts/buildsystems/vcpkg.cmake"
 
     - name: Build
       run: cmake --build ${{github.workspace}}/build --parallel 4
@@ -54,10 +56,19 @@ jobs:
       working-directory: ${{github.workspace}}/build
       shell: pwsh
       run: |
-        # Prevent Windows Error Reporting dialogs from hanging headless CI
+        # Prevent Windows from displaying blocking hard-error modal dialogs for missing DLLs
+        Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Windows' -Name 'ErrorMode' -Value 2
         Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\Windows Error Reporting' -Name 'DontShowUI' -Value 1 -ErrorAction SilentlyContinue
-        # Ensure all vcpkg runtime DLLs are available in PATH
-        $env:PATH = "$env:VCPKG_INSTALLATION_ROOT/installed/x64-windows/bin;" + $env:PATH
+
+        # Locate vcpkg runtime DLL directory and copy required DLLs next to the test executable
+        $vcpkgBin = if (Test-Path "C:\vcpkg\installed\x64-windows\bin") { "C:\vcpkg\installed\x64-windows\bin" } else { "$env:VCPKG_ROOT\installed\x64-windows\bin" }
+        if (Test-Path $vcpkgBin) {
+          Copy-Item "$vcpkgBin\*.dll" -Destination "test" -Force -ErrorAction SilentlyContinue
+          $env:PATH = "$vcpkgBin;" + $env:PATH
+        }
+        Copy-Item "*.dll" -Destination "test" -Force -ErrorAction SilentlyContinue
+        $env:PATH = "${{github.workspace}}/build;" + $env:PATH
+
         ctest --output-on-failure --output-junit test-results.xml --timeout 60 -V
 
     - name: Publish Test Results
